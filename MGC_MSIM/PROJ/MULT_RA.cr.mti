@@ -1,0 +1,50 @@
+/home/edatp59/hsm1_tutorial/HDL/TBENCH/multn_tb.vhd {1 {vcom -work MULT_RA -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/multn_tb.vhd
+Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity multn_tb
+-- Compiling architecture bench of multn_tb
+
+} {} {}} /home/edatp59/hsm1_tutorial/HDL/TBENCH/mult8_ra_rtl_conf.vhd {1 {vcom -work MULT_RA -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/mult8_ra_rtl_conf.vhd
+Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+-- Loading package STANDARD
+-- Compiling configuration mult8_ra_rtl_conf
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading entity multn_tb
+-- Loading architecture bench of multn_tb
+-- Loading entity multn
+
+} {} {}} /home/edatp59/hsm1_tutorial/HDL/TBENCH/mult8_ra_mapped_conf.vhd {1 {vcom -work MULT_RA -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/mult8_ra_mapped_conf.vhd
+Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+-- Loading package STANDARD
+-- Compiling configuration mult8_ra_mapped_conf
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading entity multn_tb
+-- Loading architecture bench of multn_tb
+-- Loading entity multn
+-- Loading package vl_types
+-- Loading entity multn_NBITS8
+
+} {} {}} /home/edatp59/hsm1_tutorial/HDL/RTL/multn_ra.vhd {1 {vcom -work MULT_RA -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/RTL/multn_ra.vhd
+Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity multn
+-- Loading package NUMERIC_STD
+-- Compiling architecture ra of multn
+
+} {} {}} /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v {1 {vlog -work MULT_RA -novopt -nocovercells /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v
+Model Technology ModelSim SE vlog 10.0a Compiler 2011.02 Feb 21 2011
+-- Compiling module multn_NBITS8
+
+Top level modules:
+	multn_NBITS8
+
+} {} {}}

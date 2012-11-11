@@ -1,0 +1,143 @@
+m255
+K3
+13
+cModel Technology
+d/home/edatp59/hsm1_tutorial/MGC_MSIM
+Cmult8_ra_mapped_conf
+Z0 abench
+Z1 emultn_tb
+Z2 DEx4 work 5 multn 0 22 TO^[`Z9WcaPUz8MPK3g5W3
+DPx7 verilog 8 vl_types 0 22 ]G>2izW1V4dcRR@F[keS10
+DEx4 work 12 multn_NBITS8 0 22 FC9DAj8;@leW=O>e`^I3:2
+Z3 DAx4 work 8 multn_tb 5 bench 22 ?aGgPf@GW6jZVeDSAQd9V1
+Z4 DPx4 ieee 11 numeric_std 0 22 k7B<7GmYYYmX;0X]XHFD10
+Z5 DPx3 std 6 textio 0 22 G^o2zK;Vh4eVdKTVo98653
+Z6 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z7 DEx4 work 8 multn_tb 0 22 GaP]<W`OFK8zDZ1`<2Zm@1
+Z8 w1350317726
+Z9 d/home/edatp59/hsm1_tutorial/MGC_MSIM/PROJ
+8/home/edatp59/hsm1_tutorial/HDL/TBENCH/mult8_ra_mapped_conf.vhd
+F/home/edatp59/hsm1_tutorial/HDL/TBENCH/mult8_ra_mapped_conf.vhd
+l0
+L1
+V^<9;hfS0I9<]19RiXn[bU2
+!s100 <2U>=2=Do?=bR78K0ao9D1
+Z10 OE;C;10.0a;49
+32
+!s108 1351601386.843794
+!s90 -reportprogress|300|-work|MULT_RA|-2002|-explicit|-novopt|/home/edatp59/hsm1_tutorial/HDL/TBENCH/mult8_ra_mapped_conf.vhd|
+!s107 /home/edatp59/hsm1_tutorial/HDL/TBENCH/mult8_ra_mapped_conf.vhd|
+Z11 o-work MULT_RA -2002 -explicit
+Z12 tExplicit 1
+Cmult8_ra_rtl_conf
+Z13 abench
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+8/home/edatp59/hsm1_tutorial/HDL/TBENCH/mult8_ra_rtl_conf.vhd
+F/home/edatp59/hsm1_tutorial/HDL/TBENCH/mult8_ra_rtl_conf.vhd
+l0
+L1
+VWIa5Jo?J3QU[aSMOZePoI2
+R10
+32
+R11
+R12
+!s100 PaPnc4lUdK?o=i<JAQli80
+!s108 1351601386.810867
+!s90 -reportprogress|300|-work|MULT_RA|-2002|-explicit|-novopt|/home/edatp59/hsm1_tutorial/HDL/TBENCH/mult8_ra_rtl_conf.vhd|
+!s107 /home/edatp59/hsm1_tutorial/HDL/TBENCH/mult8_ra_rtl_conf.vhd|
+Emultn
+Z14 w1350318241
+R5
+R6
+R9
+Z15 8/home/edatp59/hsm1_tutorial/HDL/RTL/multn_ra.vhd
+Z16 F/home/edatp59/hsm1_tutorial/HDL/RTL/multn_ra.vhd
+l0
+L15
+VTO^[`Z9WcaPUz8MPK3g5W3
+R10
+32
+Z17 !s108 1351601386.690557
+Z18 !s90 -reportprogress|300|-work|MULT_RA|-2002|-explicit|-novopt|/home/edatp59/hsm1_tutorial/HDL/RTL/multn_ra.vhd|
+Z19 !s107 /home/edatp59/hsm1_tutorial/HDL/RTL/multn_ra.vhd|
+R11
+R12
+!s100 D68dOMniNVlM5_og_^fFT0
+Ara
+R2
+R6
+R5
+R4
+l50
+L29
+V<E_A;9g?zab02=gQ;UTU@2
+R10
+32
+R17
+R18
+R19
+R11
+R12
+!s100 ;CeGMAc7?DjNz:iikVL7E3
+vmultn_NBITS8
+I7I>NaiK5z<WK=g^[:]B722
+VFC9DAj8;@leW=O>e`^I3:2
+R9
+w1351601007
+8/home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v
+F/home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v
+L0 2
+OE;L;10.0a;49
+r1
+31
+o-work MULT_RA -nocovercells -L mtiAvm -L mtiOvm -L mtiUPF
+nmultn_@n@b@i@t@s8
+!s100 d0P9GUk[YbPPQHgOcb^5]1
+!s85 0
+!s108 1351601386.643303
+!s107 /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v|
+!s90 -reportprogress|300|-work|MULT_RA|-novopt|-nocovercells|/home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v|
+!s102 -nocovercells
+Emultn_tb
+Z20 w1350371580
+R4
+R5
+R6
+R9
+Z21 8/home/edatp59/hsm1_tutorial/HDL/TBENCH/multn_tb.vhd
+Z22 F/home/edatp59/hsm1_tutorial/HDL/TBENCH/multn_tb.vhd
+l0
+L16
+VGaP]<W`OFK8zDZ1`<2Zm@1
+R10
+32
+Z23 !s108 1351601386.750495
+Z24 !s90 -reportprogress|300|-work|MULT_RA|-2002|-explicit|-novopt|/home/edatp59/hsm1_tutorial/HDL/TBENCH/multn_tb.vhd|
+Z25 !s107 /home/edatp59/hsm1_tutorial/HDL/TBENCH/multn_tb.vhd|
+R11
+R12
+!s100 L9B0BYWX4o?iKcK_ka:iW1
+Abench
+R4
+R5
+R6
+R7
+l44
+L19
+V?aGgPf@GW6jZVeDSAQd9V1
+R10
+32
+R23
+R24
+R25
+R11
+R12
+!s100 ^Mmi[^;<LdYLO[aFl]QBK2

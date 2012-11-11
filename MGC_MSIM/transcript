@@ -1,0 +1,212 @@
+# //  ModelSim SE 10.0a Feb 21 2011 Linux 2.6.18-308.16.1.el5
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+cd /home/edatp59/hsm1_tutorial/MGC_MSIM
+# reading modelsim.ini
+# reading /softs/mentor/msim/10.0a/linux/../modelsim.ini
+# Loading project MULT_RA
+# Compile of multn_ra.vhd was successful.
+# Compile of multn_tb.vhd was successful.
+# Compile of mult8_ra_rtl_conf.vhd was successful.
+# vcom -work MULT_RA -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/RTL/multn_ra.vhd
+# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity multn
+# -- Loading package NUMERIC_STD
+# -- Compiling architecture ra of multn
+# 
+# 
+# vcom -work MULT_RA -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/multn_tb.vhd
+# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity multn_tb
+# -- Compiling architecture bench of multn_tb
+# 
+# 
+# vcom -work MULT_RA -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/mult8_ra_rtl_conf.vhd
+# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+# -- Loading package STANDARD
+# -- Compiling configuration mult8_ra_rtl_conf
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading entity multn_tb
+# -- Loading architecture bench of multn_tb
+# -- Loading entity multn
+# 
+# 
+# 3 compiles, 0 failed with no errors. 
+vsim -t ns -wlf /home/edatp59/hsm1_tutorial/MGC_MSIM/OUT/mult8_ra_rtl.wlf -novopt MULT_RA.mult8_ra_rtl_conf
+# vsim -do ../BIN/mult_rtl.do -t ns -wlf /home/edatp59/hsm1_tutorial/MGC_MSIM/OUT/mult8_ra_rtl.wlf -novopt MULT_RA.mult8_ra_rtl_conf 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading MULT_RA.mult8_ra_rtl_conf
+# Loading MULT_RA.multn_tb(bench)
+# Loading MULT_RA.multn(ra)
+# ../BIN/mult_rtl.do 
+# invalid command name "../BIN/mult_rtl.do"
+add wave sim:/multn_tb/*
+add wave  \
+sim:/multn_tb/UUT/state_reg \
+sim:/multn_tb/UUT/state_next
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf /home/edatp59/hsm1_tutorial/MGC_MSIM/BIN/mult_rtl.do
+run 10ns
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /multn_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /multn_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /multn_tb/UUT
+run 10ns
+run -all
+restart
+run -all
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /multn_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /multn_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /multn_tb/UUT
+# Compile of multn_nbits8_clk10_mapped.v was successful.
+# Compile of multn_ra.vhd was successful.
+# Compile of multn_tb.vhd was successful.
+# Compile of mult8_ra_rtl_conf.vhd was successful.
+# Compile of mult8_ra_mapped_conf.vhd was successful.
+vsim -L /home/edatp59/hsm1_tutorial/MGC_MSIM/DLIB/c35_corelib_vlog -sdftyp uut=/home/edatp59/hsm1_tutorial/SNPS_DC/TIM/multn_nbits8_clk10_mapped.sdf -t ps MULT_RA.mult8_ra_mapped_conf
+# vsim -L /home/edatp59/hsm1_tutorial/MGC_MSIM/DLIB/c35_corelib_vlog -sdftyp uut=/home/edatp59/hsm1_tutorial/SNPS_DC/TIM/multn_nbits8_clk10_mapped.sdf -t ps MULT_RA.mult8_ra_mapped_conf 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading verilog.vl_types(body)
+# Loading MULT_RA.mult8_ra_mapped_conf
+# SDF 10.0a Compiler 2011.02 Feb 21 2011
+# Loading MULT_RA.multn_tb(bench)
+# Loading MULT_RA.multn_NBITS8
+# Loading /home/edatp59/hsm1_tutorial/MGC_MSIM/DLIB/c35_corelib_vlog.OAI212
+# Loading /home/edatp59/hsm1_tutorial/MGC_MSIM/DLIB/c35_corelib_vlog.DFC3
+# Loading /home/edatp59/hsm1_tutorial/MGC_MSIM/DLIB/c35_corelib_vlog.ADD32
+# Loading /home/edatp59/hsm1_tutorial/MGC_MSIM/DLIB/c35_corelib_vlog.DFEC1
+# Loading /home/edatp59/hsm1_tutorial/MGC_MSIM/DLIB/c35_corelib_vlog.DFC1
+# Loading /home/edatp59/hsm1_tutorial/MGC_MSIM/DLIB/c35_corelib_vlog.INV3
+# Loading /home/edatp59/hsm1_tutorial/MGC_MSIM/DLIB/c35_corelib_vlog.AOI221
+# Loading /home/edatp59/hsm1_tutorial/MGC_MSIM/DLIB/c35_corelib_vlog.NOR40
+# Loading /home/edatp59/hsm1_tutorial/MGC_MSIM/DLIB/c35_corelib_vlog.NOR21
+# Loading /home/edatp59/hsm1_tutorial/MGC_MSIM/DLIB/c35_corelib_vlog.BUF2
+# Loading /home/edatp59/hsm1_tutorial/MGC_MSIM/DLIB/c35_corelib_vlog.XOR21
+# Loading /home/edatp59/hsm1_tutorial/MGC_MSIM/DLIB/c35_corelib_vlog.OAI311
+# Loading /home/edatp59/hsm1_tutorial/MGC_MSIM/DLIB/c35_corelib_vlog.NAND22
+# Loading /home/edatp59/hsm1_tutorial/MGC_MSIM/DLIB/c35_corelib_vlog.AOI211
+# Loading /home/edatp59/hsm1_tutorial/MGC_MSIM/DLIB/c35_corelib_vlog.XNR21
+# Loading /home/edatp59/hsm1_tutorial/MGC_MSIM/DLIB/c35_corelib_vlog.NOR20
+# Loading /home/edatp59/hsm1_tutorial/MGC_MSIM/DLIB/c35_corelib_vlog.OAI210
+# Loading /home/edatp59/hsm1_tutorial/MGC_MSIM/DLIB/c35_corelib_vlog.AOI210
+# Loading /home/edatp59/hsm1_tutorial/MGC_MSIM/DLIB/c35_corelib_vlog.NAND20
+# Loading /home/edatp59/hsm1_tutorial/MGC_MSIM/DLIB/c35_corelib_vlog.XNR20
+# Loading /home/edatp59/hsm1_tutorial/MGC_MSIM/DLIB/c35_corelib_vlog.XOR20
+# Loading instances from /home/edatp59/hsm1_tutorial/SNPS_DC/TIM/multn_nbits8_clk10_mapped.sdf
+# Loading /home/edatp59/hsm1_tutorial/MGC_MSIM/DLIB/c35_corelib_vlog.U_FD_P_RB_NO
+# Loading /home/edatp59/hsm1_tutorial/MGC_MSIM/DLIB/c35_corelib_vlog.U_ADDR2_S
+# Loading /home/edatp59/hsm1_tutorial/MGC_MSIM/DLIB/c35_corelib_vlog.U_ADDR2_C
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(44): [TFMPC] - Too few port connections. Expected 6, found 5.
+#         Region: /multn_tb/UUT/a_reg_reg_6_
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(44): [TFMPC] - Missing connection for port 'QN'.
+# Loading /home/edatp59/hsm1_tutorial/MGC_MSIM/DLIB/c35_corelib_vlog.U_MUX_2_1
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(46): [TFMPC] - Too few port connections. Expected 6, found 5.
+#         Region: /multn_tb/UUT/a_reg_reg_7_
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(46): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(48): [TFMPC] - Too few port connections. Expected 6, found 5.
+#         Region: /multn_tb/UUT/a_reg_reg_3_
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(48): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(50): [TFMPC] - Too few port connections. Expected 6, found 5.
+#         Region: /multn_tb/UUT/a_reg_reg_4_
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(50): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(52): [TFMPC] - Too few port connections. Expected 6, found 5.
+#         Region: /multn_tb/UUT/a_reg_reg_5_
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(52): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(54): [TFMPC] - Too few port connections. Expected 6, found 5.
+#         Region: /multn_tb/UUT/a_reg_reg_1_
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(54): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(56): [TFMPC] - Too few port connections. Expected 6, found 5.
+#         Region: /multn_tb/UUT/a_reg_reg_2_
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(56): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(58): [TFMPC] - Too few port connections. Expected 6, found 5.
+#         Region: /multn_tb/UUT/a_reg_reg_0_
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(58): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(59): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /multn_tb/UUT/z_reg_reg_2_
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(59): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(60): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /multn_tb/UUT/z_reg_reg_1_
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(60): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(61): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /multn_tb/UUT/z_reg_reg_0_
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(61): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(62): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /multn_tb/UUT/z_reg_reg_3_
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(62): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(69): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /multn_tb/UUT/z_reg_reg_4_
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(69): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(72): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /multn_tb/UUT/z_reg_reg_5_
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(72): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(73): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /multn_tb/UUT/z_reg_reg_6_
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(73): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(74): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /multn_tb/UUT/b_reg_reg_4_
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(74): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(75): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /multn_tb/UUT/z_reg_reg_7_
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(75): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(78): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /multn_tb/UUT/b_reg_reg_6_
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(78): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(79): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /multn_tb/UUT/z_reg_reg_8_
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(79): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(80): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /multn_tb/UUT/b_reg_reg_7_
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(80): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(81): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /multn_tb/UUT/z_reg_reg_9_
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(81): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(82): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /multn_tb/UUT/z_reg_reg_10_
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(82): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(83): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /multn_tb/UUT/z_reg_reg_11_
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(83): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(84): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /multn_tb/UUT/z_reg_reg_12_
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(84): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(85): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /multn_tb/UUT/z_reg_reg_13_
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(85): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(86): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /multn_tb/UUT/z_reg_reg_14_
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(86): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(87): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /multn_tb/UUT/z_reg_reg_15_
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/multn_nbits8_clk10_mapped.v(87): [TFMPC] - Missing connection for port 'QN'.
+# Loading timing data from /home/edatp59/hsm1_tutorial/SNPS_DC/TIM/multn_nbits8_clk10_mapped.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /multn_tb File: /home/edatp59/hsm1_tutorial/HDL/TBENCH/multn_tb.vhd
+add wave sim:/multn_tb/*
+add wave sim:/multn_tb/UUT/state_reg_reg_0_/*
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf /home/edatp59/hsm1_tutorial/MGC_MSIM/BIN/mult_rtl_mapped.do
+run -all
