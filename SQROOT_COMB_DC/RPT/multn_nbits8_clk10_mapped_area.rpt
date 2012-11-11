@@ -1,0 +1,28 @@
+ 
+****************************************
+Report : area
+Design : multn_NBITS8
+Version: G-2012.06-SP2
+Date   : Tue Oct 30 13:29:07 2012
+****************************************
+
+Library(s) Used:
+
+    c35_CORELIB (File: /dkits/ams/hk370/synopsys/c35_3.3V/c35_CORELIB.db)
+
+Number of ports:                           36
+Number of nets:                           195
+Number of cells:                          162
+Number of combinational cells:            128
+Number of sequential cells:                34
+Number of macros:                           0
+Number of buf/inv:                         35
+Number of references:                      21
+
+Combinational area:       9864.400040
+Buf/Inv area:             1310.400047
+Noncombinational area:    10810.799744
+Net Interconnect area:    3834.000000  
+
+Total cell area:          20675.199783
+Total area:               24509.199783

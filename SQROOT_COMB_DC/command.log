@@ -1,12 +1,10 @@
 #@ # 
-#@ # Running dc_shell Version G-2012.06-SP2 for linux -- Aug 31, 2012
-#@ # Date:   Sun Nov 11 22:49:30 2012
+#@ # Running dc_shell Version F-2011.09-SP5 for linux -- Apr 20, 2012
+#@ # Date:   Sun Nov 11 22:57:11 2012
 #@ # Run by: edatp59@ielsrv01.epfl.ch
 #@ 
 
-source /softs/synopsys/syn/2012.06/admin/setup/.synopsys_dc.setup
-#@ # -- Starting source /softs/synopsys/syn/2012.06/admin/setup/.synopsys_dc.setup
-
+source /softs/synopsys/syn/2011.09/admin/setup/.synopsys_dc.setup
 #@ #
 #@ #		".synopsys_dc.setup" Initialization File for
 #@ #
@@ -48,16 +46,6 @@ source /softs/synopsys/syn/2012.06/admin/setup/.synopsys_dc.setup
 #@ set sh_new_variable_message	 "true"
 #@ update_app_var -default true sh_new_variable_message
 #@ }
-#@ 
-#@ if {$synopsys_program_name == "dc_shell"} {
-#@ set html_log_enable	     "false"
-#@ set html_log_filename	 "default.html"
-#@ }
-#@ 
-#@ if {$synopsys_program_name == "de_shell"} {
-#@ set de_log_html_filename	 "default.html"
-#@ }
-#@ 
 #@ if { [string compare $dc_shell_mode "tcl"] == 0 } {
 #@  set sh_enable_line_editing       "true"
 #@  set sh_line_editing_mode         "emacs"
@@ -92,8 +80,6 @@ source /softs/synopsys/syn/2012.06/admin/setup/.synopsys_dc.setup
 #@   source $synopsys_root/auxx/syn/.dc_procs.tcl
 #@   alias list_commands help
 #@ }
-#@ # -- Starting source /softs/synopsys/syn/2012.06/auxx/syn/.dc_common_procs.tcl
-
 #@ ##############################################################################
 #@ #
 #@ #
@@ -290,9 +276,7 @@ source /softs/synopsys/syn/2012.06/admin/setup/.synopsys_dc.setup
 #@ }
 #@ define_proc_attributes _Variable_Groups_Get_Variables_Of_Group -hidden
 #@ 
-#@ # -- End source /softs/synopsys/syn/2012.06/auxx/syn/.dc_common_procs.tcl
-
-#@ # -- Starting source /softs/synopsys/syn/2012.06/auxx/syn/.dc_procs.tcl
+#@ # -- End source /softs/synopsys/syn/2011.09/auxx/syn/.dc_common_procs.tcl
 
 #@ ##############################################################################
 #@ #
@@ -1030,7 +1014,6 @@ source /softs/synopsys/syn/2012.06/admin/setup/.synopsys_dc.setup
 #@ #  PROCEDURE:   write_mw_lib_files
 #@ #
 #@ #  ABSTRACT:    Write technology or reference control file
-#@ #  History: Yun Zhang 2011/12/5. add new hidden option -stream_layer_map_file
 #@ #
 #@ ##############################################################################
 #@ proc write_mw_lib_files args {
@@ -1049,9 +1032,6 @@ source /softs/synopsys/syn/2012.06/admin/setup/.synopsys_dc.setup
 #@      } elseif {[info exists ra(-plib)]} {
 #@        echo "Error: Cannot specify '-reference_control_file' with '-plib'.(CMD-001)"
 #@        return 0
-#@      } elseif {[info exists ra(-stream_layer_map_file)]} {
-#@        echo "Error: Cannot specify '-reference_control_file' with '-stream_layer_map_file'.(CMD-001)"
-#@        return 0
 #@      } else {
 #@        set cmd [format {report_mw_lib_ref_ctrl_file -output %s %s}                            $ra(-output)                            $ra() ]
 #@        return [uplevel #0 $cmd]
@@ -1062,9 +1042,6 @@ source /softs/synopsys/syn/2012.06/admin/setup/.synopsys_dc.setup
 #@      if {[info exists ra(-plib)]} {
 #@        echo "Error: Cannot specify '-technology' with '-plib'.(CMD-001)"
 #@        return 0
-#@      } elseif {[info exists ra(-stream_layer_map_file)]} {
-#@        echo "Error: Cannot specify '-technology' with '-stream_layer_map_file'.(CMD-001)"
-#@        return 0
 #@      } else {
 #@        set cmd [format {org_report_mw_lib -output %s %s}                            $ra(-output)                            $ra() ]
 #@        return [uplevel #0 $cmd]
@@ -1072,22 +1049,12 @@ source /softs/synopsys/syn/2012.06/admin/setup/.synopsys_dc.setup
 #@   }
 #@ 
 #@   if {[info exists ra(-plib)]} {
-#@     if {[info exists ra(-layer_map_file)]} {
-#@        echo "Error: Cannot specify '-technology' with '-stream_layer_map_file'.(CMD-001)"
-#@        return 0
-#@     } else {
-#@ 	set cmd [format {write_plib -lib_name %s %s} 	$ra() 	$ra(-output) ]
-#@ 	return [uplevel #0 $cmd]
-#@     }
+#@     set cmd [format {write_plib -lib_name %s %s}                         $ra()                         $ra(-output) ]
+#@     return [uplevel #0 $cmd]
 #@   }
-#@     if {[info exists ra(-stream_layer_map_file)]} {
-#@        set cmd [format {org_report_mw_lib -stream_layer_map_file %s -output %s %s} 			$ra(-stream_layer_map_file)                         $ra(-output)                         $ra() ]
-#@        return [uplevel #0 $cmd]
-#@     }
-#@   
 #@ }
 #@ 
-#@ define_proc_attributes write_mw_lib_files -hide_body     -info " Write technology or reference control file "     -define_args       {{-technology "Dump technology file" "" boolean {optional}} 	  {-plib "Dump plib file" "" boolean {optional}}       {-reference_control_file "Dump reference control file" "" boolean {optional}}       {-stream_layer_map_file "Dump layer map file during stream in/out" "" string {optional hidden}}       {-output "Output file" "file_name" string {required}}       {"" "Library to be reported" "libName" string {required}}}
+#@ define_proc_attributes write_mw_lib_files -hide_body     -info " Write technology or reference control file "     -define_args       {{-technology "Dump technology file" "" boolean {optional}} 	  {-plib "Dump plib file" "" boolean {optional}}       {-reference_control_file "Dump reference control file" "" boolean {optional}}       {-output "Output file" "file_name" string {required}}       {"" "Library to be reported" "libName" string {required}}}
 #@ }
 #@ ##############################################################################
 #@ #
@@ -1537,7 +1504,7 @@ source /softs/synopsys/syn/2012.06/admin/setup/.synopsys_dc.setup
 #@     return $ret;
 #@ }
 #@ define_proc_attributes _snps_array_peek -hidden
-#@ # -- End source /softs/synopsys/syn/2012.06/auxx/syn/.dc_procs.tcl
+#@ # -- End source /softs/synopsys/syn/2011.09/auxx/syn/.dc_procs.tcl
 
 #@ 
 #@ # Temporary fix for the LMC_HOME variable- set it to an empty string 
@@ -1558,6 +1525,7 @@ source /softs/synopsys/syn/2012.06/admin/setup/.synopsys_dc.setup
 #@ #
 #@ 
 #@ # from the System Variable Group 
+#@ set link_force_case  "check_reference"
 #@ set link_library  { * your_library.db }
 #@ 
 #@ set search_path [list . ${synopsys_root}/libraries/syn ${synopsys_root}/minpower/syn ${synopsys_root}/dw/syn_ver ${synopsys_root}/dw/sim_ver]
@@ -1638,9 +1606,9 @@ source /softs/synopsys/syn/2012.06/admin/setup/.synopsys_dc.setup
 #@ set compile_hold_reduce_cell_count "false"
 #@ set compile_retime_license_behavior "wait"
 #@ set dont_touch_nets_with_size_only_cells "false"
+#@ set suppress_errors  {PWR-18 OPT-932 OPT-317}
 #@ if { $synopsys_program_name == "dc_shell" && [shell_is_in_topographical_mode] } {
 #@    set dct_prioritize_area_correlation "false"
-#@    set compile_error_on_missing_physical_cells "false"
 #@ }
 #@ 
 #@ set ldd_return_val 0
@@ -1653,8 +1621,6 @@ source /softs/synopsys/syn/2012.06/admin/setup/.synopsys_dc.setup
 #@   source ${synopsys_root}/auxx/syn/scripts/list_duplicate_designs.tcl
 #@   source ${synopsys_root}/auxx/syn/scripts/analyze_datapath.tbc
 #@ }
-#@ # -- Starting source /softs/synopsys/syn/2012.06/auxx/syn/scripts/list_duplicate_designs.tcl
-
 #@ ####################################################################### 
 #@ #
 #@ #  list_duplicate_designs.tcl		21 Sept. 2006
@@ -1708,9 +1674,7 @@ source /softs/synopsys/syn/2012.06/admin/setup/.synopsys_dc.setup
 #@ 
 #@ define_proc_attributes list_duplicate_designs     -info " List designs of same names"     -permanent     -define_args {
 #@     }
-#@ # -- End source /softs/synopsys/syn/2012.06/auxx/syn/scripts/list_duplicate_designs.tcl
-
-#@ # -- Starting source /softs/synopsys/syn/2012.06/auxx/syn/scripts/analyze_datapath.tbc
+#@ # -- End source /softs/synopsys/syn/2011.09/auxx/syn/scripts/list_duplicate_designs.tcl
 
 #@ #!/bin/csh -f
 #@ # the next line restarts using tclshexec tclsh "$0" "$*"
@@ -2912,7 +2876,7 @@ source /softs/synopsys/syn/2012.06/admin/setup/.synopsys_dc.setup
 #@ 0
 #@ 0
 #@ }
-#@ # -- End source /softs/synopsys/syn/2012.06/auxx/syn/scripts/analyze_datapath.tbc
+#@ # -- End source /softs/synopsys/syn/2011.09/auxx/syn/scripts/analyze_datapath.tbc
 
 #@ 
 #@ 
@@ -3821,7 +3785,6 @@ source /softs/synopsys/syn/2012.06/admin/setup/.synopsys_dc.setup
 #@ 
 #@   if { $synopsys_program_name == "dc_shell" && [shell_is_in_topographical_mode] } {
 #@     group_variable  compile  "dct_prioritize_area_correlation"
-#@     group_variable  compile  "compile_error_on_missing_physical_cells"
 #@   }
 #@ 
 #@   # "multibit" variables are used by the the multibit mapping functionality 
@@ -4599,8 +4562,6 @@ source /softs/synopsys/syn/2012.06/admin/setup/.synopsys_dc.setup
 #@   #for read_lib -html	
 #@   source ${synopsys_root}/auxx/syn/lc/read_lib_html_msg_list.tcl
 #@ }
-#@ # -- Starting source /softs/synopsys/syn/2012.06/admin/setup/.dc_name_rules
-
 #@ #
 #@ 
 #@ #	.dc_name_rules Initialization file for
@@ -4649,7 +4610,7 @@ source /softs/synopsys/syn/2012.06/admin/setup/.synopsys_dc.setup
 #@ define_name_rules vhdl -map { {{"__","_"},{"_$",""}} }
 #@ 
 #@ ####/* Name rule for VHDL */
-#@ # -- End source /softs/synopsys/syn/2012.06/admin/setup/.dc_name_rules
+#@ # -- End source /softs/synopsys/syn/2011.09/admin/setup/.dc_name_rules
 
 #@ 
 #@ if { $synopsys_program_name == "psyn_gui"} {
@@ -4694,6 +4655,9 @@ source /softs/synopsys/syn/2012.06/admin/setup/.synopsys_dc.setup
 #@ set fp_snap_type(net_shape) wiretrack
 #@ set fp_snap_type(route_shape) wiretrack
 #@ set fp_snap_type(none) litho
+#@ 
+#@ # 6/24/05 cpark requested to add to GA image
+#@ set suppress_errors "$suppress_errors RCCALC-010 RCCALC-011"
 #@ 
 #@ # alias for write_sge is always the last line of the setup file
 #@ #if { [string compare $dc_shell_mode "tcl"] == 0 } {
@@ -4756,11 +4720,9 @@ source /softs/synopsys/syn/2012.06/admin/setup/.synopsys_dc.setup
 #@ 
 #@ }
 #@ 
-#@ # -- End source /softs/synopsys/syn/2012.06/admin/setup/.synopsys_dc.setup
+#@ # -- End source /softs/synopsys/syn/2011.09/admin/setup/.synopsys_dc.setup
 
-source /home/edatp59/hsm1_tutorial/SNPS_DC/.synopsys_dc.setup
-#@ # -- Starting source /home/edatp59/hsm1_tutorial/SNPS_DC/.synopsys_dc.setup
-
+source /home/edatp59/hsm1_tutorial/SQROOT_COMB_DC/.synopsys_dc.setup
 #@ #===============================================================================
 #@ #  Synopsys DC setup for AMS Hit-Kit C35 0.35u CMOS
 #@ #===============================================================================
@@ -4790,6 +4752,137 @@ source /home/edatp59/hsm1_tutorial/SNPS_DC/.synopsys_dc.setup
 #@ #  design library
 #@ if { ![file isdirectory "./DLIB/WORK"] } { file mkdir "./DLIB/WORK" }
 #@ define_design_lib WORK -path ./DLIB/WORK
-#@ # -- End source /home/edatp59/hsm1_tutorial/SNPS_DC/.synopsys_dc.setup
+#@ # -- End source /home/edatp59/hsm1_tutorial/SQROOT_COMB_DC/.synopsys_dc.setup
 
 gui_start
+ls
+source BIN/temp.tcl
+#@ #===============================================================================
+#@ #  File        :  multn_syn.tcl
+#@ #  Description :  Synthesis script for generic multiplier model.
+#@ #  Notes       :  -.
+#@ #  Author      :  Alain Vachoux, EPFL STI IEL LSM, alain.vachoux@epfl.ch
+#@ #                 for Hardware Modeling I course.
+#@ #  Tools       :  Synopsys DC 2009.06
+#@ #  History     :
+#@ #===============================================================================
+#@ 
+#@ #  design related definitions
+#@ set ENTITY_NAME sqroot_comb
+#@ set ARCH_NAME   rtl
+#@ set NBITS       8
+#@ set LIBRARY	WORK
+#@ #
+#@ set DESIGN_ENTITY "${ENTITY_NAME}_${ARCH_NAME}"
+#@ set DESIGN        "${ENTITY_NAME}_nbits${NBITS}"
+#@ 
+#@ #  start from fresh state
+#@ remove_design -all
+#@ 
+#@ #  analyze VHDL sources
+#@ puts "-i- Analyze HDL/RTL/${DESIGN_ENTITY}.vhd"
+#@ analyze -library ${LIBRARY} -format vhdl HDL/RTL/${DESIGN_ENTITY}.vhd
+#@ # -- End source BIN/temp.tcl
+
+source BIN/sqroot_comb_syn.tcl
+#@ #===============================================================================
+#@ #  File        :  multn_syn.tcl
+#@ #  Description :  Synthesis script for generic multiplier model.
+#@ #  Notes       :  -.
+#@ #  Author      :  Alain Vachoux, EPFL STI IEL LSM, alain.vachoux@epfl.ch
+#@ #                 for Hardware Modeling I course.
+#@ #  Tools       :  Synopsys DC 2009.06
+#@ #  History     :
+#@ #===============================================================================
+#@ 
+#@ #  design related definitions
+#@ set ENTITY_NAME sqroot_comb
+#@ set ARCH_NAME   rtl
+#@ set NBITS       8
+#@ #
+#@ set DESIGN_ENTITY "${ENTITY_NAME}_${ARCH_NAME}"
+#@ set DESIGN        "${ENTITY_NAME}_nbits${NBITS}"
+#@ 
+#@ #  start from fresh state
+#@ remove_design -all
+#@ 
+#@ #  analyze VHDL sources
+#@ puts "-i- Analyze HDL/RTL/${DESIGN_ENTITY}.vhd"
+#@ analyze -format vhdl HDL/RTL/${DESIGN_ENTITY}.vhd
+#@ 
+#@ #  elaborate design
+#@ puts "-i- Elaborate design"
+#@ elaborate ${ENTITY_NAME} -architecture ${ARCH_NAME}           -parameters "NBITS = ${NBITS}"           -library DEFAULT -update
+#@ 
+#@ #  save elaborated design
+#@ puts "-i- Save elaborated design"
+#@ write -hierarchy -format ddc -output DB/${DESIGN}_elab.ddc
+#@ 
+#@ #  define constraints
+#@ puts "-i- Define constraints"
+#@ puts "-i-   set_max_area 0"
+#@ puts "-i-   set_fix_multiple_port_nets -all"
+#@ set_max_area 0
+#@ set_fix_multiple_port_nets -all
+#@ 
+#@ #  map and optimize design
+#@ puts "-i- Map and optimize design"
+#@ compile -map_effort medium -area_effort medium
+#@ 
+#@ #  save mapped design
+#@ puts "-i- Save mapped design"
+#@ write -hierarchy -format ddc -output DB/${DESIGN}_mapped.ddc
+#@ 
+#@ #  generate reports
+#@ puts "-i- Generate reports"
+#@ report_constraint -nosplit -all_violators > RPT/${DESIGN}_allviol.rpt
+#@ report_area > RPT/${DESIGN}_area.rpt
+#@ report_timing > RPT/${DESIGN}_timing.rpt
+#@ report_resources -nosplit -hierarchy > RPT/${DESIGN}_resources.rpt
+#@ report_reference -nosplit -hierarchy > RPT/${DESIGN}_references.rpt
+#@ 
+#@ #  generate Verilog netlist
+#@ puts "-i- Generate Verilog netlist"
+#@ change_names -rules verilog -hierarchy
+#@ write -format verilog -hierarchy -output HDL/GATE/${DESIGN}_mapped.v
+#@ 
+#@ #  generate SDF timing file for Verilog
+#@ puts "-i- Generate SDF file for Verilog netlist"
+#@ write_sdf -version 2.1 TIM/${DESIGN}_mapped.sdf
+#@ 
+#@ puts "-i- Finished"
+#@ # -- End source BIN/sqroot_comb_syn.tcl
+
+change_selection [get_s sub_1_root_sub_48_I3_U2_5]
+change_selection [get_s sqroot_comb_NBITS8]
+man check_design
+check_design
+uplevel #0 { report_design }
+uplevel #0 check_design
+uplevel #0 check_design
+uplevel #0 { report_resources -nosplit }
+uplevel #0 { report_resources }
+source BIN/temp.tcl
+#@ #===============================================================================
+#@ #  File        :  multn_syn.tcl
+#@ #  Description :  Synthesis script for generic multiplier model.
+#@ #  Notes       :  -.
+#@ #  Author      :  Alain Vachoux, EPFL STI IEL LSM, alain.vachoux@epfl.ch
+#@ #                 for Hardware Modeling I course.
+#@ #  Tools       :  Synopsys DC 2009.06
+#@ #  History     :
+#@ #===============================================================================
+#@ 
+#@ #  design related definitions
+#@ set ENTITY_NAME sqroot_comb
+#@ set ARCH_NAME   rtl
+#@ set NBITS       8
+#@ set LIBRARY	WORK
+#@ #
+#@ set DESIGN_ENTITY "${ENTITY_NAME}_${ARCH_NAME}"
+#@ set DESIGN        "${ENTITY_NAME}_nbits${NBITS}"
+#@ 
+#@ puts "-i- Elaborate design"
+#@ elaborate ${ENTITY_NAME} -architecture ${ARCH_NAME}           -parameters "NBITS = ${NBITS}"           -library DEFAULT -update
+#@ # -- End source BIN/temp.tcl
+

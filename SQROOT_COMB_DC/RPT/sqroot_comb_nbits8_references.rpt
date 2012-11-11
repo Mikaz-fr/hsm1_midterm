@@ -1,0 +1,45 @@
+ 
+****************************************
+Report : reference
+Design : sqroot_comb_NBITS8
+Version: F-2011.09-SP5
+Date   : Sun Nov 11 23:00:31 2012
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+ADD22              c35_CORELIB   145.600006       3   436.800018  r
+ADD32              c35_CORELIB   273.000000       4  1092.000000  r
+AOI210             c35_CORELIB    72.800003       4   291.200012  
+AOI2110            c35_CORELIB    91.000000       3   273.000000  
+CLKIN0             c35_CORELIB    36.400002      15   546.000023  
+IMAJ30             c35_CORELIB   109.199997       1   109.199997  
+IMUX20             c35_CORELIB    91.000000       3   273.000000  
+INV3               c35_CORELIB    36.400002       9   327.600014  
+MAJ31              c35_CORELIB   109.199997       3   327.599991  
+MUX21              c35_CORELIB   109.199997       9   982.799973  
+NAND20             c35_CORELIB    54.599998       7   382.199989  
+NAND30             c35_CORELIB    72.800003       1    72.800003  
+NAND31             c35_CORELIB    72.800003       1    72.800003  
+NOR20              c35_CORELIB    54.599998       4   218.399994  
+NOR21              c35_CORELIB    54.599998      12   655.199982  
+OAI210             c35_CORELIB    72.800003       2   145.600006  
+OAI220             c35_CORELIB    91.000000       1    91.000000  
+OAI310             c35_CORELIB    91.000000       1    91.000000  
+XNR20              c35_CORELIB   109.199997       4   436.799988  
+XNR21              c35_CORELIB   109.199997      15  1637.999954  
+XOR21              c35_CORELIB   127.400002       2   254.800003  
+-----------------------------------------------------------------------------
+Total 21 references                                  8717.799950
+1

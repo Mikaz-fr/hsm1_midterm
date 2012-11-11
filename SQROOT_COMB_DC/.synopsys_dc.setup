@@ -1,0 +1,29 @@
+#===============================================================================
+#  Synopsys DC setup for AMS Hit-Kit C35 0.35u CMOS
+#===============================================================================
+
+puts "-i- AMS C35 technology setup"
+
+set AMS_DIR [getenv AMS_DIR]
+
+#  library search path
+lappend search_path "."
+lappend search_path ${AMS_DIR}/synopsys/c35_3.3V
+
+#  symbol library
+set     symbol_library { }
+lappend symbol_library c35_CORELIB.sdb
+
+#  target library
+set     target_library { }
+lappend target_library c35_CORELIB.db
+
+#  synthetic library
+set synthetic_library { dw_foundation.sldb }
+
+#  link library
+set link_library [concat { "*" } ${target_library} ${synthetic_library} ]
+
+#  design library
+if { ![file isdirectory "./DLIB/WORK"] } { file mkdir "./DLIB/WORK" }
+define_design_lib WORK -path ./DLIB/WORK

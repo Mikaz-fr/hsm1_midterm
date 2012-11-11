@@ -26,6 +26,7 @@ VJbDfNQl4AkD66<FSY<z433
 R1
 n@_opt2
 R2
+R3
 Esqroot_comb
 Z4 w1352656589
 Z5 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
@@ -41,7 +42,7 @@ L16
 V:KGg[dK]akEALaQZZ?@9D3
 Z13 OE;C;10.1a;51
 32
-Z14 !s108 1352656589.706006
+Z14 !s108 1352664719.087067
 Z15 !s90 -reportprogress|300|-work|SQROOT_COMB|-2002|-explicit|-vopt|/home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_comb_rtl.vhd|
 Z16 !s107 /home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_comb_rtl.vhd|
 Z17 o-work SQROOT_COMB -2002 -explicit
@@ -55,18 +56,18 @@ R7
 R8
 R9
 Z19 DEx4 work 11 sqroot_comb 0 22 :KGg[dK]akEALaQZZ?@9D3
+32
+!i10b 1
 l29
 L25
 VOPY=:2RLdd[PM>6[<NMVB2
 R13
-32
 R14
 R15
 R16
 R17
 R18
 !s100 j@k^olK2O^9O2HoV^B<P?0
-!i10b 1
 Esqroot_comb_tb
 Z20 w1352207076
 Z21 DPx4 ieee 9 math_real 0 22 :iME`dTX54_U49lJNF5JI3
@@ -81,7 +82,7 @@ L6
 VO<lNISV@JK9[j[CMI9?BY0
 R13
 32
-Z24 !s108 1352656589.738646
+Z24 !s108 1352664719.143009
 Z25 !s90 -reportprogress|300|-work|SQROOT_COMB|-2002|-explicit|-vopt|/home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_comb_tb.vhd|
 Z26 !s107 /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_comb_tb.vhd|
 R17
@@ -94,18 +95,18 @@ R7
 R8
 R9
 Z27 DEx4 work 14 sqroot_comb_tb 0 22 O<lNISV@JK9[j[CMI9?BY0
+32
 l26
 L8
 V;X0De5H4LNBcK9_P9YmcT2
 R13
-32
 R24
 R25
 R26
 R17
 R18
-!s100 mo?Qh75P@WFlWWi6aBBb81
 !i10b 1
+!s100 mo?Qh75P@WFlWWi6aBBb81
 Csqroot_comb_tb_rtl_conf
 abench
 esqroot_comb_tb
@@ -118,6 +119,7 @@ R7
 R8
 R9
 R27
+32
 w1352206265
 R10
 8/home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_comb_tb_rtl_conf.vhd
@@ -126,11 +128,10 @@ l0
 L1
 V<DJX>0UHKc[nh[h_^dD=c0
 R13
-32
 R17
 R18
-!s100 gaYAWWJ^^Ii@<JB?cF=kR0
 !i10b 1
-!s108 1352656589.767433
+!s100 gaYAWWJ^^Ii@<JB?cF=kR0
+!s108 1352664719.192048
 !s90 -reportprogress|300|-work|SQROOT_COMB|-2002|-explicit|-vopt|/home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_comb_tb_rtl_conf.vhd|
 !s107 /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_comb_tb_rtl_conf.vhd|

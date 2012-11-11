@@ -1,0 +1,19 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : multn_NBITS8
+Version: G-2012.06-SP2
+Date   : Tue Oct 30 13:27:27 2012
+****************************************
+
+
+   max_area
+
+                             Required        Actual
+   Design                      Area           Area           Slack
+   -----------------------------------------------------------------
+   multn_NBITS8                 0.00       24509.20       -24509.20 (VIOLATED)
+
+

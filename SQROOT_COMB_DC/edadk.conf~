@@ -5,8 +5,7 @@
 mgc msim 10.0a
 
 # Synopsys Design Compiler suite
-#snps syn 2012.06
-snps syn 2011.09
+snps syn 2012.06
 
 # Design kit
 dk ams hk370
