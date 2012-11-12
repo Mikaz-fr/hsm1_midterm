@@ -1,0 +1,217 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : sqroot_comb_NBITS32
+Version: F-2011.09-SP5
+Date   : Mon Nov 12 22:34:41 2012
+****************************************
+
+Operating Conditions: nom_pvt   Library: c35_CORELIB
+Wire Load Model Mode: enclosed
+
+  Startpoint: arg[27] (input port)
+  Endpoint: sqroot[2] (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sqroot_comb_NBITS32
+                     10k                   c35_CORELIB
+  sqroot_comb_NBITS32_DW01_sub_39
+                     10k                   c35_CORELIB
+  sqroot_comb_NBITS32_DW_cmp_49
+                     10k                   c35_CORELIB
+  sqroot_comb_NBITS32_DW_cmp_47
+                     10k                   c35_CORELIB
+  sqroot_comb_NBITS32_DW_cmp_50
+                     10k                   c35_CORELIB
+  sqroot_comb_NBITS32_DW_cmp_48
+                     10k                   c35_CORELIB
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 r
+  arg[27] (in)                                            0.00       0.00 r
+  U3705/Q (NOR24)                                         0.07       0.07 f
+  U3698/Q (OAI2112)                                       0.29       0.36 r
+  U3696/Q (INV6)                                          0.09       0.45 f
+  U3689/Q (CLKIN6)                                        0.10       0.55 r
+  U3687/Q (NAND26)                                        0.05       0.60 f
+  U3695/Q (OAI212)                                        0.15       0.75 r
+  U4890/Q (OAI212)                                        0.12       0.87 f
+  U4884/Q (INV6)                                          0.13       1.00 r
+  U4629/Q (NAND24)                                        0.07       1.07 f
+  U3520/Q (NAND33)                                        0.29       1.36 r
+  U3667/Q (NOR33)                                         0.25       1.61 f
+  U3671/Q (NAND22)                                        0.28       1.90 r
+  U3766/Q (AOI222)                                        0.10       1.99 f
+  U3654/Q (OAI212)                                        0.21       2.20 r
+  U3760/Q (OAI222)                                        0.10       2.30 f
+  U3755/Q (BUF15)                                         0.23       2.53 f
+  U3753/Q (OAI212)                                        0.21       2.75 r
+  U3751/Q (INV6)                                          0.09       2.83 f
+  U3750/Q (NAND22)                                        0.20       3.03 r
+  U3749/Q (NAND28)                                        0.04       3.08 f
+  U3733/Q (NAND28)                                        0.12       3.20 r
+  U3466/Q (NAND28)                                        0.03       3.23 f
+  U3725/Q (AOI212)                                        0.13       3.36 r
+  U3719/Q (AOI2112)                                       0.22       3.58 f
+  U3748/Q (NAND26)                                        0.25       3.83 r
+  U3217/Q (INV4)                                          0.16       3.99 f
+  U4683/Q (NAND22)                                        0.22       4.21 r
+  U2921/Q (NAND28)                                        0.06       4.27 f
+  U3827/Q (NAND28)                                        0.10       4.37 r
+  U3415/Q (NAND28)                                        0.05       4.42 f
+  U2907/Q (INV12)                                         0.09       4.51 r
+  U4852/Q (NOR42)                                         0.23       4.74 f
+  U3271/Q (NOR32)                                         0.22       4.95 r
+  U4496/Q (XOR22)                                         0.31       5.26 f
+  U2937/Q (NAND26)                                        0.13       5.39 r
+  U4029/Q (INV6)                                          0.06       5.45 f
+  U4026/Q (NAND28)                                        0.10       5.55 r
+  U4027/Q (NAND28)                                        0.07       5.62 f
+  U3810/Q (CLKIN6)                                        0.09       5.71 r
+  U3809/Q (AOI2112)                                       0.15       5.85 f
+  U3805/Q (NAND43)                                        0.24       6.09 r
+  U3785/Q (AOI212)                                        0.21       6.30 f
+  U3782/Q (NAND26)                                        0.28       6.58 r
+  U4312/Q (INV12)                                         0.13       6.70 f
+  U4650/Q (NOR24)                                         0.14       6.85 r
+  U4598/Q (INV6)                                          0.06       6.90 f
+  U4461/Q (NAND28)                                        0.09       7.00 r
+  U3278/Q (NAND26)                                        0.07       7.07 f
+  U4016/Q (CLKIN12)                                       0.06       7.12 r
+  U4782/Q (NOR42)                                         0.14       7.26 f
+  U4605/Q (NAND24)                                        0.17       7.44 r
+  U4766/Q (INV6)                                          0.05       7.49 f
+  U4765/Q (NAND34)                                        0.24       7.73 r
+  U3877/Q (INV12)                                         0.11       7.84 f
+  U3874/Q (NAND28)                                        0.19       8.03 r
+  U3872/Q (INV15)                                         0.09       8.11 f
+  U2857/Q (CLKIN12)                                       0.08       8.20 r
+  U3032/Q (NAND26)                                        0.06       8.26 f
+  U4246/Q (CLKIN6)                                        0.07       8.33 r
+  U4245/Q (NAND26)                                        0.06       8.39 f
+  U4251/Q (NAND28)                                        0.18       8.57 r
+  U3489/Q (NAND28)                                        0.06       8.63 f
+  U3061/Q (CLKIN12)                                       0.06       8.68 r
+  U3854/Q (NOR42)                                         0.17       8.85 f
+  U3847/Q (OAI212)                                        0.23       9.08 r
+  U3846/Q (INV6)                                          0.13       9.22 f
+  U3843/Q (NAND28)                                        0.17       9.38 r
+  U3485/Q (INV12)                                         0.05       9.43 f
+  U4713/Q (AOI212)                                        0.13       9.56 r
+  U4566/Q (AOI222)                                        0.15       9.71 f
+  U4200/Q (OAI212)                                        0.26       9.96 r
+  U4604/Q (NAND24)                                        0.10      10.07 f
+  U3962/Q (CLKIN6)                                        0.12      10.19 r
+  U4472/Q (NOR33)                                         0.11      10.30 f
+  U4144/Q (NAND26)                                        0.12      10.42 r
+  U4868/Q (INV6)                                          0.05      10.47 f
+  U4869/Q (NAND34)                                        0.20      10.67 r
+  U4244/Q (NAND26)                                        0.07      10.74 f
+  U3235/Q (CLKIN15)                                       0.10      10.84 r
+  U4741/Q (NAND28)                                        0.08      10.92 f
+  U3055/Q (INV12)                                         0.11      11.03 r
+  U3952/Q (IMUX23)                                        0.29      11.32 f
+  U4250/Q (CLKIN8)                                        0.13      11.45 r
+  U3920/Q (INV6)                                          0.05      11.50 f
+  U4971/Q (OAI222)                                        0.20      11.70 r
+  U3010/Q (NAND34)                                        0.10      11.80 f
+  U3026/Q (NAND34)                                        0.23      12.03 r
+  U3635/Q (NOR24)                                         0.10      12.14 f
+  U3634/Q (NAND34)                                        0.27      12.41 r
+  U3637/Q (INV15)                                         0.16      12.56 f
+  U4719/Q (MUX24)                                         0.45      13.01 r
+  sub_0_root_sub_0_root_sub_44_I13/A[8] (sqroot_comb_NBITS32_DW01_sub_39)
+                                                          0.00      13.01 r
+  sub_0_root_sub_0_root_sub_44_I13/U288/Q (NOR24)         0.12      13.13 f
+  sub_0_root_sub_0_root_sub_44_I13/U218/Q (OAI212)        0.19      13.32 r
+  sub_0_root_sub_0_root_sub_44_I13/U203/Q (AOI212)        0.18      13.50 f
+  sub_0_root_sub_0_root_sub_44_I13/U162/Q (OAI212)        0.26      13.76 r
+  sub_0_root_sub_0_root_sub_44_I13/U310/Q (INV8)          0.17      13.93 f
+  sub_0_root_sub_0_root_sub_44_I13/U155/Q (OAI212)        0.26      14.19 r
+  sub_0_root_sub_0_root_sub_44_I13/U253/Q (NAND23)        0.09      14.28 f
+  sub_0_root_sub_0_root_sub_44_I13/U300/Q (NAND28)        0.13      14.41 r
+  sub_0_root_sub_0_root_sub_44_I13/DIFF[16] (sqroot_comb_NBITS32_DW01_sub_39)
+                                                          0.00      14.41 r
+  U4175/Q (INV6)                                          0.04      14.44 f
+  U4980/Q (OAI222)                                        0.20      14.64 r
+  lte_43_I14/B[16] (sqroot_comb_NBITS32_DW_cmp_49)        0.00      14.64 r
+  lte_43_I14/U30/Q (NOR24)                                0.14      14.78 f
+  lte_43_I14/U29/Q (OAI212)                               0.20      14.98 r
+  lte_43_I14/U27/Q (AOI212)                               0.13      15.11 f
+  lte_43_I14/U14/Q (OAI212)                               0.20      15.31 r
+  lte_43_I14/U12/Q (AOI212)                               0.15      15.46 f
+  lte_43_I14/U92/Q (NAND26)                               0.15      15.60 r
+  lte_43_I14/GE_LT_GT_LE (sqroot_comb_NBITS32_DW_cmp_49)
+                                                          0.00      15.60 r
+  U4732/Q (INV12)                                         0.07      15.67 f
+  U3959/Q (CLKIN15)                                       0.08      15.75 r
+  U3594/Q (BUF15)                                         0.21      15.97 r
+  U4993/Q (OAI212)                                        0.12      16.09 f
+  U3974/Q (BUF15)                                         0.23      16.32 f
+  lte_43_I15/B[9] (sqroot_comb_NBITS32_DW_cmp_47)         0.00      16.32 f
+  lte_43_I15/U173/Q (NOR23)                               0.13      16.45 r
+  lte_43_I15/U169/Q (INV6)                                0.06      16.51 f
+  lte_43_I15/U171/Q (NAND24)                              0.14      16.65 r
+  lte_43_I15/U117/Q (NOR24)                               0.11      16.76 f
+  lte_43_I15/U39/Q (AOI212)                               0.15      16.92 r
+  lte_43_I15/U37/Q (OAI212)                               0.08      16.99 f
+  lte_43_I15/U12/Q (AOI212)                               0.23      17.22 r
+  lte_43_I15/U1/Q (NAND28)                                0.09      17.31 f
+  lte_43_I15/GE_LT_GT_LE (sqroot_comb_NBITS32_DW_cmp_47)
+                                                          0.00      17.31 f
+  U3608/Q (BUF15)                                         0.23      17.54 f
+  U3607/Q (NAND24)                                        0.14      17.68 r
+  U3511/Q (CLKIN6)                                        0.05      17.73 f
+  U3609/Q (AOI212)                                        0.18      17.91 r
+  U3610/Q (INV8)                                          0.11      18.02 f
+  lte_43_I16/B[13] (sqroot_comb_NBITS32_DW_cmp_50)        0.00      18.02 f
+  lte_43_I16/U140/Q (NOR24)                               0.11      18.13 r
+  lte_43_I16/U134/Q (INV6)                                0.05      18.18 f
+  lte_43_I16/U133/Q (AOI212)                              0.17      18.35 r
+  lte_43_I16/U26/Q (OAI212)                               0.09      18.44 f
+  lte_43_I16/U17/Q (AOI212)                               0.21      18.64 r
+  lte_43_I16/U156/Q (NAND24)                              0.05      18.69 f
+  lte_43_I16/U6/Q (AOI212)                                0.16      18.85 r
+  lte_43_I16/U157/Q (NAND26)                              0.07      18.91 f
+  lte_43_I16/GE_LT_GT_LE (sqroot_comb_NBITS32_DW_cmp_50)
+                                                          0.00      18.91 f
+  U3596/Q (INV12)                                         0.10      19.02 r
+  U3599/Q (CLKIN4)                                        0.16      19.17 f
+  U4001/Q (CLKIN4)                                        0.18      19.36 r
+  U3582/Q (NAND24)                                        0.07      19.42 f
+  U4547/Q (NAND28)                                        0.10      19.53 r
+  lt_gt_52/B[11] (sqroot_comb_NBITS32_DW_cmp_48)          0.00      19.53 r
+  lt_gt_52/U159/Q (NOR24)                                 0.09      19.62 f
+  lt_gt_52/U170/Q (OAI212)                                0.21      19.83 r
+  lt_gt_52/U112/Q (INV4)                                  0.08      19.90 f
+  lt_gt_52/U169/Q (NOR24)                                 0.11      20.01 r
+  lt_gt_52/U162/Q (NOR24)                                 0.07      20.08 f
+  lt_gt_52/U17/Q (OAI212)                                 0.19      20.28 r
+  lt_gt_52/U136/Q (AOI212)                                0.13      20.40 f
+  lt_gt_52/U135/Q (NAND24)                                0.14      20.55 r
+  lt_gt_52/GE_LT_GT_LE (sqroot_comb_NBITS32_DW_cmp_48)
+                                                          0.00      20.55 r
+  U3605/Q (NAND28)                                        0.07      20.62 f
+  U3604/Q (CLKIN6)                                        0.17      20.79 r
+  U4855/Q (IMUX20)                                        0.31      21.10 f
+  sqroot[2] (out)                                         0.00      21.10 f
+  data arrival time                                                 21.10
+
+  max_delay                                              21.10      21.10
+  output external delay                                   0.00      21.10
+  data required time                                                21.10
+  --------------------------------------------------------------------------
+  data required time                                                21.10
+  data arrival time                                                -21.10
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

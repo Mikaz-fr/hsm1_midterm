@@ -8,16 +8,12 @@ Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
 -- Compiling entity sqroot_comb_tb
 -- Compiling architecture bench of sqroot_comb_tb
 
-} {} {}} /home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_comb_rtl.vhd {1 {vcom -work SQROOT_COMB -2002 -explicit -vopt /home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_comb_rtl.vhd
-Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Compiling entity sqroot_comb
--- Compiling architecture rtl of sqroot_comb
+} {} {}} /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_comb_nbits8_mapped.v {1 {vlog -work work -vopt -nocovercells /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_comb_nbits8_mapped.v
+Model Technology ModelSim SE vlog 10.0a Compiler 2011.02 Feb 21 2011
+-- Compiling module sqroot_comb_NBITS8
+
+Top level modules:
+	sqroot_comb_NBITS8
 
 } {} {}} /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_comb_tb_rtl_conf.vhd {1 {vcom -work SQROOT_COMB -2002 -explicit -vopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_comb_tb_rtl_conf.vhd
 Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
@@ -32,6 +28,17 @@ Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
 -- Loading package std_logic_arith
 -- Loading package STD_LOGIC_UNSIGNED
 -- Loading entity sqroot_comb
+
+} {} {}} /home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_comb_rtl.vhd {1 {vcom -work SQROOT_COMB -2002 -explicit -vopt /home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_comb_rtl.vhd
+Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity sqroot_comb
+-- Compiling architecture rtl of sqroot_comb
 
 } {} {}} /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_comb_tb_mapped_conf.vhd {1 {vcom -work work -2002 -explicit -vopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_comb_tb_mapped_conf.vhd
 Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011

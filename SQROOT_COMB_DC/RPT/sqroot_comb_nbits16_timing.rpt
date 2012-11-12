@@ -6,14 +6,14 @@ Report : timing
         -max_paths 1
 Design : sqroot_comb_NBITS16
 Version: F-2011.09-SP5
-Date   : Mon Nov 12 15:34:48 2012
+Date   : Mon Nov 12 16:15:20 2012
 ****************************************
 
 Operating Conditions: nom_pvt   Library: c35_CORELIB
 Wire Load Model Mode: enclosed
 
-  Startpoint: arg[15] (input port)
-  Endpoint: sqroot[1] (output port)
+  Startpoint: arg[10] (input port)
+  Endpoint: sqroot[3] (output port)
   Path Group: default
   Path Type: max
 
@@ -24,70 +24,69 @@ Wire Load Model Mode: enclosed
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  input external delay                     0.00       0.00 f
-  arg[15] (in)                             0.00       0.00 f
-  U1292/Q (OAI222)                         0.22       0.22 r
-  U888/Q (NAND26)                          0.11       0.33 f
-  U1001/Q (NAND28)                         0.14       0.47 r
-  U991/Q (NAND28)                          0.06       0.53 f
-  U990/Q (NAND28)                          0.09       0.62 r
-  U1011/Q (INV6)                           0.04       0.65 f
-  U1297/Q (OAI212)                         0.15       0.81 r
-  U1298/Q (OAI312)                         0.11       0.91 f
-  U1300/Q (NOR33)                          0.16       1.07 r
-  U1108/Q (INV8)                           0.09       1.17 f
-  U1061/Q (NAND26)                         0.18       1.35 r
-  U791/Q (INV12)                           0.07       1.42 f
-  U820/Q (NAND26)                          0.10       1.52 r
-  U730/Q (INV6)                            0.09       1.61 f
-  U1311/Q (OAI212)                         0.18       1.78 r
-  U695/Q (NAND42)                          0.10       1.89 f
-  U1312/Q (OAI222)                         0.24       2.13 r
-  U703/Q (CLKIN6)                          0.12       2.25 f
-  U702/Q (NAND32)                          0.25       2.50 r
-  U1102/Q (INV6)                           0.10       2.60 f
-  U1282/Q (XNR22)                          0.31       2.90 r
-  U980/Q (INV1)                            0.14       3.04 f
-  U1080/Q (NAND22)                         0.25       3.29 r
-  U1350/Q (CLKIN3)                         0.11       3.39 f
-  U1351/Q (OAI212)                         0.19       3.58 r
-  U733/Q (NAND23)                          0.05       3.63 f
-  U1352/Q (XOR31)                          0.31       3.94 f
-  U805/Q (IMUX22)                          0.22       4.16 r
-  U1199/Q (CLKIN6)                         0.10       4.26 f
-  U823/Q (INV12)                           0.11       4.37 r
-  U1361/Q (OAI2112)                        0.06       4.43 f
-  U1362/Q (OAI212)                         0.21       4.64 r
-  U1012/Q (NAND24)                         0.08       4.72 f
-  U951/Q (INV12)                           0.11       4.83 r
-  U994/Q (INV15)                           0.08       4.91 f
-  U1049/Q (NAND34)                         0.23       5.14 r
-  U1143/Q (XOR22)                          0.29       5.43 f
-  U966/Q (NAND24)                          0.16       5.59 r
-  U1154/Q (INV6)                           0.07       5.66 f
-  U1379/Q (AOI212)                         0.13       5.79 r
-  U1380/Q (NAND24)                         0.06       5.85 f
-  U1385/Q (NOR24)                          0.11       5.96 r
-  U1388/Q (OAI312)                         0.16       6.12 f
-  U809/Q (NAND26)                          0.28       6.40 r
-  U846/Q (INV12)                           0.11       6.51 f
-  U1183/Q (NAND22)                         0.15       6.65 r
-  U893/Q (XNR21)                           0.31       6.96 r
-  U1409/Q (OAI222)                         0.09       7.05 f
-  U1410/Q (OAI2112)                        0.30       7.35 r
-  U1418/Q (OAI222)                         0.10       7.45 f
-  U1421/Q (OAI2112)                        0.25       7.70 r
-  U1208/Q (INV10)                          0.11       7.81 f
-  U1285/Q (MUX21)                          0.38       8.20 r
-  sqroot[1] (out)                          0.00       8.20 r
-  data arrival time                                   8.20
+  input external delay                     0.00       0.00 r
+  arg[10] (in)                             0.00       0.00 r
+  U708/Q (CLKIN15)                         0.04       0.04 f
+  U1333/Q (NAND28)                         0.12       0.16 r
+  U1418/Q (OAI212)                         0.08       0.24 f
+  U1305/Q (AOI222)                         0.18       0.42 r
+  U1184/Q (INV6)                           0.06       0.49 f
+  U1222/Q (NAND21)                         0.20       0.68 r
+  U1224/Q (NAND22)                         0.10       0.78 f
+  U647/Q (NAND26)                          0.12       0.90 r
+  U646/Q (INV4)                            0.07       0.97 f
+  U1423/Q (NOR33)                          0.22       1.19 r
+  U681/Q (INV8)                            0.10       1.30 f
+  U1247/Q (NAND28)                         0.16       1.46 r
+  U1101/Q (XNR22)                          0.29       1.75 r
+  U1016/Q (NAND24)                         0.09       1.85 f
+  U707/Q (NAND34)                          0.18       2.02 r
+  U1150/Q (XOR31)                          0.72       2.74 r
+  U1272/Q (NAND24)                         0.08       2.83 f
+  U1147/Q (NAND28)                         0.14       2.97 r
+  U680/Q (CLKIN12)                         0.06       3.03 f
+  U1453/Q (OAI222)                         0.22       3.25 r
+  U1050/Q (NAND24)                         0.07       3.33 f
+  U1187/Q (OAI211)                         0.27       3.60 r
+  U1455/Q (OAI222)                         0.13       3.73 f
+  U1459/Q (AOI2112)                        0.22       3.95 r
+  U729/Q (INV4)                            0.12       4.07 f
+  U1461/Q (OAI2112)                        0.33       4.40 r
+  U751/Q (INV6)                            0.06       4.46 f
+  U1462/Q (OAI222)                         0.23       4.69 r
+  U770/Q (INV6)                            0.08       4.77 f
+  U1207/Q (XOR22)                          0.27       5.04 r
+  U1208/Q (NAND24)                         0.06       5.11 f
+  U1041/Q (NAND21)                         0.26       5.37 r
+  U1043/Q (NAND23)                         0.09       5.46 f
+  U1246/Q (OAI212)                         0.17       5.63 r
+  U1323/Q (OAI222)                         0.12       5.75 f
+  U1072/Q (NAND24)                         0.12       5.87 r
+  U1491/Q (OAI212)                         0.11       5.98 f
+  U912/Q (NAND26)                          0.17       6.15 r
+  U1135/Q (CLKIN15)                        0.12       6.27 f
+  U888/Q (NAND28)                          0.13       6.40 r
+  U669/Q (INV10)                           0.04       6.44 f
+  U1015/Q (NAND28)                         0.10       6.54 r
+  U1014/Q (NAND28)                         0.06       6.60 f
+  U1219/Q (CLKIN12)                        0.05       6.65 r
+  U1005/Q (NAND26)                         0.04       6.69 f
+  U1065/Q (NAND24)                         0.16       6.86 r
+  U1255/Q (INV6)                           0.05       6.90 f
+  U833/Q (NAND24)                          0.14       7.05 r
+  U1057/Q (AOI222)                         0.09       7.13 f
+  U1501/Q (OAI2112)                        0.28       7.42 r
+  U775/Q (INV12)                           0.10       7.52 f
+  U1361/Q (MUX21)                          0.38       7.90 r
+  sqroot[3] (out)                          0.00       7.90 r
+  data arrival time                                   7.90
 
-  max_delay                                8.20       8.20
-  output external delay                    0.00       8.20
-  data required time                                  8.20
+  max_delay                                7.90       7.90
+  output external delay                    0.00       7.90
+  data required time                                  7.90
   -----------------------------------------------------------
-  data required time                                  8.20
-  data arrival time                                  -8.20
+  data required time                                  7.90
+  data arrival time                                  -7.90
   -----------------------------------------------------------
   slack (MET)                                         0.00
 

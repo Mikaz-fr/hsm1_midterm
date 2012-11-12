@@ -9,6 +9,12 @@
 # //
 # reading modelsim.ini
 # Loading project sqroot_comb
+# reading modelsim.ini
+# reading /softs/mentor/msim/10.0a/linux/../modelsim.ini
+# Loading project SQROOT_SEQ
+# reading /softs/mentor/msim/10.0a/linux/../modelsim.ini
+# reading modelsim.ini
+# Loading project sqroot_comb
 # vlog -work work -vopt -nocovercells /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_comb_nbits8_mapped.v
 # Model Technology ModelSim SE vlog 10.0a Compiler 2011.02 Feb 21 2011
 # -- Compiling module sqroot_comb_NBITS8
@@ -70,485 +76,10 @@
 # 
 # 
 # 5 compiles, 0 failed with no errors. 
-vsim -L /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog -sdftyp uut=/home/edatp59/hsm1_tutorial/SQROOT_COMB_DC/TIM/sqroot_comb_nbits8_mapped.sdf -t ps -novopt SQROOT_COMB.sqroot_comb_tb_mapped_conf
-# vsim -L /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog -sdftyp uut=/home/edatp59/hsm1_tutorial/SQROOT_COMB_DC/TIM/sqroot_comb_nbits8_mapped.sdf -t ps -novopt SQROOT_COMB.sqroot_comb_tb_mapped_conf 
-# Loading std.standard
-# Refreshing /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/PROJ/SQROOT_COMB.sqroot_comb_tb_mapped_conf
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading ieee.math_real(body)
-# Loading verilog.vl_types(body)
-# Loading SQROOT_COMB.sqroot_comb_tb_mapped_conf
-# Refreshing /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/PROJ/SQROOT_COMB.sqroot_comb_tb(bench)
-# Loading SQROOT_COMB.sqroot_comb_tb(bench)
-# Refreshing /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/PROJ/SQROOT_COMB.sqroot_comb_NBITS8
-# Loading SQROOT_COMB.sqroot_comb_NBITS8
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR24
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND23
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV12
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND24
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV3
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV10
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV8
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR23
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND26
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.CLKIN8
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.AOI2110
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.OAI221
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND28
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV4
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.CLKBU15
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR22
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR41
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND22
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.OAI311
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.AOI211
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV6
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR21
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.OAI212
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR42
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.OAI222
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND42
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND34
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.AOI2112
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.CLKIN3
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.BUF2
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.CLKIN2
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.BUF6
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.CLKBU4
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.AOI212
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR31
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.CLKIN6
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.AOI312
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.AOI310
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.CLKIN1
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.XOR22
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND21
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV15
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND20
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV0
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR32
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV2
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.XNR22
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.OAI312
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.OAI210
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR40
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND31
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.OAI2112
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.AOI222
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.XNR21
-# Loading instances from /home/edatp59/hsm1_tutorial/SQROOT_COMB_DC/TIM/sqroot_comb_nbits8_mapped.sdf
-# Loading timing data from /home/edatp59/hsm1_tutorial/SQROOT_COMB_DC/TIM/sqroot_comb_nbits8_mapped.sdf
-# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
-#    Time: 0 ps  Iteration: 0  Instance: /sqroot_comb_tb File: /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_comb_tb.vhd
-add wave  \
-sim:/sqroot_comb_tb/arg \
-sim:/sqroot_comb_tb/z \
-sim:/sqroot_comb_tb/roundup \
-sim:/sqroot_comb_tb/check \
-sim:/sqroot_comb_tb/sqrt_exp \
-sim:/sqroot_comb_tb/NBITS \
-sim:/sqroot_comb_tb/WAIT_TIME
-add wave  \
-sim:/sqroot_comb_tb/UUT/arg \
-sim:/sqroot_comb_tb/UUT/sqroot \
-sim:/sqroot_comb_tb/UUT/roundup
-run -all
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/PROJ/sqroot_comb_mapped.do
-restart
-# Loading instances from /home/edatp59/hsm1_tutorial/SQROOT_COMB_DC/TIM/sqroot_comb_nbits8_mapped.sdf
-# Loading timing data from /home/edatp59/hsm1_tutorial/SQROOT_COMB_DC/TIM/sqroot_comb_nbits8_mapped.sdf
-# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
-#    Time: 0 ps  Iteration: 0  Instance: /sqroot_comb_tb File: /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_comb_tb.vhd
-do /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/PROJ/sqroot_comb_mapped.do
-run -all
-vsim -t ns -wlf OUT/sqroot_comb_rtl.wlf -novopt SQROOT_COMB.sqroot_comb_tb_rtl_conf
-# vsim -do ../BIN/sqroot_comb_rtl.do -t ns -wlf OUT/sqroot_comb_rtl.wlf -novopt SQROOT_COMB.sqroot_comb_tb_rtl_conf 
-# Loading std.standard
-# Refreshing /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/PROJ/SQROOT_COMB.sqroot_comb_tb_rtl_conf
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading ieee.math_real(body)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading SQROOT_COMB.sqroot_comb_tb_rtl_conf
-# Loading SQROOT_COMB.sqroot_comb_tb(bench)
-# Refreshing /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/PROJ/SQROOT_COMB.sqroot_comb(rtl)
-# Loading SQROOT_COMB.sqroot_comb(rtl)
-# ../BIN/sqroot_comb_rtl.do 
-# invalid command name "../BIN/sqroot_comb_rtl.do"
-# vlog -work work -vopt -nocovercells /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_comb_nbits8_mapped.v
-# Model Technology ModelSim SE vlog 10.0a Compiler 2011.02 Feb 21 2011
-# -- Compiling module sqroot_comb_NBITS8
-# 
-# Top level modules:
-# 	sqroot_comb_NBITS8
-# 
-# 
-# vcom -work SQROOT_COMB -2002 -explicit -vopt /home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_comb_rtl.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity sqroot_comb
-# -- Compiling architecture rtl of sqroot_comb
-# 
-# 
-# vcom -work SQROOT_COMB -2002 -explicit -vopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_comb_tb.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Compiling entity sqroot_comb_tb
-# -- Compiling architecture bench of sqroot_comb_tb
-# 
-# 
-# vcom -work SQROOT_COMB -2002 -explicit -vopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_comb_tb_rtl_conf.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Compiling configuration sqroot_comb_tb_rtl_conf
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Loading entity sqroot_comb_tb
-# -- Loading architecture bench of sqroot_comb_tb
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading entity sqroot_comb
-# 
-# 
-# vcom -work work -2002 -explicit -vopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_comb_tb_mapped_conf.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Compiling configuration sqroot_comb_tb_mapped_conf
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Loading entity sqroot_comb_tb
-# -- Loading architecture bench of sqroot_comb_tb
-# -- Loading package vl_types
-# -- Loading entity sqroot_comb_NBITS8
-# 
-# 
-# 5 compiles, 0 failed with no errors. 
-vsim -t ns -wlf OUT/sqroot_comb_rtl.wlf -novopt SQROOT_COMB.sqroot_comb_tb_rtl_conf
-# vsim -do ../BIN/sqroot_comb_rtl.do -t ns -wlf OUT/sqroot_comb_rtl.wlf -novopt SQROOT_COMB.sqroot_comb_tb_rtl_conf 
-# Loading std.standard
-# Refreshing /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/PROJ/SQROOT_COMB.sqroot_comb_tb_rtl_conf
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading ieee.math_real(body)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading SQROOT_COMB.sqroot_comb_tb_rtl_conf
-# Refreshing /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/PROJ/SQROOT_COMB.sqroot_comb_tb(bench)
-# Loading SQROOT_COMB.sqroot_comb_tb(bench)
-# Refreshing /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/PROJ/SQROOT_COMB.sqroot_comb(rtl)
-# Loading SQROOT_COMB.sqroot_comb(rtl)
-# ../BIN/sqroot_comb_rtl.do 
-# invalid command name "../BIN/sqroot_comb_rtl.do"
-add wave  \
-sim:/sqroot_comb_tb/arg \
-sim:/sqroot_comb_tb/z \
-sim:/sqroot_comb_tb/roundup \
-sim:/sqroot_comb_tb/check \
-sim:/sqroot_comb_tb/sqrt_exp \
-sim:/sqroot_comb_tb/NBITS \
-sim:/sqroot_comb_tb/WAIT_TIME
-# ** Error: Cannot open WLF file: OUT/sqroot_comb_rtl.wlf
-#           No such file or directory.
-#           Attempting to use alternate WLF file "OUT/wlftnZnSrp".
-# ** Error: Cannot open WLF file: OUT/wlftnZnSrp
-#           No such file or directory.
-#           Attempting to use alternate WLF file "./wlft5u0Wwl".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: OUT/sqroot_comb_rtl.wlf
-#           Using alternate file: ./wlft5u0Wwl
-add wave  \
-sim:/sqroot_comb_tb/UUT/arg \
-sim:/sqroot_comb_tb/UUT/roundup \
-sim:/sqroot_comb_tb/UUT/sqroot
-run -all
-# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 0  Instance: /sqroot_comb_tb/UUT
-# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 0  Instance: /sqroot_comb_tb/UUT
-# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 0  Instance: /sqroot_comb_tb/UUT
-# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 0  Instance: /sqroot_comb_tb/UUT
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/PROJ/sqroot_comb_rtl.do
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/BIN/sqroot_comb_rtl.do
-vsim -L /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog -sdftyp uut=/home/edatp59/hsm1_tutorial/SQROOT_COMB_DC/TIM/sqroot_comb_nbits8_mapped.sdf -t ps -novopt SQROOT_COMB.sqroot_comb_tb_mapped_conf
-# vsim -L /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog -sdftyp uut=/home/edatp59/hsm1_tutorial/SQROOT_COMB_DC/TIM/sqroot_comb_nbits8_mapped.sdf -t ps -novopt SQROOT_COMB.sqroot_comb_tb_mapped_conf 
-# Loading std.standard
-# Refreshing /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/PROJ/SQROOT_COMB.sqroot_comb_tb_mapped_conf
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading ieee.math_real(body)
-# Loading verilog.vl_types(body)
-# Loading SQROOT_COMB.sqroot_comb_tb_mapped_conf
-# Loading SQROOT_COMB.sqroot_comb_tb(bench)
-# Refreshing /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/PROJ/SQROOT_COMB.sqroot_comb_NBITS8
-# Loading SQROOT_COMB.sqroot_comb_NBITS8
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR24
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND23
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV12
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND24
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV3
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV10
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV8
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR23
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND26
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.CLKIN8
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.AOI2110
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.OAI221
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND28
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV4
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.CLKBU15
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR22
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR41
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND22
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.OAI311
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.AOI211
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV6
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR21
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.OAI212
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR42
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.OAI222
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND42
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND34
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.AOI2112
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.CLKIN3
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.BUF2
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.CLKIN2
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.BUF6
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.CLKBU4
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.AOI212
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR31
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.CLKIN6
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.AOI312
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.AOI310
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.CLKIN1
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.XOR22
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND21
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV15
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND20
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV0
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR32
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV2
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.XNR22
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.OAI312
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.OAI210
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR40
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND31
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.OAI2112
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.AOI222
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.XNR21
-# Loading instances from /home/edatp59/hsm1_tutorial/SQROOT_COMB_DC/TIM/sqroot_comb_nbits8_mapped.sdf
-# Loading timing data from /home/edatp59/hsm1_tutorial/SQROOT_COMB_DC/TIM/sqroot_comb_nbits8_mapped.sdf
-# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
-#    Time: 0 ps  Iteration: 0  Instance: /sqroot_comb_tb File: /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_comb_tb.vhd
-vsim -t ns -wlf OUT/sqroot_comb_rtl.wlf -novopt SQROOT_COMB.sqroot_comb_tb_rtl_conf
-# vsim -do ../BIN/sqroot_comb_rtl.do -t ns -wlf OUT/sqroot_comb_rtl.wlf -novopt SQROOT_COMB.sqroot_comb_tb_rtl_conf 
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading ieee.math_real(body)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading SQROOT_COMB.sqroot_comb_tb_rtl_conf
-# Loading SQROOT_COMB.sqroot_comb_tb(bench)
-# Loading SQROOT_COMB.sqroot_comb(rtl)
-# do ../BIN/sqroot_comb_rtl.do 
-# ** Error: Cannot open WLF file: OUT/sqroot_comb_rtl.wlf
-#           No such file or directory.
-#           Attempting to use alternate WLF file "OUT/wlft3HdRqE".
-# ** Error: Cannot open WLF file: OUT/wlft3HdRqE
-#           No such file or directory.
-#           Attempting to use alternate WLF file "./wlftjZtTcN".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: OUT/sqroot_comb_rtl.wlf
-#           Using alternate file: ./wlftjZtTcN
-run -all
-# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 0  Instance: /sqroot_comb_tb/UUT
-# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 0  Instance: /sqroot_comb_tb/UUT
-# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 0  Instance: /sqroot_comb_tb/UUT
-# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 0  Instance: /sqroot_comb_tb/UUT
-# vlog -work work -vopt -nocovercells /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_comb_nbits8_mapped.v
-# Model Technology ModelSim SE vlog 10.0a Compiler 2011.02 Feb 21 2011
-# -- Compiling module sqroot_comb_NBITS8
-# 
-# Top level modules:
-# 	sqroot_comb_NBITS8
-# 
-# 
-# vcom -work SQROOT_COMB -2002 -explicit -vopt /home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_comb_rtl.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity sqroot_comb
-# -- Compiling architecture rtl of sqroot_comb
-# 
-# 
-# vcom -work SQROOT_COMB -2002 -explicit -vopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_comb_tb.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Compiling entity sqroot_comb_tb
-# -- Compiling architecture bench of sqroot_comb_tb
-# 
-# 
-# vcom -work SQROOT_COMB -2002 -explicit -vopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_comb_tb_rtl_conf.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Compiling configuration sqroot_comb_tb_rtl_conf
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Loading entity sqroot_comb_tb
-# -- Loading architecture bench of sqroot_comb_tb
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading entity sqroot_comb
-# 
-# 
-# vcom -work work -2002 -explicit -vopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_comb_tb_mapped_conf.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Compiling configuration sqroot_comb_tb_mapped_conf
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Loading entity sqroot_comb_tb
-# -- Loading architecture bench of sqroot_comb_tb
-# -- Loading package vl_types
-# -- Loading entity sqroot_comb_NBITS8
-# 
-# 
-# 5 compiles, 0 failed with no errors. 
-vsim -L /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog -sdftyp uut=/home/edatp59/hsm1_tutorial/SQROOT_COMB_DC/TIM/sqroot_comb_nbits8_mapped.sdf -t ps -novopt SQROOT_COMB.sqroot_comb_tb_mapped_conf
-# vsim -L /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog -sdftyp uut=/home/edatp59/hsm1_tutorial/SQROOT_COMB_DC/TIM/sqroot_comb_nbits8_mapped.sdf -t ps -novopt SQROOT_COMB.sqroot_comb_tb_mapped_conf 
-# Loading std.standard
-# Refreshing /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/PROJ/SQROOT_COMB.sqroot_comb_tb_mapped_conf
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading ieee.math_real(body)
-# Loading verilog.vl_types(body)
-# Loading SQROOT_COMB.sqroot_comb_tb_mapped_conf
-# SDF 10.0a Compiler 2011.02 Feb 21 2011
-# Refreshing /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/PROJ/SQROOT_COMB.sqroot_comb_tb(bench)
-# Loading SQROOT_COMB.sqroot_comb_tb(bench)
-# Refreshing /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/PROJ/SQROOT_COMB.sqroot_comb_NBITS8
-# Loading SQROOT_COMB.sqroot_comb_NBITS8
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR24
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND23
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV12
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND24
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV3
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV10
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV8
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR23
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND26
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.CLKIN8
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.AOI2110
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.OAI221
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND28
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV4
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.CLKBU15
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR22
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR41
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND22
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.OAI311
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.AOI211
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV6
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR21
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.OAI212
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR42
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.OAI222
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND42
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND34
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.AOI2112
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.CLKIN3
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.BUF2
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.CLKIN2
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.BUF6
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.CLKBU4
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.AOI212
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR31
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.CLKIN6
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.AOI312
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.AOI310
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.CLKIN1
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.XOR22
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND21
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV15
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND20
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV0
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR32
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV2
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.XNR22
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.OAI312
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.OAI210
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR40
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND31
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.OAI2112
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.AOI222
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.XNR21
-# Loading instances from /home/edatp59/hsm1_tutorial/SQROOT_COMB_DC/TIM/sqroot_comb_nbits8_mapped.sdf
-# Loading timing data from /home/edatp59/hsm1_tutorial/SQROOT_COMB_DC/TIM/sqroot_comb_nbits8_mapped.sdf
-# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
-#    Time: 0 ps  Iteration: 0  Instance: /sqroot_comb_tb File: /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_comb_tb.vhd
-vsim -t ns -wlf OUT/sqroot_comb_rtl.wlf -novopt SQROOT_COMB.sqroot_comb_tb_rtl_conf
-# vsim -do ../BIN/sqroot_comb_rtl.do -t ns -wlf OUT/sqroot_comb_rtl.wlf -novopt SQROOT_COMB.sqroot_comb_tb_rtl_conf 
-# Loading std.standard
-# Refreshing /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/PROJ/SQROOT_COMB.sqroot_comb_tb_rtl_conf
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading ieee.math_real(body)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading SQROOT_COMB.sqroot_comb_tb_rtl_conf
-# Loading SQROOT_COMB.sqroot_comb_tb(bench)
-# Refreshing /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/PROJ/SQROOT_COMB.sqroot_comb(rtl)
-# Loading SQROOT_COMB.sqroot_comb(rtl)
-# do ../BIN/sqroot_comb_rtl.do 
-# ** Error: Cannot open WLF file: OUT/sqroot_comb_rtl.wlf
-#           No such file or directory.
-#           Attempting to use alternate WLF file "OUT/wlft8wKkvS".
-# ** Error: Cannot open WLF file: OUT/wlft8wKkvS
-#           No such file or directory.
-#           Attempting to use alternate WLF file "./wlft4OrKyK".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: OUT/sqroot_comb_rtl.wlf
-#           Using alternate file: ./wlft4OrKyK
 vsim -t ns -wlf ../OUT/sqroot_comb_rtl.wlf -novopt SQROOT_COMB.sqroot_comb_tb_rtl_conf
 # vsim -do ../BIN/sqroot_comb_rtl.do -t ns -wlf ../OUT/sqroot_comb_rtl.wlf -novopt SQROOT_COMB.sqroot_comb_tb_rtl_conf 
 # Loading std.standard
+# Refreshing /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/PROJ/SQROOT_COMB.sqroot_comb_tb_rtl_conf
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
@@ -556,163 +87,1103 @@ vsim -t ns -wlf ../OUT/sqroot_comb_rtl.wlf -novopt SQROOT_COMB.sqroot_comb_tb_rt
 # Loading ieee.std_logic_arith(body)
 # Loading ieee.std_logic_unsigned(body)
 # Loading SQROOT_COMB.sqroot_comb_tb_rtl_conf
+# Refreshing /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/PROJ/SQROOT_COMB.sqroot_comb_tb(bench)
 # Loading SQROOT_COMB.sqroot_comb_tb(bench)
+# Refreshing /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/PROJ/SQROOT_COMB.sqroot_comb(rtl)
 # Loading SQROOT_COMB.sqroot_comb(rtl)
 # do ../BIN/sqroot_comb_rtl.do 
-vsim -L /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog -sdftyp uut=/home/edatp59/hsm1_tutorial/SQROOT_COMB_DC/TIM/sqroot_comb_nbits8_mapped.sdf -t ps -wlf ../OUT/sqroot_comb_mapped.wlf -novopt SQROOT_COMB.sqroot_comb_tb_mapped_conf
-# vsim -L /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog -do ../BIN/sqroot_comb_mapped.do -sdftyp uut=/home/edatp59/hsm1_tutorial/SQROOT_COMB_DC/TIM/sqroot_comb_nbits8_mapped.sdf -t ps -wlf ../OUT/sqroot_comb_mapped.wlf -novopt SQROOT_COMB.sqroot_comb_tb_mapped_conf 
+# ** Error: lock failed. Retrying 1 times, errno 11
+# ** Error: lock failed. Retrying 2 times, errno 11
+# ** Error: lock failed. Retrying 3 times, errno 11
+# ** Error: lock failed. Give up retry 3, errno 11
+# ** Error: Cannot lock WLF file: ../OUT/sqroot_comb_rtl.wlf
+#           errno 11: Resource temporarily unavailable.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: ../OUT/sqroot_comb_rtl.wlf
+#           File in use by:   Hostname:   ProcessID: 2
+#           Attempting to use alternate WLF file "../OUT/wlftIiuuGf".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: ../OUT/sqroot_comb_rtl.wlf
+#           Using alternate file: ../OUT/wlftIiuuGf
+run -all
+# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /sqroot_comb_tb/UUT
+# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /sqroot_comb_tb/UUT
+# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /sqroot_comb_tb/UUT
+# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /sqroot_comb_tb/UUT
+# ** Error: Assertion violation.
+#    Time: 96 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 99 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 102 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 105 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 108 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 111 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 114 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 117 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 120 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 123 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 126 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 129 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 132 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 135 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 138 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 141 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 144 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 147 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 150 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 153 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 156 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 159 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 162 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 165 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 168 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 171 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 174 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 177 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 180 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 183 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 186 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 189 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 192 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 195 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 198 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 201 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 204 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 207 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 210 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 213 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 216 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 219 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 222 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 225 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 228 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 231 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 234 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 237 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 240 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 243 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 246 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 249 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 252 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 255 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 258 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 261 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 264 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 267 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 270 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 273 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 276 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 279 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 282 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 285 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 288 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 291 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 294 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 297 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 300 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 303 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 306 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 309 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 312 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 315 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 318 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 321 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 324 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 327 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 330 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 333 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 336 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 339 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 342 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 345 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 348 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 351 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 354 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 357 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 360 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 363 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 366 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 369 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 372 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 375 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 378 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 381 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 384 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 387 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 390 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 393 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 396 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 399 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 402 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 405 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 408 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 411 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 414 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 417 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 420 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 423 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 426 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 429 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 432 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 435 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 438 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 441 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 444 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 447 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 450 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 453 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 456 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 459 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 462 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 465 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 468 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 471 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 474 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 477 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 480 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 483 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 486 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 489 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 492 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 495 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 498 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 501 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 504 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 507 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 510 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 513 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 516 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 519 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 522 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 525 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 528 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 531 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 534 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 537 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 540 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 543 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 546 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 549 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 552 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 555 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 558 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 561 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 564 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 567 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 570 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 573 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 576 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 579 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 582 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 585 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 588 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 591 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 594 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 597 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 600 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 603 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 606 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 609 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 612 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 615 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 618 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 621 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 624 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 627 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 630 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 633 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 636 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 639 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 642 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 645 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 648 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 651 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 654 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 657 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 660 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 663 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 666 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 669 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 672 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 675 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 678 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 681 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 684 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 687 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 690 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 693 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 696 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 699 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 702 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 705 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 708 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 711 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 714 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 717 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 720 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 723 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 726 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 729 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 732 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 735 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 738 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 741 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 744 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 747 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 750 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 753 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 756 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 759 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 762 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 765 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 768 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 771 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 774 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 777 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 780 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 783 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 786 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 789 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 792 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 795 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 798 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 801 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 804 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 807 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 810 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 813 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 816 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 819 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 822 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 825 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 828 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 831 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 834 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 837 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 840 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 843 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 846 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 849 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 852 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 855 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 858 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 861 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 864 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 867 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 870 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 873 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 876 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 879 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 882 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 885 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 888 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 891 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 894 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 897 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 900 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 903 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 906 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 909 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 912 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 915 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 918 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 921 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 924 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 927 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 930 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 933 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 936 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 939 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 942 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 945 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 948 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 951 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 954 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 957 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 960 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 963 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 966 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 969 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 972 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 975 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 978 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 981 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 984 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 987 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 990 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 993 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 996 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 999 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1002 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1005 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1008 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1011 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1014 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1017 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1020 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1023 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1026 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1029 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1032 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1035 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1038 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1041 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1044 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1047 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1050 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1053 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1056 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1059 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1062 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1065 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1068 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1071 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1074 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1077 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1080 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1083 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1086 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1089 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1092 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1095 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1098 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1101 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1104 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1107 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1110 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1113 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1116 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1119 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1122 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1125 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1128 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1131 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1134 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1137 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1140 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1143 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1146 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1149 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1152 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1155 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1158 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1161 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1164 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1167 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1170 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1173 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1176 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1179 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1182 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1185 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1188 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1191 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1194 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1197 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1200 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1203 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1206 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1209 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1212 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1215 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1218 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1221 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1224 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1227 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1230 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1233 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1236 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1239 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1242 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1245 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1248 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1251 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1254 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1257 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1260 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1263 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1266 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1269 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1272 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1275 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1278 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1281 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1284 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1287 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1290 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1293 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1296 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1299 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1302 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1305 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1308 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1311 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1314 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1317 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1320 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1323 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1326 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1329 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1332 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1335 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1338 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1341 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1344 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1347 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1350 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1353 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1356 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1359 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1362 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1365 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1368 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1371 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1374 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1377 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1380 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1383 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1386 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1389 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1392 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1395 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1398 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1401 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1404 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1407 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1410 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1413 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1416 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1419 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1422 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1425 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1428 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1431 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1434 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1437 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1440 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1443 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1446 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1449 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1452 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1455 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1458 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1461 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1464 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1467 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1470 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1473 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1476 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1479 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1482 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1485 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1488 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1491 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1494 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1497 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1500 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1503 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1506 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1509 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1512 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1515 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1518 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1521 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1524 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1527 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1530 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 1533 ns  Iteration: 0  Instance: /sqroot_comb_tb
+restart
+run
+# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /sqroot_comb_tb/UUT
+# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /sqroot_comb_tb/UUT
+# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /sqroot_comb_tb/UUT
+# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /sqroot_comb_tb/UUT
+# ** Error: Assertion violation.
+#    Time: 96 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# ** Error: Assertion violation.
+#    Time: 99 ns  Iteration: 0  Instance: /sqroot_comb_tb
+# vlog -work work -vopt -nocovercells /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_comb_nbits8_mapped.v
+# Model Technology ModelSim SE vlog 10.0a Compiler 2011.02 Feb 21 2011
+# -- Compiling module sqroot_comb_NBITS8
+# 
+# Top level modules:
+# 	sqroot_comb_NBITS8
+# 
+# 
+# vcom -work SQROOT_COMB -2002 -explicit -vopt /home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_comb_rtl.vhd
+# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity sqroot_comb
+# -- Compiling architecture rtl of sqroot_comb
+# 
+# 
+# vcom -work SQROOT_COMB -2002 -explicit -vopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_comb_tb.vhd
+# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity sqroot_comb_tb
+# -- Compiling architecture bench of sqroot_comb_tb
+# 
+# 
+# vcom -work SQROOT_COMB -2002 -explicit -vopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_comb_tb_rtl_conf.vhd
+# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+# -- Loading package STANDARD
+# -- Compiling configuration sqroot_comb_tb_rtl_conf
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading entity sqroot_comb_tb
+# -- Loading architecture bench of sqroot_comb_tb
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity sqroot_comb
+# 
+# 
+# vcom -work work -2002 -explicit -vopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_comb_tb_mapped_conf.vhd
+# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+# -- Loading package STANDARD
+# -- Compiling configuration sqroot_comb_tb_mapped_conf
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading entity sqroot_comb_tb
+# -- Loading architecture bench of sqroot_comb_tb
+# -- Loading package vl_types
+# -- Loading entity sqroot_comb_NBITS8
+# 
+# 
+# 5 compiles, 0 failed with no errors. 
+vsim -t ns -wlf ../OUT/sqroot_comb_rtl.wlf -novopt SQROOT_COMB.sqroot_comb_tb_rtl_conf
+# vsim -do ../BIN/sqroot_comb_rtl.do -t ns -wlf ../OUT/sqroot_comb_rtl.wlf -novopt SQROOT_COMB.sqroot_comb_tb_rtl_conf 
 # Loading std.standard
+# Refreshing /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/PROJ/SQROOT_COMB.sqroot_comb_tb_rtl_conf
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
 # Loading ieee.math_real(body)
-# Loading verilog.vl_types(body)
-# Loading SQROOT_COMB.sqroot_comb_tb_mapped_conf
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading SQROOT_COMB.sqroot_comb_tb_rtl_conf
+# Refreshing /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/PROJ/SQROOT_COMB.sqroot_comb_tb(bench)
 # Loading SQROOT_COMB.sqroot_comb_tb(bench)
-# Loading SQROOT_COMB.sqroot_comb_NBITS8
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR24
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND23
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV12
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND24
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV3
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV10
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV8
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR23
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND26
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.CLKIN8
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.AOI2110
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.OAI221
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND28
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV4
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.CLKBU15
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR22
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR41
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND22
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.OAI311
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.AOI211
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV6
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR21
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.OAI212
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR42
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.OAI222
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND42
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND34
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.AOI2112
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.CLKIN3
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.BUF2
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.CLKIN2
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.BUF6
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.CLKBU4
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.AOI212
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR31
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.CLKIN6
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.AOI312
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.AOI310
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.CLKIN1
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.XOR22
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND21
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV15
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND20
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV0
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR32
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV2
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.XNR22
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.OAI312
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.OAI210
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR40
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND31
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.OAI2112
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.AOI222
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.XNR21
-# Loading instances from /home/edatp59/hsm1_tutorial/SQROOT_COMB_DC/TIM/sqroot_comb_nbits8_mapped.sdf
-# Loading timing data from /home/edatp59/hsm1_tutorial/SQROOT_COMB_DC/TIM/sqroot_comb_nbits8_mapped.sdf
-# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
-#    Time: 0 ps  Iteration: 0  Instance: /sqroot_comb_tb File: /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_comb_tb.vhd
-# ../BIN/sqroot_comb_mapped.do 
-# invalid command name "../BIN/sqroot_comb_mapped.do"
-add wave  \
-sim:/sqroot_comb_tb/arg \
-sim:/sqroot_comb_tb/z \
-sim:/sqroot_comb_tb/roundup \
-sim:/sqroot_comb_tb/check \
-sim:/sqroot_comb_tb/sqrt_exp \
-sim:/sqroot_comb_tb/NBITS \
-sim:/sqroot_comb_tb/WAIT_TIME
-add wave  \
-sim:/sqroot_comb_tb/UUT/arg \
-sim:/sqroot_comb_tb/UUT/sqroot \
-sim:/sqroot_comb_tb/UUT/roundup
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/BIN/sqroot_comb_mapped.do
-run -all
-vsim -L /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog -sdftyp uut=/home/edatp59/hsm1_tutorial/SQROOT_COMB_DC/TIM/sqroot_comb_nbits8_mapped.sdf -t ps -wlf ../OUT/sqroot_comb_mapped.wlf -novopt SQROOT_COMB.sqroot_comb_tb_mapped_conf
-# vsim -L /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog -do ../BIN/sqroot_comb_mapped.do -sdftyp uut=/home/edatp59/hsm1_tutorial/SQROOT_COMB_DC/TIM/sqroot_comb_nbits8_mapped.sdf -t ps -wlf ../OUT/sqroot_comb_mapped.wlf -novopt SQROOT_COMB.sqroot_comb_tb_mapped_conf 
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading ieee.math_real(body)
-# Loading verilog.vl_types(body)
-# Loading SQROOT_COMB.sqroot_comb_tb_mapped_conf
-# Loading SQROOT_COMB.sqroot_comb_tb(bench)
-# Loading SQROOT_COMB.sqroot_comb_NBITS8
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR24
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND23
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV12
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND24
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV3
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV10
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV8
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR23
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND26
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.CLKIN8
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.AOI2110
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.OAI221
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND28
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV4
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.CLKBU15
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR22
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR41
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND22
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.OAI311
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.AOI211
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV6
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR21
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.OAI212
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR42
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.OAI222
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND42
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND34
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.AOI2112
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.CLKIN3
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.BUF2
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.CLKIN2
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.BUF6
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.CLKBU4
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.AOI212
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR31
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.CLKIN6
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.AOI312
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.AOI310
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.CLKIN1
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.XOR22
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND21
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV15
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND20
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV0
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR32
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV2
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.XNR22
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.OAI312
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.OAI210
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR40
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND31
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.OAI2112
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.AOI222
-# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.XNR21
-# Loading instances from /home/edatp59/hsm1_tutorial/SQROOT_COMB_DC/TIM/sqroot_comb_nbits8_mapped.sdf
-# Loading timing data from /home/edatp59/hsm1_tutorial/SQROOT_COMB_DC/TIM/sqroot_comb_nbits8_mapped.sdf
-# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
-#    Time: 0 ps  Iteration: 0  Instance: /sqroot_comb_tb File: /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_comb_tb.vhd
-# do ../BIN/sqroot_comb_mapped.do 
-run -all
-quit
+# Refreshing /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/PROJ/SQROOT_COMB.sqroot_comb(rtl)
+# Loading SQROOT_COMB.sqroot_comb(rtl)
+# do ../BIN/sqroot_comb_rtl.do 
+# ** Error: lock failed. Retrying 1 times, errno 11
+# ** Error: lock failed. Retrying 2 times, errno 11
+# ** Error: lock failed. Retrying 3 times, errno 11
+# ** Error: lock failed. Give up retry 3, errno 11
+# ** Error: Cannot lock WLF file: ../OUT/sqroot_comb_rtl.wlf
+#           errno 11: Resource temporarily unavailable.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: ../OUT/sqroot_comb_rtl.wlf
+#           File in use by:   Hostname:   ProcessID: 2
+#           Attempting to use alternate WLF file "../OUT/wlftiexrpO".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: ../OUT/sqroot_comb_rtl.wlf
+#           Using alternate file: ../OUT/wlftiexrpO
+run
+# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /sqroot_comb_tb/UUT
+# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /sqroot_comb_tb/UUT
+# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /sqroot_comb_tb/UUT
+# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /sqroot_comb_tb/UUT
+quit -sim
+# reading modelsim.ini
+# reading /softs/mentor/msim/10.0a/linux/../modelsim.ini
+# Loading project SQROOT_SEQ

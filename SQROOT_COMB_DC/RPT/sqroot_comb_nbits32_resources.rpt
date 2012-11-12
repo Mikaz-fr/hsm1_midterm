@@ -1,0 +1,244 @@
+ 
+****************************************
+Report : resources
+Design : sqroot_comb_NBITS32
+Version: F-2011.09-SP5
+Date   : Mon Nov 12 22:34:41 2012
+****************************************
+
+Resource Sharing Report for design sqroot_comb_NBITS32 in file
+        ./HDL/RTL/sqroot_comb_rtl.vhd
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r714     | DW_cmp       | width=32   |               | lte_43               |
+| r716     | DW01_sub     | width=32   |               | sub_44               |
+| r718     | DW01_add     | width=32   |               | add_43_I2            |
+| r720     | DW_cmp       | width=32   |               | lte_43_I2            |
+| r726     | DW01_add     | width=31   |               | add_45_I2            |
+| r728     | DW01_add     | width=32   |               | add_43_I3            |
+| r730     | DW_cmp       | width=32   |               | lte_43_I3            |
+| r736     | DW01_add     | width=32   |               | add_45_I3            |
+| r738     | DW01_add     | width=32   |               | add_43_I4            |
+| r740     | DW_cmp       | width=32   |               | lte_43_I4            |
+| r746     | DW01_add     | width=32   |               | add_45_I4            |
+| r748     | DW01_add     | width=32   |               | add_43_I5            |
+| r750     | DW_cmp       | width=32   |               | lte_43_I5            |
+| r756     | DW01_add     | width=32   |               | add_45_I5            |
+| r758     | DW01_add     | width=32   |               | add_43_I6            |
+| r760     | DW_cmp       | width=32   |               | lte_43_I6            |
+| r766     | DW01_add     | width=32   |               | add_45_I6            |
+| r768     | DW01_add     | width=32   |               | add_43_I7            |
+| r770     | DW_cmp       | width=32   |               | lte_43_I7            |
+| r776     | DW01_add     | width=32   |               | add_45_I7            |
+| r778     | DW01_add     | width=32   |               | add_43_I8            |
+| r780     | DW_cmp       | width=32   |               | lte_43_I8            |
+| r786     | DW01_add     | width=32   |               | add_45_I8            |
+| r788     | DW01_add     | width=32   |               | add_43_I9            |
+| r790     | DW_cmp       | width=32   |               | lte_43_I9            |
+| r796     | DW01_add     | width=32   |               | add_45_I9            |
+| r798     | DW01_add     | width=32   |               | add_43_I10           |
+| r800     | DW_cmp       | width=32   |               | lte_43_I10           |
+| r806     | DW01_add     | width=32   |               | add_45_I10           |
+| r808     | DW01_add     | width=32   |               | add_43_I11           |
+| r810     | DW_cmp       | width=32   |               | lte_43_I11           |
+| r816     | DW01_add     | width=32   |               | add_45_I11           |
+| r818     | DW01_add     | width=32   |               | add_43_I12           |
+| r820     | DW_cmp       | width=32   |               | lte_43_I12           |
+| r826     | DW01_add     | width=32   |               | add_45_I12           |
+| r828     | DW01_add     | width=32   |               | add_43_I13           |
+| r830     | DW_cmp       | width=32   |               | lte_43_I13           |
+| r836     | DW01_add     | width=32   |               | add_45_I13           |
+| r838     | DW01_add     | width=32   |               | add_43_I14           |
+| r840     | DW_cmp       | width=32   |               | lte_43_I14           |
+| r846     | DW01_add     | width=32   |               | add_45_I14           |
+| r848     | DW01_add     | width=32   |               | add_43_I15           |
+| r850     | DW_cmp       | width=32   |               | lte_43_I15           |
+| r856     | DW01_add     | width=32   |               | add_45_I15           |
+| r858     | DW01_inc     | width=32   |               | add_43_I16           |
+| r860     | DW_cmp       | width=32   |               | lte_43_I16           |
+| r862     | DW01_sub     | width=32   |               | sub_1_root_sub_44_I16 |
+| r864     | DW01_add     | width=32   |               | add_45_I16           |
+| r866     | DW_cmp       | width=32   |               | lt_gt_52             |
+| r868     | DW01_inc     | width=17   |               | add_53               |
+| r1456    | DW01_add     | width=32   |               | add_1_root_sub_0_root_sub_44_I2 |
+| r1458    | DW01_sub     | width=32   |               | sub_0_root_sub_0_root_sub_44_I2 |
+| r2047    | DW01_sub     | width=32   |               | sub_1_root_sub_0_root_sub_44_I3 |
+| r2049    | DW01_sub     | width=32   |               | sub_0_root_sub_0_root_sub_44_I3 |
+| r2638    | DW01_sub     | width=32   |               | sub_1_root_sub_0_root_sub_44_I4 |
+| r2640    | DW01_sub     | width=32   |               | sub_0_root_sub_0_root_sub_44_I4 |
+| r3228    | DW01_add     | width=32   |               | add_1_root_sub_0_root_sub_44_I5 |
+| r3230    | DW01_sub     | width=32   |               | sub_0_root_sub_0_root_sub_44_I5 |
+| r3818    | DW01_add     | width=32   |               | add_1_root_sub_0_root_sub_44_I6 |
+| r3820    | DW01_sub     | width=32   |               | sub_0_root_sub_0_root_sub_44_I6 |
+| r4408    | DW01_add     | width=32   |               | add_1_root_sub_0_root_sub_44_I7 |
+| r4410    | DW01_sub     | width=32   |               | sub_0_root_sub_0_root_sub_44_I7 |
+| r4998    | DW01_add     | width=32   |               | add_1_root_sub_0_root_sub_44_I8 |
+| r5000    | DW01_sub     | width=32   |               | sub_0_root_sub_0_root_sub_44_I8 |
+| r5588    | DW01_add     | width=32   |               | add_1_root_sub_0_root_sub_44_I9 |
+| r5590    | DW01_sub     | width=32   |               | sub_0_root_sub_0_root_sub_44_I9 |
+| r6178    | DW01_add     | width=32   |               | add_1_root_sub_0_root_sub_44_I10 |
+| r6180    | DW01_sub     | width=32   |               | sub_0_root_sub_0_root_sub_44_I10 |
+| r6768    | DW01_add     | width=32   |               | add_1_root_sub_0_root_sub_44_I11 |
+| r6770    | DW01_sub     | width=32   |               | sub_0_root_sub_0_root_sub_44_I11 |
+| r7358    | DW01_add     | width=32   |               | add_1_root_sub_0_root_sub_44_I12 |
+| r7360    | DW01_sub     | width=32   |               | sub_0_root_sub_0_root_sub_44_I12 |
+| r7948    | DW01_add     | width=32   |               | add_1_root_sub_0_root_sub_44_I13 |
+| r7950    | DW01_sub     | width=32   |               | sub_0_root_sub_0_root_sub_44_I13 |
+| r8538    | DW01_add     | width=32   |               | add_1_root_sub_0_root_sub_44_I14 |
+| r8540    | DW01_sub     | width=32   |               | sub_0_root_sub_0_root_sub_44_I14 |
+| r9128    | DW01_add     | width=32   |               | add_1_root_sub_0_root_sub_44_I15 |
+| r9130    | DW01_sub     | width=32   |               | sub_0_root_sub_0_root_sub_44_I15 |
+===============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| lt_gt_52           | DW_cmp           | pparch (area,speed)                 |
+| sub_0_root_sub_0_root_sub_44_I14      |                    |                |
+|                    | DW01_sub         | pparch (area,speed)                 |
+| lte_43_I16         | DW_cmp           | pparch (area,speed)                 |
+| lte_43_I14         | DW_cmp           | pparch (area,speed)                 |
+| lte_43_I15         | DW_cmp           | pparch (area,speed)                 |
+| lte_43_I13         | DW_cmp           | pparch (area,speed)                 |
+| sub_1_root_sub_44_I16                 |                    |                |
+|                    | DW01_sub         | pparch (area,speed)                 |
+| sub_0_root_sub_0_root_sub_44_I13      |                    |                |
+|                    | DW01_sub         | pparch (area,speed)                 |
+| sub_0_root_sub_0_root_sub_44_I11      |                    |                |
+|                    | DW01_sub         | pparch (area,speed)                 |
+| sub_0_root_sub_0_root_sub_44_I12      |                    |                |
+|                    | DW01_sub         | pparch (area,speed)                 |
+| add_53             | DW01_inc         | pparch (area,speed)                 |
+| sub_0_root_sub_0_root_sub_44_I15      |                    |                |
+|                    | DW01_sub         | pparch (area,speed)                 |
+===============================================================================
+
+
+No multiplexors to report
+ 
+****************************************
+Design : sqroot_comb_NBITS32_DW_cmp_48
+****************************************
+
+No resource sharing information to report.
+
+No implementations to report
+
+No multiplexors to report
+ 
+****************************************
+Design : sqroot_comb_NBITS32_DW01_sub_69
+****************************************
+
+No resource sharing information to report.
+
+No implementations to report
+
+No multiplexors to report
+ 
+****************************************
+Design : sqroot_comb_NBITS32_DW_cmp_50
+****************************************
+
+No resource sharing information to report.
+
+No implementations to report
+
+No multiplexors to report
+ 
+****************************************
+Design : sqroot_comb_NBITS32_DW_cmp_49
+****************************************
+
+No resource sharing information to report.
+
+No implementations to report
+
+No multiplexors to report
+ 
+****************************************
+Design : sqroot_comb_NBITS32_DW_cmp_47
+****************************************
+
+No resource sharing information to report.
+
+No implementations to report
+
+No multiplexors to report
+ 
+****************************************
+Design : sqroot_comb_NBITS32_DW_cmp_45
+****************************************
+
+No resource sharing information to report.
+
+No implementations to report
+
+No multiplexors to report
+ 
+****************************************
+Design : sqroot_comb_NBITS32_DW01_sub_43
+****************************************
+
+No resource sharing information to report.
+
+No implementations to report
+
+No multiplexors to report
+ 
+****************************************
+Design : sqroot_comb_NBITS32_DW01_sub_39
+****************************************
+
+No resource sharing information to report.
+
+No implementations to report
+
+No multiplexors to report
+ 
+****************************************
+Design : sqroot_comb_NBITS32_DW01_sub_32
+****************************************
+
+No resource sharing information to report.
+
+No implementations to report
+
+No multiplexors to report
+ 
+****************************************
+Design : sqroot_comb_NBITS32_DW01_sub_31
+****************************************
+
+No resource sharing information to report.
+
+No implementations to report
+
+No multiplexors to report
+ 
+****************************************
+Design : sqroot_comb_NBITS32_DW01_inc_3
+****************************************
+
+No resource sharing information to report.
+
+No implementations to report
+
+No multiplexors to report
+ 
+****************************************
+Design : sqroot_comb_NBITS32_DW01_sub_28
+****************************************
+
+No resource sharing information to report.
+
+No implementations to report
+
+No multiplexors to report
+1

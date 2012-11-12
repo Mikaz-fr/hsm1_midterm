@@ -3,7 +3,7 @@
 Report : reference
 Design : sqroot_comb_NBITS16
 Version: F-2011.09-SP5
-Date   : Mon Nov 12 15:34:48 2012
+Date   : Mon Nov 12 16:15:20 2012
 ****************************************
 
 Attributes:
@@ -20,100 +20,104 @@ Attributes:
 Reference          Library       Unit Area   Count    Total Area   Attributes
 -----------------------------------------------------------------------------
 AOI210             c35_CORELIB    72.800003       2   145.600006  
-AOI211             c35_CORELIB    72.800003       4   291.200012  
-AOI212             c35_CORELIB    91.000000      13  1183.000000  
-AOI221             c35_CORELIB    91.000000       1    91.000000  
-AOI222             c35_CORELIB   109.199997       4   436.799988  
-AOI310             c35_CORELIB    91.000000       1    91.000000  
-AOI312             c35_CORELIB   109.199997       7   764.399979  
+AOI211             c35_CORELIB    72.800003       1    72.800003  
+AOI212             c35_CORELIB    91.000000      12  1092.000000  
+AOI220             c35_CORELIB    91.000000       2   182.000000  
+AOI222             c35_CORELIB   109.199997       3   327.599991  
+AOI311             c35_CORELIB    91.000000       1    91.000000  
+AOI312             c35_CORELIB   109.199997      12  1310.399963  
 AOI2111            c35_CORELIB    91.000000       1    91.000000  
-AOI2112            c35_CORELIB   127.400002       4   509.600006  
-BUF2               c35_CORELIB    54.599998      13   709.799980  
-BUF6               c35_CORELIB    72.800003       4   291.200012  
-BUF12              c35_CORELIB   109.199997       4   436.799988  
-CLKBU4             c35_CORELIB    72.800003       2   145.600006  
-CLKBU12            c35_CORELIB   109.199997       2   218.399994  
-CLKIN0             c35_CORELIB    36.400002       1    36.400002  
-CLKIN1             c35_CORELIB    36.400002       3   109.200005  
-CLKIN2             c35_CORELIB    36.400002      10   364.000015  
+AOI2112            c35_CORELIB   127.400002       8  1019.200012  
+BUF2               c35_CORELIB    54.599998      12   655.199982  
+BUF6               c35_CORELIB    72.800003       3   218.400009  
+BUF8               c35_CORELIB    91.000000       1    91.000000  
+BUF15              c35_CORELIB   145.600006       3   436.800018  
+CLKBU12            c35_CORELIB   109.199997       1   109.199997  
+CLKBU15            c35_CORELIB   145.600006       3   436.800018  
+CLKIN0             c35_CORELIB    36.400002       5   182.000008  
+CLKIN1             c35_CORELIB    36.400002       2    72.800003  
+CLKIN2             c35_CORELIB    36.400002       6   218.400009  
 CLKIN3             c35_CORELIB    36.400002      32  1164.800049  
-CLKIN4             c35_CORELIB    54.599998       4   218.399994  
-CLKIN6             c35_CORELIB    54.599998      18   982.799973  
-CLKIN8             c35_CORELIB    72.800003       1    72.800003  
-CLKIN10            c35_CORELIB    91.000000       1    91.000000  
-CLKIN12            c35_CORELIB    91.000000       3   273.000000  
-CLKIN15            c35_CORELIB   109.199997       4   436.799988  
-IMUX22             c35_CORELIB   145.600006       4   582.400024  
-IMUX23             c35_CORELIB   145.600006       2   291.200012  
-IMUX24             c35_CORELIB   182.000000       7  1274.000000  
-INV0               c35_CORELIB    36.400002       6   218.400009  
-INV1               c35_CORELIB    36.400002       7   254.800011  
-INV2               c35_CORELIB    36.400002      20   728.000031  
-INV3               c35_CORELIB    36.400002      62  2256.800095  
-INV4               c35_CORELIB    54.599998       6   327.599991  
-INV6               c35_CORELIB    54.599998      48  2620.799927  
-INV8               c35_CORELIB    72.800003       5   364.000015  
-INV10              c35_CORELIB    91.000000       7   637.000000  
-INV12              c35_CORELIB    91.000000      19  1729.000000  
+CLKIN4             c35_CORELIB    54.599998       3   163.799995  
+CLKIN6             c35_CORELIB    54.599998      29  1583.399956  
+CLKIN8             c35_CORELIB    72.800003       2   145.600006  
+CLKIN10            c35_CORELIB    91.000000       3   273.000000  
+CLKIN12            c35_CORELIB    91.000000       9   819.000000  
+CLKIN15            c35_CORELIB   109.199997       7   764.399979  
+IMUX20             c35_CORELIB    91.000000       4   364.000000  
+IMUX22             c35_CORELIB   145.600006       1   145.600006  
+IMUX24             c35_CORELIB   182.000000       6  1092.000000  
+INV0               c35_CORELIB    36.400002      17   618.800026  
+INV1               c35_CORELIB    36.400002      12   436.800018  
+INV2               c35_CORELIB    36.400002      24   873.600037  
+INV3               c35_CORELIB    36.400002      56  2038.400085  
+INV4               c35_CORELIB    54.599998      21  1146.599968  
+INV6               c35_CORELIB    54.599998      54  2948.399918  
+INV8               c35_CORELIB    72.800003       6   436.800018  
+INV10              c35_CORELIB    91.000000       9   819.000000  
+INV12              c35_CORELIB    91.000000      17  1547.000000  
 INV15              c35_CORELIB   109.199997       9   982.799973  
 LOGIC0             c35_CORELIB    36.400002       1    36.400002  
-MUX21              c35_CORELIB   109.199997       8   873.599976  
-MUX26              c35_CORELIB   182.000000       1   182.000000  
-NAND20             c35_CORELIB    54.599998       9   491.399986  
-NAND21             c35_CORELIB    54.599998      19  1037.399971  
-NAND22             c35_CORELIB    54.599998      67  3658.199898  
-NAND23             c35_CORELIB    91.000000      29  2639.000000  
-NAND24             c35_CORELIB   109.199997      51  5569.199844  
-NAND26             c35_CORELIB   163.800003      20  3276.000061  
-NAND28             c35_CORELIB   182.000000      23  4186.000000  
+MUX21              c35_CORELIB   109.199997       3   327.599991  
+NAND20             c35_CORELIB    54.599998       5   272.999992  
+NAND21             c35_CORELIB    54.599998      21  1146.599968  
+NAND22             c35_CORELIB    54.599998      48  2620.799927  
+NAND23             c35_CORELIB    91.000000      35  3185.000000  
+NAND24             c35_CORELIB   109.199997      62  6770.399811  
+NAND26             c35_CORELIB   163.800003      30  4914.000092  
+NAND28             c35_CORELIB   182.000000      47  8554.000000  
 NAND30             c35_CORELIB    72.800003       1    72.800003  
-NAND32             c35_CORELIB   127.400002       6   764.400009  
-NAND33             c35_CORELIB   127.400002       7   891.800011  
+NAND32             c35_CORELIB   127.400002       4   509.600006  
+NAND33             c35_CORELIB   127.400002       8  1019.200012  
 NAND34             c35_CORELIB   163.800003      10  1638.000031  
-NAND42             c35_CORELIB   145.600006       2   291.200012  
-NAND43             c35_CORELIB   200.199997       1   200.199997  
-NOR20              c35_CORELIB    54.599998       2   109.199997  
-NOR21              c35_CORELIB    54.599998      10   545.999985  
-NOR22              c35_CORELIB    72.800003       6   436.800018  
-NOR23              c35_CORELIB    91.000000       9   819.000000  
-NOR24              c35_CORELIB   109.199997       6   655.199982  
-NOR32              c35_CORELIB    91.000000       3   273.000000  
-NOR33              c35_CORELIB   127.400002       7   891.800011  
+NAND42             c35_CORELIB   145.600006       1   145.600006  
+NAND43             c35_CORELIB   200.199997       3   600.599991  
+NOR20              c35_CORELIB    54.599998       3   163.799995  
+NOR21              c35_CORELIB    54.599998       6   327.599991  
+NOR22              c35_CORELIB    72.800003       4   291.200012  
+NOR23              c35_CORELIB    91.000000      10   910.000000  
+NOR24              c35_CORELIB   109.199997       8   873.599976  
+NOR31              c35_CORELIB    72.800003       1    72.800003  
+NOR32              c35_CORELIB    91.000000       5   455.000000  
+NOR33              c35_CORELIB   127.400002      10  1274.000015  
 NOR41              c35_CORELIB    91.000000       1    91.000000  
-NOR42              c35_CORELIB   163.800003       1   163.800003  
-OAI210             c35_CORELIB    72.800003       3   218.400009  
-OAI211             c35_CORELIB    72.800003      10   728.000031  
-OAI212             c35_CORELIB    72.800003      32  2329.600098  
+NOR42              c35_CORELIB   163.800003       5   819.000015  
+OAI210             c35_CORELIB    72.800003       4   291.200012  
+OAI211             c35_CORELIB    72.800003       6   436.800018  
+OAI212             c35_CORELIB    72.800003      39  2839.200119  
+OAI220             c35_CORELIB    91.000000       1    91.000000  
 OAI221             c35_CORELIB    91.000000       2   182.000000  
-OAI222             c35_CORELIB    91.000000      26  2366.000000  
-OAI310             c35_CORELIB    91.000000       3   273.000000  
-OAI312             c35_CORELIB   109.199997       7   764.399979  
-OAI2110            c35_CORELIB    91.000000       1    91.000000  
-OAI2112            c35_CORELIB   145.600006      12  1747.200073  
-XNR21              c35_CORELIB   109.199997       5   545.999985  
-XNR22              c35_CORELIB   200.199997      18  3603.599945  
-XNR31              c35_CORELIB   200.199997       1   200.199997  
-XOR21              c35_CORELIB   127.400002       1   127.400002  
-XOR22              c35_CORELIB   200.199997      10  2001.999969  
-XOR31              c35_CORELIB   200.199997       8  1601.599976  
-sqroot_comb_NBITS16_DW01_inc_4  1983.799988       1  1983.799988  h
+OAI222             c35_CORELIB    91.000000      21  1911.000000  
+OAI311             c35_CORELIB    91.000000       2   182.000000  
+OAI312             c35_CORELIB   109.199997      10  1091.999969  
+OAI2111            c35_CORELIB    91.000000       1    91.000000  
+OAI2112            c35_CORELIB   145.600006      13  1892.800079  
+XNR20              c35_CORELIB   109.199997       4   436.799988  
+XNR21              c35_CORELIB   109.199997       3   327.599991  
+XNR22              c35_CORELIB   200.199997      10  2001.999969  
+XOR22              c35_CORELIB   200.199997       6  1201.199982  
+XOR31              c35_CORELIB   200.199997       6  1201.199982  
+sqroot_comb_NBITS16_DW01_inc_6  2038.399994       1  2038.399994  h
 -----------------------------------------------------------------------------
-Total 78 references                                 69978.999931
+Total 79 references                                 78423.799995
 
 ****************************************
-Design: sqroot_comb_NBITS16_DW01_inc_4 
+Design: sqroot_comb_NBITS16_DW01_inc_6 
 ****************************************
 Reference          Library       Unit Area   Count    Total Area   Attributes
 -----------------------------------------------------------------------------
-CLKIN1             c35_CORELIB    36.400002       1    36.400002  
-INV0               c35_CORELIB    36.400002       6   218.400009  
+CLKIN0             c35_CORELIB    36.400002       3   109.200005  
+CLKIN3             c35_CORELIB    36.400002       1    36.400002  
+INV0               c35_CORELIB    36.400002       4   145.600006  
 INV2               c35_CORELIB    36.400002       2    72.800003  
-NAND20             c35_CORELIB    54.599998       9   491.399986  
-NAND22             c35_CORELIB    54.599998       1    54.599998  
-NOR21              c35_CORELIB    54.599998       5   272.999992  
-XNR20              c35_CORELIB   109.199997       3   327.599991  
-XOR20              c35_CORELIB   127.400002       3   382.200005  
-XOR21              c35_CORELIB   127.400002       1   127.400002  
+NAND20             c35_CORELIB    54.599998       5   272.999992  
+NAND21             c35_CORELIB    54.599998       3   163.799995  
+NAND22             c35_CORELIB    54.599998       2   109.199997  
+NOR20              c35_CORELIB    54.599998       1    54.599998  
+NOR21              c35_CORELIB    54.599998       4   218.399994  
+XNR20              c35_CORELIB   109.199997       1   109.199997  
+XNR21              c35_CORELIB   109.199997       1   109.199997  
+XOR21              c35_CORELIB   127.400002       5   637.000008  
 -----------------------------------------------------------------------------
-Total 9 references                                   1983.799988
+Total 12 references                                  2038.399994
 1

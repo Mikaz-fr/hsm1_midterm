@@ -2,152 +2,160 @@ m255
 K3
 13
 cModel Technology
-d/home/edatp59/hsm1_tutorial/MGC_MSIM/PROJ
+Z0 d/home/edatp59/hsm1_tutorial/MGC_MSIM/PROJ
+T_opt
+Vf7f@7m]:D5oiBKCk@O0G]1
+04 11 3 work sqroot_comb rtl 1
+=1-002564fda277-50a15e0e-1af8c-b7e
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+OE;O;10.0a;49
+Z1 d/home/edatp59/hsm1_tutorial/MGC_MSIM/PROJ
 Esqroot_comb
-Z0 w1352728377
-Z1 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
-Z2 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
-Z3 DPx4 ieee 11 numeric_std 0 22 k7B<7GmYYYmX;0X]XHFD10
-Z4 DPx3 std 6 textio 0 22 G^o2zK;Vh4eVdKTVo98653
-Z5 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
-Z6 d/home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/PROJ
-Z7 8/home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_comb_rtl.vhd
-Z8 F/home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_comb_rtl.vhd
+Z2 w1352754467
+Z3 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z4 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z5 DPx4 ieee 11 numeric_std 0 22 k7B<7GmYYYmX;0X]XHFD10
+Z6 DPx3 std 6 textio 0 22 G^o2zK;Vh4eVdKTVo98653
+Z7 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z8 d/home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/PROJ
+Z9 8/home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_comb_rtl.vhd
+Z10 F/home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_comb_rtl.vhd
 l0
 L16
 V:KGg[dK]akEALaQZZ?@9D3
-Z9 OE;C;10.0a;49
+Z11 OE;C;10.0a;49
 32
-Z10 !s108 1352729299.540862
-Z11 !s90 -reportprogress|300|-work|SQROOT_COMB|-2002|-explicit|-vopt|/home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_comb_rtl.vhd|
-Z12 !s107 /home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_comb_rtl.vhd|
-Z13 o-work SQROOT_COMB -2002 -explicit
-Z14 tExplicit 1
+Z12 !s108 1352754467.451908
+Z13 !s90 -reportprogress|300|-work|SQROOT_COMB|-2002|-explicit|-vopt|/home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_comb_rtl.vhd|
+Z14 !s107 /home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_comb_rtl.vhd|
+Z15 o-work SQROOT_COMB -2002 -explicit
+Z16 tExplicit 1
 !s100 ?ZbU[;m8NV3ai[LR2^U[J0
 Artl
-R1
-R2
 R3
 R4
 R5
-Z15 DEx4 work 11 sqroot_comb 0 22 :KGg[dK]akEALaQZZ?@9D3
+R6
+R7
+Z17 DEx4 work 11 sqroot_comb 0 22 :KGg[dK]akEALaQZZ?@9D3
 32
 l27
 L25
 VCz`o94PnCMd8XY?:QgOl63
-R9
-R10
 R11
 R12
 R13
 R14
+R15
+R16
 !s100 o<Z19OR<A[:D4CZgVM5];0
 vsqroot_comb_NBITS8
-VcUU8>@:CcXb90^AYXlBeP3
-r1
-31
 I:^Z`N@KR8V1J67QD8zRNN2
-R6
-w1352729270
+VcUU8>@:CcXb90^AYXlBeP3
+R8
+w1352730133
 8/home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_comb_nbits8_mapped.v
 F/home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_comb_nbits8_mapped.v
 L0 2
 OE;L;10.0a;49
+r1
+31
 o-work work -nocovercells -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
 nsqroot_comb_@n@b@i@t@s8
-!s85 0
 !s100 KI9TIo6e<Rj0HHCLzB7ZL2
-!s108 1352729299.521859
+!s85 0
+!s108 1352754465.519325
 !s107 /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_comb_nbits8_mapped.v|
 !s90 -reportprogress|300|-work|work|-vopt|-nocovercells|/home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_comb_nbits8_mapped.v|
 !s102 -nocovercells
 Esqroot_comb_tb
-Z16 w1352726621
-Z17 DPx4 ieee 9 math_real 0 22 :iME`dTX54_U49lJNF5JI3
-R3
-R4
+Z18 w1352735497
+Z19 DPx4 ieee 9 math_real 0 22 :iME`dTX54_U49lJNF5JI3
 R5
 R6
-Z18 8/home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_comb_tb.vhd
-Z19 F/home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_comb_tb.vhd
+R7
+R8
+Z20 8/home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_comb_tb.vhd
+Z21 F/home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_comb_tb.vhd
 l0
 L6
 VO<lNISV@JK9[j[CMI9?BY0
-R9
+R11
 32
-Z20 !s108 1352729299.573239
-Z21 !s90 -reportprogress|300|-work|SQROOT_COMB|-2002|-explicit|-vopt|/home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_comb_tb.vhd|
-Z22 !s107 /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_comb_tb.vhd|
-R13
-R14
+Z22 !s108 1352754467.570172
+Z23 !s90 -reportprogress|300|-work|SQROOT_COMB|-2002|-explicit|-vopt|/home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_comb_tb.vhd|
+Z24 !s107 /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_comb_tb.vhd|
+R15
+R16
 !s100 WdlhzEE;ToTGjaWP3GH5m0
 Abench
-R17
-R3
-R4
+R19
 R5
-Z23 DEx4 work 14 sqroot_comb_tb 0 22 O<lNISV@JK9[j[CMI9?BY0
+R6
+R7
+Z25 DEx4 work 14 sqroot_comb_tb 0 22 O<lNISV@JK9[j[CMI9?BY0
 32
 l26
 L8
 V@Q0NZ?J[B3H5?j?D8ch980
-R9
-R20
-R21
+R11
 R22
-R13
-R14
+R23
+R24
+R15
+R16
 !s100 Dh[17cnY3LDm_Sb2`Jj8V0
 Csqroot_comb_tb_mapped_conf
-Z24 abench
-Z25 esqroot_comb_tb
+Z26 abench
+Z27 esqroot_comb_tb
 DPx7 verilog 8 vl_types 0 22 ]G>2izW1V4dcRR@F[keS10
 DEx4 work 18 sqroot_comb_NBITS8 0 22 cUU8>@:CcXb90^AYXlBeP3
-Z26 DAx4 work 14 sqroot_comb_tb 5 bench 22 @Q0NZ?J[B3H5?j?D8ch980
-R17
-R3
-R4
+Z28 DAx4 work 14 sqroot_comb_tb 5 bench 22 @Q0NZ?J[B3H5?j?D8ch980
+R19
 R5
-R23
-32
-w1352723293
 R6
+R7
+R25
+w1352723293
+R8
 8/home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_comb_tb_mapped_conf.vhd
 F/home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_comb_tb_mapped_conf.vhd
 l0
 L1
 VYO[3`19?_<X75bD@6RbL[2
-R9
+R11
+32
 o-work work -2002 -explicit
-R14
+R16
 !s100 9k5JMEC4Oj>1_de2AAo9W1
-!s108 1352729299.632831
+!s108 1352754467.629544
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|/home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_comb_tb_mapped_conf.vhd|
 !s107 /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_comb_tb_mapped_conf.vhd|
 Csqroot_comb_tb_rtl_conf
-R24
-R25
-R1
-R2
-R15
 R26
-R17
+R27
 R3
 R4
+R17
+R28
+R19
 R5
-R23
+R6
+R7
+R25
 32
 w1352206265
-R6
+R8
 8/home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_comb_tb_rtl_conf.vhd
 F/home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_comb_tb_rtl_conf.vhd
 l0
 L1
 V<DJX>0UHKc[nh[h_^dD=c0
-R9
-R13
-R14
+R11
+R15
+R16
 !s100 gaYAWWJ^^Ii@<JB?cF=kR0
-!s108 1352729299.598590
+!s108 1352754467.595462
 !s90 -reportprogress|300|-work|SQROOT_COMB|-2002|-explicit|-vopt|/home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_comb_tb_rtl_conf.vhd|
 !s107 /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_comb_tb_rtl_conf.vhd|

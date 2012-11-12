@@ -12,7 +12,7 @@
 set ENTITY_NAME sqroot_comb
 set ARCH_NAME   rtl
 set NBITS       32
-set DELAY	10.44
+set DELAY	21.1
 #
 set DESIGN_ENTITY "${ENTITY_NAME}_${ARCH_NAME}"
 set DESIGN        "${ENTITY_NAME}_nbits${NBITS}"
