@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version F-2011.09-SP5 for linux -- Apr 20, 2012
-#@ # Date:   Sun Nov 11 22:57:11 2012
+#@ # Date:   Mon Nov 12 14:22:06 2012
 #@ # Run by: edatp59@ielsrv01.epfl.ch
 #@ 
 
@@ -4754,45 +4754,15 @@ source /home/edatp59/hsm1_tutorial/SQROOT_COMB_DC/.synopsys_dc.setup
 #@ define_design_lib WORK -path ./DLIB/WORK
 #@ # -- End source /home/edatp59/hsm1_tutorial/SQROOT_COMB_DC/.synopsys_dc.setup
 
-gui_start
-ls
-source BIN/temp.tcl
+source -echo -verbose /home/edatp59/hsm1_tutorial/SQROOT_COMB_DC/BIN/sqroot_comb_syn.tcl
 #@ #===============================================================================
-#@ #  File        :  multn_syn.tcl
-#@ #  Description :  Synthesis script for generic multiplier model.
+#@ #  File        :  sqroot_comb_syn.tcl
+#@ #  Description :  Synthesis script for combinatory sqroot calculator.
 #@ #  Notes       :  -.
-#@ #  Author      :  Alain Vachoux, EPFL STI IEL LSM, alain.vachoux@epfl.ch
+#@ #  Author      :  Michaël Roy, michael.roy@epfl.ch
 #@ #                 for Hardware Modeling I course.
-#@ #  Tools       :  Synopsys DC 2009.06
-#@ #  History     :
-#@ #===============================================================================
-#@ 
-#@ #  design related definitions
-#@ set ENTITY_NAME sqroot_comb
-#@ set ARCH_NAME   rtl
-#@ set NBITS       8
-#@ set LIBRARY	WORK
-#@ #
-#@ set DESIGN_ENTITY "${ENTITY_NAME}_${ARCH_NAME}"
-#@ set DESIGN        "${ENTITY_NAME}_nbits${NBITS}"
-#@ 
-#@ #  start from fresh state
-#@ remove_design -all
-#@ 
-#@ #  analyze VHDL sources
-#@ puts "-i- Analyze HDL/RTL/${DESIGN_ENTITY}.vhd"
-#@ analyze -library ${LIBRARY} -format vhdl HDL/RTL/${DESIGN_ENTITY}.vhd
-#@ # -- End source BIN/temp.tcl
-
-source BIN/sqroot_comb_syn.tcl
-#@ #===============================================================================
-#@ #  File        :  multn_syn.tcl
-#@ #  Description :  Synthesis script for generic multiplier model.
-#@ #  Notes       :  -.
-#@ #  Author      :  Alain Vachoux, EPFL STI IEL LSM, alain.vachoux@epfl.ch
-#@ #                 for Hardware Modeling I course.
-#@ #  Tools       :  Synopsys DC 2009.06
-#@ #  History     :
+#@ #  Tools       :  Synopsys DC 2011.09
+#@ #  History     :  12/11/12 Initial version
 #@ #===============================================================================
 #@ 
 #@ #  design related definitions
@@ -4820,8 +4790,81 @@ source BIN/sqroot_comb_syn.tcl
 #@ 
 #@ #  define constraints
 #@ puts "-i- Define constraints"
+#@ puts "-i-   set_max_delay 3 -to [all_outputs]"
 #@ puts "-i-   set_max_area 0"
 #@ puts "-i-   set_fix_multiple_port_nets -all"
+#@ set_max_delay 2.6 -to [all_outputs]
+#@ set_max_area 0
+#@ set_fix_multiple_port_nets -all
+#@ 
+#@ #  map and optimize design
+#@ puts "-i- Map and optimize design"
+#@ compile -map_effort medium -area_effort medium
+#@ 
+#@ #  save mapped design
+#@ puts "-i- Save mapped design"
+#@ write -hierarchy -format ddc -output DB/${DESIGN}_mapped.ddc
+#@ 
+#@ #  generate reports
+#@ puts "-i- Generate reports"
+#@ report_constraint -nosplit -all_violators > RPT/${DESIGN}_allviol.rpt
+#@ report_area > RPT/${DESIGN}_area.rpt
+#@ report_timing > RPT/${DESIGN}_timing.rpt
+#@ report_resources -nosplit -hierarchy > RPT/${DESIGN}_resources.rpt
+#@ report_reference -nosplit -hierarchy > RPT/${DESIGN}_references.rpt
+#@ 
+#@ #  generate Verilog netlist
+#@ puts "-i- Generate Verilog netlist"
+#@ change_names -rules verilog -hierarchy
+#@ write -format verilog -hierarchy -output HDL/GATE/${DESIGN}_mapped.v
+#@ 
+#@ #  generate SDF timing file for Verilog
+#@ puts "-i- Generate SDF file for Verilog netlist"
+#@ write_sdf -version 2.1 TIM/${DESIGN}_mapped.sdf
+#@ 
+#@ puts "-i- Finished"
+#@ # -- End source /home/edatp59/hsm1_tutorial/SQROOT_COMB_DC/BIN/sqroot_comb_syn.tcl
+
+source BIN/sqroot_comb_syn.tcl
+#@ #===============================================================================
+#@ #  File        :  sqroot_comb_syn.tcl
+#@ #  Description :  Synthesis script for combinatory sqroot calculator.
+#@ #  Notes       :  -.
+#@ #  Author      :  Michaël Roy, michael.roy@epfl.ch
+#@ #                 for Hardware Modeling I course.
+#@ #  Tools       :  Synopsys DC 2011.09
+#@ #  History     :  12/11/12 Initial version
+#@ #===============================================================================
+#@ 
+#@ #  design related definitions
+#@ set ENTITY_NAME sqroot_comb
+#@ set ARCH_NAME   rtl
+#@ set NBITS       8
+#@ #
+#@ set DESIGN_ENTITY "${ENTITY_NAME}_${ARCH_NAME}"
+#@ set DESIGN        "${ENTITY_NAME}_nbits${NBITS}"
+#@ 
+#@ #  start from fresh state
+#@ remove_design -all
+#@ 
+#@ #  analyze VHDL sources
+#@ puts "-i- Analyze HDL/RTL/${DESIGN_ENTITY}.vhd"
+#@ analyze -format vhdl HDL/RTL/${DESIGN_ENTITY}.vhd
+#@ 
+#@ #  elaborate design
+#@ puts "-i- Elaborate design"
+#@ elaborate ${ENTITY_NAME} -architecture ${ARCH_NAME}           -parameters "NBITS = ${NBITS}"           -library DEFAULT -update
+#@ 
+#@ #  save elaborated design
+#@ puts "-i- Save elaborated design"
+#@ write -hierarchy -format ddc -output DB/${DESIGN}_elab.ddc
+#@ 
+#@ #  define constraints
+#@ puts "-i- Define constraints"
+#@ puts "-i-   set_max_delay 3 -to [all_outputs]"
+#@ puts "-i-   set_max_area 0"
+#@ puts "-i-   set_fix_multiple_port_nets -all"
+#@ set_max_delay 2.61 -to [all_outputs]
 #@ set_max_area 0
 #@ set_fix_multiple_port_nets -all
 #@ 
@@ -4853,36 +4896,4 @@ source BIN/sqroot_comb_syn.tcl
 #@ puts "-i- Finished"
 #@ # -- End source BIN/sqroot_comb_syn.tcl
 
-change_selection [get_s sub_1_root_sub_48_I3_U2_5]
-change_selection [get_s sqroot_comb_NBITS8]
-man check_design
-check_design
-uplevel #0 { report_design }
-uplevel #0 check_design
-uplevel #0 check_design
-uplevel #0 { report_resources -nosplit }
-uplevel #0 { report_resources }
-source BIN/temp.tcl
-#@ #===============================================================================
-#@ #  File        :  multn_syn.tcl
-#@ #  Description :  Synthesis script for generic multiplier model.
-#@ #  Notes       :  -.
-#@ #  Author      :  Alain Vachoux, EPFL STI IEL LSM, alain.vachoux@epfl.ch
-#@ #                 for Hardware Modeling I course.
-#@ #  Tools       :  Synopsys DC 2009.06
-#@ #  History     :
-#@ #===============================================================================
-#@ 
-#@ #  design related definitions
-#@ set ENTITY_NAME sqroot_comb
-#@ set ARCH_NAME   rtl
-#@ set NBITS       8
-#@ set LIBRARY	WORK
-#@ #
-#@ set DESIGN_ENTITY "${ENTITY_NAME}_${ARCH_NAME}"
-#@ set DESIGN        "${ENTITY_NAME}_nbits${NBITS}"
-#@ 
-#@ puts "-i- Elaborate design"
-#@ elaborate ${ENTITY_NAME} -architecture ${ARCH_NAME}           -parameters "NBITS = ${NBITS}"           -library DEFAULT -update
-#@ # -- End source BIN/temp.tcl
-
+quit

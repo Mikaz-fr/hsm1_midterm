@@ -15,7 +15,7 @@ architecture bench of sqroot_comb_tb is
    end component sqroot;
 
    constant NBITS     : natural := 8;
-   constant WAIT_TIME : time := 1.8 ns;
+   constant WAIT_TIME : time := 2.61 ns;
 
    signal arg      : std_logic_vector(NBITS-1 downto 0);
    signal z        : std_logic_vector(NBITS/2 downto 0);

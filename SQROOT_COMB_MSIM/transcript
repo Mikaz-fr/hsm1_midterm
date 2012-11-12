@@ -1,0 +1,181 @@
+# //  ModelSim SE 10.0a Feb 21 2011 Linux 2.6.18-308.16.1.el5
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# reading modelsim.ini
+# Loading project sqroot_comb
+# vlog -work work -vopt -nocovercells /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_comb_nbits8_mapped.v
+# Model Technology ModelSim SE vlog 10.0a Compiler 2011.02 Feb 21 2011
+# -- Compiling module sqroot_comb_NBITS8
+# 
+# Top level modules:
+# 	sqroot_comb_NBITS8
+# 
+# 
+# vcom -work SQROOT_COMB -2002 -explicit -vopt /home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_comb_rtl.vhd
+# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity sqroot_comb
+# -- Compiling architecture rtl of sqroot_comb
+# 
+# 
+# vcom -work SQROOT_COMB -2002 -explicit -vopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_comb_tb.vhd
+# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity sqroot_comb_tb
+# -- Compiling architecture bench of sqroot_comb_tb
+# 
+# 
+# vcom -work SQROOT_COMB -2002 -explicit -vopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_comb_tb_rtl_conf.vhd
+# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+# -- Loading package STANDARD
+# -- Compiling configuration sqroot_comb_tb_rtl_conf
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading entity sqroot_comb_tb
+# -- Loading architecture bench of sqroot_comb_tb
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity sqroot_comb
+# 
+# 
+# vcom -work work -2002 -explicit -vopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_comb_tb_mapped_conf.vhd
+# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+# -- Loading package STANDARD
+# -- Compiling configuration sqroot_comb_tb_mapped_conf
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading entity sqroot_comb_tb
+# -- Loading architecture bench of sqroot_comb_tb
+# -- Loading package vl_types
+# -- Loading entity sqroot_comb_NBITS8
+# 
+# 
+# 5 compiles, 0 failed with no errors. 
+vsim -L /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog -sdftyp uut=/home/edatp59/hsm1_tutorial/SQROOT_COMB_DC/TIM/sqroot_comb_nbits8_mapped.sdf -t ps -novopt SQROOT_COMB.sqroot_comb_tb_mapped_conf
+# vsim -L /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog -sdftyp uut=/home/edatp59/hsm1_tutorial/SQROOT_COMB_DC/TIM/sqroot_comb_nbits8_mapped.sdf -t ps -novopt SQROOT_COMB.sqroot_comb_tb_mapped_conf 
+# Loading std.standard
+# Refreshing /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/PROJ/SQROOT_COMB.sqroot_comb_tb_mapped_conf
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading verilog.vl_types(body)
+# Loading SQROOT_COMB.sqroot_comb_tb_mapped_conf
+# Refreshing /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/PROJ/SQROOT_COMB.sqroot_comb_tb(bench)
+# Loading SQROOT_COMB.sqroot_comb_tb(bench)
+# Refreshing /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/PROJ/SQROOT_COMB.sqroot_comb_NBITS8
+# Loading SQROOT_COMB.sqroot_comb_NBITS8
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR24
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND23
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV12
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND24
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV3
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV10
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV8
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR23
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND26
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.CLKIN8
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.AOI2110
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.OAI221
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND28
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV4
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.CLKBU15
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR22
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR41
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND22
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.OAI311
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.AOI211
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV6
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR21
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.OAI212
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR42
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.OAI222
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND42
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND34
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.AOI2112
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.CLKIN3
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.BUF2
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.CLKIN2
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.BUF6
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.CLKBU4
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.AOI212
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR31
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.CLKIN6
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.AOI312
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.AOI310
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.CLKIN1
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.XOR22
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND21
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV15
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND20
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV0
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR32
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.INV2
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.XNR22
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.OAI312
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.OAI210
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NOR40
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.NAND31
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.OAI2112
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.AOI222
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/DLIB/c35_corelib_vlog.XNR21
+# Loading instances from /home/edatp59/hsm1_tutorial/SQROOT_COMB_DC/TIM/sqroot_comb_nbits8_mapped.sdf
+# Loading timing data from /home/edatp59/hsm1_tutorial/SQROOT_COMB_DC/TIM/sqroot_comb_nbits8_mapped.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /sqroot_comb_tb File: /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_comb_tb.vhd
+add wave  \
+sim:/sqroot_comb_tb/arg \
+sim:/sqroot_comb_tb/z \
+sim:/sqroot_comb_tb/roundup \
+sim:/sqroot_comb_tb/check \
+sim:/sqroot_comb_tb/sqrt_exp \
+sim:/sqroot_comb_tb/NBITS \
+sim:/sqroot_comb_tb/WAIT_TIME
+add wave  \
+sim:/sqroot_comb_tb/UUT/arg \
+sim:/sqroot_comb_tb/UUT/sqroot \
+sim:/sqroot_comb_tb/UUT/roundup
+run -all
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/PROJ/sqroot_comb_mapped.do
+restart
+# Loading instances from /home/edatp59/hsm1_tutorial/SQROOT_COMB_DC/TIM/sqroot_comb_nbits8_mapped.sdf
+# Loading timing data from /home/edatp59/hsm1_tutorial/SQROOT_COMB_DC/TIM/sqroot_comb_nbits8_mapped.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /sqroot_comb_tb File: /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_comb_tb.vhd
+do /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/PROJ/sqroot_comb_mapped.do
+run -all
+vsim -t ns -wlf OUT/sqroot_comb_rtl.wlf -novopt SQROOT_COMB.sqroot_comb_tb_rtl_conf
+# vsim -do ../BIN/sqroot_comb_rtl.do -t ns -wlf OUT/sqroot_comb_rtl.wlf -novopt SQROOT_COMB.sqroot_comb_tb_rtl_conf 
+# Loading std.standard
+# Refreshing /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/PROJ/SQROOT_COMB.sqroot_comb_tb_rtl_conf
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading SQROOT_COMB.sqroot_comb_tb_rtl_conf
+# Loading SQROOT_COMB.sqroot_comb_tb(bench)
+# Refreshing /home/edatp59/hsm1_tutorial/SQROOT_COMB_MSIM/PROJ/SQROOT_COMB.sqroot_comb(rtl)
+# Loading SQROOT_COMB.sqroot_comb(rtl)
+# ../BIN/sqroot_comb_rtl.do 
+# invalid command name "../BIN/sqroot_comb_rtl.do"

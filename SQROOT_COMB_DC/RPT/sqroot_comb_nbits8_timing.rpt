@@ -6,15 +6,15 @@ Report : timing
         -max_paths 1
 Design : sqroot_comb_NBITS8
 Version: F-2011.09-SP5
-Date   : Sun Nov 11 23:00:31 2012
+Date   : Mon Nov 12 14:23:10 2012
 ****************************************
 
 Operating Conditions: nom_pvt   Library: c35_CORELIB
 Wire Load Model Mode: enclosed
 
-  Startpoint: arg[7] (input port)
-  Endpoint: sqroot[3] (output port)
-  Path Group: (none)
+  Startpoint: arg[3] (input port)
+  Endpoint: sqroot[1] (output port)
+  Path Group: default
   Path Type: max
 
   Des/Clust/Port     Wire Load Model       Library
@@ -23,39 +23,38 @@ Wire Load Model Mode: enclosed
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  input external delay                     0.00       0.00 r
-  arg[7] (in)                              0.00       0.00 r
-  U181/Q (NOR21)                           0.84       0.84 f
-  U276/Q (NOR20)                           0.90       1.73 r
-  U273/Q (OAI220)                          0.32       2.05 f
-  U272/Q (NAND20)                          1.59       3.64 r
-  U267/Q (XNR20)                           1.28       4.92 f
-  U266/Q (CLKIN0)                          0.92       5.84 r
-  U265/Q (AOI2110)                         0.39       6.23 f
-  U264/Q (AOI210)                          0.38       6.61 r
-  U263/Q (IMAJ30)                          0.23       6.84 f
-  U180/Q (NAND31)                          1.28       8.13 r
-  U262/Q (XNR20)                           1.12       9.24 f
-  U261/Q (CLKIN0)                          1.03      10.28 r
-  U251/Q (AOI2110)                         0.41      10.69 f
-  U250/Q (AOI210)                          0.43      11.12 r
-  U246/Q (MAJ31)                           0.34      11.46 r
-  U245/Q (OAI210)                          0.16      11.63 f
-  U244/Q (CLKIN0)                          0.36      11.99 r
-  U243/Q (AOI2110)                         0.25      12.24 f
-  U242/Q (NAND30)                          1.16      13.40 r
-  U241/Q (CLKIN0)                          1.02      14.42 f
-  U238/Q (NAND20)                          0.61      15.03 r
-  U234/Q (AOI210)                          0.23      15.26 f
-  U233/Q (MAJ31)                           0.45      15.71 f
-  U232/Q (MAJ31)                           0.32      16.03 f
-  U228/Q (OAI210)                          0.62      16.65 r
-  U226/Q (CLKIN0)                          0.63      17.28 f
-  U223/Q (MUX21)                           0.53      17.81 r
-  sqroot[3] (out)                          0.00      17.81 r
-  data arrival time                                  17.81
+  input external delay                     0.00       0.00 f
+  arg[3] (in)                              0.00       0.00 f
+  U223/Q (OAI212)                          0.25       0.25 r
+  U256/Q (AOI212)                          0.22       0.47 f
+  U200/Q (NOR24)                           0.16       0.62 r
+  U185/Q (INV10)                           0.08       0.71 f
+  U199/Q (CLKBU15)                         0.19       0.90 f
+  U226/Q (OAI222)                          0.22       1.12 r
+  U249/Q (INV6)                            0.16       1.29 f
+  U302/Q (NAND28)                          0.14       1.43 r
+  U306/Q (INV6)                            0.04       1.47 f
+  U307/Q (NAND24)                          0.12       1.59 r
+  U183/Q (NAND24)                          0.10       1.69 f
+  U259/Q (CLKIN6)                          0.07       1.76 r
+  U298/Q (AOI312)                          0.13       1.89 f
+  U198/Q (NAND26)                          0.20       2.08 r
+  U257/Q (INV12)                           0.07       2.15 f
+  U356/Q (OAI222)                          0.23       2.38 r
+  U280/Q (INV3)                            0.08       2.46 f
+  U278/Q (NAND23)                          0.11       2.57 r
+  U279/Q (NAND22)                          0.04       2.61 f
+  sqroot[1] (out)                          0.00       2.61 f
+  data arrival time                                   2.61
+
+  max_delay                                2.61       2.61
+  output external delay                    0.00       2.61
+  data required time                                  2.61
   -----------------------------------------------------------
-  (Path is unconstrained)
+  data required time                                  2.61
+  data arrival time                                  -2.61
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
 
 
 1

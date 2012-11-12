@@ -1,11 +1,11 @@
 #===============================================================================
-#  File        :  multn_syn.tcl
-#  Description :  Synthesis script for generic multiplier model.
+#  File        :  sqroot_comb_syn.tcl
+#  Description :  Synthesis script for combinatory sqroot calculator.
 #  Notes       :  -.
-#  Author      :  Alain Vachoux, EPFL STI IEL LSM, alain.vachoux@epfl.ch
+#  Author      :  Michaël Roy, michael.roy@epfl.ch
 #                 for Hardware Modeling I course.
-#  Tools       :  Synopsys DC 2009.06
-#  History     :
+#  Tools       :  Synopsys DC 2011.09
+#  History     :  12/11/12 Initial version
 #===============================================================================
 
 #  design related definitions
@@ -35,8 +35,10 @@ write -hierarchy -format ddc -output DB/${DESIGN}_elab.ddc
 
 #  define constraints
 puts "-i- Define constraints"
+puts "-i-   set_max_delay 2.61 -to [all_outputs]"
 puts "-i-   set_max_area 0"
 puts "-i-   set_fix_multiple_port_nets -all"
+set_max_delay 2.61 -to [all_outputs]
 set_max_area 0
 set_fix_multiple_port_nets -all
 

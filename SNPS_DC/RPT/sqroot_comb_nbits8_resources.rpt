@@ -1,0 +1,40 @@
+ 
+****************************************
+Report : resources
+Design : sqroot_comb_NBITS8
+Version: F-2011.09-SP5
+Date   : Mon Nov 12 14:34:22 2012
+****************************************
+
+Resource Sharing Report for design sqroot_comb_NBITS8 in file
+        ./HDL/RTL/sqroot_comb_rtl.vhd
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r390     | DW_cmp       | width=8    |               | lte_47               |
+| r392     | DW01_sub     | width=8    |               | sub_48               |
+| r394     | DW01_add     | width=8    |               | add_47_I2            |
+| r396     | DW_cmp       | width=8    |               | lte_47_I2            |
+| r402     | DW01_add     | width=7    |               | add_49_I2            |
+| r404     | DW01_add     | width=8    |               | add_47_I3            |
+| r406     | DW_cmp       | width=8    |               | lte_47_I3            |
+| r412     | DW01_add     | width=8    |               | add_49_I3            |
+| r414     | DW01_inc     | width=8    |               | add_47_I4            |
+| r416     | DW_cmp       | width=8    |               | lte_47_I4            |
+| r418     | DW01_sub     | width=8    |               | sub_1_root_sub_48_I4 |
+| r420     | DW01_add     | width=8    |               | add_49_I4            |
+| r422     | DW_cmp       | width=8    |               | lt_gt_56             |
+| r424     | DW01_inc     | width=5    |               | add_57               |
+| r1012    | DW01_add     | width=8    |               | add_1_root_sub_0_root_sub_48_I2 |
+| r1014    | DW01_sub     | width=8    |               | sub_0_root_sub_0_root_sub_48_I2 |
+| r1603    | DW01_sub     | width=8    |               | sub_1_root_sub_0_root_sub_48_I3 |
+| r1605    | DW01_sub     | width=8    |               | sub_0_root_sub_0_root_sub_48_I3 |
+===============================================================================
+
+
+No implementations to report
+
+No multiplexors to report
+1
