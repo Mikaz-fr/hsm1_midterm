@@ -1,0 +1,11 @@
+# Default edadk.conf file
+# See http://edadk.epfl.ch for more details or to bring modifications
+
+# Mentor Modelsim
+mgc msim 10.0a
+
+# Synopsys Design Compiler suite
+snps syn 2012.06
+
+# Design kit
+dk ams hk370

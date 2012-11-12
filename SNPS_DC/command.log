@@ -4825,3 +4825,4 @@ source -echo -verbose /home/edatp59/hsm1_tutorial/SNPS_DC/../SQROOT_COMB_DC/BIN/
 #@ puts "-i- Finished"
 #@ # -- End source /home/edatp59/hsm1_tutorial/SNPS_DC/../SQROOT_COMB_DC/BIN/sqroot_comb_syn.tcl
 
+quit

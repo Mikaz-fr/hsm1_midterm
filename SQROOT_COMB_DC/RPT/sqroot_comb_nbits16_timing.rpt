@@ -1,0 +1,95 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : sqroot_comb_NBITS16
+Version: F-2011.09-SP5
+Date   : Mon Nov 12 15:34:48 2012
+****************************************
+
+Operating Conditions: nom_pvt   Library: c35_CORELIB
+Wire Load Model Mode: enclosed
+
+  Startpoint: arg[15] (input port)
+  Endpoint: sqroot[1] (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sqroot_comb_NBITS16
+                     10k                   c35_CORELIB
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  arg[15] (in)                             0.00       0.00 f
+  U1292/Q (OAI222)                         0.22       0.22 r
+  U888/Q (NAND26)                          0.11       0.33 f
+  U1001/Q (NAND28)                         0.14       0.47 r
+  U991/Q (NAND28)                          0.06       0.53 f
+  U990/Q (NAND28)                          0.09       0.62 r
+  U1011/Q (INV6)                           0.04       0.65 f
+  U1297/Q (OAI212)                         0.15       0.81 r
+  U1298/Q (OAI312)                         0.11       0.91 f
+  U1300/Q (NOR33)                          0.16       1.07 r
+  U1108/Q (INV8)                           0.09       1.17 f
+  U1061/Q (NAND26)                         0.18       1.35 r
+  U791/Q (INV12)                           0.07       1.42 f
+  U820/Q (NAND26)                          0.10       1.52 r
+  U730/Q (INV6)                            0.09       1.61 f
+  U1311/Q (OAI212)                         0.18       1.78 r
+  U695/Q (NAND42)                          0.10       1.89 f
+  U1312/Q (OAI222)                         0.24       2.13 r
+  U703/Q (CLKIN6)                          0.12       2.25 f
+  U702/Q (NAND32)                          0.25       2.50 r
+  U1102/Q (INV6)                           0.10       2.60 f
+  U1282/Q (XNR22)                          0.31       2.90 r
+  U980/Q (INV1)                            0.14       3.04 f
+  U1080/Q (NAND22)                         0.25       3.29 r
+  U1350/Q (CLKIN3)                         0.11       3.39 f
+  U1351/Q (OAI212)                         0.19       3.58 r
+  U733/Q (NAND23)                          0.05       3.63 f
+  U1352/Q (XOR31)                          0.31       3.94 f
+  U805/Q (IMUX22)                          0.22       4.16 r
+  U1199/Q (CLKIN6)                         0.10       4.26 f
+  U823/Q (INV12)                           0.11       4.37 r
+  U1361/Q (OAI2112)                        0.06       4.43 f
+  U1362/Q (OAI212)                         0.21       4.64 r
+  U1012/Q (NAND24)                         0.08       4.72 f
+  U951/Q (INV12)                           0.11       4.83 r
+  U994/Q (INV15)                           0.08       4.91 f
+  U1049/Q (NAND34)                         0.23       5.14 r
+  U1143/Q (XOR22)                          0.29       5.43 f
+  U966/Q (NAND24)                          0.16       5.59 r
+  U1154/Q (INV6)                           0.07       5.66 f
+  U1379/Q (AOI212)                         0.13       5.79 r
+  U1380/Q (NAND24)                         0.06       5.85 f
+  U1385/Q (NOR24)                          0.11       5.96 r
+  U1388/Q (OAI312)                         0.16       6.12 f
+  U809/Q (NAND26)                          0.28       6.40 r
+  U846/Q (INV12)                           0.11       6.51 f
+  U1183/Q (NAND22)                         0.15       6.65 r
+  U893/Q (XNR21)                           0.31       6.96 r
+  U1409/Q (OAI222)                         0.09       7.05 f
+  U1410/Q (OAI2112)                        0.30       7.35 r
+  U1418/Q (OAI222)                         0.10       7.45 f
+  U1421/Q (OAI2112)                        0.25       7.70 r
+  U1208/Q (INV10)                          0.11       7.81 f
+  U1285/Q (MUX21)                          0.38       8.20 r
+  sqroot[1] (out)                          0.00       8.20 r
+  data arrival time                                   8.20
+
+  max_delay                                8.20       8.20
+  output external delay                    0.00       8.20
+  data required time                                  8.20
+  -----------------------------------------------------------
+  data required time                                  8.20
+  data arrival time                                  -8.20
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1

@@ -1,0 +1,14 @@
+# //  ModelSim SE 10.0a Feb 21 2011 Linux 2.6.18-308.16.1.el5
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# reading modelsim.ini
+# Loading project sqroot_comb
+# reading modelsim.ini
+# reading /softs/mentor/msim/10.0a/linux/../modelsim.ini
+# Loading project SQROOT_SEQ

@@ -28,7 +28,7 @@ architecture rtl of sqroot_comb is
   
   begin
     
-  sqroot_proc: process(arg)
+  sqroot_proc: process(arg,roundup)
     variable delta_v : unsigned(NBITS-1 downto 0);
     variable res: unsigned(NBITS-1 downto 0);
     variable root: unsigned(NBITS-1 downto 0);
