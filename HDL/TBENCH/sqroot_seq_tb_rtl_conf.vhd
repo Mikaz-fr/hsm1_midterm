@@ -1,7 +1,7 @@
-configuration sqroot_comb_tb_rtl_conf of sqroot_comb_tb is
+configuration sqroot_seq_tb_rtl_conf of sqroot_seq_tb is
    for bench
       for all : sqroot
-         use entity work.sqroot_comb(rtl);
+         use entity work.sqroot_seq(rtl);
       end for;
    end for;
-end configuration sqroot_comb_tb_rtl_conf;
+end configuration sqroot_seq_tb_rtl_conf;

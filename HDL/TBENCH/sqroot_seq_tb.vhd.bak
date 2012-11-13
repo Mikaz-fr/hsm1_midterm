@@ -50,6 +50,7 @@ begin
           roundup  <= rup;
           arg      <= std_logic_vector(to_unsigned(argn, arg'length));
 
+wait until ready = '1';
           start <= '1';
           wait until ready = '0';
           start <= '0';

@@ -53,14 +53,14 @@ Z18 F/home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_seq_rtl.vhd
 l0
 L16
 VKcdO8HE5M08Ecm:?0nO<<1
-!s100 m]^aNohW0H<i0OKLXle4j0
 R8
 32
-Z19 !s108 1352808620.846692
+Z19 !s108 1352839358.904746
 Z20 !s90 -reportprogress|300|-work|SQROOT_SEQ|-2002|-explicit|-novopt|/home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_seq_rtl.vhd|
 Z21 !s107 /home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_seq_rtl.vhd|
 R12
 R13
+!s100 m]^aNohW0H<i0OKLXle4j0
 Artl
 R15
 R16
@@ -71,11 +71,75 @@ Z22 DEx4 work 10 sqroot_seq 0 22 KcdO8HE5M08Ecm:?0nO<<1
 l46
 L29
 VS2<3MOG5RB_3P9Cn`ZaA;3
-!s100 Vka;573TEf36b1QK<_H_Z0
 R8
 32
 R19
 R20
 R21
+R12
+R13
+!s100 Vka;573TEf36b1QK<_H_Z0
+Esqroot_seq_tb
+Z23 w1352839360
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+l0
+L6
+Ve84L;fFKQNPfD>?lTkdA92
+R8
+32
+Z24 !s108 1352839360.112258
+R10
+R11
+R12
+R13
+!s100 ;eG=QD7ImgI@feN=zZjQ=1
+Abench
+R1
+R2
+R3
+R4
+Z25 DEx4 work 13 sqroot_seq_tb 0 22 e84L;fFKQNPfD>?lTkdA92
+l36
+L8
+V<=l=jSU2Vm;HOODXlmk@60
+R8
+32
+R24
+R10
+R11
+R12
+R13
+!s100 klnU2jS[LYz=5@@OA8YEz3
+Csqroot_seq_tb_rtl_conf
+abench
+esqroot_seq_tb
+R15
+R16
+R22
+DAx4 work 13 sqroot_seq_tb 5 bench 22 <=l=jSU2Vm;HOODXlmk@60
+R1
+R2
+R3
+R4
+R25
+w1352836554
+R5
+8/home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_rtl_conf.vhd
+F/home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_rtl_conf.vhd
+l0
+L1
+Vj46l>1f0Fz0ZVd2zViDe30
+!s100 Z@P`FJ?7KggiTE8:mj`j;0
+R8
+32
+!s108 1352839360.127576
+!s90 -reportprogress|300|-work|SQROOT_SEQ|-2002|-explicit|-novopt|/home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_rtl_conf.vhd|
+!s107 /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_rtl_conf.vhd|
 R12
 R13
