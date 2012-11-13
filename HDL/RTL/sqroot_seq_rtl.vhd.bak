@@ -28,8 +28,8 @@ end entity sqroot_seq;
 
 architecture rtl of sqroot_seq is
   
-  type state_type is (ST_INIT, ST_IF, ST_COMP, ST_ROUND);
-  constant RST_STATE : state_type := ST_INIT;
+  type state_type is (ST_IDLE, ST_INIT, ST_IF, ST_COMP, ST_ROUND);
+  constant RST_STATE : state_type := ST_IDLE;
   signal state_reg, state_next : state_type;
   
   --data reg
@@ -60,13 +60,14 @@ architecture rtl of sqroot_seq is
       begin
         state_next <= state_reg;        --avoid latches
         case state_reg is
-          when ST_INIT => if iss_start = '1' then     --Starting condition
-                            if iss_if = '1' then            --does res need to be updated
-                              state_next <= ST_IF;
-                            else
-                              state_next <= ST_COMP;
-                            end if;
+          when ST_IDLE => if iss_start = '1' then     --Starting condition
+                            state_next <= ST_INIT;
                           end if;
+          when ST_INIT => if iss_if = '1' then            --does res need to be updated
+                            state_next <= ST_IF;
+                          else
+                            state_next <= ST_COMP;
+                          end if;                          
           when ST_IF =>   state_next <= ST_COMP;
           when ST_COMP => if iss_looping = '1' then   --is the while over?
                             if iss_if = '1' then            --does res need to be updated
@@ -78,15 +79,15 @@ architecture rtl of sqroot_seq is
                             if iss_round = '1' then   --do we need to roundup
                               state_next <= ST_ROUND;
                            else
-                              state_next <= ST_INIT;    
+                              state_next <= ST_IDLE;    
                             end if;
                           end if;
-         when ST_ROUND => state_next <= ST_INIT;
+         when ST_ROUND => state_next <= ST_IDLE;
        end case;
       end process CP_NSL;
     
     --control path: output logic
-    CP_OL: ready <= '1' when state_reg = ST_INIT else '0';
+    CP_OL: ready <= '1' when state_reg = ST_IDLE else '0';
     
     --data path: data register
     DP_DR: process(clk, nRst)
@@ -109,13 +110,15 @@ architecture rtl of sqroot_seq is
     iss_if <= '1' when ((root_reg + delta_reg) <= res_reg) else '0';
     
     --data path; routing mux
-    DP_RMUX: process(state_reg,arg,root_reg,delta_reg,res_reg)
+    DP_RMUX: process(state_reg,arg,root_reg,delta_reg,res_reg, fuo_if_res, fuo_if_root, fuo_comp_root, fuo_comp_delta, fuo_round)
       begin
         root_next <= root_reg;    --avoid latches
         delta_next <= delta_reg;
         res_next <= res_reg;
         
         case state_reg is
+          when ST_IDLE =>   null;
+            
           when ST_INIT =>   delta_next <= (others => '0');
                             delta_next(NBITS - 2) <= '1';                  --Compute 2^(NBITS-2)
                             res_next <= unsigned(arg(NBITS-1 downto 0)); 

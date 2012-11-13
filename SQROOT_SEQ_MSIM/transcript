@@ -292,3 +292,40 @@ do /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/BIN/debug.tcl
 #    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq
 # ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
 #    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq
+# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_seq_rtl.vhd
+# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity sqroot_seq
+# -- Compiling architecture rtl of sqroot_seq
+# 
+# 
+do /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/BIN/debug.tcl
+# Loading SQROOT_SEQ.sqroot_seq(rtl)
+# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq
+find drivers -source -time {274 ns} -cause sim:/sqroot_seq/root_reg
+# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_seq_rtl.vhd
+# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity sqroot_seq
+# -- Compiling architecture rtl of sqroot_seq
+# 
+# 
+do /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/BIN/debug.tcl
+# Loading SQROOT_SEQ.sqroot_seq(rtl)
+# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq
