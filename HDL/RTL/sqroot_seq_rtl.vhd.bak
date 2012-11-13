@@ -19,25 +19,29 @@ entity sqroot_seq is
      signal arg : IN std_logic_vector(NBITS-1 downto 0); 
      signal roundup : IN std_logic;
      signal clk : IN std_logic;
-     signal nRst : IN std_logic; 
-     signal sqroot : OUT std_logic_vector(NBITS/2 downto 0)
-     signal ready : OUT std_logic;
+     signal nRst : IN std_logic;
+     signal start : IN std_logic; 
+     signal sqroot : OUT std_logic_vector(NBITS/2 downto 0);
+     signal ready : OUT std_logic
      );  
 end entity sqroot_seq;
 
 architecture rtl of sqroot_seq is
   
-  type state_type is (ST_INIT, ST_IF, ST_COMP, ST_ROUND, ST_RES);
+  type state_type is (ST_INIT, ST_IF, ST_COMP, ST_ROUND);
   constant RST_STATE : state_type := ST_INIT;
   signal state_reg, state_next : state_type;
   
   --data reg
-  signal delta, delta_next : unsigned(NBITS-1 downto 0); 
-  signal root, root_next : unsigned(NBITS-1 downto 0); 
-  signal res, res_next : unsigned(NBITS-1 downto 0); 
+  signal delta_reg, delta_next : unsigned(NBITS-1 downto 0); 
+  signal root_reg, root_next : unsigned(NBITS-1 downto 0); 
+  signal res_reg, res_next : unsigned(NBITS-1 downto 0); 
 
   --internal status signal
   signal iss_start, iss_looping, iss_round, iss_if : std_logic;
+  
+  --functional unit outputs
+  signal fuo_if_res, fuo_if_root, fuo_comp_root, fuo_comp_delta, fuo_round : unsigned(NBITS-1 downto 0);
 
   begin
     
@@ -52,11 +56,12 @@ architecture rtl of sqroot_seq is
     end process CP_SR;
     
     --control path: next state logic
-    CP_NST: process(state_reg)
+    CP_NSL: process(state_reg, start, iss_start, iss_looping, iss_round, iss_if)
       begin
+        state_next <= state_reg;        --avoid latches
         case state_reg is
           when ST_INIT => if iss_start = '1' then     --Starting condition
-                            if iss_if then            --does res need to be updated
+                            if iss_if = '1' then            --does res need to be updated
                               state_next <= ST_IF;
                             else
                               state_next <= ST_COMP;
@@ -64,7 +69,7 @@ architecture rtl of sqroot_seq is
                           end if;
           when ST_IF =>   state_next <= ST_COMP;
           when ST_COMP => if iss_looping = '1' then   --is the while over?
-                            if iss_if then            --does res need to be updated
+                            if iss_if = '1' then            --does res need to be updated
                               state_next <= ST_IF;
                             else
                               state_next <= ST_COMP;
@@ -73,13 +78,12 @@ architecture rtl of sqroot_seq is
                             if iss_round = '1' then   --do we need to roundup
                               state_next <= ST_ROUND;
                            else
-                              state_next <= ST_RES;    
+                              state_next <= ST_INIT;    
                             end if;
                           end if;
-         when ST_ROUND => state_next <= ST_RES;
-         when ST_RES =>  state_next <= ST_INIT;
+         when ST_ROUND => state_next <= ST_INIT;
        end case;
-      end process CP_NST.
+      end process CP_NSL;
     
     --control path: output logic
     CP_OL: ready <= '1' when state_reg = ST_INIT else '0';
@@ -99,15 +103,15 @@ architecture rtl of sqroot_seq is
       end process DP_DR;
     
     --data path: internal status signal
-    iss_ start <= '1' when ?????? else '0';                                --!!!!!!!!TO BE CHECKED!!!!!!!!!!!!!!
-    iss_looping <= '1' when (delta_next >= unsigned(1,NBITS)) else '0';             --!!!!!!!!TO BE CHECKED!!!!!!!!!!!!!!
-    iss_round <= '1' when (roundup = '1' and (res > root)) else '0';
-    iss_if <= when (root + delta) <= res else '0';
+    iss_start <= '1' when start = '1' else '0';                                     
+    iss_looping <= '1' when (delta_next >= to_unsigned(1,NBITS)) else '0';             --!!!!!!!!TO BE CHECKED!!!!!!!!!!!!!!
+    iss_round <= '1' when (roundup = '1' and (res_reg > root_reg)) else '0';
+    iss_if <= '1' when ((root_reg + delta_reg) <= res_reg) else '0';
     
     --data path; routing mux
     DP_RMUX: process(state_reg,arg,root_reg,delta_reg,res_reg)
       begin
-        root_next <= root_reg; --avoid latches
+        root_next <= root_reg;    --avoid latches
         delta_next <= delta_reg;
         res_next <= res_reg;
         
@@ -117,20 +121,22 @@ architecture rtl of sqroot_seq is
                             res_next <= unsigned(arg(NBITS-1 downto 0)); 
                             root_next <= (others => '0');
                             
-          when ST_IF =>     res_next <= res - (root_reg + delta_reg);
-                            root_next <= root + (delta_reg(NBITS-2 downto 0) & '0');
+          when ST_IF =>     res_next <= fuo_if_res;
+                            root_next <= fuo_if_root;
                             
-          when ST_COMPT =>  root_next(NBITS-1 downto 0) <= '0' & root_reg(NBITS-1 downto 1);   --shift by 1 (divide by 2)
-                            delta_next(NBITS-1 downto 0) <= "00" & delta_reg(NBITS-1 downto 2);  --shift by 2 (divide by 4)
+          when ST_COMP =>   root_next(NBITS-1 downto 0) <= fuo_comp_root;
+                            delta_next(NBITS-1 downto 0) <= fuo_comp_delta;
                             
-          when ST_ROUND =>  root_next <= root_reg + unsigned(1,NBITS);
-          
-          when ST_RES =>    null; 
+          when ST_ROUND =>  root_next <= fuo_round;
         end case;
       end process DP_RMUX;
       
     --data path: functional units
-      --none
+    fuo_if_res <= res_reg - (root_reg + delta_reg);
+    fuo_if_root <= root_reg + (delta_reg(NBITS-2 downto 0) & '0'); 
+    fuo_comp_root <= '0' & root_reg(NBITS-1 downto 1);   --shift by 1 (divide by 2)
+    fuo_comp_delta <= "00" & delta_reg(NBITS-1 downto 2);  --shift by 2 (divide by 4)
+    fuo_round <= root_reg + to_unsigned(1,NBITS);
       
     --data phat: data output
     sqroot <= std_logic_vector(root_reg(NBITS/2 downto 0)); 

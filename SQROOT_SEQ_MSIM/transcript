@@ -7,8 +7,288 @@
 # //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
 # //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
 # //
-# reading modelsim.ini
-# Loading project sqroot_comb
-# reading modelsim.ini
 # reading /softs/mentor/msim/10.0a/linux/../modelsim.ini
 # Loading project SQROOT_SEQ
+vsim SQROOT_SEQ.sqroot_seq
+# vsim SQROOT_SEQ.sqroot_seq 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading SQROOT_SEQ.sqroot_seq(rtl)
+add wave  \
+sim:/sqroot_seq/NBITS \
+sim:/sqroot_seq/arg \
+sim:/sqroot_seq/roundup \
+sim:/sqroot_seq/clk \
+sim:/sqroot_seq/nRst \
+sim:/sqroot_seq/start \
+sim:/sqroot_seq/sqroot \
+sim:/sqroot_seq/ready
+force -freeze sim:/sqroot_seq/clk 1 0, 0 {50 ns} -r 100
+force -freeze sim:/sqroot_seq/nRst 0 0
+run
+# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq
+force -freeze sim:/sqroot_seq/roundup 0 0
+force -freeze sim:/sqroot_seq/arg 00001000 0
+run
+run
+run
+run
+force -freeze sim:/sqroot_seq/start 1 0
+run
+run
+force -freeze sim:/sqroot_seq/nRst 1 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run -all
+# Break key hit 
+# Simulation stop requested.
+restart
+add wave  \
+sim:/sqroot_seq/state_reg \
+sim:/sqroot_seq/state_next \
+sim:/sqroot_seq/delta_reg \
+sim:/sqroot_seq/delta_next \
+sim:/sqroot_seq/root_reg \
+sim:/sqroot_seq/root_next \
+sim:/sqroot_seq/res_reg \
+sim:/sqroot_seq/res_next \
+sim:/sqroot_seq/iss_start \
+sim:/sqroot_seq/iss_looping \
+sim:/sqroot_seq/iss_round \
+sim:/sqroot_seq/iss_if \
+sim:/sqroot_seq/fuo_if_res \
+sim:/sqroot_seq/fuo_if_root \
+sim:/sqroot_seq/fuo_comp_root \
+sim:/sqroot_seq/fuo_comp_delta \
+sim:/sqroot_seq/fuo_round \
+sim:/sqroot_seq/RST_STATE
+run
+# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq
+force -freeze sim:/sqroot_seq/nRst 0 0
+force -freeze sim:/sqroot_seq/clk 1 0, 0 {25 ns} -r 50
+force -freeze sim:/sqroot_seq/arg 00001000 0
+ls
+# SQROOT_SEQ
+# SQROOT_SEQ.cr.mti
+# SQROOT_SEQ.mpf
+# vsim.wlf
+do /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/BIN/debug.tcl
+# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/BIN/debug.do
+# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_seq_rtl.vhd
+# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity sqroot_seq
+# -- Compiling architecture rtl of sqroot_seq
+# 
+# 
+# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd
+# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity sqroot_comb_tb
+# -- Compiling architecture bench of sqroot_comb_tb
+# 
+# 
+# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_rtl_conf.vhd
+# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+# -- Loading package STANDARD
+# -- Compiling configuration sqroot_comb_tb_rtl_conf
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading entity sqroot_comb_tb
+# -- Loading architecture bench of sqroot_comb_tb
+# ** Error: (vcom-11) Could not find work.sqroot_comb.
+# ** Error: /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_rtl_conf.vhd(4): (vcom-1195) Cannot find expanded name "work.sqroot_comb".
+# ** Error: /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_rtl_conf.vhd(4): (vcom-1105) Name (indexed name) does not denote an entity name.
+# ** Error: /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_rtl_conf.vhd(4): Unknown expanded name.
+# ** Error: /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_rtl_conf.vhd(7): VHDL Compiler exiting
+# 
+# 
+# 3 compiles, 1 failed with 1 error. 
+# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_rtl_conf.vhd
+# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+# -- Loading package STANDARD
+# -- Compiling configuration sqroot_comb_tb_rtl_conf
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading entity sqroot_comb_tb
+# -- Loading architecture bench of sqroot_comb_tb
+# ** Error: (vcom-11) Could not find work.sqroot_comb.
+# ** Error: /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_rtl_conf.vhd(4): (vcom-1195) Cannot find expanded name "work.sqroot_comb".
+# ** Error: /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_rtl_conf.vhd(4): (vcom-1105) Name (indexed name) does not denote an entity name.
+# ** Error: /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_rtl_conf.vhd(4): Unknown expanded name.
+# ** Error: /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_rtl_conf.vhd(7): VHDL Compiler exiting
+# 
+# 
+# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_seq_rtl.vhd
+# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity sqroot_seq
+# -- Compiling architecture rtl of sqroot_seq
+# 
+# 
+
+
+restart
+# Loading SQROOT_SEQ.sqroot_seq(rtl)
+do /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/BIN/debug.tcl
+# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq
+do /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/BIN/debug.tcl
+# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq
+do /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/BIN/debug.tcl
+# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq
