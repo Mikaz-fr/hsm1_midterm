@@ -7,78 +7,32 @@
 # //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
 # //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
 # //
-# reading modelsim.ini
-# Loading project sqroot_comb
-# reading modelsim.ini
 # reading /softs/mentor/msim/10.0a/linux/../modelsim.ini
 # Loading project SQROOT_SEQ
-# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_seq_rtl.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity sqroot_seq
-# -- Compiling architecture rtl of sqroot_seq
+# vlog -work work -novopt -nocovercells /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v
+# Model Technology ModelSim SE vlog 10.0a Compiler 2011.02 Feb 21 2011
+# -- Compiling module sqroot_seq_NBITS8_DW01_sub_2
+# -- Compiling module sqroot_seq_NBITS8_DW01_add_3
+# -- Compiling module sqroot_seq_NBITS8_DW01_inc_1
+# -- Compiling module sqroot_seq_NBITS8_DW01_sub_4
+# -- Compiling module sqroot_seq_NBITS8_DW01_add_4
+# -- Compiling module sqroot_seq_NBITS8
+# 
+# Top level modules:
+# 	sqroot_seq_NBITS8
 # 
 # 
-# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Compiling entity sqroot_seq_tb
-# -- Compiling architecture bench of sqroot_seq_tb
-# ** Error: /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd(19): near "end": expecting ';' or ')'
-# ** Error: /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd(24): (vcom-1294) Declaration with designator "arg" already exists in this region.
-# ** Prior declaration of "arg" is at /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd(12).
-# ** Error: /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd(26): (vcom-1294) Declaration with designator "roundup" already exists in this region.
-# ** Prior declaration of "roundup" is at /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd(13).
-# ** Error: /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd(29): (vcom-1294) Declaration with designator "CLK" already exists in this region.
-# ** Prior declaration of "clk" is at /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd(14).
-# ** Error: /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd(30): (vcom-1294) Declaration with designator "nRst" already exists in this region.
-# ** Prior declaration of "nRst" is at /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd(15).
-# ** Error: /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd(31): (vcom-1294) Declaration with designator "start" already exists in this region.
-# ** Prior declaration of "start" is at /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd(16).
-# ** Error: /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd(32): (vcom-1294) Declaration with designator "ready" already exists in this region.
-# ** Prior declaration of "ready" is at /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd(18).
-# ** Error: /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd(36): Object 'sqroot' cannot be used within the same interface in which it is declared.
-# ** Warning: /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd(45): Class SIGNAL parameter "rup" cannot have a default expression.
-# ** Error: /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd(73): (vcom-1451) Actual (constant "i") for formal "argn" is not signal name.
-# ** Error: /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd(73): (vcom-1037) Signal formal "rup" has OPEN or no actual associated with it.
-# ** Error: /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd(74): (vcom-1451) Actual (constant "i") for formal "argn" is not signal name.
-# ** Error: /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd(74): (vcom-1451) Actual (enumeration literal '1') for formal "rup" is not signal name.
-# ** Error: /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd(79): VHDL Compiler exiting
+# vlog -work work -novopt -nocovercells /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk10_mapped.v
+# Model Technology ModelSim SE vlog 10.0a Compiler 2011.02 Feb 21 2011
+# -- Compiling module sqroot_seq_NBITS8_DW01_add_0
+# -- Compiling module sqroot_seq_NBITS8_DW01_inc_0
+# -- Compiling module sqroot_seq_NBITS8_DW01_add_1
+# -- Compiling module sqroot_seq_NBITS8_DW01_sub_1
+# -- Compiling module sqroot_seq_NBITS8_DW01_sub_0
+# -- Compiling module sqroot_seq_NBITS8
 # 
-# 
-# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_rtl_conf.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Compiling configuration sqroot_seq_tb_rtl_conf
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Loading entity sqroot_seq_tb
-# ** Error: (vcom-11) Could not find work.sqroot_seq_tb(bench).
-# ** Error: /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_rtl_conf.vhd(3): Block specification must name an architecture.
-# ** Error: /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_rtl_conf.vhd(3): VHDL Compiler exiting
-# 
-# 
-# 3 compiles, 2 failed with 9 errors. 
-# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Compiling entity sqroot_seq_tb
-# -- Compiling architecture bench of sqroot_seq_tb
+# Top level modules:
+# 	sqroot_seq_NBITS8
 # 
 # 
 # vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_seq_rtl.vhd
@@ -119,10 +73,21 @@
 # -- Loading entity sqroot_seq
 # 
 # 
-# 3 compiles, 0 failed with no errors. 
-# Compile of sqroot_seq_rtl.vhd was successful.
-# Compile of sqroot_seq_tb.vhd was successful.
-# Compile of sqroot_seq_tb_rtl_conf.vhd was successful.
+# vcom -work work -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_mapped_conf.vhd
+# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+# -- Loading package STANDARD
+# -- Compiling configuration sqroot_seq_tb_mapped_conf
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading entity sqroot_seq_tb
+# -- Loading architecture bench of sqroot_seq_tb
+# -- Loading package vl_types
+# -- Loading entity sqroot_seq_NBITS8
+# 
+# 
+# 6 compiles, 0 failed with no errors. 
 vsim -t ns -wlf ../OUT/sqroot_seq_rtl.wlf SQROOT_SEQ.sqroot_seq_tb_rtl_conf
 # vsim -do ../BIN/sqroot_seq_rtl.do -t ns -wlf ../OUT/sqroot_seq_rtl.wlf SQROOT_SEQ.sqroot_seq_tb_rtl_conf 
 # Loading std.standard
@@ -135,8 +100,461 @@ vsim -t ns -wlf ../OUT/sqroot_seq_rtl.wlf SQROOT_SEQ.sqroot_seq_tb_rtl_conf
 # Loading SQROOT_SEQ.sqroot_seq_tb_rtl_conf
 # Loading SQROOT_SEQ.sqroot_seq_tb(bench)
 # Loading SQROOT_SEQ.sqroot_seq(rtl)
-# ../BIN/sqroot_seq_rtl.do 
-# invalid command name "../BIN/sqroot_seq_rtl.do"
+# do ../BIN/sqroot_seq_rtl.do 
+run
+# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq_tb/UUT
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq_tb/UUT
+run
+run
+run
+run
+run
+run
+# vlog -work work -novopt -nocovercells /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v
+# Model Technology ModelSim SE vlog 10.0a Compiler 2011.02 Feb 21 2011
+# -- Compiling module sqroot_seq_NBITS8_DW01_sub_2
+# -- Compiling module sqroot_seq_NBITS8_DW01_add_3
+# -- Compiling module sqroot_seq_NBITS8_DW01_inc_1
+# -- Compiling module sqroot_seq_NBITS8_DW01_sub_4
+# -- Compiling module sqroot_seq_NBITS8_DW01_add_4
+# -- Compiling module sqroot_seq_NBITS8
+# 
+# Top level modules:
+# 	sqroot_seq_NBITS8
+# 
+# 
+# vlog -work work -novopt -nocovercells /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk10_mapped.v
+# Model Technology ModelSim SE vlog 10.0a Compiler 2011.02 Feb 21 2011
+# -- Compiling module sqroot_seq_NBITS8_DW01_add_0
+# -- Compiling module sqroot_seq_NBITS8_DW01_inc_0
+# -- Compiling module sqroot_seq_NBITS8_DW01_add_1
+# -- Compiling module sqroot_seq_NBITS8_DW01_sub_1
+# -- Compiling module sqroot_seq_NBITS8_DW01_sub_0
+# -- Compiling module sqroot_seq_NBITS8
+# 
+# Top level modules:
+# 	sqroot_seq_NBITS8
+# 
+# 
+# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_seq_rtl.vhd
+# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity sqroot_seq
+# -- Compiling architecture rtl of sqroot_seq
+# 
+# 
+# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd
+# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity sqroot_seq_tb
+# -- Compiling architecture bench of sqroot_seq_tb
+# 
+# 
+# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_rtl_conf.vhd
+# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+# -- Loading package STANDARD
+# -- Compiling configuration sqroot_seq_tb_rtl_conf
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading entity sqroot_seq_tb
+# -- Loading architecture bench of sqroot_seq_tb
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity sqroot_seq
+# 
+# 
+# vcom -work work -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_mapped_conf.vhd
+# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+# -- Loading package STANDARD
+# -- Compiling configuration sqroot_seq_tb_mapped_conf
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading entity sqroot_seq_tb
+# -- Loading architecture bench of sqroot_seq_tb
+# -- Loading package vl_types
+# -- Loading entity sqroot_seq_NBITS8
+# 
+# 
+# 6 compiles, 0 failed with no errors. 
+restart
+# Loading SQROOT_SEQ.sqroot_seq_tb_rtl_conf
+# Loading SQROOT_SEQ.sqroot_seq_tb(bench)
+# Loading SQROOT_SEQ.sqroot_seq(rtl)
+run
+# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq_tb/UUT
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq_tb/UUT
+run
+run
+run
+# vlog -work work -novopt -nocovercells /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v
+# Model Technology ModelSim SE vlog 10.0a Compiler 2011.02 Feb 21 2011
+# -- Compiling module sqroot_seq_NBITS8_DW01_sub_2
+# -- Compiling module sqroot_seq_NBITS8_DW01_add_3
+# -- Compiling module sqroot_seq_NBITS8_DW01_inc_1
+# -- Compiling module sqroot_seq_NBITS8_DW01_sub_4
+# -- Compiling module sqroot_seq_NBITS8_DW01_add_4
+# -- Compiling module sqroot_seq_NBITS8
+# 
+# Top level modules:
+# 	sqroot_seq_NBITS8
+# 
+# 
+# vlog -work work -novopt -nocovercells /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk10_mapped.v
+# Model Technology ModelSim SE vlog 10.0a Compiler 2011.02 Feb 21 2011
+# -- Compiling module sqroot_seq_NBITS8_DW01_add_0
+# -- Compiling module sqroot_seq_NBITS8_DW01_inc_0
+# -- Compiling module sqroot_seq_NBITS8_DW01_add_1
+# -- Compiling module sqroot_seq_NBITS8_DW01_sub_1
+# -- Compiling module sqroot_seq_NBITS8_DW01_sub_0
+# -- Compiling module sqroot_seq_NBITS8
+# 
+# Top level modules:
+# 	sqroot_seq_NBITS8
+# 
+# 
+# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_seq_rtl.vhd
+# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity sqroot_seq
+# -- Compiling architecture rtl of sqroot_seq
+# 
+# 
+# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd
+# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity sqroot_seq_tb
+# -- Compiling architecture bench of sqroot_seq_tb
+# 
+# 
+# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_rtl_conf.vhd
+# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+# -- Loading package STANDARD
+# -- Compiling configuration sqroot_seq_tb_rtl_conf
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading entity sqroot_seq_tb
+# -- Loading architecture bench of sqroot_seq_tb
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity sqroot_seq
+# 
+# 
+# vcom -work work -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_mapped_conf.vhd
+# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+# -- Loading package STANDARD
+# -- Compiling configuration sqroot_seq_tb_mapped_conf
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading entity sqroot_seq_tb
+# -- Loading architecture bench of sqroot_seq_tb
+# -- Loading package vl_types
+# -- Loading entity sqroot_seq_NBITS8
+# 
+# 
+# 6 compiles, 0 failed with no errors. 
+restart
+# Loading SQROOT_SEQ.sqroot_seq_tb_rtl_conf
+# Loading SQROOT_SEQ.sqroot_seq_tb(bench)
+# Loading SQROOT_SEQ.sqroot_seq(rtl)
+run
+# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq_tb/UUT
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq_tb/UUT
+run
+run
+run
+run
+# vlog -work work -novopt -nocovercells /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v
+# Model Technology ModelSim SE vlog 10.0a Compiler 2011.02 Feb 21 2011
+# -- Compiling module sqroot_seq_NBITS8_DW01_sub_2
+# -- Compiling module sqroot_seq_NBITS8_DW01_add_3
+# -- Compiling module sqroot_seq_NBITS8_DW01_inc_1
+# -- Compiling module sqroot_seq_NBITS8_DW01_sub_4
+# -- Compiling module sqroot_seq_NBITS8_DW01_add_4
+# -- Compiling module sqroot_seq_NBITS8
+# 
+# Top level modules:
+# 	sqroot_seq_NBITS8
+# 
+# 
+# vlog -work work -novopt -nocovercells /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk10_mapped.v
+# Model Technology ModelSim SE vlog 10.0a Compiler 2011.02 Feb 21 2011
+# -- Compiling module sqroot_seq_NBITS8_DW01_add_0
+# -- Compiling module sqroot_seq_NBITS8_DW01_inc_0
+# -- Compiling module sqroot_seq_NBITS8_DW01_add_1
+# -- Compiling module sqroot_seq_NBITS8_DW01_sub_1
+# -- Compiling module sqroot_seq_NBITS8_DW01_sub_0
+# -- Compiling module sqroot_seq_NBITS8
+# 
+# Top level modules:
+# 	sqroot_seq_NBITS8
+# 
+# 
+# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_seq_rtl.vhd
+# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity sqroot_seq
+# -- Compiling architecture rtl of sqroot_seq
+# 
+# 
+# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd
+# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity sqroot_seq_tb
+# -- Compiling architecture bench of sqroot_seq_tb
+# 
+# 
+# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_rtl_conf.vhd
+# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+# -- Loading package STANDARD
+# -- Compiling configuration sqroot_seq_tb_rtl_conf
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading entity sqroot_seq_tb
+# -- Loading architecture bench of sqroot_seq_tb
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity sqroot_seq
+# 
+# 
+# vcom -work work -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_mapped_conf.vhd
+# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+# -- Loading package STANDARD
+# -- Compiling configuration sqroot_seq_tb_mapped_conf
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading entity sqroot_seq_tb
+# -- Loading architecture bench of sqroot_seq_tb
+# -- Loading package vl_types
+# -- Loading entity sqroot_seq_NBITS8
+# 
+# 
+# 6 compiles, 0 failed with no errors. 
+restart
+# Loading SQROOT_SEQ.sqroot_seq_tb_rtl_conf
+# Loading SQROOT_SEQ.sqroot_seq_tb(bench)
+# Loading SQROOT_SEQ.sqroot_seq(rtl)
+run
+# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq_tb/UUT
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq_tb/UUT
+run
+run
+run
+run
+run
+run
+# vlog -work work -novopt -nocovercells /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v
+# Model Technology ModelSim SE vlog 10.0a Compiler 2011.02 Feb 21 2011
+# -- Compiling module sqroot_seq_NBITS8_DW01_sub_2
+# -- Compiling module sqroot_seq_NBITS8_DW01_add_3
+# -- Compiling module sqroot_seq_NBITS8_DW01_inc_1
+# -- Compiling module sqroot_seq_NBITS8_DW01_sub_4
+# -- Compiling module sqroot_seq_NBITS8_DW01_add_4
+# -- Compiling module sqroot_seq_NBITS8
+# 
+# Top level modules:
+# 	sqroot_seq_NBITS8
+# 
+# 
+# vlog -work work -novopt -nocovercells /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk10_mapped.v
+# Model Technology ModelSim SE vlog 10.0a Compiler 2011.02 Feb 21 2011
+# -- Compiling module sqroot_seq_NBITS8_DW01_add_0
+# -- Compiling module sqroot_seq_NBITS8_DW01_inc_0
+# -- Compiling module sqroot_seq_NBITS8_DW01_add_1
+# -- Compiling module sqroot_seq_NBITS8_DW01_sub_1
+# -- Compiling module sqroot_seq_NBITS8_DW01_sub_0
+# -- Compiling module sqroot_seq_NBITS8
+# 
+# Top level modules:
+# 	sqroot_seq_NBITS8
+# 
+# 
+# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_seq_rtl.vhd
+# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity sqroot_seq
+# -- Compiling architecture rtl of sqroot_seq
+# 
+# 
+# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd
+# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity sqroot_seq_tb
+# -- Compiling architecture bench of sqroot_seq_tb
+# 
+# 
+# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_rtl_conf.vhd
+# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+# -- Loading package STANDARD
+# -- Compiling configuration sqroot_seq_tb_rtl_conf
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading entity sqroot_seq_tb
+# -- Loading architecture bench of sqroot_seq_tb
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity sqroot_seq
+# 
+# 
+# vcom -work work -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_mapped_conf.vhd
+# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+# -- Loading package STANDARD
+# -- Compiling configuration sqroot_seq_tb_mapped_conf
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading entity sqroot_seq_tb
+# -- Loading architecture bench of sqroot_seq_tb
+# -- Loading package vl_types
+# -- Loading entity sqroot_seq_NBITS8
+# 
+# 
+# 6 compiles, 0 failed with no errors. 
+restart
+# Loading SQROOT_SEQ.sqroot_seq_tb_rtl_conf
+# Loading SQROOT_SEQ.sqroot_seq_tb(bench)
+# Loading SQROOT_SEQ.sqroot_seq(rtl)
+run
+# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq_tb/UUT
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq_tb/UUT
+run
+run -all
+quit -vsim
+# unknown switch: -vsim
+quit -sim
+vsim -L /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog -sdftyp uut=/home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk10_mapped.sdf -t ps -wlf {../OUT/sqroot_seq_nbits8_clk10_mapped.wlf } SQROOT_SEQ.sqroot_seq_tb_mapped_conf
+# vsim -L /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog -do ../BIN/sqroot_seq_nbits8_clk10_mapped.do -sdftyp uut=/home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk10_mapped.sdf -t ps -wlf {../OUT/sqroot_seq_nbits8_clk10_mapped.wlf } SQROOT_SEQ.sqroot_seq_tb_mapped_conf 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading verilog.vl_types(body)
+# Loading SQROOT_SEQ.sqroot_seq_tb_mapped_conf
+# Loading SQROOT_SEQ.sqroot_seq_tb(bench)
+# Loading SQROOT_SEQ.sqroot_seq_NBITS8
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.DFC3
+# Loading SQROOT_SEQ.sqroot_seq_NBITS8_DW01_add_0
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.ADD32
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.LOGIC0
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.INV3
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NAND22
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.XOR21
+# Loading SQROOT_SEQ.sqroot_seq_NBITS8_DW01_inc_0
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.ADD22
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.XOR20
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.CLKIN0
+# Loading SQROOT_SEQ.sqroot_seq_NBITS8_DW01_add_1
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.XOR31
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.BUF2
+# Loading SQROOT_SEQ.sqroot_seq_NBITS8_DW01_sub_1
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.XNR21
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NOR21
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.LOGIC1
+# Loading SQROOT_SEQ.sqroot_seq_NBITS8_DW01_sub_0
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.DFC1
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.OAI220
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NOR40
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NOR31
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NAND31
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NOR30
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NAND20
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.OAI210
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.AOI220
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.AOI2110
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.OAI2110
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.OAI310
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.AOI210
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NOR20
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.MAJ31
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NAND30
+# Loading instances from /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk10_mapped.sdf
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.U_FD_P_RB_NO
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk10_mapped.v(183): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /sqroot_seq_tb/UUT/add_110
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk10_mapped.v(183): [TFMPC] - Missing connection for port 'CO'.
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.U_ADDR2_S
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.U_ADDR2_C
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk10_mapped.v(188): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /sqroot_seq_tb/UUT/add_139
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk10_mapped.v(188): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk10_mapped.v(191): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /sqroot_seq_tb/UUT/sub_1_root_sub_0_root_sub_138
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk10_mapped.v(191): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk10_mapped.v(194): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /sqroot_seq_tb/UUT/sub_0_root_sub_0_root_sub_138
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk10_mapped.v(194): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk10_mapped.v(196): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /sqroot_seq_tb/UUT/root_reg_reg_0_
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk10_mapped.v(196): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk10_mapped.v(215): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /sqroot_seq_tb/UUT/state_reg_reg_0_
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk10_mapped.v(215): [TFMPC] - Missing connection for port 'QN'.
+# Loading timing data from /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk10_mapped.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /sqroot_seq_tb File: /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd
+# ../BIN/sqroot_seq_nbits8_clk10_mapped.do 
+# invalid command name "../BIN/sqroot_seq_nbits8_clk10_mapped.do"
 add wave  \
 sim:/sqroot_seq_tb/arg \
 sim:/sqroot_seq_tb/z \
@@ -147,142 +565,46 @@ sim:/sqroot_seq_tb/CLK \
 sim:/sqroot_seq_tb/nRst \
 sim:/sqroot_seq_tb/start \
 sim:/sqroot_seq_tb/ready \
+sim:/sqroot_seq_tb/sim_done \
 sim:/sqroot_seq_tb/NBITS \
 sim:/sqroot_seq_tb/CLK_FREQ
 add wave  \
-sim:/sqroot_seq_tb/UUT/NBITS \
 sim:/sqroot_seq_tb/UUT/arg \
+sim:/sqroot_seq_tb/UUT/sqroot \
 sim:/sqroot_seq_tb/UUT/roundup \
 sim:/sqroot_seq_tb/UUT/clk \
 sim:/sqroot_seq_tb/UUT/nRst \
 sim:/sqroot_seq_tb/UUT/start \
-sim:/sqroot_seq_tb/UUT/sqroot \
 sim:/sqroot_seq_tb/UUT/ready
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/BIN/sqroot_seq_rtl.do
-run
-# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq_tb/UUT
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq_tb/UUT
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-restart
-run
-# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq_tb/UUT
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq_tb/UUT
-# Break in Process line__46 at /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd line 73
-run
-# Break in Subprogram compute at /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd line 52
-run
-run
-# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_seq_rtl.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity sqroot_seq
-# -- Compiling architecture rtl of sqroot_seq
-# 
-# 
-# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Compiling entity sqroot_seq_tb
-# -- Compiling architecture bench of sqroot_seq_tb
-# 
-# 
-# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_rtl_conf.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Compiling configuration sqroot_seq_tb_rtl_conf
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Loading entity sqroot_seq_tb
-# -- Loading architecture bench of sqroot_seq_tb
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading entity sqroot_seq
-# 
-# 
-# 3 compiles, 0 failed with no errors. 
-restart
-# Loading SQROOT_SEQ.sqroot_seq_tb_rtl_conf
-# Loading SQROOT_SEQ.sqroot_seq_tb(bench)
-# Loading SQROOT_SEQ.sqroot_seq(rtl)
-run
-# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq_tb/UUT
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq_tb/UUT
-# Break in Process line__46 at /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd line 73
-run
-run
-run
-run
-run
-run
-run
-run
 run
 run
 run -all
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
+# vlog -work work -novopt -nocovercells /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v
+# Model Technology ModelSim SE vlog 10.0a Compiler 2011.02 Feb 21 2011
+# -- Compiling module sqroot_seq_NBITS8_DW01_sub_2
+# -- Compiling module sqroot_seq_NBITS8_DW01_add_3
+# -- Compiling module sqroot_seq_NBITS8_DW01_inc_1
+# -- Compiling module sqroot_seq_NBITS8_DW01_sub_4
+# -- Compiling module sqroot_seq_NBITS8_DW01_add_4
+# -- Compiling module sqroot_seq_NBITS8
+# 
+# Top level modules:
+# 	sqroot_seq_NBITS8
+# 
+# 
+# vlog -work work -novopt -nocovercells /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk10_mapped.v
+# Model Technology ModelSim SE vlog 10.0a Compiler 2011.02 Feb 21 2011
+# -- Compiling module sqroot_seq_NBITS8_DW01_add_0
+# -- Compiling module sqroot_seq_NBITS8_DW01_inc_0
+# -- Compiling module sqroot_seq_NBITS8_DW01_add_1
+# -- Compiling module sqroot_seq_NBITS8_DW01_sub_1
+# -- Compiling module sqroot_seq_NBITS8_DW01_sub_0
+# -- Compiling module sqroot_seq_NBITS8
+# 
+# Top level modules:
+# 	sqroot_seq_NBITS8
+# 
+# 
 # vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_seq_rtl.vhd
 # Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
 # -- Loading package STANDARD
@@ -321,620 +643,976 @@ run
 # -- Loading entity sqroot_seq
 # 
 # 
-# 3 compiles, 0 failed with no errors. 
-restart
-# Loading SQROOT_SEQ.sqroot_seq_tb_rtl_conf
+# vcom -work work -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_mapped_conf.vhd
+# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+# -- Loading package STANDARD
+# -- Compiling configuration sqroot_seq_tb_mapped_conf
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading entity sqroot_seq_tb
+# -- Loading architecture bench of sqroot_seq_tb
+# -- Loading package vl_types
+# -- Loading entity sqroot_seq_NBITS8
+# 
+# 
+# 6 compiles, 0 failed with no errors. 
+quit -sim
+# vlog -work work -novopt -nocovercells /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v
+# Model Technology ModelSim SE vlog 10.0a Compiler 2011.02 Feb 21 2011
+# -- Compiling module sqroot_seq_NBITS8_DW01_sub_2
+# -- Compiling module sqroot_seq_NBITS8_DW01_add_3
+# -- Compiling module sqroot_seq_NBITS8_DW01_inc_1
+# -- Compiling module sqroot_seq_NBITS8_DW01_sub_4
+# -- Compiling module sqroot_seq_NBITS8_DW01_add_4
+# -- Compiling module sqroot_seq_NBITS8
+# 
+# Top level modules:
+# 	sqroot_seq_NBITS8
+# 
+# 
+# vlog -work work -novopt -nocovercells /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk10_mapped.v
+# Model Technology ModelSim SE vlog 10.0a Compiler 2011.02 Feb 21 2011
+# -- Compiling module sqroot_seq_NBITS8_DW01_add_0
+# -- Compiling module sqroot_seq_NBITS8_DW01_inc_0
+# -- Compiling module sqroot_seq_NBITS8_DW01_add_1
+# -- Compiling module sqroot_seq_NBITS8_DW01_sub_1
+# -- Compiling module sqroot_seq_NBITS8_DW01_sub_0
+# -- Compiling module sqroot_seq_NBITS8
+# 
+# Top level modules:
+# 	sqroot_seq_NBITS8
+# 
+# 
+# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_seq_rtl.vhd
+# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity sqroot_seq
+# -- Compiling architecture rtl of sqroot_seq
+# 
+# 
+# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd
+# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity sqroot_seq_tb
+# -- Compiling architecture bench of sqroot_seq_tb
+# 
+# 
+# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_rtl_conf.vhd
+# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+# -- Loading package STANDARD
+# -- Compiling configuration sqroot_seq_tb_rtl_conf
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading entity sqroot_seq_tb
+# -- Loading architecture bench of sqroot_seq_tb
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity sqroot_seq
+# 
+# 
+# vcom -work work -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_mapped_conf.vhd
+# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+# -- Loading package STANDARD
+# -- Compiling configuration sqroot_seq_tb_mapped_conf
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading entity sqroot_seq_tb
+# -- Loading architecture bench of sqroot_seq_tb
+# -- Loading package vl_types
+# -- Loading entity sqroot_seq_NBITS8
+# 
+# 
+# 6 compiles, 0 failed with no errors. 
+vsim -L /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog -sdftyp uut=/home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf -t ps -wlf {../OUT/sqroot_seq_nbits8_clk3.5_mapped.wlf } SQROOT_SEQ.sqroot_seq_tb_mapped_conf
+# vsim -L /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog -do ../BIN/sqroot_seq_nbits8_clk3.5_mapped.do -sdftyp uut=/home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf -t ps -wlf {../OUT/sqroot_seq_nbits8_clk3.5_mapped.wlf } SQROOT_SEQ.sqroot_seq_tb_mapped_conf 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading verilog.vl_types(body)
+# Loading SQROOT_SEQ.sqroot_seq_tb_mapped_conf
+# SDF 10.0a Compiler 2011.02 Feb 21 2011
 # Loading SQROOT_SEQ.sqroot_seq_tb(bench)
-# Loading SQROOT_SEQ.sqroot_seq(rtl)
+# Loading SQROOT_SEQ.sqroot_seq_NBITS8
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.DFC3
+# Loading SQROOT_SEQ.sqroot_seq_NBITS8_DW01_add_0
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.ADD32
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.LOGIC0
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.INV3
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NAND22
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.XOR21
+# Loading SQROOT_SEQ.sqroot_seq_NBITS8_DW01_inc_0
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.ADD22
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.XOR20
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.CLKIN0
+# Loading SQROOT_SEQ.sqroot_seq_NBITS8_DW01_add_1
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.XOR31
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.BUF2
+# Loading SQROOT_SEQ.sqroot_seq_NBITS8_DW01_sub_1
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.XNR21
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NOR21
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.LOGIC1
+# Loading SQROOT_SEQ.sqroot_seq_NBITS8_DW01_sub_0
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.DFC1
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.OAI220
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NOR40
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NOR31
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NAND31
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NOR30
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NAND20
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.OAI210
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.AOI220
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.AOI2110
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.OAI2110
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.OAI310
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.AOI210
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NOR20
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.MAJ31
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NAND30
+# Loading instances from /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf
+# ** Error: lock failed. Retrying 1 times, errno 11
+# ** Error: lock failed. Retrying 2 times, errno 11
+# ** Error: lock failed. Retrying 3 times, errno 11
+# ** Error: lock failed. Give up retry 3, errno 11
+# ** Error: Cannot lock WLF file: ../OUT/sqroot_seq_nbits8_clk3.5_mapped.wlf 
+#           errno 11: Resource temporarily unavailable.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: ../OUT/sqroot_seq_nbits8_clk3.5_mapped.wlf 
+#           File in use by:   Hostname:   ProcessID: 3
+#           Attempting to use alternate WLF file "../OUT/wlftodOqPW".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: ../OUT/sqroot_seq_nbits8_clk3.5_mapped.wlf 
+#           Using alternate file: ../OUT/wlftodOqPW
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(164): Failed to find INSTANCE 'U217'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(127): Failed to find INSTANCE 'U218'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(112): Failed to find INSTANCE 'U219'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(159): Failed to find INSTANCE 'U220'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(157): Failed to find INSTANCE 'U221'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(152): Failed to find INSTANCE 'U222'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(151): Failed to find INSTANCE 'U223'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(149): Failed to find INSTANCE 'U224'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(145): Failed to find INSTANCE 'U225'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(143): Failed to find INSTANCE 'U226'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(140): Failed to find INSTANCE 'U227'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(137): Failed to find INSTANCE 'U228'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(135): Failed to find INSTANCE 'U229'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(135): Failed to find INSTANCE 'U230'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(132): Failed to find INSTANCE 'U231'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(129): Failed to find INSTANCE 'U232'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(46): Failed to find INSTANCE 'U233'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(38): Failed to find INSTANCE 'U234'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(121): Failed to find INSTANCE 'U235'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(37): Failed to find INSTANCE 'U236'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(122): Failed to find INSTANCE 'U237'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(119): Failed to find INSTANCE 'U238'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(116): Failed to find INSTANCE 'U239'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(113): Failed to find INSTANCE 'U240'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(73): Failed to find INSTANCE 'U241'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(109): Failed to find INSTANCE 'U242'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(107): Failed to find INSTANCE 'U243'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(103): Failed to find INSTANCE 'U244'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(102): Failed to find INSTANCE 'U245'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(100): Failed to find INSTANCE 'U246'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(96): Failed to find INSTANCE 'U247'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(95): Failed to find INSTANCE 'U248'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(92): Failed to find INSTANCE 'U249'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(90): Failed to find INSTANCE 'U250'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(82): Failed to find INSTANCE 'U251'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(83): Failed to find INSTANCE 'U252'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(81): Failed to find INSTANCE 'U253'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(79): Failed to find INSTANCE 'U254'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(76): Failed to find INSTANCE 'U255'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(78): Failed to find INSTANCE 'U256'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(75): Failed to find INSTANCE 'U257'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(57): Failed to find INSTANCE 'U258'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(71): Failed to find INSTANCE 'U259'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(64): Failed to find INSTANCE 'U260'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(66): Failed to find INSTANCE 'U261'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(62): Failed to find INSTANCE 'U262'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(59): Failed to find INSTANCE 'U263'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(55): Failed to find INSTANCE 'U264'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(53): Failed to find INSTANCE 'U265'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(19): Failed to find INSTANCE 'U266'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(50): Failed to find INSTANCE 'U267'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(41): Failed to find INSTANCE 'U268'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(42): Failed to find INSTANCE 'U269'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(26): Failed to find INSTANCE 'U270'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(34): Failed to find INSTANCE 'U271'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(36): Failed to find INSTANCE 'U272'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(27): Failed to find INSTANCE 'U273'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(28): Failed to find INSTANCE 'U274'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(20): Failed to find INSTANCE 'U275'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(21): Failed to find INSTANCE 'U276'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(18): Failed to find INSTANCE 'U277'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(458): Failed to find INSTANCE 'U10'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(452): Failed to find INSTANCE 'U100'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(445): Failed to find INSTANCE 'U101'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(449): Failed to find INSTANCE 'U102'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(447): Failed to find INSTANCE 'U103'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(309): Failed to find INSTANCE 'U104'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(444): Failed to find INSTANCE 'U105'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(442): Failed to find INSTANCE 'U106'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(440): Failed to find INSTANCE 'U107'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(439): Failed to find INSTANCE 'U108'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(437): Failed to find INSTANCE 'U110'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(530): Failed to find INSTANCE 'U12'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(39): Failed to find INSTANCE 'U17'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(482): Failed to find INSTANCE 'U25'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(534): Failed to find INSTANCE 'U31'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(502): Failed to find INSTANCE 'U36'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(529): Failed to find INSTANCE 'U52'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(528): Failed to find INSTANCE 'U53'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(494): Failed to find INSTANCE 'U54'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(457): Failed to find INSTANCE 'U55'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(469): Failed to find INSTANCE 'U56'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(522): Failed to find INSTANCE 'U57'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(23): Failed to find INSTANCE 'U58'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(466): Failed to find INSTANCE 'U59'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(453): Failed to find INSTANCE 'U60'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(503): Failed to find INSTANCE 'U61'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(513): Failed to find INSTANCE 'U62'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(444): Failed to find INSTANCE 'U63'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(472): Failed to find INSTANCE 'U64'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(47): Failed to find INSTANCE 'U65'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(507): Failed to find INSTANCE 'U66'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(464): Failed to find INSTANCE 'U67'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(503): Failed to find INSTANCE 'U68'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(467): Failed to find INSTANCE 'U69'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(449): Failed to find INSTANCE 'U7'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(500): Failed to find INSTANCE 'U70'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(499): Failed to find INSTANCE 'U71'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(495): Failed to find INSTANCE 'U72'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(446): Failed to find INSTANCE 'U73'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(494): Failed to find INSTANCE 'U74'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(481): Failed to find INSTANCE 'U75'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(473): Failed to find INSTANCE 'U76'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(489): Failed to find INSTANCE 'U77'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(487): Failed to find INSTANCE 'U78'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(485): Failed to find INSTANCE 'U79'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(484): Failed to find INSTANCE 'U80'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(483): Failed to find INSTANCE 'U81'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(456): Failed to find INSTANCE 'U82'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(480): Failed to find INSTANCE 'U83'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(476): Failed to find INSTANCE 'U84'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(50): Failed to find INSTANCE 'U85'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(455): Failed to find INSTANCE 'U86'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(468): Failed to find INSTANCE 'U87'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(447): Failed to find INSTANCE 'U88'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(470): Failed to find INSTANCE 'U89'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(271): Failed to find INSTANCE 'U9'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(469): Failed to find INSTANCE 'U90'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(466): Failed to find INSTANCE 'U91'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(465): Failed to find INSTANCE 'U92'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(43): Failed to find INSTANCE 'U93'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(460): Failed to find INSTANCE 'U94'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(452): Failed to find INSTANCE 'U95'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(459): Failed to find INSTANCE 'U96'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(208): Failed to find INSTANCE 'U97'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(448): Failed to find INSTANCE 'U98'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(454): Failed to find INSTANCE 'U99'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(729): Failed to find INSTANCE 'U100'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(728): Failed to find INSTANCE 'U101'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(722): Failed to find INSTANCE 'U102'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(726): Failed to find INSTANCE 'U103'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(725): Failed to find INSTANCE 'U104'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(723): Failed to find INSTANCE 'U105'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(720): Failed to find INSTANCE 'U107'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(727): Failed to find INSTANCE 'U11'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(721): Failed to find INSTANCE 'U23'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(179): Failed to find INSTANCE 'U30'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(767): Failed to find INSTANCE 'U31'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(761): Failed to find INSTANCE 'U38'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(796): Failed to find INSTANCE 'U51'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(728): Failed to find INSTANCE 'U52'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(801): Failed to find INSTANCE 'U53'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(188): Failed to find INSTANCE 'U54'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(805): Failed to find INSTANCE 'U55'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(744): Failed to find INSTANCE 'U56'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(173): Failed to find INSTANCE 'U57'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(791): Failed to find INSTANCE 'U58'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(790): Failed to find INSTANCE 'U59'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(796): Failed to find INSTANCE 'U60'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(748): Failed to find INSTANCE 'U61'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(752): Failed to find INSTANCE 'U62'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(169): Failed to find INSTANCE 'U63'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(789): Failed to find INSTANCE 'U64'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(787): Failed to find INSTANCE 'U65'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(786): Failed to find INSTANCE 'U66'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(784): Failed to find INSTANCE 'U67'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(782): Failed to find INSTANCE 'U68'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(750): Failed to find INSTANCE 'U69'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(779): Failed to find INSTANCE 'U70'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(765): Failed to find INSTANCE 'U71'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(776): Failed to find INSTANCE 'U72'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(218): Failed to find INSTANCE 'U73'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(764): Failed to find INSTANCE 'U74'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(726): Failed to find INSTANCE 'U75'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(770): Failed to find INSTANCE 'U76'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(740): Failed to find INSTANCE 'U77'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(768): Failed to find INSTANCE 'U78'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(177): Failed to find INSTANCE 'U79'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(764): Failed to find INSTANCE 'U80'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(762): Failed to find INSTANCE 'U81'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(761): Failed to find INSTANCE 'U82'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(742): Failed to find INSTANCE 'U83'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(757): Failed to find INSTANCE 'U84'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(756): Failed to find INSTANCE 'U85'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(753): Failed to find INSTANCE 'U86'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(747): Failed to find INSTANCE 'U87'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(190): Failed to find INSTANCE 'U88'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(749): Failed to find INSTANCE 'U89'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(747): Failed to find INSTANCE 'U90'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(738): Failed to find INSTANCE 'U91'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(743): Failed to find INSTANCE 'U92'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(742): Failed to find INSTANCE 'U93'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(740): Failed to find INSTANCE 'U94'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(720): Failed to find INSTANCE 'U95'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(737): Failed to find INSTANCE 'U96'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(735): Failed to find INSTANCE 'U97'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(236): Failed to find INSTANCE 'U98'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(731): Failed to find INSTANCE 'U99'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(183): Failed to find INSTANCE 'U22'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(690): Failed to find INSTANCE 'U35'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(708): Failed to find INSTANCE 'U36'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(192): Failed to find INSTANCE 'U37'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(684): Failed to find INSTANCE 'U38'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(692): Failed to find INSTANCE 'U39'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(698): Failed to find INSTANCE 'U40'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(284): Failed to find INSTANCE 'U41'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(695): Failed to find INSTANCE 'U42'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(683): Failed to find INSTANCE 'U43'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(699): Failed to find INSTANCE 'U44'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(694): Failed to find INSTANCE 'U45'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(689): Failed to find INSTANCE 'U46'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(697): Failed to find INSTANCE 'U47'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(696): Failed to find INSTANCE 'U48'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(181): Failed to find INSTANCE 'U49'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(175): Failed to find INSTANCE 'U50'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(681): Failed to find INSTANCE 'U51'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(171): Failed to find INSTANCE 'U52'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(687): Failed to find INSTANCE 'U53'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(685): Failed to find INSTANCE 'U54'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(684): Failed to find INSTANCE 'U55'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(234): Failed to find INSTANCE 'U56'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(167): Failed to find INSTANCE 'U57'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(679): Failed to find INSTANCE 'U58'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(678): Failed to find INSTANCE 'U59'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(676): Failed to find INSTANCE 'U60'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(581): Failed to find INSTANCE 'U100'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(587): Failed to find INSTANCE 'U101'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(589): Failed to find INSTANCE 'U102'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(364): Failed to find INSTANCE 'U103'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(157): Failed to find INSTANCE 'U104'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(565): Failed to find INSTANCE 'U105'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(582): Failed to find INSTANCE 'U106'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(580): Failed to find INSTANCE 'U107'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(578): Failed to find INSTANCE 'U108'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(399): Failed to find INSTANCE 'U109'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(574): Failed to find INSTANCE 'U110'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(573): Failed to find INSTANCE 'U111'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(572): Failed to find INSTANCE 'U112'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(568): Failed to find INSTANCE 'U113'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(563): Failed to find INSTANCE 'U114'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(289): Failed to find INSTANCE 'U115'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(566): Failed to find INSTANCE 'U116'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(564): Failed to find INSTANCE 'U117'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(561): Failed to find INSTANCE 'U118'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(561): Failed to find INSTANCE 'U119'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(406): Failed to find INSTANCE 'U120'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(554): Failed to find INSTANCE 'U121'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(556): Failed to find INSTANCE 'U122'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(555): Failed to find INSTANCE 'U123'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(553): Failed to find INSTANCE 'U124'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(552): Failed to find INSTANCE 'U125'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(119): Failed to find INSTANCE 'U16'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(567): Failed to find INSTANCE 'U17'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(572): Failed to find INSTANCE 'U20'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(607): Failed to find INSTANCE 'U28'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(153): Failed to find INSTANCE 'U43'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(559): Failed to find INSTANCE 'U44'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(647): Failed to find INSTANCE 'U50'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(597): Failed to find INSTANCE 'U65'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(608): Failed to find INSTANCE 'U66'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(564): Failed to find INSTANCE 'U67'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(646): Failed to find INSTANCE 'U68'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(584): Failed to find INSTANCE 'U69'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(643): Failed to find INSTANCE 'U70'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(573): Failed to find INSTANCE 'U71'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(634): Failed to find INSTANCE 'U72'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(578): Failed to find INSTANCE 'U73'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(601): Failed to find INSTANCE 'U74'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(637): Failed to find INSTANCE 'U75'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(627): Failed to find INSTANCE 'U76'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(590): Failed to find INSTANCE 'U77'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(631): Failed to find INSTANCE 'U78'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(616): Failed to find INSTANCE 'U79'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(628): Failed to find INSTANCE 'U80'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(626): Failed to find INSTANCE 'U81'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(615): Failed to find INSTANCE 'U82'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(623): Failed to find INSTANCE 'U83'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(621): Failed to find INSTANCE 'U84'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(599): Failed to find INSTANCE 'U85'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(575): Failed to find INSTANCE 'U86'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(613): Failed to find INSTANCE 'U87'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(615): Failed to find INSTANCE 'U88'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(614): Failed to find INSTANCE 'U89'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(611): Failed to find INSTANCE 'U90'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(560): Failed to find INSTANCE 'U91'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(582): Failed to find INSTANCE 'U92'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(579): Failed to find INSTANCE 'U93'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(604): Failed to find INSTANCE 'U94'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(591): Failed to find INSTANCE 'U95'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(576): Failed to find INSTANCE 'U96'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(598): Failed to find INSTANCE 'U97'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(577): Failed to find INSTANCE 'U98'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(595): Failed to find INSTANCE 'U99'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(896): Failed to find INSTANCE 'U100'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(835): Failed to find INSTANCE 'U101'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(892): Failed to find INSTANCE 'U102'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(891): Failed to find INSTANCE 'U103'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(885): Failed to find INSTANCE 'U104'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(886): Failed to find INSTANCE 'U105'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(553): Failed to find INSTANCE 'U106'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(884): Failed to find INSTANCE 'U107'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(883): Failed to find INSTANCE 'U108'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(845): Failed to find INSTANCE 'U109'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(879): Failed to find INSTANCE 'U110'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(844): Failed to find INSTANCE 'U111'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(848): Failed to find INSTANCE 'U112'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(875): Failed to find INSTANCE 'U113'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(873): Failed to find INSTANCE 'U114'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(852): Failed to find INSTANCE 'U115'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(834): Failed to find INSTANCE 'U116'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(859): Failed to find INSTANCE 'U117'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(866): Failed to find INSTANCE 'U118'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(865): Failed to find INSTANCE 'U119'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(849): Failed to find INSTANCE 'U120'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(862): Failed to find INSTANCE 'U121'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(860): Failed to find INSTANCE 'U122'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(859): Failed to find INSTANCE 'U123'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(555): Failed to find INSTANCE 'U124'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(853): Failed to find INSTANCE 'U125'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(846): Failed to find INSTANCE 'U126'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(850): Failed to find INSTANCE 'U127'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(842): Failed to find INSTANCE 'U128'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(848): Failed to find INSTANCE 'U129'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(845): Failed to find INSTANCE 'U130'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(844): Failed to find INSTANCE 'U131'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(842): Failed to find INSTANCE 'U132'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(840): Failed to find INSTANCE 'U133'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(838): Failed to find INSTANCE 'U134'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(836): Failed to find INSTANCE 'U135'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(835): Failed to find INSTANCE 'U136'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(833): Failed to find INSTANCE 'U137'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(832): Failed to find INSTANCE 'U138'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(830): Failed to find INSTANCE 'U139'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(829): Failed to find INSTANCE 'U140'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(826): Failed to find INSTANCE 'U142'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(921): Failed to find INSTANCE 'U17'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(827): Failed to find INSTANCE 'U29'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(580): Failed to find INSTANCE 'U36'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(866): Failed to find INSTANCE 'U37'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(892): Failed to find INSTANCE 'U61'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(957): Failed to find INSTANCE 'U62'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(840): Failed to find INSTANCE 'U63'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(860): Failed to find INSTANCE 'U64'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(843): Failed to find INSTANCE 'U65'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(826): Failed to find INSTANCE 'U66'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(585): Failed to find INSTANCE 'U67'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(648): Failed to find INSTANCE 'U68'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(855): Failed to find INSTANCE 'U69'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(888): Failed to find INSTANCE 'U70'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(863): Failed to find INSTANCE 'U71'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(828): Failed to find INSTANCE 'U72'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(941): Failed to find INSTANCE 'U73'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(635): Failed to find INSTANCE 'U74'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(862): Failed to find INSTANCE 'U75'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(936): Failed to find INSTANCE 'U76'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(934): Failed to find INSTANCE 'U77'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(933): Failed to find INSTANCE 'U78'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(890): Failed to find INSTANCE 'U79'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(930): Failed to find INSTANCE 'U80'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(928): Failed to find INSTANCE 'U81'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(830): Failed to find INSTANCE 'U82'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(926): Failed to find INSTANCE 'U83'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(925): Failed to find INSTANCE 'U84'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(912): Failed to find INSTANCE 'U85'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(907): Failed to find INSTANCE 'U86'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(588): Failed to find INSTANCE 'U87'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(917): Failed to find INSTANCE 'U88'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(914): Failed to find INSTANCE 'U89'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(833): Failed to find INSTANCE 'U90'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(896): Failed to find INSTANCE 'U91'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(839): Failed to find INSTANCE 'U92'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(847): Failed to find INSTANCE 'U93'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(858): Failed to find INSTANCE 'U94'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(838): Failed to find INSTANCE 'U95'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(898): Failed to find INSTANCE 'U96'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(899): Failed to find INSTANCE 'U97'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(598): Failed to find INSTANCE 'U98'.
+# ** Error: (vsim-SDF-3250) /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf(897): Failed to find INSTANCE 'U99'.
+# ** Error: (vsim-SDF-3894) : Errors occured in reading and resolving instances from compiled SDF file(s).
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.U_FD_P_RB_NO
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk10_mapped.v(183): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /sqroot_seq_tb/UUT/add_110
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk10_mapped.v(183): [TFMPC] - Missing connection for port 'CO'.
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.U_ADDR2_S
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.U_ADDR2_C
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk10_mapped.v(188): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /sqroot_seq_tb/UUT/add_139
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk10_mapped.v(188): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk10_mapped.v(191): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /sqroot_seq_tb/UUT/sub_1_root_sub_0_root_sub_138
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk10_mapped.v(191): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk10_mapped.v(194): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /sqroot_seq_tb/UUT/sub_0_root_sub_0_root_sub_138
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk10_mapped.v(194): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk10_mapped.v(196): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /sqroot_seq_tb/UUT/root_reg_reg_0_
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk10_mapped.v(196): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk10_mapped.v(215): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /sqroot_seq_tb/UUT/state_reg_reg_0_
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk10_mapped.v(215): [TFMPC] - Missing connection for port 'QN'.
+# ** Error: (vsim-SDF-3445) Failed to parse SDF file "/home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf".
+#    Time: 0 ps  Iteration: 0  Instance: /sqroot_seq_tb File: /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd
+# Error loading design
+# Compile of sqroot_seq_nbits8_clk3.5_mapped.v was successful.
+# Compile of sqroot_seq_rtl.vhd was successful.
+# Compile of sqroot_seq_tb.vhd was successful.
+# Compile of sqroot_seq_tb_rtl_conf.vhd was successful.
+# Compile of sqroot_seq_tb_mapped_conf.vhd was successful.
+# vlog -work work -novopt -nocovercells /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v
+# Model Technology ModelSim SE vlog 10.0a Compiler 2011.02 Feb 21 2011
+# -- Compiling module sqroot_seq_NBITS8_DW01_sub_2
+# -- Compiling module sqroot_seq_NBITS8_DW01_add_3
+# -- Compiling module sqroot_seq_NBITS8_DW01_inc_1
+# -- Compiling module sqroot_seq_NBITS8_DW01_sub_4
+# -- Compiling module sqroot_seq_NBITS8_DW01_add_4
+# -- Compiling module sqroot_seq_NBITS8
+# 
+# Top level modules:
+# 	sqroot_seq_NBITS8
+# 
+# 
+# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_seq_rtl.vhd
+# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity sqroot_seq
+# -- Compiling architecture rtl of sqroot_seq
+# 
+# 
+# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd
+# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity sqroot_seq_tb
+# -- Compiling architecture bench of sqroot_seq_tb
+# 
+# 
+# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_rtl_conf.vhd
+# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+# -- Loading package STANDARD
+# -- Compiling configuration sqroot_seq_tb_rtl_conf
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading entity sqroot_seq_tb
+# -- Loading architecture bench of sqroot_seq_tb
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity sqroot_seq
+# 
+# 
+# vcom -work work -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_mapped_conf.vhd
+# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+# -- Loading package STANDARD
+# -- Compiling configuration sqroot_seq_tb_mapped_conf
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading entity sqroot_seq_tb
+# -- Loading architecture bench of sqroot_seq_tb
+# -- Loading package vl_types
+# -- Loading entity sqroot_seq_NBITS8
+# 
+# 
+# 5 compiles, 0 failed with no errors. 
+vsim -L /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog -sdftyp uut=/home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf -t ps -wlf {../OUT/sqroot_seq_nbits8_clk3.5_mapped.wlf } SQROOT_SEQ.sqroot_seq_tb_mapped_conf
+# vsim -L /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog -do ../BIN/sqroot_seq_nbits8_clk3.5_mapped.do -sdftyp uut=/home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf -t ps -wlf {../OUT/sqroot_seq_nbits8_clk3.5_mapped.wlf } SQROOT_SEQ.sqroot_seq_tb_mapped_conf 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading verilog.vl_types(body)
+# Loading SQROOT_SEQ.sqroot_seq_tb_mapped_conf
+# Loading SQROOT_SEQ.sqroot_seq_tb(bench)
+# Loading SQROOT_SEQ.sqroot_seq_NBITS8
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.DFC3
+# Loading SQROOT_SEQ.sqroot_seq_NBITS8_DW01_sub_2
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.AOI212
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.XOR22
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.OAI212
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.CLKIN6
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.INV3
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NAND24
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NOR23
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.CLKIN8
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.INV4
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NAND22
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NAND23
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.AOI211
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NAND28
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.INV1
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NAND26
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NOR21
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NAND21
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.CLKIN3
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.INV6
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.XNR21
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.INV2
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.LOGIC0
+# Loading SQROOT_SEQ.sqroot_seq_NBITS8_DW01_add_3
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.INV0
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.BUF6
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.XNR22
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NOR24
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.OAI211
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NOR20
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.LOGIC1
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.OAI210
+# Loading SQROOT_SEQ.sqroot_seq_NBITS8_DW01_inc_1
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NOR22
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.CLKIN2
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.CLKIN0
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.XOR21
+# Loading SQROOT_SEQ.sqroot_seq_NBITS8_DW01_sub_4
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.CLKIN4
+# Loading SQROOT_SEQ.sqroot_seq_NBITS8_DW01_add_4
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NAND20
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.CLKIN12
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.AOI210
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.DFC1
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.OAI222
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.CLKIN15
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NAND32
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.AOI221
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NAND33
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.INV8
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NOR31
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NOR32
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.OAI2112
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.OAI2111
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.OAI221
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.BUF2
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.AOI2112
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.AOI222
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NAND31
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.AOI312
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.OAI2110
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.AOI220
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.AOI310
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NOR40
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.CLKBU15
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.OAI312
+# Loading instances from /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.U_FD_P_RB_NO
+# ** Error: lock failed. Retrying 1 times, errno 11
+# ** Error: lock failed. Retrying 2 times, errno 11
+# ** Error: lock failed. Retrying 3 times, errno 11
+# ** Error: lock failed. Give up retry 3, errno 11
+# ** Error: Cannot lock WLF file: ../OUT/sqroot_seq_nbits8_clk3.5_mapped.wlf 
+#           errno 11: Resource temporarily unavailable.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: ../OUT/sqroot_seq_nbits8_clk3.5_mapped.wlf 
+#           File in use by:   Hostname:   ProcessID: 3
+#           Attempting to use alternate WLF file "../OUT/wlftUQS3Wm".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: ../OUT/sqroot_seq_nbits8_clk3.5_mapped.wlf 
+#           Using alternate file: ../OUT/wlftUQS3Wm
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v(429): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /sqroot_seq_tb/UUT/state_reg_reg_0_
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v(429): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v(448): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /sqroot_seq_tb/UUT/root_reg_reg_6_
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v(448): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v(450): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /sqroot_seq_tb/UUT/root_reg_reg_5_
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v(450): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v(452): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /sqroot_seq_tb/UUT/root_reg_reg_4_
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v(452): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v(454): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /sqroot_seq_tb/UUT/root_reg_reg_3_
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v(454): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v(458): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /sqroot_seq_tb/UUT/root_reg_reg_0_
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v(458): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v(462): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /sqroot_seq_tb/UUT/sub_1_root_sub_0_root_sub_138
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v(462): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v(464): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /sqroot_seq_tb/UUT/add_139
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v(464): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v(468): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /sqroot_seq_tb/UUT/sub_0_root_sub_0_root_sub_138
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v(468): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v(471): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /sqroot_seq_tb/UUT/add_110
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v(471): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v(472): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /sqroot_seq_tb/UUT/res_reg_reg_7_
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v(472): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v(473): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /sqroot_seq_tb/UUT/res_reg_reg_5_
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v(473): [TFMPC] - Missing connection for port 'QN'.
+# Loading timing data from /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /sqroot_seq_tb File: /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd
+# ../BIN/sqroot_seq_nbits8_clk3.5_mapped.do 
+# invalid command name "../BIN/sqroot_seq_nbits8_clk3.5_mapped.do"
 run
-# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq_tb/UUT
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq_tb/UUT
-run
+# vlog -work work -novopt -nocovercells /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v
+# Model Technology ModelSim SE vlog 10.0a Compiler 2011.02 Feb 21 2011
+# -- Compiling module sqroot_seq_NBITS8_DW01_sub_2
+# -- Compiling module sqroot_seq_NBITS8_DW01_add_3
+# -- Compiling module sqroot_seq_NBITS8_DW01_inc_1
+# -- Compiling module sqroot_seq_NBITS8_DW01_sub_4
+# -- Compiling module sqroot_seq_NBITS8_DW01_add_4
+# -- Compiling module sqroot_seq_NBITS8
+# 
+# Top level modules:
+# 	sqroot_seq_NBITS8
+# 
+# 
+# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_seq_rtl.vhd
+# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity sqroot_seq
+# -- Compiling architecture rtl of sqroot_seq
+# 
+# 
+# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd
+# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity sqroot_seq_tb
+# -- Compiling architecture bench of sqroot_seq_tb
+# 
+# 
+# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_rtl_conf.vhd
+# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+# -- Loading package STANDARD
+# -- Compiling configuration sqroot_seq_tb_rtl_conf
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading entity sqroot_seq_tb
+# -- Loading architecture bench of sqroot_seq_tb
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity sqroot_seq
+# 
+# 
+# vcom -work work -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_mapped_conf.vhd
+# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+# -- Loading package STANDARD
+# -- Compiling configuration sqroot_seq_tb_mapped_conf
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading entity sqroot_seq_tb
+# -- Loading architecture bench of sqroot_seq_tb
+# -- Loading package vl_types
+# -- Loading entity sqroot_seq_NBITS8
+# 
+# 
+# 5 compiles, 0 failed with no errors. 
+vsim -L /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog -sdftyp uut=/home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf -t ps -wlf {../OUT/sqroot_seq_nbits8_clk3.5_mapped.wlf } SQROOT_SEQ.sqroot_seq_tb_mapped_conf
+# vsim -L /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog -do ../BIN/sqroot_seq_nbits8_clk3.5_mapped.do -sdftyp uut=/home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf -t ps -wlf {../OUT/sqroot_seq_nbits8_clk3.5_mapped.wlf } SQROOT_SEQ.sqroot_seq_tb_mapped_conf 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading verilog.vl_types(body)
+# Loading SQROOT_SEQ.sqroot_seq_tb_mapped_conf
+# Loading SQROOT_SEQ.sqroot_seq_tb(bench)
+# Loading SQROOT_SEQ.sqroot_seq_NBITS8
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.DFC3
+# Loading SQROOT_SEQ.sqroot_seq_NBITS8_DW01_sub_2
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.AOI212
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.XOR22
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.OAI212
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.CLKIN6
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.INV3
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NAND24
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NOR23
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.CLKIN8
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.INV4
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NAND22
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NAND23
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.AOI211
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NAND28
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.INV1
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NAND26
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NOR21
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NAND21
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.CLKIN3
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.INV6
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.XNR21
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.INV2
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.LOGIC0
+# Loading SQROOT_SEQ.sqroot_seq_NBITS8_DW01_add_3
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.INV0
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.BUF6
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.XNR22
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NOR24
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.OAI211
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NOR20
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.LOGIC1
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.OAI210
+# Loading SQROOT_SEQ.sqroot_seq_NBITS8_DW01_inc_1
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NOR22
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.CLKIN2
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.CLKIN0
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.XOR21
+# Loading SQROOT_SEQ.sqroot_seq_NBITS8_DW01_sub_4
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.CLKIN4
+# Loading SQROOT_SEQ.sqroot_seq_NBITS8_DW01_add_4
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NAND20
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.CLKIN12
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.AOI210
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.DFC1
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.OAI222
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.CLKIN15
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NAND32
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.AOI221
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NAND33
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.INV8
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NOR31
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NOR32
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.OAI2112
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.OAI2111
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.OAI221
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.BUF2
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.AOI2112
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.AOI222
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NAND31
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.AOI312
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.OAI2110
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.AOI220
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.AOI310
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.NOR40
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.CLKBU15
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.OAI312
+# Loading instances from /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf
+# Loading /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/DLIB/c35_corelib_vlog.U_FD_P_RB_NO
+# ** Error: lock failed. Retrying 1 times, errno 11
+# ** Error: lock failed. Retrying 2 times, errno 11
+# ** Error: lock failed. Retrying 3 times, errno 11
+# ** Error: lock failed. Give up retry 3, errno 11
+# ** Error: Cannot lock WLF file: ../OUT/sqroot_seq_nbits8_clk3.5_mapped.wlf 
+#           errno 11: Resource temporarily unavailable.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: ../OUT/sqroot_seq_nbits8_clk3.5_mapped.wlf 
+#           File in use by:   Hostname:   ProcessID: 3
+#           Attempting to use alternate WLF file "../OUT/wlftPm1QmF".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: ../OUT/sqroot_seq_nbits8_clk3.5_mapped.wlf 
+#           Using alternate file: ../OUT/wlftPm1QmF
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v(429): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /sqroot_seq_tb/UUT/state_reg_reg_0_
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v(429): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v(448): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /sqroot_seq_tb/UUT/root_reg_reg_6_
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v(448): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v(450): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /sqroot_seq_tb/UUT/root_reg_reg_5_
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v(450): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v(452): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /sqroot_seq_tb/UUT/root_reg_reg_4_
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v(452): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v(454): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /sqroot_seq_tb/UUT/root_reg_reg_3_
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v(454): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v(458): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /sqroot_seq_tb/UUT/root_reg_reg_0_
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v(458): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v(462): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /sqroot_seq_tb/UUT/sub_1_root_sub_0_root_sub_138
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v(462): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v(464): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /sqroot_seq_tb/UUT/add_139
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v(464): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v(468): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /sqroot_seq_tb/UUT/sub_0_root_sub_0_root_sub_138
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v(468): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v(471): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /sqroot_seq_tb/UUT/add_110
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v(471): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v(472): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /sqroot_seq_tb/UUT/res_reg_reg_7_
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v(472): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-3017) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v(473): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /sqroot_seq_tb/UUT/res_reg_reg_5_
+# ** Warning: (vsim-3722) /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v(473): [TFMPC] - Missing connection for port 'QN'.
+# Loading timing data from /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/TIM/sqroot_seq_nbits8_clk3.5_mapped.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /sqroot_seq_tb File: /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd
+# ../BIN/sqroot_seq_nbits8_clk3.5_mapped.do 
+# invalid command name "../BIN/sqroot_seq_nbits8_clk3.5_mapped.do"
+add wave  \
+sim:/sqroot_seq_tb/arg \
+sim:/sqroot_seq_tb/z \
+sim:/sqroot_seq_tb/roundup \
+sim:/sqroot_seq_tb/check \
+sim:/sqroot_seq_tb/sqrt_exp \
+sim:/sqroot_seq_tb/CLK \
+sim:/sqroot_seq_tb/nRst \
+sim:/sqroot_seq_tb/start \
+sim:/sqroot_seq_tb/ready \
+sim:/sqroot_seq_tb/sim_done \
+sim:/sqroot_seq_tb/NBITS \
+sim:/sqroot_seq_tb/CLK_FREQ
+add wave  \
+sim:/sqroot_seq_tb/UUT/arg \
+sim:/sqroot_seq_tb/UUT/sqroot \
+sim:/sqroot_seq_tb/UUT/roundup \
+sim:/sqroot_seq_tb/UUT/clk \
+sim:/sqroot_seq_tb/UUT/nRst \
+sim:/sqroot_seq_tb/UUT/start \
+sim:/sqroot_seq_tb/UUT/ready
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf /home/edatp59/hsm1_tutorial/SQROOT_SEQ_MSIM/BIN/sqroot_seq_nbits8_clk3.5_mapped.do
 run
 run -all
-# ** Error: Assertion violation.
-#    Time: 750 ns  Iteration: 2  Instance: /sqroot_seq_tb
-# Break in ForLoop loop at /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd line 78
-run
-# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_seq_rtl.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity sqroot_seq
-# -- Compiling architecture rtl of sqroot_seq
-# 
-# 
-# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Compiling entity sqroot_seq_tb
-# -- Compiling architecture bench of sqroot_seq_tb
-# 
-# 
-# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_rtl_conf.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Compiling configuration sqroot_seq_tb_rtl_conf
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Loading entity sqroot_seq_tb
-# -- Loading architecture bench of sqroot_seq_tb
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading entity sqroot_seq
-# 
-# 
-# 3 compiles, 0 failed with no errors. 
-restart
-# Loading SQROOT_SEQ.sqroot_seq_tb_rtl_conf
-# Loading SQROOT_SEQ.sqroot_seq_tb(bench)
-# Loading SQROOT_SEQ.sqroot_seq(rtl)
-run
-# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq_tb/UUT
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq_tb/UUT
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run -all
-# Break key hit 
-# Simulation stop requested.
-# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_seq_rtl.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity sqroot_seq
-# -- Compiling architecture rtl of sqroot_seq
-# 
-# 
-# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Compiling entity sqroot_seq_tb
-# -- Compiling architecture bench of sqroot_seq_tb
-# ** Error: /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd(81): (vcom-1136) Unknown identifier "done".
-# ** Error: /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd(81): Expression is not a signal.
-# ** Error: /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd(81): (vcom-1226) A wait statement is illegal for a process with a sensitivity list.
-# ** Error: /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd(87): VHDL Compiler exiting
-# 
-# 
-# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_rtl_conf.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Compiling configuration sqroot_seq_tb_rtl_conf
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Loading entity sqroot_seq_tb
-# -- Loading architecture bench of sqroot_seq_tb
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading entity sqroot_seq
-# 
-# 
-# 3 compiles, 1 failed with 1 error. 
-# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_seq_rtl.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity sqroot_seq
-# -- Compiling architecture rtl of sqroot_seq
-# 
-# 
-# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Compiling entity sqroot_seq_tb
-# -- Compiling architecture bench of sqroot_seq_tb
-# ** Error: /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd(81): (vcom-1226) A wait statement is illegal for a process with a sensitivity list.
-# ** Error: /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd(87): VHDL Compiler exiting
-# 
-# 
-# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_rtl_conf.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Compiling configuration sqroot_seq_tb_rtl_conf
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Loading entity sqroot_seq_tb
-# -- Loading architecture bench of sqroot_seq_tb
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading entity sqroot_seq
-# 
-# 
-# 3 compiles, 1 failed with 1 error. 
-# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_seq_rtl.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity sqroot_seq
-# -- Compiling architecture rtl of sqroot_seq
-# 
-# 
-# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Compiling entity sqroot_seq_tb
-# -- Compiling architecture bench of sqroot_seq_tb
-# 
-# 
-# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_rtl_conf.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Compiling configuration sqroot_seq_tb_rtl_conf
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Loading entity sqroot_seq_tb
-# -- Loading architecture bench of sqroot_seq_tb
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading entity sqroot_seq
-# 
-# 
-# 3 compiles, 0 failed with no errors. 
-restart
-# Loading SQROOT_SEQ.sqroot_seq_tb_rtl_conf
-# Loading SQROOT_SEQ.sqroot_seq_tb(bench)
-# Loading SQROOT_SEQ.sqroot_seq(rtl)
-run -all
-# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq_tb/UUT
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq_tb/UUT
-# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_seq_rtl.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity sqroot_seq
-# -- Compiling architecture rtl of sqroot_seq
-# 
-# 
-# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Compiling entity sqroot_seq_tb
-# -- Compiling architecture bench of sqroot_seq_tb
-# 
-# 
-# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_rtl_conf.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Compiling configuration sqroot_seq_tb_rtl_conf
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Loading entity sqroot_seq_tb
-# -- Loading architecture bench of sqroot_seq_tb
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading entity sqroot_seq
-# 
-# 
-# 3 compiles, 0 failed with no errors. 
-restart
-# Loading SQROOT_SEQ.sqroot_seq_tb_rtl_conf
-# Loading SQROOT_SEQ.sqroot_seq_tb(bench)
-# Loading SQROOT_SEQ.sqroot_seq(rtl)
-run
-# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq_tb/UUT
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq_tb/UUT
-run
-run
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 250 ns  Iteration: 2  Instance: /sqroot_seq_tb/UUT
-# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
-#    Time: 250 ns  Iteration: 2  Instance: /sqroot_seq_tb/UUT
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_seq_rtl.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity sqroot_seq
-# -- Compiling architecture rtl of sqroot_seq
-# 
-# 
-# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Compiling entity sqroot_seq_tb
-# -- Compiling architecture bench of sqroot_seq_tb
-# 
-# 
-# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_rtl_conf.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Compiling configuration sqroot_seq_tb_rtl_conf
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Loading entity sqroot_seq_tb
-# -- Loading architecture bench of sqroot_seq_tb
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading entity sqroot_seq
-# 
-# 
-# 3 compiles, 0 failed with no errors. 
-restart
-# Loading SQROOT_SEQ.sqroot_seq_tb_rtl_conf
-# Loading SQROOT_SEQ.sqroot_seq_tb(bench)
-# Loading SQROOT_SEQ.sqroot_seq(rtl)
-run
-# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq_tb/UUT
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq_tb/UUT
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_seq_rtl.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity sqroot_seq
-# -- Compiling architecture rtl of sqroot_seq
-# 
-# 
-# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Compiling entity sqroot_seq_tb
-# -- Compiling architecture bench of sqroot_seq_tb
-# 
-# 
-# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_rtl_conf.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Compiling configuration sqroot_seq_tb_rtl_conf
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Loading entity sqroot_seq_tb
-# -- Loading architecture bench of sqroot_seq_tb
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading entity sqroot_seq
-# 
-# 
-# 3 compiles, 0 failed with no errors. 
-restart
-# Loading SQROOT_SEQ.sqroot_seq_tb_rtl_conf
-# Loading SQROOT_SEQ.sqroot_seq_tb(bench)
-# Loading SQROOT_SEQ.sqroot_seq(rtl)
-run -all
-# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq_tb/UUT
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq_tb/UUT
-# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_seq_rtl.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity sqroot_seq
-# -- Compiling architecture rtl of sqroot_seq
-# 
-# 
-# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Compiling entity sqroot_seq_tb
-# -- Compiling architecture bench of sqroot_seq_tb
-# 
-# 
-# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_rtl_conf.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Compiling configuration sqroot_seq_tb_rtl_conf
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Loading entity sqroot_seq_tb
-# -- Loading architecture bench of sqroot_seq_tb
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading entity sqroot_seq
-# 
-# 
-# 3 compiles, 0 failed with no errors. 
-restart
-# Loading SQROOT_SEQ.sqroot_seq_tb_rtl_conf
-# Loading SQROOT_SEQ.sqroot_seq_tb(bench)
-# Loading SQROOT_SEQ.sqroot_seq(rtl)
-run
-# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq_tb/UUT
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq_tb/UUT
-run
-run
-# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_seq_rtl.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity sqroot_seq
-# -- Compiling architecture rtl of sqroot_seq
-# 
-# 
-# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Compiling entity sqroot_seq_tb
-# -- Compiling architecture bench of sqroot_seq_tb
-# 
-# 
-# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_rtl_conf.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Compiling configuration sqroot_seq_tb_rtl_conf
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Loading entity sqroot_seq_tb
-# -- Loading architecture bench of sqroot_seq_tb
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading entity sqroot_seq
-# 
-# 
-# 3 compiles, 0 failed with no errors. 
-# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_seq_rtl.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity sqroot_seq
-# -- Compiling architecture rtl of sqroot_seq
-# 
-# 
-# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Compiling entity sqroot_seq_tb
-# -- Compiling architecture bench of sqroot_seq_tb
-# 
-# 
-# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_rtl_conf.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Compiling configuration sqroot_seq_tb_rtl_conf
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Loading entity sqroot_seq_tb
-# -- Loading architecture bench of sqroot_seq_tb
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading entity sqroot_seq
-# 
-# 
-# 3 compiles, 0 failed with no errors. 
-restart
-# Loading SQROOT_SEQ.sqroot_seq_tb_rtl_conf
-# Loading SQROOT_SEQ.sqroot_seq_tb(bench)
-# Loading SQROOT_SEQ.sqroot_seq(rtl)
-run -all
-# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq_tb/UUT
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq_tb/UUT
-# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_seq_rtl.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity sqroot_seq
-# -- Compiling architecture rtl of sqroot_seq
-# 
-# 
-# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Compiling entity sqroot_seq_tb
-# -- Compiling architecture bench of sqroot_seq_tb
-# 
-# 
-# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_rtl_conf.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Compiling configuration sqroot_seq_tb_rtl_conf
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Loading entity sqroot_seq_tb
-# -- Loading architecture bench of sqroot_seq_tb
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading entity sqroot_seq
-# 
-# 
-# 3 compiles, 0 failed with no errors. 
-restart
-# Loading SQROOT_SEQ.sqroot_seq_tb_rtl_conf
-# Loading SQROOT_SEQ.sqroot_seq_tb(bench)
-# Loading SQROOT_SEQ.sqroot_seq(rtl)
-run
-# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq_tb/UUT
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 0  Instance: /sqroot_seq_tb/UUT
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_seq_rtl.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity sqroot_seq
-# -- Compiling architecture rtl of sqroot_seq
-# 
-# 
-# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Compiling entity sqroot_seq_tb
-# -- Compiling architecture bench of sqroot_seq_tb
-# 
-# 
-# vcom -work SQROOT_SEQ -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_rtl_conf.vhd
-# Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
-# -- Loading package STANDARD
-# -- Compiling configuration sqroot_seq_tb_rtl_conf
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Loading entity sqroot_seq_tb
-# -- Loading architecture bench of sqroot_seq_tb
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading entity sqroot_seq
-# 
-# 
-# 3 compiles, 0 failed with no errors. 

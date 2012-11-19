@@ -1,0 +1,93 @@
+ 
+****************************************
+Report : resources
+Design : sqroot_seq_NBITS8
+Version: F-2011.09-SP5
+Date   : Mon Nov 19 16:37:30 2012
+****************************************
+
+Resource Sharing Report for design sqroot_seq_NBITS8 in file
+        ./HDL/RTL/sqroot_seq_rtl.vhd
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r337     | DW_cmp       | width=8    |               | lte_gte_108          |
+| r339     | DW_cmp       | width=8    |               | lt_gt_109            |
+| r341     | DW01_add     | width=8    |               | add_110              |
+| r343     | DW_cmp       | width=8    |               | lte_110              |
+| r349     | DW01_add     | width=8    |               | add_139              |
+| r351     | DW01_inc     | width=8    |               | add_142              |
+| r940     | DW01_sub     | width=8    |               | sub_1_root_sub_0_root_sub_138 |
+| r942     | DW01_sub     | width=8    |               | sub_0_root_sub_0_root_sub_138 |
+===============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_110            | DW01_add         | pparch (area,speed)                 |
+| sub_0_root_sub_0_root_sub_138         |                    |                |
+|                    | DW01_sub         | pparch (area,speed)                 |
+| add_142            | DW01_inc         | pparch (area,speed)                 |
+| add_139            | DW01_add         | pparch (area,speed)                 |
+| sub_1_root_sub_0_root_sub_138         |                    |                |
+|                    | DW01_sub         | pparch (speed)     |                |
+===============================================================================
+
+
+No multiplexors to report
+ 
+****************************************
+Design : sqroot_seq_NBITS8_DW01_add_4
+****************************************
+
+No resource sharing information to report.
+
+No implementations to report
+
+No multiplexors to report
+ 
+****************************************
+Design : sqroot_seq_NBITS8_DW01_sub_4
+****************************************
+
+No resource sharing information to report.
+
+No implementations to report
+
+No multiplexors to report
+ 
+****************************************
+Design : sqroot_seq_NBITS8_DW01_inc_1
+****************************************
+
+No resource sharing information to report.
+
+No implementations to report
+
+No multiplexors to report
+ 
+****************************************
+Design : sqroot_seq_NBITS8_DW01_add_3
+****************************************
+
+No resource sharing information to report.
+
+No implementations to report
+
+No multiplexors to report
+ 
+****************************************
+Design : sqroot_seq_NBITS8_DW01_sub_2
+****************************************
+
+No resource sharing information to report.
+
+No implementations to report
+
+No multiplexors to report
+1
