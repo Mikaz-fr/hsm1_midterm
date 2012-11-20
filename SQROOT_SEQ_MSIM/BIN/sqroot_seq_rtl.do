@@ -10,8 +10,8 @@ add wave -noupdate /sqroot_seq_tb/nRst
 add wave -noupdate /sqroot_seq_tb/start
 add wave -noupdate /sqroot_seq_tb/ready
 add wave -noupdate /sqroot_seq_tb/NBITS
-add wave -noupdate /sqroot_seq_tb/CLK_FREQ
 add wave -noupdate /sqroot_seq_tb/UUT/NBITS
+add wave -noupdate /sqroot_seq_tb/CLK_PERIODE
 add wave -noupdate -radix unsigned /sqroot_seq_tb/UUT/arg
 add wave -noupdate /sqroot_seq_tb/UUT/roundup
 add wave -noupdate /sqroot_seq_tb/UUT/clk
@@ -21,8 +21,8 @@ add wave -noupdate -radix unsigned /sqroot_seq_tb/UUT/sqroot
 add wave -noupdate /sqroot_seq_tb/UUT/ready
 TreeUpdate [SetDefaultTree]
 WaveRestoreCursors {{Cursor 1} {124 ns} 0}
-configure wave -namecolwidth 187
-configure wave -valuecolwidth 100
+configure wave -namecolwidth 234
+configure wave -valuecolwidth 63
 configure wave -justifyvalue left
 configure wave -signalnamewidth 0
 configure wave -snapdistance 10
@@ -35,4 +35,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ns
 update
-WaveRestoreZoom {0 ns} {951 ns}
+WaveRestoreZoom {0 ns} {935 ns}

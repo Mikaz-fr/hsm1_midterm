@@ -55,7 +55,7 @@ L16
 VKcdO8HE5M08Ecm:?0nO<<1
 R8
 32
-Z19 !s108 1353339629.847255
+Z19 !s108 1353407440.026083
 Z20 !s90 -reportprogress|300|-work|SQROOT_SEQ|-2002|-explicit|-novopt|/home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_seq_rtl.vhd|
 Z21 !s107 /home/edatp59/hsm1_tutorial/HDL/RTL/sqroot_seq_rtl.vhd|
 R12
@@ -79,22 +79,136 @@ R21
 R12
 R13
 !s100 Vka;573TEf36b1QK<_H_Z0
+vsqroot_seq_NBITS16
+IT5RDE`efmSeQBOXQCo1LV1
+Vhd]0z:?<Sk9;ghVbLhUO23
+R5
+Z23 w1353404660
+Z24 8/home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits16_clk4.6_mapped.v
+Z25 F/home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits16_clk4.6_mapped.v
+L0 763
+Z26 OE;L;10.0a;49
+r1
+31
+Z27 !s108 1353407439.942812
+Z28 !s107 /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits16_clk4.6_mapped.v|
+Z29 !s90 -reportprogress|300|-work|work|-novopt|-nocovercells|/home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits16_clk4.6_mapped.v|
+Z30 !s102 -nocovercells
+Z31 o-work work -nocovercells -L mtiAvm -L mtiOvm -L mtiUPF
+nsqroot_seq_@n@b@i@t@s16
+!s100 ga`NXETIEdAbE3ig5LBOa3
+!s85 0
+vsqroot_seq_NBITS16_DW01_add_3
+IaZ=5B3SK4zYD`>X`6HMA41
+VDZO`9TFYCMC:;XA2iRRd]3
+R5
+R23
+R24
+R25
+L0 2
+R26
+r1
+31
+R27
+R28
+R29
+R30
+R31
+nsqroot_seq_@n@b@i@t@s16_@d@w01_add_3
+!s100 GWzjX=WjXOZ<K>5?IYVL?0
+!s85 0
+vsqroot_seq_NBITS16_DW01_add_7
+I2kNJQ0][I28Gdom7l_@=B3
+VFdW[RR:QM1:W_hO=eBoHz0
+R5
+R23
+R24
+R25
+L0 606
+R26
+r1
+31
+R27
+R28
+R29
+R30
+R31
+nsqroot_seq_@n@b@i@t@s16_@d@w01_add_7
+!s100 ;3beP7ES2KO?kbj`7ez>N0
+!s85 0
+vsqroot_seq_NBITS16_DW01_inc_1
+I96^DIIMNcc:B?loF`AR863
+VK7=YBW@cEC55NOi2dCi_e1
+R5
+R23
+R24
+R25
+L0 150
+R26
+r1
+31
+R27
+R28
+R29
+R30
+R31
+nsqroot_seq_@n@b@i@t@s16_@d@w01_inc_1
+!s100 9_>KDT3;el16bNil5j>8`2
+!s85 0
+vsqroot_seq_NBITS16_DW01_sub_4
+IM>KKSNZ;R4KadaZH0Yag31
+V>O8kLH=o`;YlVnSb^fz_h1
+R5
+R23
+R24
+R25
+L0 223
+R26
+r1
+31
+R27
+R28
+R29
+R30
+R31
+nsqroot_seq_@n@b@i@t@s16_@d@w01_sub_4
+!s100 H=cjGTm`RH@a5KDCiTkfV3
+!s85 0
+vsqroot_seq_NBITS16_DW01_sub_5
+I1>^NlLT<85_:2D[O?ho0f3
+VNg72<]Zigc4a>A401l8Y80
+R5
+R23
+R24
+R25
+L0 400
+R26
+r1
+31
+R27
+R28
+R29
+R30
+R31
+nsqroot_seq_@n@b@i@t@s16_@d@w01_sub_5
+!s100 le93LR[Jbkh:9e^WRQ;gh0
+!s85 0
 vsqroot_seq_NBITS8
 IF`d^G;TGBRK@VbKJ^aSaT0
 V7j1QlEda5eUXlGL:>b=^l3
 R5
-Z23 w1353339450
-Z24 8/home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v
-Z25 F/home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v
+Z32 w1353339450
+Z33 8/home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v
+Z34 F/home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v
 L0 385
-Z26 OE;L;10.0a;49
+R26
 r1
 31
-Z27 !s108 1353339629.799484
-Z28 !s107 /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v|
-Z29 !s90 -reportprogress|300|-work|work|-novopt|-nocovercells|/home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v|
-Z30 !s102 -nocovercells
-Z31 o-work work -nocovercells -L mtiAvm -L mtiOvm -L mtiUPF
+Z35 !s108 1353407439.890268
+Z36 !s107 /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v|
+Z37 !s90 -reportprogress|300|-work|work|-novopt|-nocovercells|/home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk3.5_mapped.v|
+R30
+R31
 nsqroot_seq_@n@b@i@t@s8
 !s100 Y<X3_kR_i^00R;]KDzV2X3
 !s85 0
@@ -102,16 +216,16 @@ vsqroot_seq_NBITS8_DW01_add_0
 IC9@o1h4h;`D]_O<EVZRdD1
 V26H`hGZ>mI;UCXmUP9=Ti0
 R5
-Z32 w1353329876
-Z33 8/home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk10_mapped.v
-Z34 F/home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk10_mapped.v
+Z38 w1353329876
+Z39 8/home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk10_mapped.v
+Z40 F/home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk10_mapped.v
 L0 2
 R26
 r1
 31
-Z35 !s108 1353339471.454607
-Z36 !s107 /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk10_mapped.v|
-Z37 !s90 -reportprogress|300|-work|work|-novopt|-nocovercells|/home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk10_mapped.v|
+Z41 !s108 1353339471.454607
+Z42 !s107 /home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk10_mapped.v|
+Z43 !s90 -reportprogress|300|-work|work|-novopt|-nocovercells|/home/edatp59/hsm1_tutorial/HDL/GATE/sqroot_seq_nbits8_clk10_mapped.v|
 R30
 R31
 nsqroot_seq_@n@b@i@t@s8_@d@w01_add_0
@@ -121,16 +235,16 @@ vsqroot_seq_NBITS8_DW01_add_1
 I5@4J@Z>U]8M20l1S;DZ_i1
 V8;j<TRm[2WeICE32:EN5f0
 R5
-R32
-R33
-R34
+R38
+R39
+R40
 L0 42
 R26
 r1
 31
-R35
-R36
-R37
+R41
+R42
+R43
 R30
 R31
 nsqroot_seq_@n@b@i@t@s8_@d@w01_add_1
@@ -140,16 +254,16 @@ vsqroot_seq_NBITS8_DW01_add_3
 Iece1Z8cD9h3b41lWeL6kS1
 VIF@Xo_;<S_Z=M4bj<HQ]D1
 R5
-R23
-R24
-R25
+R32
+R33
+R34
 L0 104
 R26
 r1
 31
-R27
-R28
-R29
+R35
+R36
+R37
 R30
 R31
 nsqroot_seq_@n@b@i@t@s8_@d@w01_add_3
@@ -159,16 +273,16 @@ vsqroot_seq_NBITS8_DW01_add_4
 I4ND]iJS=l70_R`hnS0DGF2
 VD_>H;GHS4EZZ>9zKYzAYA3
 R5
-R23
-R24
-R25
+R32
+R33
+R34
 L0 302
 R26
 r1
 31
-R27
-R28
-R29
+R35
+R36
+R37
 R30
 R31
 nsqroot_seq_@n@b@i@t@s8_@d@w01_add_4
@@ -178,16 +292,16 @@ vsqroot_seq_NBITS8_DW01_inc_0
 IOYb[SBZ1:^eH7CB7G4YbK1
 V^AZW?TVIMJ3MdUn;D[aPV2
 R5
-R32
-R33
-R34
+R38
+R39
+R40
 L0 25
 R26
 r1
 31
-R35
-R36
-R37
+R41
+R42
+R43
 R30
 R31
 nsqroot_seq_@n@b@i@t@s8_@d@w01_inc_0
@@ -197,16 +311,16 @@ vsqroot_seq_NBITS8_DW01_inc_1
 I:2a9i^3WnS6hggEY6f93N2
 V1^49@SImA9Z9lnXfJ5X[Z0
 R5
-R23
-R24
-R25
+R32
+R33
+R34
 L0 180
 R26
 r1
 31
-R27
-R28
-R29
+R35
+R36
+R37
 R30
 R31
 nsqroot_seq_@n@b@i@t@s8_@d@w01_inc_1
@@ -216,16 +330,16 @@ vsqroot_seq_NBITS8_DW01_sub_0
 IDDN?NCLe>VY5_=`[1dGfR2
 VQ?9mRE_kggm21JcZI3W`:2
 R5
-R32
-R33
-R34
+R38
+R39
+R40
 L0 94
 R26
 r1
 31
-R35
-R36
-R37
+R41
+R42
+R43
 R30
 R31
 nsqroot_seq_@n@b@i@t@s8_@d@w01_sub_0
@@ -235,16 +349,16 @@ vsqroot_seq_NBITS8_DW01_sub_1
 IN769Cd<CE0kzbQFH9J;el3
 VWnSLi<>hbM0DefQ5hb<6j3
 R5
-R32
-R33
-R34
+R38
+R39
+R40
 L0 65
 R26
 r1
 31
-R35
-R36
-R37
+R41
+R42
+R43
 R30
 R31
 nsqroot_seq_@n@b@i@t@s8_@d@w01_sub_1
@@ -254,16 +368,16 @@ vsqroot_seq_NBITS8_DW01_sub_2
 IKZV]]h9c2lb;NdDVo3JH]3
 V8o@`hjW^Cm0jT<f^93I]n1
 R5
-R23
-R24
-R25
+R32
+R33
+R34
 L0 2
 R26
 r1
 31
-R27
-R28
-R29
+R35
+R36
+R37
 R30
 R31
 nsqroot_seq_@n@b@i@t@s8_@d@w01_sub_2
@@ -273,23 +387,23 @@ vsqroot_seq_NBITS8_DW01_sub_4
 IF8OKI8jznN?dCYEYf1V6k0
 VBV=FFn^mVI<mc9[]hGf_61
 R5
-R23
-R24
-R25
+R32
+R33
+R34
 L0 216
 R26
 r1
 31
-R27
-R28
-R29
+R35
+R36
+R37
 R30
 R31
 nsqroot_seq_@n@b@i@t@s8_@d@w01_sub_4
 !s100 o]hWfXSNTGFDj=E`zKjRd0
 !s85 0
 Esqroot_seq_tb
-Z38 w1353339631
+Z44 w1353407441
 R1
 R2
 R3
@@ -302,7 +416,7 @@ L6
 Ve84L;fFKQNPfD>?lTkdA92
 R8
 32
-Z39 !s108 1353339631.102184
+Z45 !s108 1353407441.229563
 R10
 R11
 R12
@@ -313,56 +427,56 @@ R1
 R2
 R3
 R4
-Z40 DEx4 work 13 sqroot_seq_tb 0 22 e84L;fFKQNPfD>?lTkdA92
+Z46 DEx4 work 13 sqroot_seq_tb 0 22 e84L;fFKQNPfD>?lTkdA92
 l36
 L8
-VzJocdbki@2zc]JzEYo^B>3
+V4Da5B3:bko]EPl]l6]=4I3
 R8
 32
-R39
+R45
 R10
 R11
 R12
 R13
-!s100 OYzE]>DfJP4;LT:SnE:]30
+!s100 9j[SP959d[oC@`0I>9`iC2
 Csqroot_seq_tb_mapped_conf
-Z41 abench
-Z42 esqroot_seq_tb
+Z47 abench
+Z48 esqroot_seq_tb
 DPx7 verilog 8 vl_types 0 22 ]G>2izW1V4dcRR@F[keS10
-DEx4 work 17 sqroot_seq_NBITS8 0 22 7j1QlEda5eUXlGL:>b=^l3
-Z43 DAx4 work 13 sqroot_seq_tb 5 bench 22 zJocdbki@2zc]JzEYo^B>3
+DEx4 work 18 sqroot_seq_NBITS16 0 22 hd]0z:?<Sk9;ghVbLhUO23
+Z49 DAx4 work 13 sqroot_seq_tb 5 bench 22 4Da5B3:bko]EPl]l6]=4I3
 R1
 R2
 R3
 R4
-R40
-w1353256216
+R46
+w1353407029
 R5
-8/home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_mapped_conf.vhd
-F/home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_mapped_conf.vhd
+8/home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_mapped_conf_16BITS.vhd
+F/home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_mapped_conf_16BITS.vhd
 l0
 L1
-VDn86?O;]o@RZoV9EZ@08m2
-!s100 ZB;17^CI4hHhYZZm2l1^j0
+Vj`=ZP?PCW26BS:R?a?YI>2
+!s100 7B:6KGH;leC2TCgL1iS[>0
 R8
 32
-!s108 1353339631.162045
-!s90 -reportprogress|300|-work|work|-2002|-explicit|-novopt|/home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_mapped_conf.vhd|
-!s107 /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_mapped_conf.vhd|
+!s108 1353407441.318937
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-novopt|/home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_mapped_conf_16BITS.vhd|
+!s107 /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_mapped_conf_16BITS.vhd|
 o-work work -2002 -explicit
 R13
 Csqroot_seq_tb_rtl_conf
-R41
-R42
+R47
+R48
 R15
 R16
 R22
-R43
+R49
 R1
 R2
 R3
 R4
-R40
+R46
 w1352836554
 R5
 8/home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_rtl_conf.vhd
@@ -375,6 +489,6 @@ R8
 R12
 R13
 !s100 Z@P`FJ?7KggiTE8:mj`j;0
-!s108 1353339631.128807
+!s108 1353407441.249229
 !s90 -reportprogress|300|-work|SQROOT_SEQ|-2002|-explicit|-novopt|/home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_rtl_conf.vhd|
 !s107 /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_rtl_conf.vhd|

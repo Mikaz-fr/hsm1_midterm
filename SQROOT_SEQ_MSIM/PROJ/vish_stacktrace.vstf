@@ -35,3 +35,42 @@
 # 27   0x080bee6c: 'start + 0x1c' in '/softs/mentor/msim/10.0a/bin/../linux/vish'
 # End of Stack Trace
 
+# Current time Tue Nov 20 11:23:54 2012
+# ModelSim Stack Trace
+# Program = vish
+# Id = "10.0a"
+# Version = "2011.02"
+# Date = "Feb 21 2011"
+# Platform = linux
+# 0    0x0840a478: 'Tcl_DStringAppend + 0x90' in '/softs/mentor/msim/10.0a/bin/../linux/vish'
+# 1    0x083b3d95: 'Tcl_VarEvalVA + 0x31' in '/softs/mentor/msim/10.0a/bin/../linux/vish'
+# 2    0x083b3dea: 'Tcl_VarEval + 0x1a' in '/softs/mentor/msim/10.0a/bin/../linux/vish'
+# 3    0x08341930: 'TkPostSubmenu + 0x178' in '/softs/mentor/msim/10.0a/bin/../linux/vish'
+# 4    0x0833e43a: 'TkFreeMenuReferences + 0x1226' in '/softs/mentor/msim/10.0a/bin/../linux/vish'
+# 5    0x083b1b59: 'TclEvalObjvInternal + 0x341' in '/softs/mentor/msim/10.0a/bin/../linux/vish'
+# 6    0x083b2fed: 'Tcl_EvalEx + 0x1cd' in '/softs/mentor/msim/10.0a/bin/../linux/vish'
+# 7    0x083b3430: 'Tcl_Eval + 0x20' in '/softs/mentor/msim/10.0a/bin/../linux/vish'
+# 8    0x083b3db4: 'Tcl_VarEvalVA + 0x50' in '/softs/mentor/msim/10.0a/bin/../linux/vish'
+# 9    0x083b3dea: 'Tcl_VarEval + 0x1a' in '/softs/mentor/msim/10.0a/bin/../linux/vish'
+# 10   0x08341930: 'TkPostSubmenu + 0x178' in '/softs/mentor/msim/10.0a/bin/../linux/vish'
+# 11   0x0833e43a: 'TkFreeMenuReferences + 0x1226' in '/softs/mentor/msim/10.0a/bin/../linux/vish'
+# 12   0x083b1b59: 'TclEvalObjvInternal + 0x341' in '/softs/mentor/msim/10.0a/bin/../linux/vish'
+# 13   0x083d748b: 'TclExprFloatError + 0x2a1b' in '/softs/mentor/msim/10.0a/bin/../linux/vish'
+# 14   0x083dc573: 'TclCompEvalObj + 0x107' in '/softs/mentor/msim/10.0a/bin/../linux/vish'
+# 15   0x08401dc9: 'TclObjInterpProc + 0x24d' in '/softs/mentor/msim/10.0a/bin/../linux/vish'
+# 16   0x083b1b59: 'TclEvalObjvInternal + 0x341' in '/softs/mentor/msim/10.0a/bin/../linux/vish'
+# 17   0x083b2fed: 'Tcl_EvalEx + 0x1cd' in '/softs/mentor/msim/10.0a/bin/../linux/vish'
+# 18   0x0839ec13: 'Tk_BindEvent + 0xecb' in '/softs/mentor/msim/10.0a/bin/../linux/vish'
+# 19   0x0839fe25: 'TkBindEventProc + 0xb1' in '/softs/mentor/msim/10.0a/bin/../linux/vish'
+# 20   0x08322601: 'Tk_HandleEvent + 0x45d' in '/softs/mentor/msim/10.0a/bin/../linux/vish'
+# 21   0x08322e05: 'TkQueueEventForAllChildren + 0xad' in '/softs/mentor/msim/10.0a/bin/../linux/vish'
+# 22   0x083f95f0: 'Tcl_ServiceEvent + 0x54' in '/softs/mentor/msim/10.0a/bin/../linux/vish'
+# 23   0x083f9822: 'Tcl_DoOneEvent + 0x72' in '/softs/mentor/msim/10.0a/bin/../linux/vish'
+# 24   0x08322ec9: 'Tk_MainLoop + 0x19' in '/softs/mentor/msim/10.0a/bin/../linux/vish'
+# 25   0x0832a09c: 'Tk_MainEx + 0x298' in '/softs/mentor/msim/10.0a/bin/../linux/vish'
+# 26   0x08190662: 'vish_inner_loop + 0x112' in '/softs/mentor/msim/10.0a/bin/../linux/vish'
+# 27   0x081925e3: 'main + 0xeb3' in '/softs/mentor/msim/10.0a/bin/../linux/vish'
+# 28   0x003f7e97: '_libc_start_main + 0xd7' in '/lib/libc.so.6'
+# 29   0x080bee6c: 'start + 0x1c' in '/softs/mentor/msim/10.0a/bin/../linux/vish'
+# End of Stack Trace
+

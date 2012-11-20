@@ -1,0 +1,115 @@
+ 
+****************************************
+Report : resources
+Design : sqroot_seq_NBITS32
+Version: F-2011.09-SP5
+Date   : Tue Nov 20 11:01:25 2012
+****************************************
+
+Resource Sharing Report for design sqroot_seq_NBITS32 in file
+        ./HDL/RTL/sqroot_seq_rtl.vhd
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r337     | DW_cmp       | width=32   |               | lte_gte_108          |
+| r339     | DW_cmp       | width=32   |               | lt_gt_109            |
+| r341     | DW01_add     | width=32   |               | add_110              |
+| r343     | DW_cmp       | width=32   |               | lte_110              |
+| r349     | DW01_add     | width=32   |               | add_139              |
+| r351     | DW01_inc     | width=32   |               | add_142              |
+| r940     | DW01_sub     | width=32   |               | sub_1_root_sub_0_root_sub_138 |
+| r942     | DW01_sub     | width=32   |               | sub_0_root_sub_0_root_sub_138 |
+===============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| sub_1_root_sub_0_root_sub_138         |                    |                |
+|                    | DW01_sub         | pparch (area,speed)                 |
+| add_139            | DW01_add         | pparch (area,speed)                 |
+| add_110            | DW01_add         | pparch (area,speed)                 |
+| lte_110            | DW_cmp           | pparch (area,speed)                 |
+| sub_0_root_sub_0_root_sub_138         |                    |                |
+|                    | DW01_sub         | pparch (area,speed)                 |
+| lt_gt_109          | DW_cmp           | pparch (area,speed)                 |
+| add_142            | DW01_inc         | pparch (area,speed)                 |
+===============================================================================
+
+
+No multiplexors to report
+ 
+****************************************
+Design : sqroot_seq_NBITS32_DW01_sub_7
+****************************************
+
+No resource sharing information to report.
+
+No implementations to report
+
+No multiplexors to report
+ 
+****************************************
+Design : sqroot_seq_NBITS32_DW01_add_6
+****************************************
+
+No resource sharing information to report.
+
+No implementations to report
+
+No multiplexors to report
+ 
+****************************************
+Design : sqroot_seq_NBITS32_DW01_add_5
+****************************************
+
+No resource sharing information to report.
+
+No implementations to report
+
+No multiplexors to report
+ 
+****************************************
+Design : sqroot_seq_NBITS32_DW_cmp_6
+****************************************
+
+No resource sharing information to report.
+
+No implementations to report
+
+No multiplexors to report
+ 
+****************************************
+Design : sqroot_seq_NBITS32_DW01_sub_5
+****************************************
+
+No resource sharing information to report.
+
+No implementations to report
+
+No multiplexors to report
+ 
+****************************************
+Design : sqroot_seq_NBITS32_DW_cmp_5
+****************************************
+
+No resource sharing information to report.
+
+No implementations to report
+
+No multiplexors to report
+ 
+****************************************
+Design : sqroot_seq_NBITS32_DW01_inc_1
+****************************************
+
+No resource sharing information to report.
+
+No implementations to report
+
+No multiplexors to report
+1

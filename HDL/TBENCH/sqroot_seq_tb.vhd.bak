@@ -20,7 +20,7 @@ architecture bench of sqroot_seq_tb is
    end component sqroot;
 
    constant NBITS     : natural := 8;
-   constant CLK_FREQ  : time := 50 ns;
+   constant CLK_PERIODE  : time := 3.5 ns;
 
    signal arg      : std_logic_vector(NBITS-1 downto 0);
    signal z        : std_logic_vector(NBITS/2 downto 0);
@@ -39,7 +39,7 @@ begin
       port map (arg, roundup, CLK, nRst, start, z, ready);
 
 
-  CLK <= not CLK after CLK_FREQ when sim_done = '0' else '0';
+  CLK <= not CLK after (CLK_PERIODE/2) when sim_done = '0' else '0';
 
 
    process
@@ -62,7 +62,7 @@ begin
           else
             sqrt_exp2 := integer(floor(sqrt_exp));
           end if;
-          wait for CLK_FREQ/20 ;  --let time to do a pulse on check
+          wait for CLK_PERIODE/20 ;  --let time to do a pulse on check
           assert to_integer(unsigned(z)) = sqrt_exp2;
           check <= '0';
       end procedure compute;

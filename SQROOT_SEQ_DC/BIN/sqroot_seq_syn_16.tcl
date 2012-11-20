@@ -13,7 +13,7 @@ set ENTITY_NAME sqroot_seq
 set ARCH_NAME   rtl
 set NBITS       16
 set CLK_NAME    clk
-set CLK_PERIOD  10  ;# ns
+set CLK_PERIOD  4.6  ;# ns
 #
 set DESIGN_ENTITY "${ENTITY_NAME}_${ARCH_NAME}"
 set DESIGN        "${ENTITY_NAME}_nbits${NBITS}_clk${CLK_PERIOD}"

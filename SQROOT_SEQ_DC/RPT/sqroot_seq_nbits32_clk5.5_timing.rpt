@@ -1,0 +1,81 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : sqroot_seq_NBITS32
+Version: F-2011.09-SP5
+Date   : Tue Nov 20 11:01:25 2012
+****************************************
+
+Operating Conditions: nom_pvt   Library: c35_CORELIB
+Wire Load Model Mode: enclosed
+
+  Startpoint: state_reg_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: state_reg_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sqroot_seq_NBITS32 10k                   c35_CORELIB
+  sqroot_seq_NBITS32_DW01_add_5
+                     10k                   c35_CORELIB
+  sqroot_seq_NBITS32_DW_cmp_6
+                     10k                   c35_CORELIB
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  state_reg_reg[0]/C (DFC1)                               0.00       0.00 r
+  state_reg_reg[0]/QN (DFC1)                              0.60       0.60 f
+  U311/Q (BUF8)                                           0.25       0.86 f
+  U395/Q (NAND28)                                         0.09       0.95 r
+  U320/Q (CLKIN6)                                         0.08       1.02 f
+  U321/Q (NAND23)                                         0.24       1.26 r
+  U317/Q (CLKIN6)                                         0.10       1.37 f
+  U318/Q (BUF12)                                          0.27       1.63 f
+  U519/Q (AOI220)                                         0.36       1.99 r
+  U480/Q (NAND22)                                         0.17       2.17 f
+  add_110/A[1] (sqroot_seq_NBITS32_DW01_add_5)            0.00       2.17 f
+  add_110/U602/Q (NOR22)                                  0.17       2.34 r
+  add_110/U363/Q (CLKIN4)                                 0.08       2.42 f
+  add_110/U598/Q (NAND20)                                 0.31       2.73 r
+  add_110/U597/Q (XNR20)                                  0.60       3.33 f
+  add_110/SUM[1] (sqroot_seq_NBITS32_DW01_add_5)          0.00       3.33 f
+  lte_110/A[1] (sqroot_seq_NBITS32_DW_cmp_6)              0.00       3.33 f
+  lte_110/U262/Q (CLKIN2)                                 0.18       3.51 r
+  lte_110/U303/Q (NOR21)                                  0.17       3.68 f
+  lte_110/U137/Q (OAI212)                                 0.20       3.88 r
+  lte_110/U291/Q (AOI211)                                 0.18       4.06 f
+  lte_110/U129/Q (OAI212)                                 0.20       4.26 r
+  lte_110/U231/Q (AOI212)                                 0.13       4.39 f
+  lte_110/U111/Q (OAI212)                                 0.19       4.57 r
+  lte_110/U88/Q (AOI212)                                  0.13       4.70 f
+  lte_110/U57/Q (OAI212)                                  0.19       4.89 r
+  lte_110/U26/Q (AOI212)                                  0.13       5.01 f
+  lte_110/U1/Q (OAI212)                                   0.19       5.20 r
+  lte_110/GE_LT_GT_LE (sqroot_seq_NBITS32_DW_cmp_6)       0.00       5.20 r
+  U518/Q (INV3)                                           0.06       5.26 f
+  U344/Q (OAI212)                                         0.13       5.39 r
+  U416/Q (AOI212)                                         0.10       5.50 f
+  state_reg_reg[0]/D (DFC1)                               0.00       5.50 f
+  data arrival time                                                  5.50
+
+  clock clk (rise edge)                                   5.50       5.50
+  clock network delay (ideal)                             0.00       5.50
+  state_reg_reg[0]/C (DFC1)                               0.00       5.50 r
+  library setup time                                      0.00       5.50
+  data required time                                                 5.50
+  --------------------------------------------------------------------------
+  data required time                                                 5.50
+  data arrival time                                                 -5.50
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

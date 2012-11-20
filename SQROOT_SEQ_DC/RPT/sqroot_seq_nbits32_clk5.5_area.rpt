@@ -1,0 +1,28 @@
+ 
+****************************************
+Report : area
+Design : sqroot_seq_NBITS32
+Version: F-2011.09-SP5
+Date   : Tue Nov 20 11:01:25 2012
+****************************************
+
+Library(s) Used:
+
+    c35_CORELIB (File: /dkits/ams/hk370/synopsys/c35_3.3V/c35_CORELIB.db)
+
+Number of ports:                           54
+Number of nets:                           670
+Number of cells:                          436
+Number of combinational cells:            332
+Number of sequential cells:                97
+Number of macros:                           0
+Number of buf/inv:                         80
+Number of references:                      51
+
+Combinational area:       164073.000214
+Noncombinational area:    30011.799408
+Net Interconnect area:    42327.000000 
+
+Total cell area:          194084.799622
+Total area:               236411.799622
+1
