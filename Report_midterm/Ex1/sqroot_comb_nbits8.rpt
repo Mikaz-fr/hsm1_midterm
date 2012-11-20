@@ -1,3 +1,7 @@
+8 BITS REPORT:
+
+
+
  
 ****************************************
 Report : area
@@ -204,3 +208,1417 @@ XOR22              c35_CORELIB   200.199997       2   400.399994
 -----------------------------------------------------------------------------
 Total 54 references                                 13959.400032
 1
+
+
+
+
+
+
+16 BITS REPORT:
+
+
+
+
+
+
+
+ 
+****************************************
+Report : area
+Design : sqroot_comb_NBITS16
+Version: F-2011.09-SP5
+Date   : Mon Nov 12 16:15:20 2012
+****************************************
+
+Library(s) Used:
+
+    c35_CORELIB (File: /dkits/ams/hk370/synopsys/c35_3.3V/c35_CORELIB.db)
+
+Number of ports:                           26
+Number of nets:                           884
+Number of cells:                          860
+Number of combinational cells:            859
+Number of sequential cells:                 0
+Number of macros:                           0
+Number of buf/inv:                        346
+Number of references:                      79
+
+Combinational area:       78423.799995
+Noncombinational area:       0.000000
+Net Interconnect area:    15570.000000 
+
+Total cell area:          78423.799995
+Total area:               93993.799995
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : sqroot_comb_NBITS16
+Version: F-2011.09-SP5
+Date   : Mon Nov 12 16:15:20 2012
+****************************************
+
+Operating Conditions: nom_pvt   Library: c35_CORELIB
+Wire Load Model Mode: enclosed
+
+  Startpoint: arg[10] (input port)
+  Endpoint: sqroot[3] (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sqroot_comb_NBITS16
+                     10k                   c35_CORELIB
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  arg[10] (in)                             0.00       0.00 r
+  U708/Q (CLKIN15)                         0.04       0.04 f
+  U1333/Q (NAND28)                         0.12       0.16 r
+  U1418/Q (OAI212)                         0.08       0.24 f
+  U1305/Q (AOI222)                         0.18       0.42 r
+  U1184/Q (INV6)                           0.06       0.49 f
+  U1222/Q (NAND21)                         0.20       0.68 r
+  U1224/Q (NAND22)                         0.10       0.78 f
+  U647/Q (NAND26)                          0.12       0.90 r
+  U646/Q (INV4)                            0.07       0.97 f
+  U1423/Q (NOR33)                          0.22       1.19 r
+  U681/Q (INV8)                            0.10       1.30 f
+  U1247/Q (NAND28)                         0.16       1.46 r
+  U1101/Q (XNR22)                          0.29       1.75 r
+  U1016/Q (NAND24)                         0.09       1.85 f
+  U707/Q (NAND34)                          0.18       2.02 r
+  U1150/Q (XOR31)                          0.72       2.74 r
+  U1272/Q (NAND24)                         0.08       2.83 f
+  U1147/Q (NAND28)                         0.14       2.97 r
+  U680/Q (CLKIN12)                         0.06       3.03 f
+  U1453/Q (OAI222)                         0.22       3.25 r
+  U1050/Q (NAND24)                         0.07       3.33 f
+  U1187/Q (OAI211)                         0.27       3.60 r
+  U1455/Q (OAI222)                         0.13       3.73 f
+  U1459/Q (AOI2112)                        0.22       3.95 r
+  U729/Q (INV4)                            0.12       4.07 f
+  U1461/Q (OAI2112)                        0.33       4.40 r
+  U751/Q (INV6)                            0.06       4.46 f
+  U1462/Q (OAI222)                         0.23       4.69 r
+  U770/Q (INV6)                            0.08       4.77 f
+  U1207/Q (XOR22)                          0.27       5.04 r
+  U1208/Q (NAND24)                         0.06       5.11 f
+  U1041/Q (NAND21)                         0.26       5.37 r
+  U1043/Q (NAND23)                         0.09       5.46 f
+  U1246/Q (OAI212)                         0.17       5.63 r
+  U1323/Q (OAI222)                         0.12       5.75 f
+  U1072/Q (NAND24)                         0.12       5.87 r
+  U1491/Q (OAI212)                         0.11       5.98 f
+  U912/Q (NAND26)                          0.17       6.15 r
+  U1135/Q (CLKIN15)                        0.12       6.27 f
+  U888/Q (NAND28)                          0.13       6.40 r
+  U669/Q (INV10)                           0.04       6.44 f
+  U1015/Q (NAND28)                         0.10       6.54 r
+  U1014/Q (NAND28)                         0.06       6.60 f
+  U1219/Q (CLKIN12)                        0.05       6.65 r
+  U1005/Q (NAND26)                         0.04       6.69 f
+  U1065/Q (NAND24)                         0.16       6.86 r
+  U1255/Q (INV6)                           0.05       6.90 f
+  U833/Q (NAND24)                          0.14       7.05 r
+  U1057/Q (AOI222)                         0.09       7.13 f
+  U1501/Q (OAI2112)                        0.28       7.42 r
+  U775/Q (INV12)                           0.10       7.52 f
+  U1361/Q (MUX21)                          0.38       7.90 r
+  sqroot[3] (out)                          0.00       7.90 r
+  data arrival time                                   7.90
+
+  max_delay                                7.90       7.90
+  output external delay                    0.00       7.90
+  data required time                                  7.90
+  -----------------------------------------------------------
+  data required time                                  7.90
+  data arrival time                                  -7.90
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1
+ 
+****************************************
+Report : resources
+Design : sqroot_comb_NBITS16
+Version: F-2011.09-SP5
+Date   : Mon Nov 12 16:15:20 2012
+****************************************
+
+Resource Sharing Report for design sqroot_comb_NBITS16 in file
+        ./HDL/RTL/sqroot_comb_rtl.vhd
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r498     | DW_cmp       | width=16   |               | lte_43               |
+| r500     | DW01_sub     | width=16   |               | sub_44               |
+| r502     | DW01_add     | width=16   |               | add_43_I2            |
+| r504     | DW_cmp       | width=16   |               | lte_43_I2            |
+| r510     | DW01_add     | width=15   |               | add_45_I2            |
+| r512     | DW01_add     | width=16   |               | add_43_I3            |
+| r514     | DW_cmp       | width=16   |               | lte_43_I3            |
+| r520     | DW01_add     | width=16   |               | add_45_I3            |
+| r522     | DW01_add     | width=16   |               | add_43_I4            |
+| r524     | DW_cmp       | width=16   |               | lte_43_I4            |
+| r530     | DW01_add     | width=16   |               | add_45_I4            |
+| r532     | DW01_add     | width=16   |               | add_43_I5            |
+| r534     | DW_cmp       | width=16   |               | lte_43_I5            |
+| r540     | DW01_add     | width=16   |               | add_45_I5            |
+| r542     | DW01_add     | width=16   |               | add_43_I6            |
+| r544     | DW_cmp       | width=16   |               | lte_43_I6            |
+| r550     | DW01_add     | width=16   |               | add_45_I6            |
+| r552     | DW01_add     | width=16   |               | add_43_I7            |
+| r554     | DW_cmp       | width=16   |               | lte_43_I7            |
+| r560     | DW01_add     | width=16   |               | add_45_I7            |
+| r562     | DW01_inc     | width=16   |               | add_43_I8            |
+| r564     | DW_cmp       | width=16   |               | lte_43_I8            |
+| r566     | DW01_sub     | width=16   |               | sub_1_root_sub_44_I8 |
+| r568     | DW01_add     | width=16   |               | add_45_I8            |
+| r570     | DW_cmp       | width=16   |               | lt_gt_52             |
+| r572     | DW01_inc     | width=9    |               | add_53               |
+| r1160    | DW01_add     | width=16   |               | add_1_root_sub_0_root_sub_44_I2 |
+| r1162    | DW01_sub     | width=16   |               | sub_0_root_sub_0_root_sub_44_I2 |
+| r1751    | DW01_sub     | width=16   |               | sub_1_root_sub_0_root_sub_44_I3 |
+| r1753    | DW01_sub     | width=16   |               | sub_0_root_sub_0_root_sub_44_I3 |
+| r2341    | DW01_add     | width=16   |               | add_1_root_sub_0_root_sub_44_I4 |
+| r2343    | DW01_sub     | width=16   |               | sub_0_root_sub_0_root_sub_44_I4 |
+| r2932    | DW01_sub     | width=16   |               | sub_1_root_sub_0_root_sub_44_I5 |
+| r2934    | DW01_sub     | width=16   |               | sub_0_root_sub_0_root_sub_44_I5 |
+| r3523    | DW01_sub     | width=16   |               | sub_1_root_sub_0_root_sub_44_I6 |
+| r3525    | DW01_sub     | width=16   |               | sub_0_root_sub_0_root_sub_44_I6 |
+| r4114    | DW01_sub     | width=16   |               | sub_1_root_sub_0_root_sub_44_I7 |
+| r4116    | DW01_sub     | width=16   |               | sub_0_root_sub_0_root_sub_44_I7 |
+===============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_53             | DW01_inc         | pparch (area,speed)                 |
+===============================================================================
+
+
+No multiplexors to report
+ 
+****************************************
+Design : sqroot_comb_NBITS16_DW01_inc_6
+****************************************
+
+No resource sharing information to report.
+
+No implementations to report
+
+No multiplexors to report
+1
+ 
+****************************************
+Report : reference
+Design : sqroot_comb_NBITS16
+Version: F-2011.09-SP5
+Date   : Mon Nov 12 16:15:20 2012
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AOI210             c35_CORELIB    72.800003       2   145.600006  
+AOI211             c35_CORELIB    72.800003       1    72.800003  
+AOI212             c35_CORELIB    91.000000      12  1092.000000  
+AOI220             c35_CORELIB    91.000000       2   182.000000  
+AOI222             c35_CORELIB   109.199997       3   327.599991  
+AOI311             c35_CORELIB    91.000000       1    91.000000  
+AOI312             c35_CORELIB   109.199997      12  1310.399963  
+AOI2111            c35_CORELIB    91.000000       1    91.000000  
+AOI2112            c35_CORELIB   127.400002       8  1019.200012  
+BUF2               c35_CORELIB    54.599998      12   655.199982  
+BUF6               c35_CORELIB    72.800003       3   218.400009  
+BUF8               c35_CORELIB    91.000000       1    91.000000  
+BUF15              c35_CORELIB   145.600006       3   436.800018  
+CLKBU12            c35_CORELIB   109.199997       1   109.199997  
+CLKBU15            c35_CORELIB   145.600006       3   436.800018  
+CLKIN0             c35_CORELIB    36.400002       5   182.000008  
+CLKIN1             c35_CORELIB    36.400002       2    72.800003  
+CLKIN2             c35_CORELIB    36.400002       6   218.400009  
+CLKIN3             c35_CORELIB    36.400002      32  1164.800049  
+CLKIN4             c35_CORELIB    54.599998       3   163.799995  
+CLKIN6             c35_CORELIB    54.599998      29  1583.399956  
+CLKIN8             c35_CORELIB    72.800003       2   145.600006  
+CLKIN10            c35_CORELIB    91.000000       3   273.000000  
+CLKIN12            c35_CORELIB    91.000000       9   819.000000  
+CLKIN15            c35_CORELIB   109.199997       7   764.399979  
+IMUX20             c35_CORELIB    91.000000       4   364.000000  
+IMUX22             c35_CORELIB   145.600006       1   145.600006  
+IMUX24             c35_CORELIB   182.000000       6  1092.000000  
+INV0               c35_CORELIB    36.400002      17   618.800026  
+INV1               c35_CORELIB    36.400002      12   436.800018  
+INV2               c35_CORELIB    36.400002      24   873.600037  
+INV3               c35_CORELIB    36.400002      56  2038.400085  
+INV4               c35_CORELIB    54.599998      21  1146.599968  
+INV6               c35_CORELIB    54.599998      54  2948.399918  
+INV8               c35_CORELIB    72.800003       6   436.800018  
+INV10              c35_CORELIB    91.000000       9   819.000000  
+INV12              c35_CORELIB    91.000000      17  1547.000000  
+INV15              c35_CORELIB   109.199997       9   982.799973  
+LOGIC0             c35_CORELIB    36.400002       1    36.400002  
+MUX21              c35_CORELIB   109.199997       3   327.599991  
+NAND20             c35_CORELIB    54.599998       5   272.999992  
+NAND21             c35_CORELIB    54.599998      21  1146.599968  
+NAND22             c35_CORELIB    54.599998      48  2620.799927  
+NAND23             c35_CORELIB    91.000000      35  3185.000000  
+NAND24             c35_CORELIB   109.199997      62  6770.399811  
+NAND26             c35_CORELIB   163.800003      30  4914.000092  
+NAND28             c35_CORELIB   182.000000      47  8554.000000  
+NAND30             c35_CORELIB    72.800003       1    72.800003  
+NAND32             c35_CORELIB   127.400002       4   509.600006  
+NAND33             c35_CORELIB   127.400002       8  1019.200012  
+NAND34             c35_CORELIB   163.800003      10  1638.000031  
+NAND42             c35_CORELIB   145.600006       1   145.600006  
+NAND43             c35_CORELIB   200.199997       3   600.599991  
+NOR20              c35_CORELIB    54.599998       3   163.799995  
+NOR21              c35_CORELIB    54.599998       6   327.599991  
+NOR22              c35_CORELIB    72.800003       4   291.200012  
+NOR23              c35_CORELIB    91.000000      10   910.000000  
+NOR24              c35_CORELIB   109.199997       8   873.599976  
+NOR31              c35_CORELIB    72.800003       1    72.800003  
+NOR32              c35_CORELIB    91.000000       5   455.000000  
+NOR33              c35_CORELIB   127.400002      10  1274.000015  
+NOR41              c35_CORELIB    91.000000       1    91.000000  
+NOR42              c35_CORELIB   163.800003       5   819.000015  
+OAI210             c35_CORELIB    72.800003       4   291.200012  
+OAI211             c35_CORELIB    72.800003       6   436.800018  
+OAI212             c35_CORELIB    72.800003      39  2839.200119  
+OAI220             c35_CORELIB    91.000000       1    91.000000  
+OAI221             c35_CORELIB    91.000000       2   182.000000  
+OAI222             c35_CORELIB    91.000000      21  1911.000000  
+OAI311             c35_CORELIB    91.000000       2   182.000000  
+OAI312             c35_CORELIB   109.199997      10  1091.999969  
+OAI2111            c35_CORELIB    91.000000       1    91.000000  
+OAI2112            c35_CORELIB   145.600006      13  1892.800079  
+XNR20              c35_CORELIB   109.199997       4   436.799988  
+XNR21              c35_CORELIB   109.199997       3   327.599991  
+XNR22              c35_CORELIB   200.199997      10  2001.999969  
+XOR22              c35_CORELIB   200.199997       6  1201.199982  
+XOR31              c35_CORELIB   200.199997       6  1201.199982  
+sqroot_comb_NBITS16_DW01_inc_6  2038.399994       1  2038.399994  h
+-----------------------------------------------------------------------------
+Total 79 references                                 78423.799995
+
+****************************************
+Design: sqroot_comb_NBITS16_DW01_inc_6 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CLKIN0             c35_CORELIB    36.400002       3   109.200005  
+CLKIN3             c35_CORELIB    36.400002       1    36.400002  
+INV0               c35_CORELIB    36.400002       4   145.600006  
+INV2               c35_CORELIB    36.400002       2    72.800003  
+NAND20             c35_CORELIB    54.599998       5   272.999992  
+NAND21             c35_CORELIB    54.599998       3   163.799995  
+NAND22             c35_CORELIB    54.599998       2   109.199997  
+NOR20              c35_CORELIB    54.599998       1    54.599998  
+NOR21              c35_CORELIB    54.599998       4   218.399994  
+XNR20              c35_CORELIB   109.199997       1   109.199997  
+XNR21              c35_CORELIB   109.199997       1   109.199997  
+XOR21              c35_CORELIB   127.400002       5   637.000008  
+-----------------------------------------------------------------------------
+Total 12 references                                  2038.399994
+1
+
+
+
+
+32 BITS REPORT:
+
+
+
+ 
+
+
+ 
+****************************************
+Report : area
+Design : sqroot_comb_NBITS32
+Version: F-2011.09-SP5
+Date   : Mon Nov 12 22:34:41 2012
+****************************************
+
+Library(s) Used:
+
+    c35_CORELIB (File: /dkits/ams/hk370/synopsys/c35_3.3V/c35_CORELIB.db)
+
+Number of ports:                           50
+Number of nets:                          2453
+Number of cells:                         2224
+Number of combinational cells:           2212
+Number of sequential cells:                 0
+Number of macros:                           0
+Number of buf/inv:                        925
+Number of references:                     104
+
+Combinational area:       338301.599648
+Noncombinational area:       0.000000
+Net Interconnect area:    66699.000000 
+
+Total cell area:          338301.599648
+Total area:               405000.599648
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : sqroot_comb_NBITS32
+Version: F-2011.09-SP5
+Date   : Mon Nov 12 22:34:41 2012
+****************************************
+
+Operating Conditions: nom_pvt   Library: c35_CORELIB
+Wire Load Model Mode: enclosed
+
+  Startpoint: arg[27] (input port)
+  Endpoint: sqroot[2] (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sqroot_comb_NBITS32
+                     10k                   c35_CORELIB
+  sqroot_comb_NBITS32_DW01_sub_39
+                     10k                   c35_CORELIB
+  sqroot_comb_NBITS32_DW_cmp_49
+                     10k                   c35_CORELIB
+  sqroot_comb_NBITS32_DW_cmp_47
+                     10k                   c35_CORELIB
+  sqroot_comb_NBITS32_DW_cmp_50
+                     10k                   c35_CORELIB
+  sqroot_comb_NBITS32_DW_cmp_48
+                     10k                   c35_CORELIB
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 r
+  arg[27] (in)                                            0.00       0.00 r
+  U3705/Q (NOR24)                                         0.07       0.07 f
+  U3698/Q (OAI2112)                                       0.29       0.36 r
+  U3696/Q (INV6)                                          0.09       0.45 f
+  U3689/Q (CLKIN6)                                        0.10       0.55 r
+  U3687/Q (NAND26)                                        0.05       0.60 f
+  U3695/Q (OAI212)                                        0.15       0.75 r
+  U4890/Q (OAI212)                                        0.12       0.87 f
+  U4884/Q (INV6)                                          0.13       1.00 r
+  U4629/Q (NAND24)                                        0.07       1.07 f
+  U3520/Q (NAND33)                                        0.29       1.36 r
+  U3667/Q (NOR33)                                         0.25       1.61 f
+  U3671/Q (NAND22)                                        0.28       1.90 r
+  U3766/Q (AOI222)                                        0.10       1.99 f
+  U3654/Q (OAI212)                                        0.21       2.20 r
+  U3760/Q (OAI222)                                        0.10       2.30 f
+  U3755/Q (BUF15)                                         0.23       2.53 f
+  U3753/Q (OAI212)                                        0.21       2.75 r
+  U3751/Q (INV6)                                          0.09       2.83 f
+  U3750/Q (NAND22)                                        0.20       3.03 r
+  U3749/Q (NAND28)                                        0.04       3.08 f
+  U3733/Q (NAND28)                                        0.12       3.20 r
+  U3466/Q (NAND28)                                        0.03       3.23 f
+  U3725/Q (AOI212)                                        0.13       3.36 r
+  U3719/Q (AOI2112)                                       0.22       3.58 f
+  U3748/Q (NAND26)                                        0.25       3.83 r
+  U3217/Q (INV4)                                          0.16       3.99 f
+  U4683/Q (NAND22)                                        0.22       4.21 r
+  U2921/Q (NAND28)                                        0.06       4.27 f
+  U3827/Q (NAND28)                                        0.10       4.37 r
+  U3415/Q (NAND28)                                        0.05       4.42 f
+  U2907/Q (INV12)                                         0.09       4.51 r
+  U4852/Q (NOR42)                                         0.23       4.74 f
+  U3271/Q (NOR32)                                         0.22       4.95 r
+  U4496/Q (XOR22)                                         0.31       5.26 f
+  U2937/Q (NAND26)                                        0.13       5.39 r
+  U4029/Q (INV6)                                          0.06       5.45 f
+  U4026/Q (NAND28)                                        0.10       5.55 r
+  U4027/Q (NAND28)                                        0.07       5.62 f
+  U3810/Q (CLKIN6)                                        0.09       5.71 r
+  U3809/Q (AOI2112)                                       0.15       5.85 f
+  U3805/Q (NAND43)                                        0.24       6.09 r
+  U3785/Q (AOI212)                                        0.21       6.30 f
+  U3782/Q (NAND26)                                        0.28       6.58 r
+  U4312/Q (INV12)                                         0.13       6.70 f
+  U4650/Q (NOR24)                                         0.14       6.85 r
+  U4598/Q (INV6)                                          0.06       6.90 f
+  U4461/Q (NAND28)                                        0.09       7.00 r
+  U3278/Q (NAND26)                                        0.07       7.07 f
+  U4016/Q (CLKIN12)                                       0.06       7.12 r
+  U4782/Q (NOR42)                                         0.14       7.26 f
+  U4605/Q (NAND24)                                        0.17       7.44 r
+  U4766/Q (INV6)                                          0.05       7.49 f
+  U4765/Q (NAND34)                                        0.24       7.73 r
+  U3877/Q (INV12)                                         0.11       7.84 f
+  U3874/Q (NAND28)                                        0.19       8.03 r
+  U3872/Q (INV15)                                         0.09       8.11 f
+  U2857/Q (CLKIN12)                                       0.08       8.20 r
+  U3032/Q (NAND26)                                        0.06       8.26 f
+  U4246/Q (CLKIN6)                                        0.07       8.33 r
+  U4245/Q (NAND26)                                        0.06       8.39 f
+  U4251/Q (NAND28)                                        0.18       8.57 r
+  U3489/Q (NAND28)                                        0.06       8.63 f
+  U3061/Q (CLKIN12)                                       0.06       8.68 r
+  U3854/Q (NOR42)                                         0.17       8.85 f
+  U3847/Q (OAI212)                                        0.23       9.08 r
+  U3846/Q (INV6)                                          0.13       9.22 f
+  U3843/Q (NAND28)                                        0.17       9.38 r
+  U3485/Q (INV12)                                         0.05       9.43 f
+  U4713/Q (AOI212)                                        0.13       9.56 r
+  U4566/Q (AOI222)                                        0.15       9.71 f
+  U4200/Q (OAI212)                                        0.26       9.96 r
+  U4604/Q (NAND24)                                        0.10      10.07 f
+  U3962/Q (CLKIN6)                                        0.12      10.19 r
+  U4472/Q (NOR33)                                         0.11      10.30 f
+  U4144/Q (NAND26)                                        0.12      10.42 r
+  U4868/Q (INV6)                                          0.05      10.47 f
+  U4869/Q (NAND34)                                        0.20      10.67 r
+  U4244/Q (NAND26)                                        0.07      10.74 f
+  U3235/Q (CLKIN15)                                       0.10      10.84 r
+  U4741/Q (NAND28)                                        0.08      10.92 f
+  U3055/Q (INV12)                                         0.11      11.03 r
+  U3952/Q (IMUX23)                                        0.29      11.32 f
+  U4250/Q (CLKIN8)                                        0.13      11.45 r
+  U3920/Q (INV6)                                          0.05      11.50 f
+  U4971/Q (OAI222)                                        0.20      11.70 r
+  U3010/Q (NAND34)                                        0.10      11.80 f
+  U3026/Q (NAND34)                                        0.23      12.03 r
+  U3635/Q (NOR24)                                         0.10      12.14 f
+  U3634/Q (NAND34)                                        0.27      12.41 r
+  U3637/Q (INV15)                                         0.16      12.56 f
+  U4719/Q (MUX24)                                         0.45      13.01 r
+  sub_0_root_sub_0_root_sub_44_I13/A[8] (sqroot_comb_NBITS32_DW01_sub_39)
+                                                          0.00      13.01 r
+  sub_0_root_sub_0_root_sub_44_I13/U288/Q (NOR24)         0.12      13.13 f
+  sub_0_root_sub_0_root_sub_44_I13/U218/Q (OAI212)        0.19      13.32 r
+  sub_0_root_sub_0_root_sub_44_I13/U203/Q (AOI212)        0.18      13.50 f
+  sub_0_root_sub_0_root_sub_44_I13/U162/Q (OAI212)        0.26      13.76 r
+  sub_0_root_sub_0_root_sub_44_I13/U310/Q (INV8)          0.17      13.93 f
+  sub_0_root_sub_0_root_sub_44_I13/U155/Q (OAI212)        0.26      14.19 r
+  sub_0_root_sub_0_root_sub_44_I13/U253/Q (NAND23)        0.09      14.28 f
+  sub_0_root_sub_0_root_sub_44_I13/U300/Q (NAND28)        0.13      14.41 r
+  sub_0_root_sub_0_root_sub_44_I13/DIFF[16] (sqroot_comb_NBITS32_DW01_sub_39)
+                                                          0.00      14.41 r
+  U4175/Q (INV6)                                          0.04      14.44 f
+  U4980/Q (OAI222)                                        0.20      14.64 r
+  lte_43_I14/B[16] (sqroot_comb_NBITS32_DW_cmp_49)        0.00      14.64 r
+  lte_43_I14/U30/Q (NOR24)                                0.14      14.78 f
+  lte_43_I14/U29/Q (OAI212)                               0.20      14.98 r
+  lte_43_I14/U27/Q (AOI212)                               0.13      15.11 f
+  lte_43_I14/U14/Q (OAI212)                               0.20      15.31 r
+  lte_43_I14/U12/Q (AOI212)                               0.15      15.46 f
+  lte_43_I14/U92/Q (NAND26)                               0.15      15.60 r
+  lte_43_I14/GE_LT_GT_LE (sqroot_comb_NBITS32_DW_cmp_49)
+                                                          0.00      15.60 r
+  U4732/Q (INV12)                                         0.07      15.67 f
+  U3959/Q (CLKIN15)                                       0.08      15.75 r
+  U3594/Q (BUF15)                                         0.21      15.97 r
+  U4993/Q (OAI212)                                        0.12      16.09 f
+  U3974/Q (BUF15)                                         0.23      16.32 f
+  lte_43_I15/B[9] (sqroot_comb_NBITS32_DW_cmp_47)         0.00      16.32 f
+  lte_43_I15/U173/Q (NOR23)                               0.13      16.45 r
+  lte_43_I15/U169/Q (INV6)                                0.06      16.51 f
+  lte_43_I15/U171/Q (NAND24)                              0.14      16.65 r
+  lte_43_I15/U117/Q (NOR24)                               0.11      16.76 f
+  lte_43_I15/U39/Q (AOI212)                               0.15      16.92 r
+  lte_43_I15/U37/Q (OAI212)                               0.08      16.99 f
+  lte_43_I15/U12/Q (AOI212)                               0.23      17.22 r
+  lte_43_I15/U1/Q (NAND28)                                0.09      17.31 f
+  lte_43_I15/GE_LT_GT_LE (sqroot_comb_NBITS32_DW_cmp_47)
+                                                          0.00      17.31 f
+  U3608/Q (BUF15)                                         0.23      17.54 f
+  U3607/Q (NAND24)                                        0.14      17.68 r
+  U3511/Q (CLKIN6)                                        0.05      17.73 f
+  U3609/Q (AOI212)                                        0.18      17.91 r
+  U3610/Q (INV8)                                          0.11      18.02 f
+  lte_43_I16/B[13] (sqroot_comb_NBITS32_DW_cmp_50)        0.00      18.02 f
+  lte_43_I16/U140/Q (NOR24)                               0.11      18.13 r
+  lte_43_I16/U134/Q (INV6)                                0.05      18.18 f
+  lte_43_I16/U133/Q (AOI212)                              0.17      18.35 r
+  lte_43_I16/U26/Q (OAI212)                               0.09      18.44 f
+  lte_43_I16/U17/Q (AOI212)                               0.21      18.64 r
+  lte_43_I16/U156/Q (NAND24)                              0.05      18.69 f
+  lte_43_I16/U6/Q (AOI212)                                0.16      18.85 r
+  lte_43_I16/U157/Q (NAND26)                              0.07      18.91 f
+  lte_43_I16/GE_LT_GT_LE (sqroot_comb_NBITS32_DW_cmp_50)
+                                                          0.00      18.91 f
+  U3596/Q (INV12)                                         0.10      19.02 r
+  U3599/Q (CLKIN4)                                        0.16      19.17 f
+  U4001/Q (CLKIN4)                                        0.18      19.36 r
+  U3582/Q (NAND24)                                        0.07      19.42 f
+  U4547/Q (NAND28)                                        0.10      19.53 r
+  lt_gt_52/B[11] (sqroot_comb_NBITS32_DW_cmp_48)          0.00      19.53 r
+  lt_gt_52/U159/Q (NOR24)                                 0.09      19.62 f
+  lt_gt_52/U170/Q (OAI212)                                0.21      19.83 r
+  lt_gt_52/U112/Q (INV4)                                  0.08      19.90 f
+  lt_gt_52/U169/Q (NOR24)                                 0.11      20.01 r
+  lt_gt_52/U162/Q (NOR24)                                 0.07      20.08 f
+  lt_gt_52/U17/Q (OAI212)                                 0.19      20.28 r
+  lt_gt_52/U136/Q (AOI212)                                0.13      20.40 f
+  lt_gt_52/U135/Q (NAND24)                                0.14      20.55 r
+  lt_gt_52/GE_LT_GT_LE (sqroot_comb_NBITS32_DW_cmp_48)
+                                                          0.00      20.55 r
+  U3605/Q (NAND28)                                        0.07      20.62 f
+  U3604/Q (CLKIN6)                                        0.17      20.79 r
+  U4855/Q (IMUX20)                                        0.31      21.10 f
+  sqroot[2] (out)                                         0.00      21.10 f
+  data arrival time                                                 21.10
+
+  max_delay                                              21.10      21.10
+  output external delay                                   0.00      21.10
+  data required time                                                21.10
+  --------------------------------------------------------------------------
+  data required time                                                21.10
+  data arrival time                                                -21.10
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
+ 
+****************************************
+Report : resources
+Design : sqroot_comb_NBITS32
+Version: F-2011.09-SP5
+Date   : Mon Nov 12 22:34:41 2012
+****************************************
+
+Resource Sharing Report for design sqroot_comb_NBITS32 in file
+        ./HDL/RTL/sqroot_comb_rtl.vhd
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r714     | DW_cmp       | width=32   |               | lte_43               |
+| r716     | DW01_sub     | width=32   |               | sub_44               |
+| r718     | DW01_add     | width=32   |               | add_43_I2            |
+| r720     | DW_cmp       | width=32   |               | lte_43_I2            |
+| r726     | DW01_add     | width=31   |               | add_45_I2            |
+| r728     | DW01_add     | width=32   |               | add_43_I3            |
+| r730     | DW_cmp       | width=32   |               | lte_43_I3            |
+| r736     | DW01_add     | width=32   |               | add_45_I3            |
+| r738     | DW01_add     | width=32   |               | add_43_I4            |
+| r740     | DW_cmp       | width=32   |               | lte_43_I4            |
+| r746     | DW01_add     | width=32   |               | add_45_I4            |
+| r748     | DW01_add     | width=32   |               | add_43_I5            |
+| r750     | DW_cmp       | width=32   |               | lte_43_I5            |
+| r756     | DW01_add     | width=32   |               | add_45_I5            |
+| r758     | DW01_add     | width=32   |               | add_43_I6            |
+| r760     | DW_cmp       | width=32   |               | lte_43_I6            |
+| r766     | DW01_add     | width=32   |               | add_45_I6            |
+| r768     | DW01_add     | width=32   |               | add_43_I7            |
+| r770     | DW_cmp       | width=32   |               | lte_43_I7            |
+| r776     | DW01_add     | width=32   |               | add_45_I7            |
+| r778     | DW01_add     | width=32   |               | add_43_I8            |
+| r780     | DW_cmp       | width=32   |               | lte_43_I8            |
+| r786     | DW01_add     | width=32   |               | add_45_I8            |
+| r788     | DW01_add     | width=32   |               | add_43_I9            |
+| r790     | DW_cmp       | width=32   |               | lte_43_I9            |
+| r796     | DW01_add     | width=32   |               | add_45_I9            |
+| r798     | DW01_add     | width=32   |               | add_43_I10           |
+| r800     | DW_cmp       | width=32   |               | lte_43_I10           |
+| r806     | DW01_add     | width=32   |               | add_45_I10           |
+| r808     | DW01_add     | width=32   |               | add_43_I11           |
+| r810     | DW_cmp       | width=32   |               | lte_43_I11           |
+| r816     | DW01_add     | width=32   |               | add_45_I11           |
+| r818     | DW01_add     | width=32   |               | add_43_I12           |
+| r820     | DW_cmp       | width=32   |               | lte_43_I12           |
+| r826     | DW01_add     | width=32   |               | add_45_I12           |
+| r828     | DW01_add     | width=32   |               | add_43_I13           |
+| r830     | DW_cmp       | width=32   |               | lte_43_I13           |
+| r836     | DW01_add     | width=32   |               | add_45_I13           |
+| r838     | DW01_add     | width=32   |               | add_43_I14           |
+| r840     | DW_cmp       | width=32   |               | lte_43_I14           |
+| r846     | DW01_add     | width=32   |               | add_45_I14           |
+| r848     | DW01_add     | width=32   |               | add_43_I15           |
+| r850     | DW_cmp       | width=32   |               | lte_43_I15           |
+| r856     | DW01_add     | width=32   |               | add_45_I15           |
+| r858     | DW01_inc     | width=32   |               | add_43_I16           |
+| r860     | DW_cmp       | width=32   |               | lte_43_I16           |
+| r862     | DW01_sub     | width=32   |               | sub_1_root_sub_44_I16 |
+| r864     | DW01_add     | width=32   |               | add_45_I16           |
+| r866     | DW_cmp       | width=32   |               | lt_gt_52             |
+| r868     | DW01_inc     | width=17   |               | add_53               |
+| r1456    | DW01_add     | width=32   |               | add_1_root_sub_0_root_sub_44_I2 |
+| r1458    | DW01_sub     | width=32   |               | sub_0_root_sub_0_root_sub_44_I2 |
+| r2047    | DW01_sub     | width=32   |               | sub_1_root_sub_0_root_sub_44_I3 |
+| r2049    | DW01_sub     | width=32   |               | sub_0_root_sub_0_root_sub_44_I3 |
+| r2638    | DW01_sub     | width=32   |               | sub_1_root_sub_0_root_sub_44_I4 |
+| r2640    | DW01_sub     | width=32   |               | sub_0_root_sub_0_root_sub_44_I4 |
+| r3228    | DW01_add     | width=32   |               | add_1_root_sub_0_root_sub_44_I5 |
+| r3230    | DW01_sub     | width=32   |               | sub_0_root_sub_0_root_sub_44_I5 |
+| r3818    | DW01_add     | width=32   |               | add_1_root_sub_0_root_sub_44_I6 |
+| r3820    | DW01_sub     | width=32   |               | sub_0_root_sub_0_root_sub_44_I6 |
+| r4408    | DW01_add     | width=32   |               | add_1_root_sub_0_root_sub_44_I7 |
+| r4410    | DW01_sub     | width=32   |               | sub_0_root_sub_0_root_sub_44_I7 |
+| r4998    | DW01_add     | width=32   |               | add_1_root_sub_0_root_sub_44_I8 |
+| r5000    | DW01_sub     | width=32   |               | sub_0_root_sub_0_root_sub_44_I8 |
+| r5588    | DW01_add     | width=32   |               | add_1_root_sub_0_root_sub_44_I9 |
+| r5590    | DW01_sub     | width=32   |               | sub_0_root_sub_0_root_sub_44_I9 |
+| r6178    | DW01_add     | width=32   |               | add_1_root_sub_0_root_sub_44_I10 |
+| r6180    | DW01_sub     | width=32   |               | sub_0_root_sub_0_root_sub_44_I10 |
+| r6768    | DW01_add     | width=32   |               | add_1_root_sub_0_root_sub_44_I11 |
+| r6770    | DW01_sub     | width=32   |               | sub_0_root_sub_0_root_sub_44_I11 |
+| r7358    | DW01_add     | width=32   |               | add_1_root_sub_0_root_sub_44_I12 |
+| r7360    | DW01_sub     | width=32   |               | sub_0_root_sub_0_root_sub_44_I12 |
+| r7948    | DW01_add     | width=32   |               | add_1_root_sub_0_root_sub_44_I13 |
+| r7950    | DW01_sub     | width=32   |               | sub_0_root_sub_0_root_sub_44_I13 |
+| r8538    | DW01_add     | width=32   |               | add_1_root_sub_0_root_sub_44_I14 |
+| r8540    | DW01_sub     | width=32   |               | sub_0_root_sub_0_root_sub_44_I14 |
+| r9128    | DW01_add     | width=32   |               | add_1_root_sub_0_root_sub_44_I15 |
+| r9130    | DW01_sub     | width=32   |               | sub_0_root_sub_0_root_sub_44_I15 |
+===============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| lt_gt_52           | DW_cmp           | pparch (area,speed)                 |
+| sub_0_root_sub_0_root_sub_44_I14      |                    |                |
+|                    | DW01_sub         | pparch (area,speed)                 |
+| lte_43_I16         | DW_cmp           | pparch (area,speed)                 |
+| lte_43_I14         | DW_cmp           | pparch (area,speed)                 |
+| lte_43_I15         | DW_cmp           | pparch (area,speed)                 |
+| lte_43_I13         | DW_cmp           | pparch (area,speed)                 |
+| sub_1_root_sub_44_I16                 |                    |                |
+|                    | DW01_sub         | pparch (area,speed)                 |
+| sub_0_root_sub_0_root_sub_44_I13      |                    |                |
+|                    | DW01_sub         | pparch (area,speed)                 |
+| sub_0_root_sub_0_root_sub_44_I11      |                    |                |
+|                    | DW01_sub         | pparch (area,speed)                 |
+| sub_0_root_sub_0_root_sub_44_I12      |                    |                |
+|                    | DW01_sub         | pparch (area,speed)                 |
+| add_53             | DW01_inc         | pparch (area,speed)                 |
+| sub_0_root_sub_0_root_sub_44_I15      |                    |                |
+|                    | DW01_sub         | pparch (area,speed)                 |
+===============================================================================
+
+
+No multiplexors to report
+ 
+****************************************
+Design : sqroot_comb_NBITS32_DW_cmp_48
+****************************************
+
+No resource sharing information to report.
+
+No implementations to report
+
+No multiplexors to report
+ 
+****************************************
+Design : sqroot_comb_NBITS32_DW01_sub_69
+****************************************
+
+No resource sharing information to report.
+
+No implementations to report
+
+No multiplexors to report
+ 
+****************************************
+Design : sqroot_comb_NBITS32_DW_cmp_50
+****************************************
+
+No resource sharing information to report.
+
+No implementations to report
+
+No multiplexors to report
+ 
+****************************************
+Design : sqroot_comb_NBITS32_DW_cmp_49
+****************************************
+
+No resource sharing information to report.
+
+No implementations to report
+
+No multiplexors to report
+ 
+****************************************
+Design : sqroot_comb_NBITS32_DW_cmp_47
+****************************************
+
+No resource sharing information to report.
+
+No implementations to report
+
+No multiplexors to report
+ 
+****************************************
+Design : sqroot_comb_NBITS32_DW_cmp_45
+****************************************
+
+No resource sharing information to report.
+
+No implementations to report
+
+No multiplexors to report
+ 
+****************************************
+Design : sqroot_comb_NBITS32_DW01_sub_43
+****************************************
+
+No resource sharing information to report.
+
+No implementations to report
+
+No multiplexors to report
+ 
+****************************************
+Design : sqroot_comb_NBITS32_DW01_sub_39
+****************************************
+
+No resource sharing information to report.
+
+No implementations to report
+
+No multiplexors to report
+ 
+****************************************
+Design : sqroot_comb_NBITS32_DW01_sub_32
+****************************************
+
+No resource sharing information to report.
+
+No implementations to report
+
+No multiplexors to report
+ 
+****************************************
+Design : sqroot_comb_NBITS32_DW01_sub_31
+****************************************
+
+No resource sharing information to report.
+
+No implementations to report
+
+No multiplexors to report
+ 
+****************************************
+Design : sqroot_comb_NBITS32_DW01_inc_3
+****************************************
+
+No resource sharing information to report.
+
+No implementations to report
+
+No multiplexors to report
+ 
+****************************************
+Design : sqroot_comb_NBITS32_DW01_sub_28
+****************************************
+
+No resource sharing information to report.
+
+No implementations to report
+
+No multiplexors to report
+1
+ 
+****************************************
+Report : reference
+Design : sqroot_comb_NBITS32
+Version: F-2011.09-SP5
+Date   : Mon Nov 12 22:34:41 2012
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AOI210             c35_CORELIB    72.800003       1    72.800003  
+AOI211             c35_CORELIB    72.800003       5   364.000015  
+AOI212             c35_CORELIB    91.000000      19  1729.000000  
+AOI220             c35_CORELIB    91.000000       1    91.000000  
+AOI221             c35_CORELIB    91.000000       2   182.000000  
+AOI222             c35_CORELIB   109.199997      12  1310.399963  
+AOI311             c35_CORELIB    91.000000       3   273.000000  
+AOI312             c35_CORELIB   109.199997      14  1528.799957  
+AOI2111            c35_CORELIB    91.000000       3   273.000000  
+AOI2112            c35_CORELIB   127.400002      14  1783.600021  
+BUF2               c35_CORELIB    54.599998      81  4422.599876  
+BUF4               c35_CORELIB    72.800003       1    72.800003  
+BUF6               c35_CORELIB    72.800003       8   582.400024  
+BUF12              c35_CORELIB   109.199997       9   982.799973  
+BUF15              c35_CORELIB   145.600006      27  3931.200165  
+CLKBU4             c35_CORELIB    72.800003       2   145.600006  
+CLKBU8             c35_CORELIB    91.000000       3   273.000000  
+CLKBU12            c35_CORELIB   109.199997       4   436.799988  
+CLKBU15            c35_CORELIB   145.600006       8  1164.800049  
+CLKIN0             c35_CORELIB    36.400002      28  1019.200043  
+CLKIN1             c35_CORELIB    36.400002       9   327.600014  
+CLKIN2             c35_CORELIB    36.400002      12   436.800018  
+CLKIN3             c35_CORELIB    36.400002      83  3021.200127  
+CLKIN4             c35_CORELIB    54.599998      16   873.599976  
+CLKIN6             c35_CORELIB    54.599998      91  4968.599861  
+CLKIN8             c35_CORELIB    72.800003      11   800.800034  
+CLKIN10            c35_CORELIB    91.000000       7   637.000000  
+CLKIN12            c35_CORELIB    91.000000      27  2457.000000  
+CLKIN15            c35_CORELIB   109.199997      10  1091.999969  
+IMUX20             c35_CORELIB    91.000000       9   819.000000  
+IMUX21             c35_CORELIB    91.000000       4   364.000000  
+IMUX22             c35_CORELIB   145.600006      11  1601.600067  
+IMUX23             c35_CORELIB   145.600006       5   728.000031  
+IMUX24             c35_CORELIB   182.000000      13  2366.000000  
+INV0               c35_CORELIB    36.400002      40  1456.000061  
+INV1               c35_CORELIB    36.400002      32  1164.800049  
+INV2               c35_CORELIB    36.400002      45  1638.000069  
+INV3               c35_CORELIB    36.400002     113  4113.200172  
+INV4               c35_CORELIB    54.599998      30  1637.999954  
+INV6               c35_CORELIB    54.599998     118  6442.799820  
+INV8               c35_CORELIB    72.800003      23  1674.400070  
+INV10              c35_CORELIB    91.000000      16  1456.000000  
+INV12              c35_CORELIB    91.000000      45  4095.000000  
+INV15              c35_CORELIB   109.199997      26  2839.199921  
+LOGIC0             c35_CORELIB    36.400002       1    36.400002  
+LOGIC1             c35_CORELIB    36.400002       1    36.400002  
+MUX21              c35_CORELIB   109.199997      24  2620.799927  
+MUX22              c35_CORELIB   109.199997       6   655.199982  
+MUX24              c35_CORELIB   182.000000      17  3094.000000  
+MUX26              c35_CORELIB   182.000000      16  2912.000000  
+NAND20             c35_CORELIB    54.599998      17   928.199974  
+NAND21             c35_CORELIB    54.599998      44  2402.399933  
+NAND22             c35_CORELIB    54.599998     195 10646.999702  
+NAND23             c35_CORELIB    91.000000      65  5915.000000  
+NAND24             c35_CORELIB   109.199997     144 15724.799561  
+NAND26             c35_CORELIB   163.800003      96 15724.800293  
+NAND28             c35_CORELIB   182.000000     113 20566.000000  
+NAND30             c35_CORELIB    72.800003       1    72.800003  
+NAND31             c35_CORELIB    72.800003       5   364.000015  
+NAND32             c35_CORELIB   127.400002       6   764.400009  
+NAND33             c35_CORELIB   127.400002      13  1656.200020  
+NAND34             c35_CORELIB   163.800003      10  1638.000031  
+NAND41             c35_CORELIB    91.000000       1    91.000000  
+NAND43             c35_CORELIB   200.199997       5  1000.999985  
+NOR20              c35_CORELIB    54.599998       2   109.199997  
+NOR21              c35_CORELIB    54.599998       3   163.799995  
+NOR22              c35_CORELIB    72.800003       8   582.400024  
+NOR23              c35_CORELIB    91.000000      11  1001.000000  
+NOR24              c35_CORELIB   109.199997      32  3494.399902  
+NOR30              c35_CORELIB    72.800003       1    72.800003  
+NOR31              c35_CORELIB    72.800003       2   145.600006  
+NOR32              c35_CORELIB    91.000000       8   728.000000  
+NOR33              c35_CORELIB   127.400002      12  1528.800018  
+NOR40              c35_CORELIB    72.800003       1    72.800003  
+NOR41              c35_CORELIB    91.000000       3   273.000000  
+NOR42              c35_CORELIB   163.800003      17  2784.600052  
+OAI210             c35_CORELIB    72.800003       5   364.000015  
+OAI211             c35_CORELIB    72.800003      11   800.800034  
+OAI212             c35_CORELIB    72.800003     107  7789.600327  
+OAI221             c35_CORELIB    91.000000       5   455.000000  
+OAI222             c35_CORELIB    91.000000      41  3731.000000  
+OAI310             c35_CORELIB    91.000000       1    91.000000  
+OAI311             c35_CORELIB    91.000000       2   182.000000  
+OAI312             c35_CORELIB   109.199997       9   982.799973  
+OAI2112            c35_CORELIB   145.600006      10  1456.000061  
+XNR20              c35_CORELIB   109.199997       7   764.399979  
+XNR21              c35_CORELIB   109.199997      15  1637.999954  
+XNR22              c35_CORELIB   200.199997      51 10210.199844  
+XOR20              c35_CORELIB   127.400002       1   127.400002  
+XOR21              c35_CORELIB   127.400002       3   382.200005  
+XOR22              c35_CORELIB   200.199997      21  4204.199936  
+XOR31              c35_CORELIB   200.199997       2   400.399994  
+sqroot_comb_NBITS32_DW01_inc_3  5004.999992       1  5004.999992  h
+sqroot_comb_NBITS32_DW01_sub_28 18600.399956       1 18600.399956 h
+sqroot_comb_NBITS32_DW01_sub_31 14487.199974       1 14487.199974 h
+sqroot_comb_NBITS32_DW01_sub_32 15069.599983       1 15069.599983 h
+sqroot_comb_NBITS32_DW01_sub_39 16325.400017       1 16325.400017 h
+sqroot_comb_NBITS32_DW01_sub_43 17981.599968       1 17981.599968 h
+sqroot_comb_NBITS32_DW01_sub_69 16270.799973       1 16270.799973 h
+sqroot_comb_NBITS32_DW_cmp_45  5496.399994       1   5496.399994  h
+sqroot_comb_NBITS32_DW_cmp_47  7443.799965       1   7443.799965  h
+sqroot_comb_NBITS32_DW_cmp_48  7516.599991       1   7516.599991  h
+sqroot_comb_NBITS32_DW_cmp_49  6115.200020       1   6115.200020  h
+sqroot_comb_NBITS32_DW_cmp_50  8954.399956       1   8954.399956  h
+-----------------------------------------------------------------------------
+Total 104 references                                338301.599648
+
+****************************************
+Design: sqroot_comb_NBITS32_DW01_inc_3 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CLKIN0             c35_CORELIB    36.400002       5   182.000008  
+CLKIN1             c35_CORELIB    36.400002       2    72.800003  
+INV0               c35_CORELIB    36.400002       5   182.000008  
+INV1               c35_CORELIB    36.400002       2    72.800003  
+INV2               c35_CORELIB    36.400002       2    72.800003  
+INV3               c35_CORELIB    36.400002      10   364.000015  
+INV6               c35_CORELIB    54.599998       1    54.599998  
+NAND20             c35_CORELIB    54.599998       9   491.399986  
+NAND21             c35_CORELIB    54.599998       1    54.599998  
+NAND22             c35_CORELIB    54.599998      13   709.799980  
+NOR20              c35_CORELIB    54.599998       3   163.799995  
+NOR21              c35_CORELIB    54.599998      13   709.799980  
+XNR20              c35_CORELIB   109.199997       1   109.199997  
+XNR21              c35_CORELIB   109.199997       1   109.199997  
+XOR21              c35_CORELIB   127.400002      13  1656.200020  
+-----------------------------------------------------------------------------
+Total 15 references                                  5004.999992
+
+****************************************
+Design: sqroot_comb_NBITS32_DW01_sub_28 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AOI211             c35_CORELIB    72.800003       6   436.800018  
+AOI212             c35_CORELIB    91.000000       6   546.000000  
+BUF2               c35_CORELIB    54.599998       4   218.399994  
+CLKBU15            c35_CORELIB   145.600006       1   145.600006  
+CLKIN0             c35_CORELIB    36.400002       3   109.200005  
+CLKIN2             c35_CORELIB    36.400002       1    36.400002  
+CLKIN3             c35_CORELIB    36.400002       6   218.400009  
+CLKIN4             c35_CORELIB    54.599998       2   109.199997  
+CLKIN6             c35_CORELIB    54.599998       4   218.399994  
+CLKIN12            c35_CORELIB    91.000000       2   182.000000  
+INV0               c35_CORELIB    36.400002       7   254.800011  
+INV1               c35_CORELIB    36.400002       7   254.800011  
+INV2               c35_CORELIB    36.400002       6   218.400009  
+INV3               c35_CORELIB    36.400002      22   800.800034  
+INV4               c35_CORELIB    54.599998       3   163.799995  
+INV6               c35_CORELIB    54.599998       7   382.199989  
+INV8               c35_CORELIB    72.800003       1    72.800003  
+INV10              c35_CORELIB    91.000000       1    91.000000  
+INV12              c35_CORELIB    91.000000       1    91.000000  
+NAND20             c35_CORELIB    54.599998       6   327.599991  
+NAND21             c35_CORELIB    54.599998      12   655.199982  
+NAND22             c35_CORELIB    54.599998      12   655.199982  
+NAND23             c35_CORELIB    91.000000       5   455.000000  
+NAND24             c35_CORELIB   109.199997      10  1091.999969  
+NAND26             c35_CORELIB   163.800003       3   491.400009  
+NAND28             c35_CORELIB   182.000000       4   728.000000  
+NOR20              c35_CORELIB    54.599998       6   327.599991  
+NOR21              c35_CORELIB    54.599998      12   655.199982  
+NOR22              c35_CORELIB    72.800003       2   145.600006  
+NOR23              c35_CORELIB    91.000000       6   546.000000  
+NOR24              c35_CORELIB   109.199997      15  1637.999954  
+OAI211             c35_CORELIB    72.800003       8   582.400024  
+OAI212             c35_CORELIB    72.800003      20  1456.000061  
+XNR20              c35_CORELIB   109.199997       1   109.199997  
+XNR21              c35_CORELIB   109.199997      11  1201.199966  
+XNR22              c35_CORELIB   200.199997      10  2001.999969  
+XOR20              c35_CORELIB   127.400002       1   127.400002  
+XOR21              c35_CORELIB   127.400002       2   254.800003  
+XOR22              c35_CORELIB   200.199997       3   600.599991  
+-----------------------------------------------------------------------------
+Total 39 references                                 18600.399956
+
+****************************************
+Design: sqroot_comb_NBITS32_DW01_sub_31 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AOI210             c35_CORELIB    72.800003       2   145.600006  
+AOI211             c35_CORELIB    72.800003       2   145.600006  
+AOI212             c35_CORELIB    91.000000      10   910.000000  
+BUF2               c35_CORELIB    54.599998       7   382.199989  
+BUF6               c35_CORELIB    72.800003       1    72.800003  
+BUF15              c35_CORELIB   145.600006       1   145.600006  
+CLKIN0             c35_CORELIB    36.400002       5   182.000008  
+CLKIN2             c35_CORELIB    36.400002       2    72.800003  
+CLKIN3             c35_CORELIB    36.400002       3   109.200005  
+CLKIN6             c35_CORELIB    54.599998       3   163.799995  
+INV0               c35_CORELIB    36.400002       5   182.000008  
+INV1               c35_CORELIB    36.400002       3   109.200005  
+INV2               c35_CORELIB    36.400002       4   145.600006  
+INV3               c35_CORELIB    36.400002      17   618.800026  
+INV4               c35_CORELIB    54.599998       2   109.199997  
+INV6               c35_CORELIB    54.599998       4   218.399994  
+INV8               c35_CORELIB    72.800003       2   145.600006  
+INV10              c35_CORELIB    91.000000       1    91.000000  
+INV12              c35_CORELIB    91.000000       1    91.000000  
+NAND20             c35_CORELIB    54.599998      13   709.799980  
+NAND21             c35_CORELIB    54.599998       5   272.999992  
+NAND22             c35_CORELIB    54.599998       9   491.399986  
+NAND23             c35_CORELIB    91.000000       4   364.000000  
+NAND24             c35_CORELIB   109.199997       6   655.199982  
+NAND26             c35_CORELIB   163.800003       2   327.600006  
+NAND28             c35_CORELIB   182.000000       2   364.000000  
+NOR20              c35_CORELIB    54.599998       2   109.199997  
+NOR21              c35_CORELIB    54.599998       2   109.199997  
+NOR22              c35_CORELIB    72.800003      10   728.000031  
+NOR23              c35_CORELIB    91.000000       7   637.000000  
+NOR24              c35_CORELIB   109.199997      11  1201.199966  
+OAI210             c35_CORELIB    72.800003       1    72.800003  
+OAI211             c35_CORELIB    72.800003       1    72.800003  
+OAI212             c35_CORELIB    72.800003       7   509.600021  
+XNR20              c35_CORELIB   109.199997       1   109.199997  
+XNR21              c35_CORELIB   109.199997       3   327.599991  
+XNR22              c35_CORELIB   200.199997       2   400.399994  
+XOR21              c35_CORELIB   127.400002       3   382.200005  
+XOR22              c35_CORELIB   200.199997      13  2602.599960  
+-----------------------------------------------------------------------------
+Total 39 references                                 14487.199974
+
+****************************************
+Design: sqroot_comb_NBITS32_DW01_sub_32 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AOI211             c35_CORELIB    72.800003       7   509.600021  
+AOI212             c35_CORELIB    91.000000      12  1092.000000  
+BUF2               c35_CORELIB    54.599998      10   545.999985  
+BUF15              c35_CORELIB   145.600006       1   145.600006  
+CLKBU15            c35_CORELIB   145.600006       1   145.600006  
+CLKIN0             c35_CORELIB    36.400002       3   109.200005  
+CLKIN3             c35_CORELIB    36.400002       3   109.200005  
+CLKIN4             c35_CORELIB    54.599998       1    54.599998  
+CLKIN6             c35_CORELIB    54.599998       2   109.199997  
+CLKIN8             c35_CORELIB    72.800003       1    72.800003  
+CLKIN10            c35_CORELIB    91.000000       1    91.000000  
+CLKIN12            c35_CORELIB    91.000000       1    91.000000  
+INV0               c35_CORELIB    36.400002       6   218.400009  
+INV1               c35_CORELIB    36.400002       8   291.200012  
+INV2               c35_CORELIB    36.400002       7   254.800011  
+INV3               c35_CORELIB    36.400002      21   764.400032  
+INV6               c35_CORELIB    54.599998      13   709.799980  
+INV12              c35_CORELIB    91.000000       1    91.000000  
+NAND20             c35_CORELIB    54.599998       5   272.999992  
+NAND21             c35_CORELIB    54.599998       5   272.999992  
+NAND22             c35_CORELIB    54.599998      13   709.799980  
+NAND23             c35_CORELIB    91.000000       5   455.000000  
+NAND24             c35_CORELIB   109.199997       9   982.799973  
+NAND26             c35_CORELIB   163.800003       3   491.400009  
+NAND28             c35_CORELIB   182.000000       4   728.000000  
+NOR21              c35_CORELIB    54.599998       3   163.799995  
+NOR22              c35_CORELIB    72.800003       3   218.400009  
+NOR23              c35_CORELIB    91.000000       5   455.000000  
+NOR24              c35_CORELIB   109.199997      11  1201.199966  
+OAI210             c35_CORELIB    72.800003       2   145.600006  
+OAI211             c35_CORELIB    72.800003       1    72.800003  
+OAI212             c35_CORELIB    72.800003       8   582.400024  
+XNR20              c35_CORELIB   109.199997       1   109.199997  
+XNR21              c35_CORELIB   109.199997       2   218.399994  
+XNR22              c35_CORELIB   200.199997       4   800.799988  
+XOR21              c35_CORELIB   127.400002       3   382.200005  
+XOR22              c35_CORELIB   200.199997       7  1401.399979  
+-----------------------------------------------------------------------------
+Total 37 references                                 15069.599983
+
+****************************************
+Design: sqroot_comb_NBITS32_DW01_sub_39 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AOI210             c35_CORELIB    72.800003       1    72.800003  
+AOI211             c35_CORELIB    72.800003       7   509.600021  
+AOI212             c35_CORELIB    91.000000       7   637.000000  
+BUF2               c35_CORELIB    54.599998      10   545.999985  
+CLKBU15            c35_CORELIB   145.600006       1   145.600006  
+CLKIN0             c35_CORELIB    36.400002       6   218.400009  
+CLKIN2             c35_CORELIB    36.400002       1    36.400002  
+CLKIN3             c35_CORELIB    36.400002       1    36.400002  
+CLKIN4             c35_CORELIB    54.599998       1    54.599998  
+CLKIN6             c35_CORELIB    54.599998       2   109.199997  
+INV0               c35_CORELIB    36.400002       7   254.800011  
+INV1               c35_CORELIB    36.400002       6   218.400009  
+INV2               c35_CORELIB    36.400002       8   291.200012  
+INV3               c35_CORELIB    36.400002      21   764.400032  
+INV4               c35_CORELIB    54.599998       1    54.599998  
+INV6               c35_CORELIB    54.599998       2   109.199997  
+INV8               c35_CORELIB    72.800003       3   218.400009  
+INV15              c35_CORELIB   109.199997       1   109.199997  
+NAND20             c35_CORELIB    54.599998       6   327.599991  
+NAND21             c35_CORELIB    54.599998      10   545.999985  
+NAND22             c35_CORELIB    54.599998      15   818.999977  
+NAND23             c35_CORELIB    91.000000       8   728.000000  
+NAND24             c35_CORELIB   109.199997       9   982.799973  
+NAND26             c35_CORELIB   163.800003       5   819.000015  
+NAND28             c35_CORELIB   182.000000       2   364.000000  
+NOR20              c35_CORELIB    54.599998       1    54.599998  
+NOR21              c35_CORELIB    54.599998       6   327.599991  
+NOR22              c35_CORELIB    72.800003       3   218.400009  
+NOR23              c35_CORELIB    91.000000       7   637.000000  
+NOR24              c35_CORELIB   109.199997      12  1310.399963  
+OAI210             c35_CORELIB    72.800003       1    72.800003  
+OAI211             c35_CORELIB    72.800003       8   582.400024  
+OAI212             c35_CORELIB    72.800003      13   946.400040  
+XNR20              c35_CORELIB   109.199997       1   109.199997  
+XNR21              c35_CORELIB   109.199997       6   655.199982  
+XNR22              c35_CORELIB   200.199997       6  1201.199982  
+XOR20              c35_CORELIB   127.400002       1   127.400002  
+XOR21              c35_CORELIB   127.400002       4   509.600006  
+XOR22              c35_CORELIB   200.199997       3   600.599991  
+-----------------------------------------------------------------------------
+Total 39 references                                 16325.400017
+
+****************************************
+Design: sqroot_comb_NBITS32_DW01_sub_43 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AOI210             c35_CORELIB    72.800003       2   145.600006  
+AOI211             c35_CORELIB    72.800003       3   218.400009  
+AOI212             c35_CORELIB    91.000000       7   637.000000  
+BUF2               c35_CORELIB    54.599998       3   163.799995  
+BUF15              c35_CORELIB   145.600006       1   145.600006  
+CLKIN0             c35_CORELIB    36.400002       5   182.000008  
+CLKIN1             c35_CORELIB    36.400002       1    36.400002  
+CLKIN2             c35_CORELIB    36.400002       1    36.400002  
+CLKIN3             c35_CORELIB    36.400002       5   182.000008  
+CLKIN4             c35_CORELIB    54.599998       1    54.599998  
+CLKIN6             c35_CORELIB    54.599998       2   109.199997  
+INV0               c35_CORELIB    36.400002      12   436.800018  
+INV1               c35_CORELIB    36.400002       2    72.800003  
+INV2               c35_CORELIB    36.400002       8   291.200012  
+INV3               c35_CORELIB    36.400002      18   655.200027  
+INV4               c35_CORELIB    54.599998       2   109.199997  
+INV6               c35_CORELIB    54.599998       3   163.799995  
+INV15              c35_CORELIB   109.199997       1   109.199997  
+NAND20             c35_CORELIB    54.599998       7   382.199989  
+NAND21             c35_CORELIB    54.599998       6   327.599991  
+NAND22             c35_CORELIB    54.599998      29  1583.399956  
+NAND23             c35_CORELIB    91.000000      10   910.000000  
+NAND24             c35_CORELIB   109.199997       4   436.799988  
+NAND26             c35_CORELIB   163.800003       4   655.200012  
+NAND28             c35_CORELIB   182.000000       1   182.000000  
+NOR20              c35_CORELIB    54.599998       1    54.599998  
+NOR21              c35_CORELIB    54.599998       8   436.799988  
+NOR22              c35_CORELIB    72.800003       7   509.600021  
+NOR23              c35_CORELIB    91.000000       9   819.000000  
+NOR24              c35_CORELIB   109.199997      15  1637.999954  
+OAI211             c35_CORELIB    72.800003       5   364.000015  
+OAI212             c35_CORELIB    72.800003      15  1092.000046  
+XNR20              c35_CORELIB   109.199997       1   109.199997  
+XNR21              c35_CORELIB   109.199997      10  1091.999969  
+XNR22              c35_CORELIB   200.199997      12  2402.399963  
+XOR20              c35_CORELIB   127.400002       3   382.200005  
+XOR21              c35_CORELIB   127.400002       2   254.800003  
+XOR22              c35_CORELIB   200.199997       3   600.599991  
+-----------------------------------------------------------------------------
+Total 38 references                                 17981.599968
+
+****************************************
+Design: sqroot_comb_NBITS32_DW01_sub_69 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AOI210             c35_CORELIB    72.800003       1    72.800003  
+AOI211             c35_CORELIB    72.800003       4   291.200012  
+AOI212             c35_CORELIB    91.000000       7   637.000000  
+BUF2               c35_CORELIB    54.599998       1    54.599998  
+BUF6               c35_CORELIB    72.800003       1    72.800003  
+CLKBU15            c35_CORELIB   145.600006       1   145.600006  
+CLKIN0             c35_CORELIB    36.400002       5   182.000008  
+CLKIN1             c35_CORELIB    36.400002       1    36.400002  
+CLKIN2             c35_CORELIB    36.400002       1    36.400002  
+CLKIN3             c35_CORELIB    36.400002       3   109.200005  
+CLKIN6             c35_CORELIB    54.599998       2   109.199997  
+CLKIN12            c35_CORELIB    91.000000       1    91.000000  
+INV0               c35_CORELIB    36.400002      14   509.600021  
+INV1               c35_CORELIB    36.400002       6   218.400009  
+INV2               c35_CORELIB    36.400002       4   145.600006  
+INV3               c35_CORELIB    36.400002      17   618.800026  
+INV4               c35_CORELIB    54.599998       1    54.599998  
+INV6               c35_CORELIB    54.599998       4   218.399994  
+INV8               c35_CORELIB    72.800003       1    72.800003  
+NAND20             c35_CORELIB    54.599998       4   218.399994  
+NAND21             c35_CORELIB    54.599998      11   600.599983  
+NAND22             c35_CORELIB    54.599998      23  1255.799965  
+NAND23             c35_CORELIB    91.000000       6   546.000000  
+NAND24             c35_CORELIB   109.199997       7   764.399979  
+NAND26             c35_CORELIB   163.800003       2   327.600006  
+NOR20              c35_CORELIB    54.599998       2   109.199997  
+NOR21              c35_CORELIB    54.599998       6   327.599991  
+NOR22              c35_CORELIB    72.800003       4   291.200012  
+NOR23              c35_CORELIB    91.000000       7   637.000000  
+NOR24              c35_CORELIB   109.199997      17  1856.399948  
+OAI210             c35_CORELIB    72.800003       2   145.600006  
+OAI211             c35_CORELIB    72.800003       5   364.000015  
+OAI212             c35_CORELIB    72.800003      13   946.400040  
+OAI2112            c35_CORELIB   145.600006       1   145.600006  
+XNR20              c35_CORELIB   109.199997       1   109.199997  
+XNR21              c35_CORELIB   109.199997       7   764.399979  
+XNR22              c35_CORELIB   200.199997      11  2202.199966  
+XOR20              c35_CORELIB   127.400002       2   254.800003  
+XOR21              c35_CORELIB   127.400002       1   127.400002  
+XOR22              c35_CORELIB   200.199997       3   600.599991  
+-----------------------------------------------------------------------------
+Total 40 references                                 16270.799973
+
+****************************************
+Design: sqroot_comb_NBITS32_DW_cmp_45 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AOI212             c35_CORELIB    91.000000       4   364.000000  
+CLKIN0             c35_CORELIB    36.400002       1    36.400002  
+CLKIN3             c35_CORELIB    36.400002       1    36.400002  
+INV0               c35_CORELIB    36.400002       2    72.800003  
+INV2               c35_CORELIB    36.400002       2    72.800003  
+INV3               c35_CORELIB    36.400002       6   218.400009  
+INV4               c35_CORELIB    54.599998       1    54.599998  
+INV6               c35_CORELIB    54.599998       3   163.799995  
+NAND20             c35_CORELIB    54.599998       2   109.199997  
+NAND21             c35_CORELIB    54.599998       5   272.999992  
+NAND22             c35_CORELIB    54.599998       5   272.999992  
+NAND23             c35_CORELIB    91.000000       2   182.000000  
+NAND24             c35_CORELIB   109.199997       2   218.399994  
+NAND26             c35_CORELIB   163.800003       3   491.400009  
+NOR21              c35_CORELIB    54.599998       4   218.399994  
+NOR22              c35_CORELIB    72.800003       4   291.200012  
+NOR23              c35_CORELIB    91.000000       7   637.000000  
+NOR24              c35_CORELIB   109.199997      11  1201.199966  
+OAI211             c35_CORELIB    72.800003       1    72.800003  
+OAI212             c35_CORELIB    72.800003       7   509.600021  
+-----------------------------------------------------------------------------
+Total 20 references                                  5496.399994
+
+****************************************
+Design: sqroot_comb_NBITS32_DW_cmp_47 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AOI212             c35_CORELIB    91.000000       6   546.000000  
+CLKIN4             c35_CORELIB    54.599998       1    54.599998  
+CLKIN6             c35_CORELIB    54.599998       3   163.799995  
+INV0               c35_CORELIB    36.400002       3   109.200005  
+INV1               c35_CORELIB    36.400002       1    36.400002  
+INV3               c35_CORELIB    36.400002      13   473.200020  
+INV6               c35_CORELIB    54.599998       3   163.799995  
+INV12              c35_CORELIB    91.000000       1    91.000000  
+NAND20             c35_CORELIB    54.599998       1    54.599998  
+NAND21             c35_CORELIB    54.599998       3   163.799995  
+NAND22             c35_CORELIB    54.599998       6   327.599991  
+NAND23             c35_CORELIB    91.000000       3   273.000000  
+NAND24             c35_CORELIB   109.199997       5   545.999985  
+NAND26             c35_CORELIB   163.800003       3   491.400009  
+NAND28             c35_CORELIB   182.000000       3   546.000000  
+NOR21              c35_CORELIB    54.599998       3   163.799995  
+NOR22              c35_CORELIB    72.800003       4   291.200012  
+NOR23              c35_CORELIB    91.000000       2   182.000000  
+NOR24              c35_CORELIB   109.199997      20  2183.999939  
+OAI212             c35_CORELIB    72.800003       8   582.400024  
+-----------------------------------------------------------------------------
+Total 20 references                                  7443.799965
+
+****************************************
+Design: sqroot_comb_NBITS32_DW_cmp_48 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AOI212             c35_CORELIB    91.000000       4   364.000000  
+AOI222             c35_CORELIB   109.199997       1   109.199997  
+CLKIN0             c35_CORELIB    36.400002       1    36.400002  
+CLKIN1             c35_CORELIB    36.400002       1    36.400002  
+CLKIN3             c35_CORELIB    36.400002       1    36.400002  
+CLKIN6             c35_CORELIB    54.599998       6   327.599991  
+INV0               c35_CORELIB    36.400002       3   109.200005  
+INV2               c35_CORELIB    36.400002       1    36.400002  
+INV3               c35_CORELIB    36.400002      16   582.400024  
+INV4               c35_CORELIB    54.599998       1    54.599998  
+INV6               c35_CORELIB    54.599998       1    54.599998  
+NAND21             c35_CORELIB    54.599998       7   382.199989  
+NAND22             c35_CORELIB    54.599998       5   272.999992  
+NAND23             c35_CORELIB    91.000000       6   546.000000  
+NAND24             c35_CORELIB   109.199997       7   764.399979  
+NOR21              c35_CORELIB    54.599998       1    54.599998  
+NOR22              c35_CORELIB    72.800003       9   655.200027  
+NOR23              c35_CORELIB    91.000000      10   910.000000  
+NOR24              c35_CORELIB   109.199997      14  1528.799957  
+OAI212             c35_CORELIB    72.800003       9   655.200027  
+-----------------------------------------------------------------------------
+Total 20 references                                  7516.599991
+
+****************************************
+Design: sqroot_comb_NBITS32_DW_cmp_49 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AOI212             c35_CORELIB    91.000000       4   364.000000  
+CLKIN0             c35_CORELIB    36.400002       2    72.800003  
+CLKIN2             c35_CORELIB    36.400002       1    36.400002  
+CLKIN3             c35_CORELIB    36.400002       1    36.400002  
+INV0               c35_CORELIB    36.400002       2    72.800003  
+INV3               c35_CORELIB    36.400002       8   291.200012  
+INV6               c35_CORELIB    54.599998       2   109.199997  
+NAND21             c35_CORELIB    54.599998       7   382.199989  
+NAND22             c35_CORELIB    54.599998       4   218.399994  
+NAND23             c35_CORELIB    91.000000       3   273.000000  
+NAND24             c35_CORELIB   109.199997       2   218.399994  
+NAND26             c35_CORELIB   163.800003       3   491.400009  
+NAND28             c35_CORELIB   182.000000       1   182.000000  
+NOR22              c35_CORELIB    72.800003       6   436.800018  
+NOR23              c35_CORELIB    91.000000      13  1183.000000  
+NOR24              c35_CORELIB   109.199997      10  1091.999969  
+OAI211             c35_CORELIB    72.800003       1    72.800003  
+OAI212             c35_CORELIB    72.800003       8   582.400024  
+-----------------------------------------------------------------------------
+Total 18 references                                  6115.200020
+
+****************************************
+Design: sqroot_comb_NBITS32_DW_cmp_50 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AOI212             c35_CORELIB    91.000000       9   819.000000  
+CLKIN3             c35_CORELIB    36.400002       1    36.400002  
+CLKIN6             c35_CORELIB    54.599998       3   163.799995  
+CLKIN12            c35_CORELIB    91.000000       1    91.000000  
+INV0               c35_CORELIB    36.400002       4   145.600006  
+INV1               c35_CORELIB    36.400002       2    72.800003  
+INV2               c35_CORELIB    36.400002       2    72.800003  
+INV3               c35_CORELIB    36.400002      17   618.800026  
+INV4               c35_CORELIB    54.599998       1    54.599998  
+INV6               c35_CORELIB    54.599998       7   382.199989  
+INV8               c35_CORELIB    72.800003       1    72.800003  
+INV10              c35_CORELIB    91.000000       1    91.000000  
+NAND21             c35_CORELIB    54.599998       3   163.799995  
+NAND22             c35_CORELIB    54.599998       8   436.799988  
+NAND23             c35_CORELIB    91.000000       2   182.000000  
+NAND24             c35_CORELIB   109.199997      10  1091.999969  
+NAND26             c35_CORELIB   163.800003       2   327.600006  
+NAND28             c35_CORELIB   182.000000       6  1092.000000  
+NOR21              c35_CORELIB    54.599998       1    54.599998  
+NOR22              c35_CORELIB    72.800003       1    72.800003  
+NOR23              c35_CORELIB    91.000000       8   728.000000  
+NOR24              c35_CORELIB   109.199997      16  1747.199951  
+OAI212             c35_CORELIB    72.800003       6   436.800018  
+-----------------------------------------------------------------------------
+Total 23 references                                  8954.399956
+1
+
+
+
+
+
+
