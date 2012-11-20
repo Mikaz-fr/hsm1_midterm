@@ -36,19 +36,6 @@ Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
 -- Loading package STD_LOGIC_UNSIGNED
 -- Loading entity sqroot_seq
 
-} {} {}} /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_mapped_conf.vhd {1 {vcom -work work -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_mapped_conf.vhd
-Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
--- Loading package STANDARD
--- Compiling configuration sqroot_seq_tb_mapped_conf
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Loading package MATH_REAL
--- Loading entity sqroot_seq_tb
--- Loading architecture bench of sqroot_seq_tb
--- Loading package vl_types
--- Loading entity sqroot_seq_NBITS8
-
 } {} {}} /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_mapped_conf_16BITS.vhd {1 {vcom -work work -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_mapped_conf_16BITS.vhd
 Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
 -- Loading package STANDARD
@@ -61,5 +48,18 @@ Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
 -- Loading architecture bench of sqroot_seq_tb
 -- Loading package vl_types
 -- Loading entity sqroot_seq_NBITS16
+
+} {} {}} /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_mapped_conf.vhd {1 {vcom -work work -2002 -explicit -novopt /home/edatp59/hsm1_tutorial/HDL/TBENCH/sqroot_seq_tb_mapped_conf.vhd
+Model Technology ModelSim SE vcom 10.0a Compiler 2011.02 Feb 21 2011
+-- Loading package STANDARD
+-- Compiling configuration sqroot_seq_tb_mapped_conf
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Loading entity sqroot_seq_tb
+-- Loading architecture bench of sqroot_seq_tb
+-- Loading package vl_types
+-- Loading entity sqroot_seq_NBITS8
 
 } {} {}}

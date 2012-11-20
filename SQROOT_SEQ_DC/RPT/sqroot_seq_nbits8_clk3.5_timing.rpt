@@ -6,7 +6,7 @@ Report : timing
         -max_paths 1
 Design : sqroot_seq_NBITS8
 Version: F-2011.09-SP5
-Date   : Mon Nov 19 16:37:30 2012
+Date   : Tue Nov 20 13:27:58 2012
 ****************************************
 
 Operating Conditions: nom_pvt   Library: c35_CORELIB
@@ -33,27 +33,27 @@ Wire Load Model Mode: enclosed
   clock network delay (ideal)                             0.00       0.00
   delta_reg_reg[3]/C (DFC3)                               0.00       0.00 r
   delta_reg_reg[3]/Q (DFC3)                               0.74       0.74 f
-  sub_1_root_sub_0_root_sub_138/B[3] (sqroot_seq_NBITS8_DW01_sub_2)
+  sub_1_root_sub_0_root_sub_139/B[3] (sqroot_seq_NBITS8_DW01_sub_2)
                                                           0.00       0.74 f
-  sub_1_root_sub_0_root_sub_138/U69/Q (CLKIN8)            0.12       0.86 r
-  sub_1_root_sub_0_root_sub_138/U117/Q (NOR23)            0.10       0.95 f
-  sub_1_root_sub_0_root_sub_138/U123/Q (CLKIN6)           0.08       1.04 r
-  sub_1_root_sub_0_root_sub_138/U122/Q (NAND24)           0.06       1.10 f
-  sub_1_root_sub_0_root_sub_138/U93/Q (NAND28)            0.10       1.20 r
-  sub_1_root_sub_0_root_sub_138/U29/Q (AOI212)            0.15       1.35 f
-  sub_1_root_sub_0_root_sub_138/U142/Q (OAI212)           0.26       1.61 r
-  sub_1_root_sub_0_root_sub_138/U71/Q (INV4)              0.08       1.69 f
-  sub_1_root_sub_0_root_sub_138/U121/Q (NAND24)           0.14       1.84 r
-  sub_1_root_sub_0_root_sub_138/U74/Q (NAND24)            0.07       1.91 f
-  sub_1_root_sub_0_root_sub_138/DIFF[5] (sqroot_seq_NBITS8_DW01_sub_2)
+  sub_1_root_sub_0_root_sub_139/U69/Q (CLKIN8)            0.12       0.86 r
+  sub_1_root_sub_0_root_sub_139/U117/Q (NOR23)            0.10       0.95 f
+  sub_1_root_sub_0_root_sub_139/U123/Q (CLKIN6)           0.08       1.04 r
+  sub_1_root_sub_0_root_sub_139/U122/Q (NAND24)           0.06       1.10 f
+  sub_1_root_sub_0_root_sub_139/U93/Q (NAND28)            0.10       1.20 r
+  sub_1_root_sub_0_root_sub_139/U29/Q (AOI212)            0.15       1.35 f
+  sub_1_root_sub_0_root_sub_139/U142/Q (OAI212)           0.26       1.61 r
+  sub_1_root_sub_0_root_sub_139/U71/Q (INV4)              0.08       1.69 f
+  sub_1_root_sub_0_root_sub_139/U121/Q (NAND24)           0.14       1.84 r
+  sub_1_root_sub_0_root_sub_139/U74/Q (NAND24)            0.07       1.91 f
+  sub_1_root_sub_0_root_sub_139/DIFF[5] (sqroot_seq_NBITS8_DW01_sub_2)
                                                           0.00       1.91 f
-  sub_0_root_sub_0_root_sub_138/A[5] (sqroot_seq_NBITS8_DW01_sub_4)
+  sub_0_root_sub_0_root_sub_139/A[5] (sqroot_seq_NBITS8_DW01_sub_4)
                                                           0.00       1.91 f
-  sub_0_root_sub_0_root_sub_138/U20/Q (NOR24)             0.16       2.07 r
-  sub_0_root_sub_0_root_sub_138/U112/Q (INV2)             0.07       2.14 f
-  sub_0_root_sub_0_root_sub_138/U81/Q (NAND22)            0.17       2.31 r
-  sub_0_root_sub_0_root_sub_138/U16/Q (XOR22)             0.30       2.61 r
-  sub_0_root_sub_0_root_sub_138/DIFF[5] (sqroot_seq_NBITS8_DW01_sub_4)
+  sub_0_root_sub_0_root_sub_139/U20/Q (NOR24)             0.16       2.07 r
+  sub_0_root_sub_0_root_sub_139/U112/Q (INV2)             0.07       2.14 f
+  sub_0_root_sub_0_root_sub_139/U81/Q (NAND22)            0.17       2.31 r
+  sub_0_root_sub_0_root_sub_139/U16/Q (XOR22)             0.30       2.61 r
+  sub_0_root_sub_0_root_sub_139/DIFF[5] (sqroot_seq_NBITS8_DW01_sub_4)
                                                           0.00       2.61 r
   U238/Q (AOI2112)                                        0.21       2.81 f
   U112/Q (NAND24)                                         0.14       2.96 r

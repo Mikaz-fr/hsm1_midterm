@@ -7,8 +7,13 @@
 # //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
 # //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
 # //
-# reading modelsim.ini
-# Loading project sqroot_comb
-# reading modelsim.ini
 # reading /softs/mentor/msim/10.0a/linux/../modelsim.ini
 # Loading project SQROOT_SEQ
+add wave  \
+sqroot_comb_mapped:/sqroot_comb_tb/arg \
+sqroot_comb_mapped:/sqroot_comb_tb/z \
+sqroot_comb_mapped:/sqroot_comb_tb/roundup \
+sqroot_comb_mapped:/sqroot_comb_tb/check \
+sqroot_comb_mapped:/sqroot_comb_tb/sqrt_exp \
+sqroot_comb_mapped:/sqroot_comb_tb/NBITS \
+sqroot_comb_mapped:/sqroot_comb_tb/WAIT_TIME

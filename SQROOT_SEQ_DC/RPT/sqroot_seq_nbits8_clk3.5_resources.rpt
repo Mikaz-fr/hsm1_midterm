@@ -3,7 +3,7 @@
 Report : resources
 Design : sqroot_seq_NBITS8
 Version: F-2011.09-SP5
-Date   : Mon Nov 19 16:37:30 2012
+Date   : Tue Nov 20 13:27:58 2012
 ****************************************
 
 Resource Sharing Report for design sqroot_seq_NBITS8 in file
@@ -13,14 +13,14 @@ Resource Sharing Report for design sqroot_seq_NBITS8 in file
 |          |              |            | Contained     |                      |
 | Resource | Module       | Parameters | Resources     | Contained Operations |
 ===============================================================================
-| r337     | DW_cmp       | width=8    |               | lte_gte_108          |
-| r339     | DW_cmp       | width=8    |               | lt_gt_109            |
-| r341     | DW01_add     | width=8    |               | add_110              |
-| r343     | DW_cmp       | width=8    |               | lte_110              |
-| r349     | DW01_add     | width=8    |               | add_139              |
-| r351     | DW01_inc     | width=8    |               | add_142              |
-| r940     | DW01_sub     | width=8    |               | sub_1_root_sub_0_root_sub_138 |
-| r942     | DW01_sub     | width=8    |               | sub_0_root_sub_0_root_sub_138 |
+| r337     | DW_cmp       | width=8    |               | lte_gte_109          |
+| r339     | DW_cmp       | width=8    |               | lt_gt_110            |
+| r341     | DW01_add     | width=8    |               | add_111              |
+| r343     | DW_cmp       | width=8    |               | lte_111              |
+| r349     | DW01_add     | width=8    |               | add_140              |
+| r351     | DW01_inc     | width=8    |               | add_143              |
+| r940     | DW01_sub     | width=8    |               | sub_1_root_sub_0_root_sub_139 |
+| r942     | DW01_sub     | width=8    |               | sub_0_root_sub_0_root_sub_139 |
 ===============================================================================
 
 
@@ -29,12 +29,12 @@ Implementation Report
 |                    |                  | Current            | Set            |
 | Cell               | Module           | Implementation     | Implementation |
 ===============================================================================
-| add_110            | DW01_add         | pparch (area,speed)                 |
-| sub_0_root_sub_0_root_sub_138         |                    |                |
+| add_111            | DW01_add         | pparch (area,speed)                 |
+| sub_0_root_sub_0_root_sub_139         |                    |                |
 |                    | DW01_sub         | pparch (area,speed)                 |
-| add_142            | DW01_inc         | pparch (area,speed)                 |
-| add_139            | DW01_add         | pparch (area,speed)                 |
-| sub_1_root_sub_0_root_sub_138         |                    |                |
+| add_143            | DW01_inc         | pparch (area,speed)                 |
+| add_140            | DW01_add         | pparch (area,speed)                 |
+| sub_1_root_sub_0_root_sub_139         |                    |                |
 |                    | DW01_sub         | pparch (speed)     |                |
 ===============================================================================
 

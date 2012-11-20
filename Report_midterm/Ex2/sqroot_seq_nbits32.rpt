@@ -1,3 +1,279 @@
+
+#  elaborate design
+puts "-i- Elaborate design"
+-i- Elaborate design
+elaborate ${ENTITY_NAME} -architecture ${ARCH_NAME}           -parameters "NBITS = ${NBITS}"           -library DEFAULT -update
+Loading db file '/softs/synopsys/syn/2011.09/libraries/syn/gtech.db'
+Loading db file '/softs/synopsys/syn/2011.09/libraries/syn/standard.sldb'
+  Loading link library 'c35_CORELIB'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+
+Statistics for case statements in always block at line 60 in file
+        './HDL/RTL/sqroot_seq_rtl.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            63            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 114 in file
+        './HDL/RTL/sqroot_seq_rtl.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           120            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+        in routine sqroot_seq_NBITS32 line 50 in file
+                './HDL/RTL/sqroot_seq_rtl.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    state_reg_reg    | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine sqroot_seq_NBITS32 line 94 in file
+                './HDL/RTL/sqroot_seq_rtl.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     res_reg_reg     | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    root_reg_reg     | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    delta_reg_reg    | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'sqroot_seq_NBITS32'.
+
+
+
+ 
+****************************************
+Report : area
+Design : sqroot_seq_NBITS32
+Version: F-2011.09-SP5
+Date   : Tue Nov 20 13:37:09 2012
+****************************************
+
+Library(s) Used:
+
+    c35_CORELIB (File: /dkits/ams/hk370/synopsys/c35_3.3V/c35_CORELIB.db)
+
+Number of ports:                           54
+Number of nets:                           670
+Number of cells:                          436
+Number of combinational cells:            332
+Number of sequential cells:                97
+Number of macros:                           0
+Number of buf/inv:                         80
+Number of references:                      51
+
+Combinational area:       164073.000214
+Noncombinational area:    30011.799408
+Net Interconnect area:    42327.000000 
+
+Total cell area:          194084.799622
+Total area:               236411.799622
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : sqroot_seq_NBITS32
+Version: F-2011.09-SP5
+Date   : Tue Nov 20 13:37:09 2012
+****************************************
+
+Operating Conditions: nom_pvt   Library: c35_CORELIB
+Wire Load Model Mode: enclosed
+
+  Startpoint: state_reg_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: state_reg_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sqroot_seq_NBITS32 10k                   c35_CORELIB
+  sqroot_seq_NBITS32_DW01_add_5
+                     10k                   c35_CORELIB
+  sqroot_seq_NBITS32_DW_cmp_6
+                     10k                   c35_CORELIB
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  state_reg_reg[0]/C (DFC1)                               0.00       0.00 r
+  state_reg_reg[0]/QN (DFC1)                              0.60       0.60 f
+  U311/Q (BUF8)                                           0.25       0.86 f
+  U395/Q (NAND28)                                         0.09       0.95 r
+  U320/Q (CLKIN6)                                         0.08       1.02 f
+  U321/Q (NAND23)                                         0.24       1.26 r
+  U317/Q (CLKIN6)                                         0.10       1.37 f
+  U318/Q (BUF12)                                          0.27       1.63 f
+  U519/Q (AOI220)                                         0.36       1.99 r
+  U480/Q (NAND22)                                         0.17       2.17 f
+  add_111/A[1] (sqroot_seq_NBITS32_DW01_add_5)            0.00       2.17 f
+  add_111/U602/Q (NOR22)                                  0.17       2.34 r
+  add_111/U363/Q (CLKIN4)                                 0.08       2.42 f
+  add_111/U598/Q (NAND20)                                 0.31       2.73 r
+  add_111/U597/Q (XNR20)                                  0.60       3.33 f
+  add_111/SUM[1] (sqroot_seq_NBITS32_DW01_add_5)          0.00       3.33 f
+  lte_111/A[1] (sqroot_seq_NBITS32_DW_cmp_6)              0.00       3.33 f
+  lte_111/U262/Q (CLKIN2)                                 0.18       3.51 r
+  lte_111/U303/Q (NOR21)                                  0.17       3.68 f
+  lte_111/U137/Q (OAI212)                                 0.20       3.88 r
+  lte_111/U291/Q (AOI211)                                 0.18       4.06 f
+  lte_111/U129/Q (OAI212)                                 0.20       4.26 r
+  lte_111/U231/Q (AOI212)                                 0.13       4.39 f
+  lte_111/U111/Q (OAI212)                                 0.19       4.57 r
+  lte_111/U88/Q (AOI212)                                  0.13       4.70 f
+  lte_111/U57/Q (OAI212)                                  0.19       4.89 r
+  lte_111/U26/Q (AOI212)                                  0.13       5.01 f
+  lte_111/U1/Q (OAI212)                                   0.19       5.20 r
+  lte_111/GE_LT_GT_LE (sqroot_seq_NBITS32_DW_cmp_6)       0.00       5.20 r
+  U518/Q (INV3)                                           0.06       5.26 f
+  U344/Q (OAI212)                                         0.13       5.39 r
+  U416/Q (AOI212)                                         0.10       5.50 f
+  state_reg_reg[0]/D (DFC1)                               0.00       5.50 f
+  data arrival time                                                  5.50
+
+  clock clk (rise edge)                                   5.50       5.50
+  clock network delay (ideal)                             0.00       5.50
+  state_reg_reg[0]/C (DFC1)                               0.00       5.50 r
+  library setup time                                      0.00       5.50
+  data required time                                                 5.50
+  --------------------------------------------------------------------------
+  data required time                                                 5.50
+  data arrival time                                                 -5.50
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
+ 
+****************************************
+Report : resources
+Design : sqroot_seq_NBITS32
+Version: F-2011.09-SP5
+Date   : Tue Nov 20 13:37:09 2012
+****************************************
+
+Resource Sharing Report for design sqroot_seq_NBITS32 in file
+        ./HDL/RTL/sqroot_seq_rtl.vhd
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r337     | DW_cmp       | width=32   |               | lte_gte_109          |
+| r339     | DW_cmp       | width=32   |               | lt_gt_110            |
+| r341     | DW01_add     | width=32   |               | add_111              |
+| r343     | DW_cmp       | width=32   |               | lte_111              |
+| r349     | DW01_add     | width=32   |               | add_140              |
+| r351     | DW01_inc     | width=32   |               | add_143              |
+| r940     | DW01_sub     | width=32   |               | sub_1_root_sub_0_root_sub_139 |
+| r942     | DW01_sub     | width=32   |               | sub_0_root_sub_0_root_sub_139 |
+===============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| sub_1_root_sub_0_root_sub_139         |                    |                |
+|                    | DW01_sub         | pparch (area,speed)                 |
+| add_140            | DW01_add         | pparch (area,speed)                 |
+| add_111            | DW01_add         | pparch (area,speed)                 |
+| lte_111            | DW_cmp           | pparch (area,speed)                 |
+| sub_0_root_sub_0_root_sub_139         |                    |                |
+|                    | DW01_sub         | pparch (area,speed)                 |
+| lt_gt_110          | DW_cmp           | pparch (area,speed)                 |
+| add_143            | DW01_inc         | pparch (area,speed)                 |
+===============================================================================
+
+
+No multiplexors to report
+ 
+****************************************
+Design : sqroot_seq_NBITS32_DW01_sub_7
+****************************************
+
+No resource sharing information to report.
+
+No implementations to report
+
+No multiplexors to report
+ 
+****************************************
+Design : sqroot_seq_NBITS32_DW01_add_6
+****************************************
+
+No resource sharing information to report.
+
+No implementations to report
+
+No multiplexors to report
+ 
+****************************************
+Design : sqroot_seq_NBITS32_DW01_add_5
+****************************************
+
+No resource sharing information to report.
+
+No implementations to report
+
+No multiplexors to report
+ 
+****************************************
+Design : sqroot_seq_NBITS32_DW_cmp_6
+****************************************
+
+No resource sharing information to report.
+
+No implementations to report
+
+No multiplexors to report
+ 
+****************************************
+Design : sqroot_seq_NBITS32_DW01_sub_5
+****************************************
+
+No resource sharing information to report.
+
+No implementations to report
+
+No multiplexors to report
+ 
+****************************************
+Design : sqroot_seq_NBITS32_DW_cmp_5
+****************************************
+
+No resource sharing information to report.
+
+No implementations to report
+
+No multiplexors to report
+ 
+****************************************
+Design : sqroot_seq_NBITS32_DW01_inc_1
+****************************************
+
+No resource sharing information to report.
+
+No implementations to report
+
+No multiplexors to report
+1
  
 ****************************************
 Report : reference

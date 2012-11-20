@@ -1,0 +1,206 @@
+ 
+****************************************
+Report : area
+Design : sqroot_comb_NBITS8
+Version: F-2011.09-SP5
+Date   : Mon Nov 12 15:22:13 2012
+****************************************
+
+Library(s) Used:
+
+    c35_CORELIB (File: /dkits/ams/hk370/synopsys/c35_3.3V/c35_CORELIB.db)
+
+Number of ports:                           14
+Number of nets:                           191
+Number of cells:                          182
+Number of combinational cells:            182
+Number of sequential cells:                 0
+Number of macros:                           0
+Number of buf/inv:                         71
+Number of references:                      54
+
+Combinational area:       13959.400032
+Noncombinational area:       0.000000
+Net Interconnect area:    3321.000000  
+
+Total cell area:          13959.400032
+Total area:               17280.400032
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : sqroot_comb_NBITS8
+Version: F-2011.09-SP5
+Date   : Mon Nov 12 15:22:13 2012
+****************************************
+
+Operating Conditions: nom_pvt   Library: c35_CORELIB
+Wire Load Model Mode: enclosed
+
+  Startpoint: arg[3] (input port)
+  Endpoint: sqroot[1] (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sqroot_comb_NBITS8 10k                   c35_CORELIB
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  arg[3] (in)                              0.00       0.00 f
+  U223/Q (OAI212)                          0.25       0.25 r
+  U256/Q (AOI212)                          0.22       0.47 f
+  U200/Q (NOR24)                           0.16       0.62 r
+  U185/Q (INV10)                           0.08       0.71 f
+  U199/Q (CLKBU15)                         0.19       0.90 f
+  U226/Q (OAI222)                          0.22       1.12 r
+  U249/Q (INV6)                            0.16       1.29 f
+  U302/Q (NAND28)                          0.14       1.43 r
+  U306/Q (INV6)                            0.04       1.47 f
+  U307/Q (NAND24)                          0.12       1.59 r
+  U183/Q (NAND24)                          0.10       1.69 f
+  U259/Q (CLKIN6)                          0.07       1.76 r
+  U298/Q (AOI312)                          0.13       1.89 f
+  U198/Q (NAND26)                          0.20       2.08 r
+  U257/Q (INV12)                           0.07       2.15 f
+  U356/Q (OAI222)                          0.23       2.38 r
+  U280/Q (INV3)                            0.08       2.46 f
+  U278/Q (NAND23)                          0.11       2.57 r
+  U279/Q (NAND22)                          0.04       2.61 f
+  sqroot[1] (out)                          0.00       2.61 f
+  data arrival time                                   2.61
+
+  max_delay                                2.61       2.61
+  output external delay                    0.00       2.61
+  data required time                                  2.61
+  -----------------------------------------------------------
+  data required time                                  2.61
+  data arrival time                                  -2.61
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1
+ 
+****************************************
+Report : resources
+Design : sqroot_comb_NBITS8
+Version: F-2011.09-SP5
+Date   : Mon Nov 12 15:22:13 2012
+****************************************
+
+Resource Sharing Report for design sqroot_comb_NBITS8 in file
+        ./HDL/RTL/sqroot_comb_rtl.vhd
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r390     | DW_cmp       | width=8    |               | lte_43               |
+| r392     | DW01_sub     | width=8    |               | sub_44               |
+| r394     | DW01_add     | width=8    |               | add_43_I2            |
+| r396     | DW_cmp       | width=8    |               | lte_43_I2            |
+| r402     | DW01_add     | width=7    |               | add_45_I2            |
+| r404     | DW01_add     | width=8    |               | add_43_I3            |
+| r406     | DW_cmp       | width=8    |               | lte_43_I3            |
+| r412     | DW01_add     | width=8    |               | add_45_I3            |
+| r414     | DW01_inc     | width=8    |               | add_43_I4            |
+| r416     | DW_cmp       | width=8    |               | lte_43_I4            |
+| r418     | DW01_sub     | width=8    |               | sub_1_root_sub_44_I4 |
+| r420     | DW01_add     | width=8    |               | add_45_I4            |
+| r422     | DW_cmp       | width=8    |               | lt_gt_52             |
+| r424     | DW01_inc     | width=5    |               | add_53               |
+| r1012    | DW01_add     | width=8    |               | add_1_root_sub_0_root_sub_44_I2 |
+| r1014    | DW01_sub     | width=8    |               | sub_0_root_sub_0_root_sub_44_I2 |
+| r1603    | DW01_sub     | width=8    |               | sub_1_root_sub_0_root_sub_44_I3 |
+| r1605    | DW01_sub     | width=8    |               | sub_0_root_sub_0_root_sub_44_I3 |
+===============================================================================
+
+
+No implementations to report
+
+No multiplexors to report
+1
+ 
+****************************************
+Report : reference
+Design : sqroot_comb_NBITS8
+Version: F-2011.09-SP5
+Date   : Mon Nov 12 15:22:13 2012
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AOI211             c35_CORELIB    72.800003       3   218.400009  
+AOI212             c35_CORELIB    91.000000       2   182.000000  
+AOI222             c35_CORELIB   109.199997       1   109.199997  
+AOI310             c35_CORELIB    91.000000       1    91.000000  
+AOI312             c35_CORELIB   109.199997       2   218.399994  
+AOI2110            c35_CORELIB    91.000000       1    91.000000  
+AOI2112            c35_CORELIB   127.400002       3   382.200005  
+BUF2               c35_CORELIB    54.599998       4   218.399994  
+BUF6               c35_CORELIB    72.800003       2   145.600006  
+CLKBU4             c35_CORELIB    72.800003       1    72.800003  
+CLKBU15            c35_CORELIB   145.600006       1   145.600006  
+CLKIN1             c35_CORELIB    36.400002       2    72.800003  
+CLKIN2             c35_CORELIB    36.400002       1    36.400002  
+CLKIN3             c35_CORELIB    36.400002       7   254.800011  
+CLKIN6             c35_CORELIB    54.599998       3   163.799995  
+CLKIN8             c35_CORELIB    72.800003       1    72.800003  
+INV0               c35_CORELIB    36.400002       2    72.800003  
+INV2               c35_CORELIB    36.400002       1    36.400002  
+INV3               c35_CORELIB    36.400002      27   982.800041  
+INV4               c35_CORELIB    54.599998       1    54.599998  
+INV6               c35_CORELIB    54.599998      11   600.599983  
+INV8               c35_CORELIB    72.800003       1    72.800003  
+INV10              c35_CORELIB    91.000000       1    91.000000  
+INV12              c35_CORELIB    91.000000       4   364.000000  
+INV15              c35_CORELIB   109.199997       1   109.199997  
+NAND20             c35_CORELIB    54.599998       4   218.399994  
+NAND21             c35_CORELIB    54.599998       3   163.799995  
+NAND22             c35_CORELIB    54.599998      21  1146.599968  
+NAND23             c35_CORELIB    91.000000       5   455.000000  
+NAND24             c35_CORELIB   109.199997      11  1201.199966  
+NAND26             c35_CORELIB   163.800003       2   327.600006  
+NAND28             c35_CORELIB   182.000000       4   728.000000  
+NAND31             c35_CORELIB    72.800003       1    72.800003  
+NAND34             c35_CORELIB   163.800003       2   327.600006  
+NAND42             c35_CORELIB   145.600006       1   145.600006  
+NOR21              c35_CORELIB    54.599998       1    54.599998  
+NOR22              c35_CORELIB    72.800003       3   218.400009  
+NOR23              c35_CORELIB    91.000000       4   364.000000  
+NOR24              c35_CORELIB   109.199997       3   327.599991  
+NOR31              c35_CORELIB    72.800003       1    72.800003  
+NOR32              c35_CORELIB    91.000000       1    91.000000  
+NOR40              c35_CORELIB    72.800003       1    72.800003  
+NOR41              c35_CORELIB    91.000000       2   182.000000  
+NOR42              c35_CORELIB   163.800003       2   327.600006  
+OAI210             c35_CORELIB    72.800003       1    72.800003  
+OAI212             c35_CORELIB    72.800003      10   728.000031  
+OAI221             c35_CORELIB    91.000000       2   182.000000  
+OAI222             c35_CORELIB    91.000000       5   455.000000  
+OAI311             c35_CORELIB    91.000000       1    91.000000  
+OAI312             c35_CORELIB   109.199997       2   218.399994  
+OAI2112            c35_CORELIB   145.600006       1   145.600006  
+XNR21              c35_CORELIB   109.199997       1   109.199997  
+XNR22              c35_CORELIB   200.199997       1   200.199997  
+XOR22              c35_CORELIB   200.199997       2   400.399994  
+-----------------------------------------------------------------------------
+Total 54 references                                 13959.400032
+1

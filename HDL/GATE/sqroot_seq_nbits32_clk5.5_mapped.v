@@ -2318,36 +2318,36 @@ module sqroot_seq_NBITS32 ( arg, roundup, clk, nRst, start, sqroot, ready );
         n436) );
   DFC3 delta_reg_reg_1_ ( .D(n468), .C(clk), .RN(nRst), .Q(delta_reg[1]), .QN(
         n277) );
-  sqroot_seq_NBITS32_DW01_inc_1 add_142 ( .A({root_reg, sqroot[16:15], n474, 
+  sqroot_seq_NBITS32_DW01_inc_1 add_143 ( .A({root_reg, sqroot[16:15], n474, 
         sqroot[13:10], n477, sqroot[8:7], n215, n480, n481, n482, sqroot[2], 
         n484, sqroot[0]}), .SUM(fuo_round) );
-  sqroot_seq_NBITS32_DW_cmp_5 lt_gt_109 ( .A({root_next[31:26], n267, 
+  sqroot_seq_NBITS32_DW_cmp_5 lt_gt_110 ( .A({root_next[31:26], n267, 
         root_next[24], n268, root_next[22:21], n242, n232, n261, n235, 
         root_next[16], n246, root_next[14], n251, n250, root_next[11:10], n243, 
         n241, n252, n239, n238, root_next[4:0]}), .B({n275, res_next}), .TC(
         n_Logic0_), .GE_LT(n4), .GE_GT_EQ(n_Logic0_), .GE_LT_GT_LE(N40) );
-  sqroot_seq_NBITS32_DW01_sub_5 sub_0_root_sub_0_root_sub_138 ( .A({N120, N119, 
+  sqroot_seq_NBITS32_DW01_sub_5 sub_0_root_sub_0_root_sub_139 ( .A({N120, N119, 
         N118, N117, N116, N115, N114, N113, N112, N111, N110, N109, N108, N107, 
         N106, N105, N104, N103, N102, N101, N100, N99, N98, N97, N96, N95, N94, 
         N93, N92, N91, N90, n237}), .B({root_reg, sqroot[16:15], n474, 
         sqroot[13:10], n477, sqroot[8:7], n215, n480, n216, n482, sqroot[2:0]}), .CI(n_Logic0_), .DIFF(fuo_if_res) );
-  sqroot_seq_NBITS32_DW_cmp_6 lte_110 ( .A({N73, N72, N71, N70, N69, N68, N67, 
+  sqroot_seq_NBITS32_DW_cmp_6 lte_111 ( .A({N73, N72, N71, N70, N69, N68, N67, 
         N66, N65, N64, N63, N62, N61, N60, N59, N58, N57, N56, N55, N54, N53, 
         N52, N51, N50, N49, N48, N47, N46, N45, N44, N43, N42}), .B({n275, 
         res_next[30:28], n264, res_next[26:0]}), .TC(n_Logic0_), .GE_LT(
         n_Logic0_), .GE_GT_EQ(n_Logic0_), .GE_LT_GT_LE(N74) );
-  sqroot_seq_NBITS32_DW01_add_5 add_110 ( .A({root_next[31:26], n267, 
+  sqroot_seq_NBITS32_DW01_add_5 add_111 ( .A({root_next[31:26], n267, 
         root_next[24], n268, root_next[22:0]}), .B({n_Logic0_, delta_next[30], 
         n_Logic0_, delta_next[28:6], n472, n471, n470, n469, n468, n467}), 
         .CI(n_Logic0_), .SUM({N73, N72, N71, N70, N69, N68, N67, N66, N65, N64, 
         N63, N62, N61, N60, N59, N58, N57, N56, N55, N54, N53, N52, N51, N50, 
         N49, N48, N47, N46, N45, N44, N43, N42}) );
-  sqroot_seq_NBITS32_DW01_add_6 add_139 ( .A({root_reg, sqroot[16:15], n474, 
+  sqroot_seq_NBITS32_DW01_add_6 add_140 ( .A({root_reg, sqroot[16:15], n474, 
         sqroot[13:11], n476, n477, sqroot[8:7], n274, n480, n481, n482, 
         sqroot[2], n484, sqroot[0]}), .B({delta_reg[30], n_Logic0_, 
         delta_reg[28:2], n224, delta_reg[0], n_Logic0_}), .CI(n_Logic0_), 
         .SUM(fuo_if_root) );
-  sqroot_seq_NBITS32_DW01_sub_7 sub_1_root_sub_0_root_sub_138 ( .A(res_reg), 
+  sqroot_seq_NBITS32_DW01_sub_7 sub_1_root_sub_0_root_sub_139 ( .A(res_reg), 
         .B({n_Logic0_, delta_reg[30], n_Logic0_, delta_reg[28:0]}), .CI(
         n_Logic0_), .DIFF({N120, N119, N118, N117, N116, N115, N114, N113, 
         N112, N111, N110, N109, N108, N107, N106, N105, N104, N103, N102, N101, 

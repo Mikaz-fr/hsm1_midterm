@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version F-2011.09-SP5 for linux -- Apr 20, 2012
-#@ # Date:   Tue Nov 20 10:41:26 2012
+#@ # Date:   Tue Nov 20 13:27:45 2012
 #@ # Run by: edatp59@ielsrv01.epfl.ch
 #@ 
 
@@ -4754,7 +4754,7 @@ source /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/.synopsys_dc.setup
 #@ define_design_lib WORK -path ./DLIB/WORK
 #@ # -- End source /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/.synopsys_dc.setup
 
-source -echo -verbose /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/BIN/sqroot_seq_syn_16.tcl
+source -echo -verbose /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/BIN/sqroot_seq_syn_8.tcl
 #@ #===============================================================================
 #@ #  File        :  sqroot_seq_syn.tcl
 #@ #  Description :  Synthesis script for sequential sqroot calculator.
@@ -4768,9 +4768,9 @@ source -echo -verbose /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/BIN/sqroot_seq_s
 #@ #  design related definitions
 #@ set ENTITY_NAME sqroot_seq
 #@ set ARCH_NAME   rtl
-#@ set NBITS       16
+#@ set NBITS       8
 #@ set CLK_NAME    clk
-#@ set CLK_PERIOD  4.5  ;# ns
+#@ set CLK_PERIOD  3.5  ;# ns
 #@ #
 #@ set DESIGN_ENTITY "${ENTITY_NAME}_${ARCH_NAME}"
 #@ set DESIGN        "${ENTITY_NAME}_nbits${NBITS}_clk${CLK_PERIOD}"
@@ -4825,80 +4825,7 @@ source -echo -verbose /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/BIN/sqroot_seq_s
 #@ write_sdf -version 2.1 TIM/${DESIGN}_mapped.sdf
 #@ 
 #@ puts "-i- Finished"
-#@ # -- End source /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/BIN/sqroot_seq_syn_16.tcl
-
-source BIN/sqroot_seq_syn_16.tcl
-#@ #===============================================================================
-#@ #  File        :  sqroot_seq_syn.tcl
-#@ #  Description :  Synthesis script for sequential sqroot calculator.
-#@ #  Notes       :  -.
-#@ #  Author      :  Michaël Roy, michael.roy@epfl.ch
-#@ #                 for Hardware Modeling I course.
-#@ #  Tools       :  Synopsys DC 2011.09
-#@ #  History     :  13/11/12 Initial version
-#@ #===============================================================================
-#@ 
-#@ #  design related definitions
-#@ set ENTITY_NAME sqroot_seq
-#@ set ARCH_NAME   rtl
-#@ set NBITS       16
-#@ set CLK_NAME    clk
-#@ set CLK_PERIOD  4.7  ;# ns
-#@ #
-#@ set DESIGN_ENTITY "${ENTITY_NAME}_${ARCH_NAME}"
-#@ set DESIGN        "${ENTITY_NAME}_nbits${NBITS}_clk${CLK_PERIOD}"
-#@ 
-#@ #  start from fresh state
-#@ remove_design -all
-#@ 
-#@ #  analyze VHDL sources
-#@ puts "-i- Analyze HDL/RTL/${DESIGN_ENTITY}.vhd"
-#@ analyze -format vhdl HDL/RTL/${DESIGN_ENTITY}.vhd
-#@ 
-#@ #  elaborate design
-#@ puts "-i- Elaborate design"
-#@ elaborate ${ENTITY_NAME} -architecture ${ARCH_NAME}           -parameters "NBITS = ${NBITS}"           -library DEFAULT -update
-#@ 
-#@ #  save elaborated design
-#@ puts "-i- Save elaborated design"
-#@ write -hierarchy -format ddc -output DB/${DESIGN}_elab.ddc
-#@ 
-#@ #  define constraints
-#@ puts "-i- Define constraints"
-#@ puts "-i-   set_max_area 0"
-#@ puts "-i-   create_clock $CLK_NAME -period $CLK_PERIOD"
-#@ puts "-i-   set_fix_multiple_port_nets -all"
-#@ set_max_area 0
-#@ create_clock $CLK_NAME -period $CLK_PERIOD
-#@ set_fix_multiple_port_nets -all
-#@ 
-#@ #  map and optimize design
-#@ puts "-i- Map and optimize design"
-#@ compile -map_effort medium -area_effort medium
-#@ 
-#@ #  save mapped design
-#@ puts "-i- Save mapped design"
-#@ write -hierarchy -format ddc -output DB/${DESIGN}_mapped.ddc
-#@ 
-#@ #  generate reports
-#@ puts "-i- Generate reports"
-#@ report_constraint -nosplit -all_violators > RPT/${DESIGN}_allviol.rpt
-#@ report_area > RPT/${DESIGN}_area.rpt
-#@ report_timing > RPT/${DESIGN}_timing.rpt
-#@ report_resources -nosplit -hierarchy > RPT/${DESIGN}_resources.rpt
-#@ report_reference -nosplit -hierarchy > RPT/${DESIGN}_references.rpt
-#@ 
-#@ #  generate Verilog netlist
-#@ puts "-i- Generate Verilog netlist"
-#@ change_names -rules verilog -hierarchy
-#@ write -format verilog -hierarchy -output HDL/GATE/${DESIGN}_mapped.v
-#@ 
-#@ #  generate SDF timing file for Verilog
-#@ puts "-i- Generate SDF file for Verilog netlist"
-#@ write_sdf -version 2.1 TIM/${DESIGN}_mapped.sdf
-#@ 
-#@ puts "-i- Finished"
-#@ # -- End source BIN/sqroot_seq_syn_16.tcl
+#@ # -- End source /home/edatp59/hsm1_tutorial/SQROOT_SEQ_DC/BIN/sqroot_seq_syn_8.tcl
 
 source BIN/sqroot_seq_syn_16.tcl
 #@ #===============================================================================
@@ -4973,7 +4900,7 @@ source BIN/sqroot_seq_syn_16.tcl
 #@ puts "-i- Finished"
 #@ # -- End source BIN/sqroot_seq_syn_16.tcl
 
-source BIN/sqroot_seq_syn_32.tcl
+source BIN/sqroot_seq_syn_16.tcl -echo
 #@ #===============================================================================
 #@ #  File        :  sqroot_seq_syn.tcl
 #@ #  Description :  Synthesis script for sequential sqroot calculator.
@@ -4987,9 +4914,9 @@ source BIN/sqroot_seq_syn_32.tcl
 #@ #  design related definitions
 #@ set ENTITY_NAME sqroot_seq
 #@ set ARCH_NAME   rtl
-#@ set NBITS       32
+#@ set NBITS       16
 #@ set CLK_NAME    clk
-#@ set CLK_PERIOD  8  ;# ns
+#@ set CLK_PERIOD  4.6  ;# ns
 #@ #
 #@ set DESIGN_ENTITY "${ENTITY_NAME}_${ARCH_NAME}"
 #@ set DESIGN        "${ENTITY_NAME}_nbits${NBITS}_clk${CLK_PERIOD}"
@@ -5044,155 +4971,9 @@ source BIN/sqroot_seq_syn_32.tcl
 #@ write_sdf -version 2.1 TIM/${DESIGN}_mapped.sdf
 #@ 
 #@ puts "-i- Finished"
-#@ # -- End source BIN/sqroot_seq_syn_32.tcl
+#@ # -- End source BIN/sqroot_seq_syn_16.tcl
 
-source BIN/sqroot_seq_syn_32.tcl
-#@ #===============================================================================
-#@ #  File        :  sqroot_seq_syn.tcl
-#@ #  Description :  Synthesis script for sequential sqroot calculator.
-#@ #  Notes       :  -.
-#@ #  Author      :  Michaël Roy, michael.roy@epfl.ch
-#@ #                 for Hardware Modeling I course.
-#@ #  Tools       :  Synopsys DC 2011.09
-#@ #  History     :  13/11/12 Initial version
-#@ #===============================================================================
-#@ 
-#@ #  design related definitions
-#@ set ENTITY_NAME sqroot_seq
-#@ set ARCH_NAME   rtl
-#@ set NBITS       32
-#@ set CLK_NAME    clk
-#@ set CLK_PERIOD  6  ;# ns
-#@ #
-#@ set DESIGN_ENTITY "${ENTITY_NAME}_${ARCH_NAME}"
-#@ set DESIGN        "${ENTITY_NAME}_nbits${NBITS}_clk${CLK_PERIOD}"
-#@ 
-#@ #  start from fresh state
-#@ remove_design -all
-#@ 
-#@ #  analyze VHDL sources
-#@ puts "-i- Analyze HDL/RTL/${DESIGN_ENTITY}.vhd"
-#@ analyze -format vhdl HDL/RTL/${DESIGN_ENTITY}.vhd
-#@ 
-#@ #  elaborate design
-#@ puts "-i- Elaborate design"
-#@ elaborate ${ENTITY_NAME} -architecture ${ARCH_NAME}           -parameters "NBITS = ${NBITS}"           -library DEFAULT -update
-#@ 
-#@ #  save elaborated design
-#@ puts "-i- Save elaborated design"
-#@ write -hierarchy -format ddc -output DB/${DESIGN}_elab.ddc
-#@ 
-#@ #  define constraints
-#@ puts "-i- Define constraints"
-#@ puts "-i-   set_max_area 0"
-#@ puts "-i-   create_clock $CLK_NAME -period $CLK_PERIOD"
-#@ puts "-i-   set_fix_multiple_port_nets -all"
-#@ set_max_area 0
-#@ create_clock $CLK_NAME -period $CLK_PERIOD
-#@ set_fix_multiple_port_nets -all
-#@ 
-#@ #  map and optimize design
-#@ puts "-i- Map and optimize design"
-#@ compile -map_effort medium -area_effort medium
-#@ 
-#@ #  save mapped design
-#@ puts "-i- Save mapped design"
-#@ write -hierarchy -format ddc -output DB/${DESIGN}_mapped.ddc
-#@ 
-#@ #  generate reports
-#@ puts "-i- Generate reports"
-#@ report_constraint -nosplit -all_violators > RPT/${DESIGN}_allviol.rpt
-#@ report_area > RPT/${DESIGN}_area.rpt
-#@ report_timing > RPT/${DESIGN}_timing.rpt
-#@ report_resources -nosplit -hierarchy > RPT/${DESIGN}_resources.rpt
-#@ report_reference -nosplit -hierarchy > RPT/${DESIGN}_references.rpt
-#@ 
-#@ #  generate Verilog netlist
-#@ puts "-i- Generate Verilog netlist"
-#@ change_names -rules verilog -hierarchy
-#@ write -format verilog -hierarchy -output HDL/GATE/${DESIGN}_mapped.v
-#@ 
-#@ #  generate SDF timing file for Verilog
-#@ puts "-i- Generate SDF file for Verilog netlist"
-#@ write_sdf -version 2.1 TIM/${DESIGN}_mapped.sdf
-#@ 
-#@ puts "-i- Finished"
-#@ # -- End source BIN/sqroot_seq_syn_32.tcl
-
-source BIN/sqroot_seq_syn_32.tcl
-#@ #===============================================================================
-#@ #  File        :  sqroot_seq_syn.tcl
-#@ #  Description :  Synthesis script for sequential sqroot calculator.
-#@ #  Notes       :  -.
-#@ #  Author      :  Michaël Roy, michael.roy@epfl.ch
-#@ #                 for Hardware Modeling I course.
-#@ #  Tools       :  Synopsys DC 2011.09
-#@ #  History     :  13/11/12 Initial version
-#@ #===============================================================================
-#@ 
-#@ #  design related definitions
-#@ set ENTITY_NAME sqroot_seq
-#@ set ARCH_NAME   rtl
-#@ set NBITS       32
-#@ set CLK_NAME    clk
-#@ set CLK_PERIOD  5.9  ;# ns
-#@ #
-#@ set DESIGN_ENTITY "${ENTITY_NAME}_${ARCH_NAME}"
-#@ set DESIGN        "${ENTITY_NAME}_nbits${NBITS}_clk${CLK_PERIOD}"
-#@ 
-#@ #  start from fresh state
-#@ remove_design -all
-#@ 
-#@ #  analyze VHDL sources
-#@ puts "-i- Analyze HDL/RTL/${DESIGN_ENTITY}.vhd"
-#@ analyze -format vhdl HDL/RTL/${DESIGN_ENTITY}.vhd
-#@ 
-#@ #  elaborate design
-#@ puts "-i- Elaborate design"
-#@ elaborate ${ENTITY_NAME} -architecture ${ARCH_NAME}           -parameters "NBITS = ${NBITS}"           -library DEFAULT -update
-#@ 
-#@ #  save elaborated design
-#@ puts "-i- Save elaborated design"
-#@ write -hierarchy -format ddc -output DB/${DESIGN}_elab.ddc
-#@ 
-#@ #  define constraints
-#@ puts "-i- Define constraints"
-#@ puts "-i-   set_max_area 0"
-#@ puts "-i-   create_clock $CLK_NAME -period $CLK_PERIOD"
-#@ puts "-i-   set_fix_multiple_port_nets -all"
-#@ set_max_area 0
-#@ create_clock $CLK_NAME -period $CLK_PERIOD
-#@ set_fix_multiple_port_nets -all
-#@ 
-#@ #  map and optimize design
-#@ puts "-i- Map and optimize design"
-#@ compile -map_effort medium -area_effort medium
-#@ 
-#@ #  save mapped design
-#@ puts "-i- Save mapped design"
-#@ write -hierarchy -format ddc -output DB/${DESIGN}_mapped.ddc
-#@ 
-#@ #  generate reports
-#@ puts "-i- Generate reports"
-#@ report_constraint -nosplit -all_violators > RPT/${DESIGN}_allviol.rpt
-#@ report_area > RPT/${DESIGN}_area.rpt
-#@ report_timing > RPT/${DESIGN}_timing.rpt
-#@ report_resources -nosplit -hierarchy > RPT/${DESIGN}_resources.rpt
-#@ report_reference -nosplit -hierarchy > RPT/${DESIGN}_references.rpt
-#@ 
-#@ #  generate Verilog netlist
-#@ puts "-i- Generate Verilog netlist"
-#@ change_names -rules verilog -hierarchy
-#@ write -format verilog -hierarchy -output HDL/GATE/${DESIGN}_mapped.v
-#@ 
-#@ #  generate SDF timing file for Verilog
-#@ puts "-i- Generate SDF file for Verilog netlist"
-#@ write_sdf -version 2.1 TIM/${DESIGN}_mapped.sdf
-#@ 
-#@ puts "-i- Finished"
-#@ # -- End source BIN/sqroot_seq_syn_32.tcl
-
-source BIN/sqroot_seq_syn_32.tcl
+source BIN/sqroot_seq_syn_32.tcl -echo
 #@ #===============================================================================
 #@ #  File        :  sqroot_seq_syn.tcl
 #@ #  Description :  Synthesis script for sequential sqroot calculator.
@@ -5265,297 +5046,3 @@ source BIN/sqroot_seq_syn_32.tcl
 #@ puts "-i- Finished"
 #@ # -- End source BIN/sqroot_seq_syn_32.tcl
 
-source BIN/sqroot_seq_syn_32.tcl
-#@ #===============================================================================
-#@ #  File        :  sqroot_seq_syn.tcl
-#@ #  Description :  Synthesis script for sequential sqroot calculator.
-#@ #  Notes       :  -.
-#@ #  Author      :  Michaël Roy, michael.roy@epfl.ch
-#@ #                 for Hardware Modeling I course.
-#@ #  Tools       :  Synopsys DC 2011.09
-#@ #  History     :  13/11/12 Initial version
-#@ #===============================================================================
-#@ 
-#@ #  design related definitions
-#@ set ENTITY_NAME sqroot_seq
-#@ set ARCH_NAME   rtl
-#@ set NBITS       32
-#@ set CLK_NAME    clk
-#@ set CLK_PERIOD  5  ;# ns
-#@ #
-#@ set DESIGN_ENTITY "${ENTITY_NAME}_${ARCH_NAME}"
-#@ set DESIGN        "${ENTITY_NAME}_nbits${NBITS}_clk${CLK_PERIOD}"
-#@ 
-#@ #  start from fresh state
-#@ remove_design -all
-#@ 
-#@ #  analyze VHDL sources
-#@ puts "-i- Analyze HDL/RTL/${DESIGN_ENTITY}.vhd"
-#@ analyze -format vhdl HDL/RTL/${DESIGN_ENTITY}.vhd
-#@ 
-#@ #  elaborate design
-#@ puts "-i- Elaborate design"
-#@ elaborate ${ENTITY_NAME} -architecture ${ARCH_NAME}           -parameters "NBITS = ${NBITS}"           -library DEFAULT -update
-#@ 
-#@ #  save elaborated design
-#@ puts "-i- Save elaborated design"
-#@ write -hierarchy -format ddc -output DB/${DESIGN}_elab.ddc
-#@ 
-#@ #  define constraints
-#@ puts "-i- Define constraints"
-#@ puts "-i-   set_max_area 0"
-#@ puts "-i-   create_clock $CLK_NAME -period $CLK_PERIOD"
-#@ puts "-i-   set_fix_multiple_port_nets -all"
-#@ set_max_area 0
-#@ create_clock $CLK_NAME -period $CLK_PERIOD
-#@ set_fix_multiple_port_nets -all
-#@ 
-#@ #  map and optimize design
-#@ puts "-i- Map and optimize design"
-#@ compile -map_effort medium -area_effort medium
-#@ 
-#@ #  save mapped design
-#@ puts "-i- Save mapped design"
-#@ write -hierarchy -format ddc -output DB/${DESIGN}_mapped.ddc
-#@ 
-#@ #  generate reports
-#@ puts "-i- Generate reports"
-#@ report_constraint -nosplit -all_violators > RPT/${DESIGN}_allviol.rpt
-#@ report_area > RPT/${DESIGN}_area.rpt
-#@ report_timing > RPT/${DESIGN}_timing.rpt
-#@ report_resources -nosplit -hierarchy > RPT/${DESIGN}_resources.rpt
-#@ report_reference -nosplit -hierarchy > RPT/${DESIGN}_references.rpt
-#@ 
-#@ #  generate Verilog netlist
-#@ puts "-i- Generate Verilog netlist"
-#@ change_names -rules verilog -hierarchy
-#@ write -format verilog -hierarchy -output HDL/GATE/${DESIGN}_mapped.v
-#@ 
-#@ #  generate SDF timing file for Verilog
-#@ puts "-i- Generate SDF file for Verilog netlist"
-#@ write_sdf -version 2.1 TIM/${DESIGN}_mapped.sdf
-#@ 
-#@ puts "-i- Finished"
-#@ # -- End source BIN/sqroot_seq_syn_32.tcl
-
-source BIN/sqroot_seq_syn_32.tcl
-#@ #===============================================================================
-#@ #  File        :  sqroot_seq_syn.tcl
-#@ #  Description :  Synthesis script for sequential sqroot calculator.
-#@ #  Notes       :  -.
-#@ #  Author      :  Michaël Roy, michael.roy@epfl.ch
-#@ #                 for Hardware Modeling I course.
-#@ #  Tools       :  Synopsys DC 2011.09
-#@ #  History     :  13/11/12 Initial version
-#@ #===============================================================================
-#@ 
-#@ #  design related definitions
-#@ set ENTITY_NAME sqroot_seq
-#@ set ARCH_NAME   rtl
-#@ set NBITS       32
-#@ set CLK_NAME    clk
-#@ set CLK_PERIOD  5.3  ;# ns
-#@ #
-#@ set DESIGN_ENTITY "${ENTITY_NAME}_${ARCH_NAME}"
-#@ set DESIGN        "${ENTITY_NAME}_nbits${NBITS}_clk${CLK_PERIOD}"
-#@ 
-#@ #  start from fresh state
-#@ remove_design -all
-#@ 
-#@ #  analyze VHDL sources
-#@ puts "-i- Analyze HDL/RTL/${DESIGN_ENTITY}.vhd"
-#@ analyze -format vhdl HDL/RTL/${DESIGN_ENTITY}.vhd
-#@ 
-#@ #  elaborate design
-#@ puts "-i- Elaborate design"
-#@ elaborate ${ENTITY_NAME} -architecture ${ARCH_NAME}           -parameters "NBITS = ${NBITS}"           -library DEFAULT -update
-#@ 
-#@ #  save elaborated design
-#@ puts "-i- Save elaborated design"
-#@ write -hierarchy -format ddc -output DB/${DESIGN}_elab.ddc
-#@ 
-#@ #  define constraints
-#@ puts "-i- Define constraints"
-#@ puts "-i-   set_max_area 0"
-#@ puts "-i-   create_clock $CLK_NAME -period $CLK_PERIOD"
-#@ puts "-i-   set_fix_multiple_port_nets -all"
-#@ set_max_area 0
-#@ create_clock $CLK_NAME -period $CLK_PERIOD
-#@ set_fix_multiple_port_nets -all
-#@ 
-#@ #  map and optimize design
-#@ puts "-i- Map and optimize design"
-#@ compile -map_effort medium -area_effort medium
-#@ 
-#@ #  save mapped design
-#@ puts "-i- Save mapped design"
-#@ write -hierarchy -format ddc -output DB/${DESIGN}_mapped.ddc
-#@ 
-#@ #  generate reports
-#@ puts "-i- Generate reports"
-#@ report_constraint -nosplit -all_violators > RPT/${DESIGN}_allviol.rpt
-#@ report_area > RPT/${DESIGN}_area.rpt
-#@ report_timing > RPT/${DESIGN}_timing.rpt
-#@ report_resources -nosplit -hierarchy > RPT/${DESIGN}_resources.rpt
-#@ report_reference -nosplit -hierarchy > RPT/${DESIGN}_references.rpt
-#@ 
-#@ #  generate Verilog netlist
-#@ puts "-i- Generate Verilog netlist"
-#@ change_names -rules verilog -hierarchy
-#@ write -format verilog -hierarchy -output HDL/GATE/${DESIGN}_mapped.v
-#@ 
-#@ #  generate SDF timing file for Verilog
-#@ puts "-i- Generate SDF file for Verilog netlist"
-#@ write_sdf -version 2.1 TIM/${DESIGN}_mapped.sdf
-#@ 
-#@ puts "-i- Finished"
-#@ # -- End source BIN/sqroot_seq_syn_32.tcl
-
-source BIN/sqroot_seq_syn_32.tcl
-#@ #===============================================================================
-#@ #  File        :  sqroot_seq_syn.tcl
-#@ #  Description :  Synthesis script for sequential sqroot calculator.
-#@ #  Notes       :  -.
-#@ #  Author      :  Michaël Roy, michael.roy@epfl.ch
-#@ #                 for Hardware Modeling I course.
-#@ #  Tools       :  Synopsys DC 2011.09
-#@ #  History     :  13/11/12 Initial version
-#@ #===============================================================================
-#@ 
-#@ #  design related definitions
-#@ set ENTITY_NAME sqroot_seq
-#@ set ARCH_NAME   rtl
-#@ set NBITS       32
-#@ set CLK_NAME    clk
-#@ set CLK_PERIOD  5.4  ;# ns
-#@ #
-#@ set DESIGN_ENTITY "${ENTITY_NAME}_${ARCH_NAME}"
-#@ set DESIGN        "${ENTITY_NAME}_nbits${NBITS}_clk${CLK_PERIOD}"
-#@ 
-#@ #  start from fresh state
-#@ remove_design -all
-#@ 
-#@ #  analyze VHDL sources
-#@ puts "-i- Analyze HDL/RTL/${DESIGN_ENTITY}.vhd"
-#@ analyze -format vhdl HDL/RTL/${DESIGN_ENTITY}.vhd
-#@ 
-#@ #  elaborate design
-#@ puts "-i- Elaborate design"
-#@ elaborate ${ENTITY_NAME} -architecture ${ARCH_NAME}           -parameters "NBITS = ${NBITS}"           -library DEFAULT -update
-#@ 
-#@ #  save elaborated design
-#@ puts "-i- Save elaborated design"
-#@ write -hierarchy -format ddc -output DB/${DESIGN}_elab.ddc
-#@ 
-#@ #  define constraints
-#@ puts "-i- Define constraints"
-#@ puts "-i-   set_max_area 0"
-#@ puts "-i-   create_clock $CLK_NAME -period $CLK_PERIOD"
-#@ puts "-i-   set_fix_multiple_port_nets -all"
-#@ set_max_area 0
-#@ create_clock $CLK_NAME -period $CLK_PERIOD
-#@ set_fix_multiple_port_nets -all
-#@ 
-#@ #  map and optimize design
-#@ puts "-i- Map and optimize design"
-#@ compile -map_effort medium -area_effort medium
-#@ 
-#@ #  save mapped design
-#@ puts "-i- Save mapped design"
-#@ write -hierarchy -format ddc -output DB/${DESIGN}_mapped.ddc
-#@ 
-#@ #  generate reports
-#@ puts "-i- Generate reports"
-#@ report_constraint -nosplit -all_violators > RPT/${DESIGN}_allviol.rpt
-#@ report_area > RPT/${DESIGN}_area.rpt
-#@ report_timing > RPT/${DESIGN}_timing.rpt
-#@ report_resources -nosplit -hierarchy > RPT/${DESIGN}_resources.rpt
-#@ report_reference -nosplit -hierarchy > RPT/${DESIGN}_references.rpt
-#@ 
-#@ #  generate Verilog netlist
-#@ puts "-i- Generate Verilog netlist"
-#@ change_names -rules verilog -hierarchy
-#@ write -format verilog -hierarchy -output HDL/GATE/${DESIGN}_mapped.v
-#@ 
-#@ #  generate SDF timing file for Verilog
-#@ puts "-i- Generate SDF file for Verilog netlist"
-#@ write_sdf -version 2.1 TIM/${DESIGN}_mapped.sdf
-#@ 
-#@ puts "-i- Finished"
-#@ # -- End source BIN/sqroot_seq_syn_32.tcl
-
-source BIN/sqroot_seq_syn_32.tcl
-#@ #===============================================================================
-#@ #  File        :  sqroot_seq_syn.tcl
-#@ #  Description :  Synthesis script for sequential sqroot calculator.
-#@ #  Notes       :  -.
-#@ #  Author      :  Michaël Roy, michael.roy@epfl.ch
-#@ #                 for Hardware Modeling I course.
-#@ #  Tools       :  Synopsys DC 2011.09
-#@ #  History     :  13/11/12 Initial version
-#@ #===============================================================================
-#@ 
-#@ #  design related definitions
-#@ set ENTITY_NAME sqroot_seq
-#@ set ARCH_NAME   rtl
-#@ set NBITS       32
-#@ set CLK_NAME    clk
-#@ set CLK_PERIOD  5.5  ;# ns
-#@ #
-#@ set DESIGN_ENTITY "${ENTITY_NAME}_${ARCH_NAME}"
-#@ set DESIGN        "${ENTITY_NAME}_nbits${NBITS}_clk${CLK_PERIOD}"
-#@ 
-#@ #  start from fresh state
-#@ remove_design -all
-#@ 
-#@ #  analyze VHDL sources
-#@ puts "-i- Analyze HDL/RTL/${DESIGN_ENTITY}.vhd"
-#@ analyze -format vhdl HDL/RTL/${DESIGN_ENTITY}.vhd
-#@ 
-#@ #  elaborate design
-#@ puts "-i- Elaborate design"
-#@ elaborate ${ENTITY_NAME} -architecture ${ARCH_NAME}           -parameters "NBITS = ${NBITS}"           -library DEFAULT -update
-#@ 
-#@ #  save elaborated design
-#@ puts "-i- Save elaborated design"
-#@ write -hierarchy -format ddc -output DB/${DESIGN}_elab.ddc
-#@ 
-#@ #  define constraints
-#@ puts "-i- Define constraints"
-#@ puts "-i-   set_max_area 0"
-#@ puts "-i-   create_clock $CLK_NAME -period $CLK_PERIOD"
-#@ puts "-i-   set_fix_multiple_port_nets -all"
-#@ set_max_area 0
-#@ create_clock $CLK_NAME -period $CLK_PERIOD
-#@ set_fix_multiple_port_nets -all
-#@ 
-#@ #  map and optimize design
-#@ puts "-i- Map and optimize design"
-#@ compile -map_effort medium -area_effort medium
-#@ 
-#@ #  save mapped design
-#@ puts "-i- Save mapped design"
-#@ write -hierarchy -format ddc -output DB/${DESIGN}_mapped.ddc
-#@ 
-#@ #  generate reports
-#@ puts "-i- Generate reports"
-#@ report_constraint -nosplit -all_violators > RPT/${DESIGN}_allviol.rpt
-#@ report_area > RPT/${DESIGN}_area.rpt
-#@ report_timing > RPT/${DESIGN}_timing.rpt
-#@ report_resources -nosplit -hierarchy > RPT/${DESIGN}_resources.rpt
-#@ report_reference -nosplit -hierarchy > RPT/${DESIGN}_references.rpt
-#@ 
-#@ #  generate Verilog netlist
-#@ puts "-i- Generate Verilog netlist"
-#@ change_names -rules verilog -hierarchy
-#@ write -format verilog -hierarchy -output HDL/GATE/${DESIGN}_mapped.v
-#@ 
-#@ #  generate SDF timing file for Verilog
-#@ puts "-i- Generate SDF file for Verilog netlist"
-#@ write_sdf -version 2.1 TIM/${DESIGN}_mapped.sdf
-#@ 
-#@ puts "-i- Finished"
-#@ # -- End source BIN/sqroot_seq_syn_32.tcl
-
-source BIN/sqroot_seq_syn_32.tclquit
-quit

@@ -456,17 +456,17 @@ module sqroot_seq_NBITS8 ( arg, roundup, clk, nRst, start, sqroot, ready );
          );
   DFC3 root_reg_reg_1_ ( .D(n92), .C(clk), .RN(nRst), .Q(n264), .QN(n120) );
   DFC3 root_reg_reg_0_ ( .D(n106), .C(clk), .RN(nRst), .Q(n265) );
-  sqroot_seq_NBITS8_DW01_sub_2 sub_1_root_sub_0_root_sub_139 ( .A({n94, 
+  sqroot_seq_NBITS8_DW01_sub_2 sub_1_root_sub_0_root_sub_138 ( .A({n94, 
         res_reg[6], n166, res_reg[4:0]}), .B({n_Logic0_, delta_reg[6], 
         n_Logic0_, delta_reg[4:0]}), .CI(n_Logic0_), .DIFF({N72, N71, N70, N69, 
         N68, N67, N66, N65}) );
-  sqroot_seq_NBITS8_DW01_add_3 add_140 ( .A({root_reg, sqroot[4:2], n264, n113}), .B({delta_reg[6], n_Logic0_, delta_reg[4], n110, n104, n114, delta_reg[0], 
+  sqroot_seq_NBITS8_DW01_add_3 add_139 ( .A({root_reg, sqroot[4:2], n264, n113}), .B({delta_reg[6], n_Logic0_, delta_reg[4], n110, n104, n114, delta_reg[0], 
         n_Logic0_}), .CI(n_Logic0_), .SUM(fuo_if_root) );
-  sqroot_seq_NBITS8_DW01_inc_1 add_143 ( .A({root_reg, sqroot[4:2], n264, n116}), .SUM(fuo_round) );
-  sqroot_seq_NBITS8_DW01_sub_4 sub_0_root_sub_0_root_sub_139 ( .A({N72, N71, 
+  sqroot_seq_NBITS8_DW01_inc_1 add_142 ( .A({root_reg, sqroot[4:2], n264, n116}), .SUM(fuo_round) );
+  sqroot_seq_NBITS8_DW01_sub_4 sub_0_root_sub_0_root_sub_138 ( .A({N72, N71, 
         N70, N69, N68, N67, N66, N65}), .B({root_reg, sqroot[4:1], n265}), 
         .CI(n_Logic0_), .DIFF(fuo_if_res) );
-  sqroot_seq_NBITS8_DW01_add_4 add_111 ( .A(root_next), .B({n_Logic0_, 
+  sqroot_seq_NBITS8_DW01_add_4 add_110 ( .A(root_next), .B({n_Logic0_, 
         delta_next[6], n_Logic0_, delta_next[4:0]}), .CI(n_Logic0_), .SUM({N49, 
         N48, N47, N46, N45, N44, N43, N42}) );
   DFC1 res_reg_reg_7_ ( .D(res_next[7]), .C(clk), .RN(nRst), .Q(n94) );

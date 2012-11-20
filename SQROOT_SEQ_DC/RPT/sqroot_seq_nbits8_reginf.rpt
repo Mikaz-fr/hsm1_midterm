@@ -1,0 +1,52 @@
+
+#  elaborate design
+puts "-i- Elaborate design"
+-i- Elaborate design
+elaborate ${ENTITY_NAME} -architecture ${ARCH_NAME}           -parameters "NBITS = ${NBITS}"           -library DEFAULT -update
+Loading db file '/softs/synopsys/syn/2011.09/libraries/syn/gtech.db'
+Loading db file '/softs/synopsys/syn/2011.09/libraries/syn/standard.sldb'
+  Loading link library 'c35_CORELIB'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+
+Statistics for case statements in always block at line 60 in file
+        './HDL/RTL/sqroot_seq_rtl.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            63            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 114 in file
+        './HDL/RTL/sqroot_seq_rtl.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           120            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+        in routine sqroot_seq_NBITS8 line 50 in file
+                './HDL/RTL/sqroot_seq_rtl.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    state_reg_reg    | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine sqroot_seq_NBITS8 line 94 in file
+                './HDL/RTL/sqroot_seq_rtl.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     res_reg_reg     | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    root_reg_reg     | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    delta_reg_reg    | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'sqroot_seq_NBITS8'.
+
+
+
