@@ -1,11 +1,12 @@
 --==============================================================================
 -- File        :  sqroot_seq_rtl.vhd
--- Description :  Sequential square root calculator.
--- Notes       :  FSMD model.
+-- Description :  Square root calculator.
+-- Notes       :  Synchronous, FSMD model.
 -- Author      :  Michael Roy
 -- Tools       :  Modelsim 10.0a, Synopsys DC 2011.09
 -- History     :
---    12 nov 2012    M. Roy     Creation.
+--    12 nov 2012    M. Roy     Creation
+--    20 nov 2012    M. Roy     Comments
 --==============================================================================
 
 library ieee;
@@ -66,7 +67,7 @@ architecture rtl of sqroot_seq is
           when ST_INIT => if iss_if = '1' then            --does res need to be updated
                             state_next <= ST_IF;
                           else
-                            state_next <= ST_COMP;
+                            state_next <= ST_COMP;	--no need to test delta here, always >1 after init
                           end if;                          
           when ST_IF =>   state_next <= ST_COMP;
           when ST_COMP => if iss_looping = '1' then   --is the while over?
@@ -105,7 +106,7 @@ architecture rtl of sqroot_seq is
     
     --data path: internal status signal
     iss_start <= '1' when start = '1' else '0';                                     
-    iss_looping <= '1' when (delta_next >= to_unsigned(1,NBITS)) else '0';             --!!!!!!!!TO BE CHECKED!!!!!!!!!!!!!!
+    iss_looping <= '1' when (delta_next >= to_unsigned(1,NBITS)) else '0';        
     iss_round <= '1' when (roundup = '1' and (res_next> root_next)) else '0';
     iss_if <= '1' when ((root_next + delta_next) <= res_next) else '0';
     
@@ -137,11 +138,11 @@ architecture rtl of sqroot_seq is
     --data path: functional units
     fuo_if_res <= res_reg - (root_reg + delta_reg);
     fuo_if_root <= root_reg + (delta_reg(NBITS-2 downto 0) & '0'); 
-    fuo_comp_root <= '0' & root_reg(NBITS-1 downto 1);   --shift by 1 (divide by 2)
-    fuo_comp_delta <= "00" & delta_reg(NBITS-1 downto 2);  --shift by 2 (divide by 4)
+    fuo_comp_root <= '0' & root_reg(NBITS-1 downto 1);   		--shift by 1 (divide by 2)
+    fuo_comp_delta <= "00" & delta_reg(NBITS-1 downto 2);  		--shift by 2 (divide by 4)
     fuo_round <= root_reg + to_unsigned(1,NBITS);
       
-    --data phat: data output
+    --data path: data output
     sqroot <= std_logic_vector(root_reg(NBITS/2 downto 0)); 
   
 end architecture rtl;

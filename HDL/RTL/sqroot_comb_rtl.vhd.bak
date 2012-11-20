@@ -28,7 +28,7 @@ architecture rtl of sqroot_comb is
     
   sqroot_proc: process(arg,roundup)
     variable res: unsigned(NBITS-1 downto 0);
-    variable root: unsigned(NBITS/2 downto 0);
+    variable root: unsigned(NBITS-1 downto 0);
     variable delta: unsigned(NBITS-1 downto 0);
     variable one_vect : unsigned(NBITS-1 downto 0);
     begin  
@@ -42,15 +42,15 @@ architecture rtl of sqroot_comb is
       while (delta >= one_vect) loop
         if ((root + delta) <= res) then
           res := res - (root + delta);
-          root := root + (delta(((NBITS/2)-1) downto 0) & '0');
+          root := root + (delta(NBITS-2 downto 0) & '0');
         end if; 
         
-        root(NBITS/2 downto 0) := '0' & root(NBITS/2 downto 1);   --shift by 1 (divide by 2)
+        root(NBITS-1 downto 0) := '0' & root(NBITS-1 downto 1);   --shift by 1 (divide by 2)
         delta(NBITS-1 downto 0) := "00" & delta(NBITS-1 downto 2);  --shift by 2 (divide by 4)
       end loop;
       
       if ((roundup = '1') AND (res > root)) then
-        root := root + one_vect(NBITS/2 downto 0);     
+        root := root + one_vect;     
       end if;
       
       sqroot <= std_logic_vector(root(NBITS/2 downto 0));

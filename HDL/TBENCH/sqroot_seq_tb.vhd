@@ -1,3 +1,14 @@
+--==============================================================================
+-- File        :  sqroot_seq_tb.vhd
+-- Description :  TestBench for synchronous square root calculator.
+-- Notes       :  
+-- Author      :  Michael Roy
+-- Tools       :  Modelsim 10.0a, Synopsys DC 2011.09
+-- History     :
+--    12 nov 2012    M. Roy     Creation
+--    20 nov 2012    M. Roy     Comments
+--==============================================================================
+
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
@@ -7,7 +18,7 @@ entity sqroot_seq_tb is end;
 
 architecture bench of sqroot_seq_tb is
 
-   component sqroot is
+   component sqroot is		--get component 
       port (
         signal arg : IN std_logic_vector; 
         signal roundup : IN std_logic;
@@ -19,10 +30,10 @@ architecture bench of sqroot_seq_tb is
         );
    end component sqroot;
 
-   constant NBITS     : natural := 16;
-   constant CLK_PERIODE  : time := 4.6 ns;
+   constant NBITS     : natural := 8;
+   constant CLK_PERIODE  : time := 3.5 ns;
 
-   signal arg      : std_logic_vector(NBITS-1 downto 0);
+   signal arg      : std_logic_vector(NBITS-1 downto 0);	--internal signals
    signal z        : std_logic_vector(NBITS/2 downto 0);
    signal roundup  : std_logic;
    signal check    : std_logic := '0';
@@ -36,10 +47,10 @@ architecture bench of sqroot_seq_tb is
 begin
 
    UUT : component sqroot
-      port map (arg, roundup, CLK, nRst, start, z, ready);
+      port map (arg, roundup, CLK, nRst, start, z, ready);	--map component
 
 
-  CLK <= not CLK after (CLK_PERIODE/2) when sim_done = '0' else '0';
+  CLK <= not CLK after (CLK_PERIODE/2) when sim_done = '0' else '0';	--Generate clock at correct periode, stop it when everything has been tested
 
 
    process
@@ -50,11 +61,11 @@ begin
           roundup  <= rup;
           arg      <= std_logic_vector(to_unsigned(argn, arg'length));
 
-          start <= '1';
+          start <= '1';			--ask to start computation
           wait until ready = '0';
-          start <= '0';
+          start <= '0';			--Reset signal as soon as computation has started
           sqrt_exp <= sqrt(real(argn));
-          wait until ready = '1';
+          wait until ready = '1';	--Wait for computation to be over
 
           check <= '1';
           if rup = '1' then
@@ -62,8 +73,8 @@ begin
           else
             sqrt_exp2 := integer(floor(sqrt_exp));
           end if;
-          wait for CLK_PERIODE/20 ;  --let time to do a pulse on check
-          assert to_integer(unsigned(z)) = sqrt_exp2;
+          wait for CLK_PERIODE/20 ;  		--let some time to do a pulse on check
+          assert to_integer(unsigned(z)) = sqrt_exp2;	--rise message a wrong value
           check <= '0';
       end procedure compute;
 
@@ -77,8 +88,8 @@ begin
          compute(i, '1');
       end loop;
       nRst <= '0';
-      sim_done <= '1';
-      wait;
+      sim_done <= '1';		--all cases has been tested
+      wait;			--wait forever
    end process;
    
 

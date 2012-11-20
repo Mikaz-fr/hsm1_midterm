@@ -1,11 +1,12 @@
 --==============================================================================
 -- File        :  sqroot_comb_rtl.vhd
--- Description :  Generic repetitive-addition multiplier model.
--- Notes       :  FSMD model.
+-- Description :  Square root calculator
+-- Notes       :  Combinational model
 -- Author      :  Michael Roy
--- Tools       :  Modelsim 6.5c, Synopsys DC 2009.06
+-- Tools       :  Modelsim 10.0a, Synopsys DC 2011.09
 -- History     :
---    06 nov 2012    M. Roy     Creation.
+--    06 nov 2012    M. Roy     Creation
+--    20 nov 2012    M. Roy	Comments
 --==============================================================================
 
 library ieee;
@@ -15,8 +16,8 @@ use ieee.std_logic_unsigned.all;
 
 entity sqroot_comb is
    generic (NBITS : natural := 8);
-   port (
-     signal arg : IN std_logic_vector(NBITS-1 downto 0); 
+   port (                                                         --Simple entity
+     signal arg : IN std_logic_vector(NBITS-1 downto 0);      
      signal roundup : IN std_logic;
      signal sqroot : OUT std_logic_vector(NBITS/2 downto 0)
      );  
@@ -36,10 +37,10 @@ architecture rtl of sqroot_comb is
       one_vect := to_unsigned(1,NBITS);
       delta := (others => '0');
       delta(NBITS - 2) := '1';                  --Compute 2^(NBITS-2)
-      res := unsigned(arg(NBITS-1 downto 0)); 
+      res := unsigned(arg(NBITS-1 downto 0));   --Read input
       root := (others => '0');
               
-      while (delta >= one_vect) loop
+      while (delta >= one_vect) loop            --main loop
         if ((root + delta) <= res) then
           res := res - (root + delta);
           root := root + (delta(NBITS-2 downto 0) & '0');
@@ -49,11 +50,11 @@ architecture rtl of sqroot_comb is
         delta(NBITS-1 downto 0) := "00" & delta(NBITS-1 downto 2);  --shift by 2 (divide by 4)
       end loop;
       
-      if ((roundup = '1') AND (res > root)) then
+      if ((roundup = '1') AND (res > root)) then    --Roundup if necessary
         root := root + one_vect;     
       end if;
       
-      sqroot <= std_logic_vector(root(NBITS/2 downto 0));
+      sqroot <= std_logic_vector(root(NBITS/2 downto 0));   --write result
       
     end process sqroot_proc;
     
